@@ -7,6 +7,9 @@
 <!DOCTYPE html>
 <html>
 <body>
-<h2>Hello World!</h2>
+<h2>Simple!</h2>
+
+<h2>Message : <c:out value="${message}" /></h2> 
+<h2>Counter : <c:out value="${counter}" /></h2> 
 </body>
 </html>

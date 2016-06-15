@@ -8,6 +8,7 @@
   <servlet>
   	<!-- <display-name>simple</display-name> -->
     <servlet-name>simple</servlet-name>
+    <!-- <jsp-file>/simple.jsp</jsp-file>  -->
     <servlet-class>
       controller.SimpleServlet
     </servlet-class>
