@@ -1,0 +1,273 @@
+* {
+    font-family: Lato,'Helvetica Neue',Arial,Helvetica,sans-serif;
+}
+body {
+    background: rgb(38, 38, 38);
+    color: white;
+}
+input, label {
+    display:block;
+    border-radius: 4px;
+    width: 100%;
+}
+
+.text-center{
+    text-align: center;
+}
+.no-margin {
+    margin: 0;
+}
+.col-widen {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.quality {
+    font-size: 18px;
+
+    color: black;
+    border-radius: 5px;
+    margin-bottom: 5px;
+
+
+    /*
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+
+    text-align: center;
+
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    overflow: hidden;*/
+}
+
+input, .descriptionText{
+    color: rgb(255,255,255);
+    background-color: rgb(16, 16, 16);
+    /* to avoid !important add separate wrapper div and add the css to that */
+    border: none !important;
+    border-color: transparent !important;
+    box-shadow: none;
+    padding: 10px 5px;
+    font-size: 100%;
+    font-weight: 100;
+
+    border-radius: 5px;
+
+    margin: 0;
+}
+
+textarea:focus, input:focus{
+    background-color: rgb(0, 0, 0);
+}
+
+.bigWhite {
+    color: rgb(255, 255, 255);
+    font-weight: 700;
+}
+a {
+    color: white;
+    text-decoration: none;
+}
+a:hover {
+    color: white;
+}
+
+
+#tableOfStuff{
+    display: inline-block;
+    background-color: rgb(30,30,30);
+    border-radius:5px;
+    padding: 10px;
+    color: rgb(255, 255, 255);
+}
+
+.input_box {
+    display: inline-block;
+    margin: 5px;
+}
+
+#inspect_m_form{
+    width: 100%;
+    margin: 0 auto;
+}
+#inspect_m{
+    padding: 15px 10px 15px 15px;
+    margin: 10px 0 5px 0;
+    width: inherit;
+    /* Box sizing makes the input width stay at 250px rather than increase to 260px due to the padding. http://stackoverflow.com/questions/6586302/add-padding-to-html-text-input-field */
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+    box-sizing: border-box;         /* Opera/IE 8+ */
+}
+#btn_inspect{
+    padding: 10px 0 10px 0;
+    margin: 5px 0 10px 0;
+    width: inherit;
+
+    display: block;
+    font-size: 150%;
+    border-radius: 4px;
+    border: none !important;
+    border-color: transparent !important;
+    box-shadow: none;
+
+    background-color: rgb(16, 16, 16);
+    color: rgb(255, 255, 255);
+}
+
+#result_fields {
+    width: 100%;
+    text-align: center;
+    /* https://css-tricks.com/centering-css-complete-guide/ */
+    /*display: inline-block;*/
+    /*vertical-align: middle;
+    align-self: center !important;*/
+}
+.input_text {
+    text-align: center;
+
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    overflow: hidden;
+}
+
+/*
+transition: color .1s ease, border-color .1s ease;
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font: 13px Helvetica, Arial; }
+#m_form { background: #000; padding: 3px; position: fixed; bottom: 0; width: 100%; }
+#inspect_m_form { background: #000; padding: 3px; position: fixed; bottom: 100px; width: 100%; }
+form input { border: 0; padding: 10px; width: 90%; margin-right: .5%; }
+form button { width: 9%; background: rgb(130, 224, 255); border: none; padding: 10px; }
+#messages { list-style-type: none; margin: 0; padding: 0; }
+#messages li { padding: 5px 10px; }
+#messages li:nth-child(odd) { background: #eee; }
+*/
+.statTrakCol{
+    color: rgb(248,148,6);
+}
+.souvenirCol{
+    color: rgb(255,215,0);
+}
+/*
+a.button{
+
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+
+    border: 2px solid black;
+
+    text-decoration: none;
+    color: white;
+    background-color: rgb(58, 63, 68);
+    background-image: linear-gradient(rgb(72, 78, 85),rgb(58, 63, 68) 60%,rgb(49, 53, 57));
+
+    width: 100%;
+    line-height: 2;
+    padding: 10px 5px;
+}*/
+
+/*
+a.button:hover{
+    background-color: rgb(29, 33, 37);
+}
+a.btn,
+a.btn:hover{
+    text-shadow: 1px 1px 1px rgba(0,0,0,.3);
+}
+a.btn:hover{
+    background-image: linear-gradient(rgb(72, 78, 85),rgb(58, 63, 68) 60%,rgb(49, 53, 57));
+}
+a.btn:link{
+    text-decoration: none;
+    text-align: left;
+    color: white;
+    width: 100%;
+    display: block; inline-block
+}
+a.btn:active{
+}
+a.btn:visited{
+    color: white;
+}
+a.btn-market{
+    font-weight: 100;
+    font-size: 100%;
+}
+*/
+
+/*
+div.btn-market-container{
+    color: white;
+
+    padding: 1px 5px;
+    font-size: 12px;
+    line-height: 1.5;
+    border-radius: 3px;
+
+    border: 1px solid rgba(0,0,0,.6);
+
+    background-image: linear-gradient(rgb(72,78,85),rgb(58,63,68) 60%,rgb(49,53,57));
+}
+*/
+/*background-color: #3a3f44;*/
+/*transparent*/
+/*border-color: rgba(0,0,0,.6);*/
+/* #484e55,#3a3f44 60%,#313539 */
+
+.btn-market{
+    text-align: left;
+}
+
+.darkBackground{
+    min-height: 20px;
+    /*padding: 19px;*/
+    padding: 5px;
+    margin-bottom: 20px;
+    background-color: rgb(32, 32, 32); /* 28, 30, 34 */
+    border: 1px solid rgb(24, 24, 24); /* 12, 13, 14 */
+    border-radius: 4px;
+}
+
+.btn-block {
+    padding: 3px 10px;
+}
+
+table {
+    background-color: transparent;
+}
+
+/* centered columns styles */
+.row-centered {
+    text-align:center;
+}
+.col-centered {
+    display:inline-block;
+    float:none;
+    /* reset the text-align */
+    text-align:left;
+    /* inline-block space fix */
+    margin-right:-4px;
+}
+
+img.centered {
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.no-select {
+    -webkit-user-select: none;  /* Chrome all / Safari all */
+    -moz-user-select: none;     /* Firefox all */
+    -ms-user-select: none;      /* IE 10+ */
+    user-select: none;          /* Likely future */
+}

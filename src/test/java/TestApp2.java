@@ -11,5 +11,12 @@ public class TestApp2 {
 		Assert.assertEquals(AppForTesting.getHelloWorld2(), "Hello World 2");
 
 	}
+	
+	@Test
+	public void testPrintHelloWorld3() {
+
+		Assert.assertEquals(AppForTesting.getHelloWorld2(), "Hello World 2");
+
+	}
 
 }
