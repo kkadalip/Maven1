@@ -26,16 +26,20 @@
 
 <!-- https://developers.google.com/speed/libraries/#libraries -->
 <!-- jQuery http://jquery.com/ -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 <!-- jQueryUI http://jqueryui.com/ -->
 <link rel="stylesheet"
 	href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
 <!-- angularJS -->
-<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+<script
+	src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
 
 <!-- Bootstrap http://getbootstrap.com/getting-started/#download -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 <!-- Bootstrap: To ensure proper rendering and touch zooming -->
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <!-- Bootswatch slate http://bootswatch.com/slate/ -->
@@ -52,7 +56,26 @@
 		<div class="darkBackground col-md-12">
 			<p>Some random text goes here.</p>
 		</div>
+
+		<div class="darkBackground col-md-12">
+			<div ng-app="" data-ng-init="firstName='John'">
+				<p>
+					The name is <span data-ng-bind="firstName"></span>
+				</p>
+
+				<p>
+					Name: <input type="text" data-ng-model="name">
+				</p>
+				<p data-ng-bind="name"></p>
+
+				<p>
+					Name: <input type="text" ng-model="name2">
+				</p>
+				<p>{{name2}}</p>
+
+				<p>My first expression: {{ 5 + 5 }}</p>
+			</div>
+		</div>
 	</div>
-	
 </body>
 </html>
