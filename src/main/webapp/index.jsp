@@ -80,15 +80,28 @@
 
 			<!-- module defineerib angulari rakendust, controller kontrollib -->
 			<!-- model kuhu paneb -->
+			
 			<br> First Name: <input type="text" data-ng-model="firstName"><br>
 			Last Name: <input type="text" data-ng-model="lastName"><br>
-			<br> Full Name: {{firstName + " " + lastName}} <br> <br>
+			<br> Full Name: {{firstName + " " + lastName}} <br>
+			<br>
 			Change background color: <input style="background-color: {{myCol}}" data-ng-model="myCol" value="{{myCol}}">
+			<br>
+			<br>
+			<input type="number" data-ng-model="add1" value="{{add1}}">
+			<br>
+			<input type="number" data-ng-model="add2" value="{{add2}}">
+			<br>
+			Tehe: {{add1}} + {{add2}} = {{add1 + add2}} <!-- if text then use --  -->
+			
 			<script>
 				var app = angular.module('myApp1', []);
 				app.controller('myController1', function($scope) {
 					$scope.firstName = "Karl";
 					$scope.lastName = "Kadalipp";
+					
+					$scope.add1 = "10";
+					$scope.add2 = "7";
 				});
 			</script>
 		</div>
