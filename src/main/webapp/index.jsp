@@ -58,7 +58,8 @@
 		</div>
 
 		<div class="darkBackground col-md-12">
-			<div ng-app="" data-ng-init="firstName='John'">
+			<div ng-app="myApp1" ng-controller="myController1"
+				data-ng-init="firstName='John'">
 				<p>
 					The name is <span data-ng-bind="firstName"></span>
 				</p>
@@ -74,7 +75,19 @@
 				<p>{{name2}}</p>
 
 				<p>My first expression: {{ 5 + 5 }}</p>
+
+				<!-- module defineerib angulari rakendust, controller kontrollib -->
+				<br> First Name: <input type="text" ng-model="firstName"><br>
+				Last Name: <input type="text" ng-model="lastName"><br>
+				<br> Full Name: {{firstName + " " + lastName}}
 			</div>
+			<script>
+				var app = angular.module('myApp1', []);
+				app.controller('myController1', function($scope) {
+					$scope.firstName = "Karl";
+					$scope.lastName = "Kadalipp";
+				});
+			</script>
 		</div>
 	</div>
 </body>
