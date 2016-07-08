@@ -50,37 +50,40 @@
 <link rel="stylesheet" type="text/css" href="static/style.css">
 <script type="text/javascript" src="static/default.js"></script>
 </head>
-<body>
+<body data-ng-app="myApp1" data-ng-controller="myController1"
+	data-ng-init="myCol='lightblue'" style="background-color: {{myCol}}">
 	<h2>Hello World!</h2>
 	<div class="container-fluid">
 		<div class="darkBackground col-md-12">
 			<p>Some random text goes here.</p>
 		</div>
 
-		<div class="darkBackground col-md-12">
-			<div ng-app="myApp1" ng-controller="myController1"
-				data-ng-init="firstName='John'">
-				<p>
-					The name is <span data-ng-bind="firstName"></span>
-				</p>
+		<div style="background-color: {{myCol"
+			class="darkBackground col-md-12">
 
-				<p>
-					Name: <input type="text" data-ng-model="name">
-				</p>
-				<p data-ng-bind="name"></p>
+			<!-- data-ng-init="firstName='John'" -->
+			<p>
+				The name is <span data-ng-bind="firstName"></span>
+			</p>
 
-				<p>
-					Name: <input type="text" ng-model="name2">
-				</p>
-				<p>{{name2}}</p>
+			<p>
+				Name: <input type="text" data-ng-model="name">
+			</p>
+			<p data-ng-bind="name"></p>
 
-				<p>My first expression: {{ 5 + 5 }}</p>
+			<p>
+				Name: <input type="text" data-ng-model="name2">
+			</p>
+			<p>{{name2}}</p>
+			<!-- {{ expression }} same as ng-bind="expression" -->
+			<p>My first expression: {{ 5 + 5 }}</p>
 
-				<!-- module defineerib angulari rakendust, controller kontrollib -->
-				<br> First Name: <input type="text" ng-model="firstName"><br>
-				Last Name: <input type="text" ng-model="lastName"><br>
-				<br> Full Name: {{firstName + " " + lastName}}
-			</div>
+			<!-- module defineerib angulari rakendust, controller kontrollib -->
+			<!-- model kuhu paneb -->
+			<br> First Name: <input type="text" data-ng-model="firstName"><br>
+			Last Name: <input type="text" data-ng-model="lastName"><br>
+			<br> Full Name: {{firstName + " " + lastName}} <br> <br>
+			Change background color: <input style="background-color: {{myCol}}" data-ng-model="myCol" value="{{myCol}}">
 			<script>
 				var app = angular.module('myApp1', []);
 				app.controller('myController1', function($scope) {
