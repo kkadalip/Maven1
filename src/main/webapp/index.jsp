@@ -85,6 +85,12 @@
 			Last Name: <input type="text" data-ng-model="lastName"><br>
 			<br> Full Name: {{firstName + " " + lastName}} <br>
 			<br>
+			<div data-ng-init="person={firstName:'John',lastName:'Doe'}">
+				<p>The first name is {{ person.firstName }}</p> <!-- can use ng-bind="person.lastName" in span tags instead of {{ }} -->
+				<p>The last name is {{ person.lastName }}</p>
+			</div>
+			
+			<br>
 			Change background color: <input style="background-color: {{myCol}}" data-ng-model="myCol" value="{{myCol}}">
 			<br>
 			<br>
@@ -100,10 +106,17 @@
 					$scope.firstName = "Karl";
 					$scope.lastName = "Kadalipp";
 					
-					$scope.add1 = "10";
-					$scope.add2 = "7";
+					$scope.add1 = 10;
+					$scope.add2 = 7;
 				});
 			</script>
+			
+			<br>
+			Arrays:
+			<br>
+			<div data-ng-init="points=[1,15,19,2,40]">
+				<p>The third result is {{ points[2] }}</p> <!-- can also use ng-bind="" in span tags -->
+			</div>
 		</div>
 	</div>
 </body>
