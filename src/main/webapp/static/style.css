@@ -20,7 +20,7 @@ body {
     .navbar-brand-centered {
         position: absolute;
         left: 50%;
-        display: block;
+        display: inline-block;
         width: 250px;
         text-align: center;
         /* background-color: #eee; */

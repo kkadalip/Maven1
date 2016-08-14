@@ -2,21 +2,27 @@
 <!-- <!DOCTYPE web-app PUBLIC "-//Sun Microsystems, Inc.//DTD Web Application 
 	2.3//EN" "http://java.sun.com/dtd/web-app_2_3.dtd" > <web-app> -->
 <web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" version="3.1">
-  <display-name>Maven1 (Archetype Created Web Application)</display-name>
+	<display-name>Maven1 (Archetype Created Web Application)</display-name>
 
+	<servlet>
+		<!-- <display-name>simple</display-name> -->
+	  	<servlet-name>simple</servlet-name>
+	  	<!-- <jsp-file>/simple.jsp</jsp-file>  -->
+	  	<servlet-class>
+	    	controller.SimpleServlet
+	  	</servlet-class>
+	</servlet>
+	<servlet-mapping>
+  		<servlet-name>simple</servlet-name>
+  		<url-pattern>/simple</url-pattern>
+	</servlet-mapping>
 
-  <servlet>
-  	<!-- <display-name>simple</display-name> -->
-    <servlet-name>simple</servlet-name>
-    <!-- <jsp-file>/simple.jsp</jsp-file>  -->
-    <servlet-class>
-      controller.SimpleServlet
-    </servlet-class>
-  </servlet>
-  <servlet-mapping>
-    <servlet-name>simple</servlet-name>
-    <url-pattern>/simple</url-pattern>
-  </servlet-mapping>
-
-
+	<servlet>
+	   <servlet-name>contact</servlet-name>
+	   <jsp-file>/contact.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+	  <servlet-name>contact</servlet-name>
+	  <url-pattern>/contact</url-pattern>
+	</servlet-mapping>
 </web-app>
