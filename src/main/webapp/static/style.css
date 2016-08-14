@@ -14,3 +14,19 @@ body {
     border: 1px solid rgb(24, 24, 24);
     border-radius: 4px;
 }
+
+
+@media screen and (min-width:768px){
+    .navbar-brand-centered {
+        position: absolute;
+        left: 50%;
+        display: block;
+        width: 250px;
+        text-align: center;
+        /* background-color: #eee; */
+    }
+    .navbar>.container .navbar-brand-centered, 
+    .navbar>.container-fluid .navbar-brand-centered {
+        margin-left: -80px;
+    }
+}
