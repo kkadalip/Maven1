@@ -17,7 +17,7 @@
 		<div id="navbar" class="navbar-collapse collapse">
 			<ul class="nav navbar-nav">
 				<li id="header_li_index"><a href="<c:url value="/"/>">Büroo</a></li> <!-- li class="active" -->
-				<li id="header_li_projects"><a href="#">Projektid</a></li>
+				<li id="header_li_projects"><a href="<c:url value="/projects"/>">Projektid</a></li>
 				<li id="header_li_people"><a href="#">Inimesed</a></li>
 			</ul>
 			<ul class="nav navbar-nav navbar-right">
