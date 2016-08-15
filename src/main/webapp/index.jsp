@@ -8,7 +8,7 @@
 </head>
 
 <body data-ng-app="myApp1" data-ng-controller="myController1"
-	data-ng-init="myCol=''" style="background-color: {{myCol">
+	data-ng-init="myCol=''" style="background-color: {{myCol}}">
 	<!-- myCol = 'lightblue' -->
 
 	<%@ include file="header.jsp"%>
@@ -20,8 +20,7 @@
 				<p>Some random text goes here.</p>
 			</div>
 
-			<div style="background-color: {{myCol"
-				class="darkBackground col-md-12">
+			<div style="background-color: {{myCol}}" class="darkBackground col-md-12">
 
 				<!-- data-ng-init="firstName='John'" -->
 				<p>
