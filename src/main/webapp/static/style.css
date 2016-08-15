@@ -1,32 +1,58 @@
+html {
+	/* for sticky footer: */
+	position: relative;
+	min-height: 100%;
+}
+
 * {
-    font-family: Lato,'Helvetica Neue',Arial,Helvetica,sans-serif;
+	font-family: Lato, 'Helvetica Neue', Arial, Helvetica, sans-serif;
 }
+
 body {
-    background: rgb(42, 42, 42);
-    color: white;
+	background: rgb(42, 42, 42);
+	color: white;
+	/* for sticky footer: Margin bottom by footer height */
+	margin-bottom: 40px;
 }
 
-.darkBackground{
-    min-height: 20px;
-    padding: 5px;
-    margin-bottom: 20px;
-    background-color: rgb(32, 32, 32);
-    border: 1px solid rgb(24, 24, 24);
-    border-radius: 4px;
+.darkBackground {
+	min-height: 20px;
+	padding: 5px;
+	margin-bottom: 20px;
+	background-color: rgb(32, 32, 32);
+	border: 1px solid rgb(24, 24, 24);
+	border-radius: 4px;
 }
 
+.navbar {
+	margin-top: 5px;
+	border-left: none;
+	border-right: none;
+}
 
-@media screen and (min-width:768px){
-    .navbar-brand-centered {
-        position: absolute;
-        left: 50%;
-        display: inline-block;
-        width: 250px;
-        text-align: center;
-        /* background-color: #eee; */
-    }
-    .navbar>.container .navbar-brand-centered, 
-    .navbar>.container-fluid .navbar-brand-centered {
-        margin-left: -80px;
-    }
+.footer-wide {
+	color: rgb(60,60,60);
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	/* Set the fixed height of the footer here (html body has to have same margin-bottom as height of footer) */
+	height: 40px;
+	margin-top: 10px;
+	padding: 10px;
+	background: rgb(30, 30, 30);
+}
+
+@media screen and (min-width:768px) {
+	.navbar-brand-centered {
+		position: absolute;
+		left: 50%;
+		display: inline-block;
+		width: 250px;
+		text-align: center;
+		/* background-color: #eee; */
+	}
+	.navbar>.container .navbar-brand-centered, .navbar>.container-fluid .navbar-brand-centered
+		{
+		margin-left: -80px;
+	}
 }
