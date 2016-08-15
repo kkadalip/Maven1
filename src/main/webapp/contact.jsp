@@ -27,11 +27,11 @@
 			<b>Tel:</b> +372 661 3753<br>
 			<b>Fax:</b> +372 661 3754<br>
 			<br>
-			Arhitekt <b>Velle Kadalipp</b>:<br>
+			Arhitekt Velle Kadalipp:<br>
 			<b>Mob:</b> 56 905 411<br>
 			<b>E-mail:</b> velle@jvr.ee<br>
 			<br>
-			Arhitekt <b>Kalle Vellevoog</b>:<br>
+			Arhitekt Kalle Vellevoog:<br>
 			<b>Mob:</b> 50 675 86<br>
 			<b>E-mail:</b> kalle@jvr.ee<br>
 		</p>
