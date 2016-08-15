@@ -23,7 +23,7 @@
 		<h2>Arhitektuuribüroo JVR OÜ</h2>
 		<p>
 			<strong>Aadress:</strong> Paldiski mnt. 26A, 10149, Tallinn<br>
-			<strong>Tel:</strong>+372 661 3753<br>
+			<strong>Tel:</strong> +372 661 3753<br>
 			<strong>Fax:</strong> +372 661 3754<br>
 			<br>
 			Arhitekt Velle Kadalipp:<br>
@@ -34,6 +34,8 @@
 			<strong>Mob:</strong> 50 675 86<br>
 			<strong>E-mail:</strong> kalle@jvr.ee<br>
 		</p>
+		<br>
+		<br>
 		<!-- https://developers.google.com/maps/documentation/javascript/tutorials/adding-a-google-map -->
 		<!-- https://developers.google.com/maps/documentation/javascript/infowindows -->
 		<h3>Asukoht:</h3>
