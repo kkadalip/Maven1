@@ -21,21 +21,20 @@
 	<%@ include file="header.jsp"%>
 	<div class="container">
 		<h2>Arhitektuuribüroo JVR OÜ</h2>
+		<br>
 		<p>
-			<strong>Aadress:</strong> Paldiski mnt. 26A, 10149, Tallinn<br>
-			<strong>Tel:</strong> +372 661 3753<br>
-			<strong>Fax:</strong> +372 661 3754<br>
+			<b>Aadress:</b> Paldiski mnt. 26A, 10149, Tallinn<br>
+			<b>Tel:</b> +372 661 3753<br>
+			<b>Fax:</b> +372 661 3754<br>
 			<br>
-			Arhitekt Velle Kadalipp:<br>
-			<strong>Mob:</strong> 56 905 411<br>
-			<strong>E-mail:</strong> velle@jvr.ee<br>
+			Arhitekt <b>Velle Kadalipp</b>:<br>
+			<b>Mob:</b> 56 905 411<br>
+			<b>E-mail:</b> velle@jvr.ee<br>
 			<br>
-			Arhitekt Kalle Vellevoog:<br>
-			<strong>Mob:</strong> 50 675 86<br>
-			<strong>E-mail:</strong> kalle@jvr.ee<br>
+			Arhitekt <b>Kalle Vellevoog</b>:<br>
+			<b>Mob:</b> 50 675 86<br>
+			<b>E-mail:</b> kalle@jvr.ee<br>
 		</p>
-		<br>
-		<br>
 		<!-- https://developers.google.com/maps/documentation/javascript/tutorials/adding-a-google-map -->
 		<!-- https://developers.google.com/maps/documentation/javascript/infowindows -->
 		<h3>Asukoht:</h3>
@@ -54,7 +53,7 @@
 					center : myLatLng
 				});
 
-				var contentString = '<strong>Arhitektuuribüroo JVR</strong><br>Paldiski mnt 26a<br>10149 Tallinn<br>';
+				var contentString = '<strong>Arhitektuuribüroo JVR OÜ';
 				var infowindow = new google.maps.InfoWindow({
 					content : contentString
 				});

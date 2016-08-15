@@ -22,7 +22,7 @@
 			<div class="container-fluid">
 				<div class="darkBackground col-md-12">
 					<p>
-						<strong>Arhitektuuribüroo JVR OÜ</strong> asutasid 1990. aastal
+						<b>Arhitektuuribüroo JVR OÜ</b> asutasid 1990. aastal
 						Ilmar Jalas, Enn Rajasaar ja Kalle Vellevoog. 1998 aastal liitus
 						bürooga Velle Kadalipp.<br>
 						<br> Täna on büroo osanikeks ja vastutavateks arhitektideks:
