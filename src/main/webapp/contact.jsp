@@ -20,18 +20,25 @@
 <body>
 	<%@ include file="header.jsp"%>
 	<div class="container">
-		<ul>
-			<li>Arhitektuuribüroo JVR OÜ Paldiski mnt. 26 A 10149 Tallinn</li>
-			<li>Üldtelefon: +372 661 3753 Fax: +372 661 3754</li>
-			<li>E-mail:</li>
-			<li>jvr@jvr.ee Velle Kadalipp 56 905 411 velle@jvr.ee</li>
-			<li>Kalle Vellevoog 50 675 86 kalle@jvr.ee</li>
-		</ul>
+		<h2>Arhitektuuribüroo JVR OÜ</h2>
+		<p>
+			<strong>Aadress:</strong> Paldiski mnt. 26A, 10149, Tallinn<br>
+			<strong>Tel:</strong>+372 661 3753<br>
+			<strong>Fax:</strong> +372 661 3754<br>
+			<br>
+			Arhitekt Velle Kadalipp:<br>
+			<strong>Mob:</strong> 56 905 411<br>
+			<strong>E-mail:</strong> velle@jvr.ee<br>
+			<br>
+			Arhitekt Kalle Vellevoog:<br>
+			<strong>Mob:</strong> 50 675 86<br>
+			<strong>E-mail:</strong> kalle@jvr.ee<br>
+		</p>
 		<!-- https://developers.google.com/maps/documentation/javascript/tutorials/adding-a-google-map -->
 		<!-- https://developers.google.com/maps/documentation/javascript/infowindows -->
 		<h3>Asukoht:</h3>
 		<div id="map"
-			style='height: 400px; width: auto; margin-left: 20px; margin-right: 20px; margin-bottom: 10px; color: black;'></div>
+			style='height: 300px; width: auto; margin-bottom: 10px; color: black;'></div>
 
 		<script>
 			function initMap() {
