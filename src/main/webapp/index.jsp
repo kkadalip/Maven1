@@ -5,11 +5,15 @@
 <head>
 <%@ include file="html_head.jsp"%>
 <title>JVR | Home</title>
+
+<script type="text/javascript">
+	$(document).ready(function() { //window.onload = function () { 
+		$("#header_li_index").addClass("active");
+	});
+</script>
 </head>
 
-<body data-ng-app="myApp1" data-ng-controller="myController1"
-	data-ng-init="myCol=''" style="background-color: {{myCol">
-	<!-- myCol = 'lightblue' -->
+<body>
 	<div class="header-and-main-wrapper">
 		<%@ include file="header.jsp"%>
 

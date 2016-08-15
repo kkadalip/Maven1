@@ -8,10 +8,13 @@
 <title>JVR | Contact</title>
 
 <style type="text/css">
-<!--
-@import url("${base}/static/style.css");
--->
 </style>
+
+<script type="text/javascript">
+	$(document).ready(function() { //window.onload = function () { 
+		$("#header_li_contact").addClass("active");
+	});
+</script>
 </head>
 
 <body>
@@ -27,8 +30,9 @@
 		<!-- https://developers.google.com/maps/documentation/javascript/tutorials/adding-a-google-map -->
 		<!-- https://developers.google.com/maps/documentation/javascript/infowindows -->
 		<h3>Asukoht:</h3>
-		<div id="map" style='height: 400px; width: auto; margin-left: 20px; margin-right: 20px; margin-bottom: 10px; color: black;'></div>
-		
+		<div id="map"
+			style='height: 400px; width: auto; margin-left: 20px; margin-right: 20px; margin-bottom: 10px; color: black;'></div>
+
 		<script>
 			function initMap() {
 				var myLatLng = {
@@ -68,7 +72,7 @@
         	src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap">
     	</script>
     	-->
-    	<%@ include file="contact_google_maps_api_key.jsp"%>
+		<%@ include file="contact_google_maps_api_key.jsp"%>
 	</div>
 	<%@ include file="footer.jsp"%>
 </body>

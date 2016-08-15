@@ -16,9 +16,9 @@
 		</div>
 		<div id="navbar" class="navbar-collapse collapse">
 			<ul class="nav navbar-nav">
-				<li class="active"><a href="<c:url value="/"/>">Büroo</a></li>
-				<li><a href="#">Projektid</a></li>
-				<li><a href="#">Inimesed</a></li>
+				<li id="header_li_index"><a href="<c:url value="/"/>">Büroo</a></li> <!-- li class="active" -->
+				<li id="header_li_projects"><a href="#">Projektid</a></li>
+				<li id="header_li_people"><a href="#">Inimesed</a></li>
 			</ul>
 			<ul class="nav navbar-nav navbar-right">
 				<li class="dropdown"><a href="#" class="dropdown-toggle"
@@ -33,7 +33,7 @@
 						<li><a href="#">Separated link</a></li>
 						<li><a href="#">One more separated link</a></li>
 					</ul></li>
-				<li><a href="./contact">Kontakt</a></li>
+				<li id="header_li_contact"><a href="./contact">Kontakt</a></li>
 			</ul>
 		</div>
 		<!--/.nav-collapse -->
