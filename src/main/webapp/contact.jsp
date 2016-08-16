@@ -24,15 +24,16 @@
 		<br>
 		<p>
 			<b>Aadress:</b> Paldiski mnt. 26A, 10149, Tallinn<br>
-			<b>Tel:</b> +372 661 3753<br>
-			<b>Fax:</b> +372 661 3754<br>
+			<b>Reg nr:</b> 10382089<br>
+			<b>Tel:</b> (+372) 661 3753<br>
+			<b>Fax:</b> (+372) 661 3754<br>
 			<br>
 			Arhitekt Velle Kadalipp:<br>
-			<b>Mob:</b> 56 905 411<br>
+			<b>Mob:</b> (+372) 56 905 411<br>
 			<b>E-mail:</b> velle@jvr.ee<br>
 			<br>
 			Arhitekt Kalle Vellevoog:<br>
-			<b>Mob:</b> 50 675 86<br>
+			<b>Mob:</b> (+372) 50 675 86<br>
 			<b>E-mail:</b> kalle@jvr.ee<br>
 		</p>
 		<!-- https://developers.google.com/maps/documentation/javascript/tutorials/adding-a-google-map -->

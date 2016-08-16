@@ -2,7 +2,7 @@
 <!-- Static navbar -->
 <nav class="navbar navbar-default navbar-static-top">
 	<!-- navbar-static-top -->
-	<div class="container"> <!-- container-fluid -->
+	<div class="container"> <!-- container-fluid -->		
 		<div class="navbar-header">
 			<button type="button" class="navbar-toggle collapsed"
 				data-toggle="collapse" data-target="#navbar" aria-expanded="false"
@@ -11,8 +11,12 @@
 					class="icon-bar"></span> <span class="icon-bar"></span> <span
 					class="icon-bar"></span>
 			</button>
-			<!-- <a class="navbar-brand" href="#">Java with maven</a> -->
-			<div class="navbar-brand navbar-brand-centered">Arhitektuuribüroo JVR</div>
+			
+			<!-- <a class="navbar-brand" href="<c:url value="/"/>"><img style="max-height: 50px;" src="static/JVR_logo_big.png" alt="JVR logo" class="img-responsive"></a>  -->
+			<!--navbar-brand-centered width: auto; max-height: 60px; center-block -->
+			<a class="navbar-brand" href="<c:url value="/"/>">
+				<img id="top-logo" src="static/logo_red.png" alt="JVR logo" class="img-responsive">
+			</a>
 		</div>
 		<div id="navbar" class="navbar-collapse collapse">
 			<ul class="nav navbar-nav">

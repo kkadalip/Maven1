@@ -25,7 +25,7 @@ body {
 }
 
 .navbar {
-	margin-top: 5px;
+	/*margin-top: 5px;*/
 	border-left: none;
 	border-right: none;
 }
@@ -44,17 +44,34 @@ body {
 	background: rgb(30, 30, 30);
 }
 
+.navbar-brand {
+	height: auto;
+	padding: 12px 15px 12px 0;
+}
+.navbar-brand img {
+	/*max-height: 20px;*/
+}
+
+@media (max-width: 1200px) {
+	.navbar-brand img {
+		width: 180px;
+	}
+}
+
+
+/* CENTERED BRAND NAME */
+/*
 @media screen and (min-width:768px) {
 	.navbar-brand-centered {
 		position: absolute;
 		left: 50%;
 		display: inline-block;
-		width: 250px;
+		width: 160px;
 		text-align: center;
-		/* background-color: #eee; */
 	}
 	.navbar>.container .navbar-brand-centered, .navbar>.container-fluid .navbar-brand-centered
 		{
 		margin-left: -80px;
 	}
 }
+*/
