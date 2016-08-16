@@ -91,7 +91,9 @@
 		</div>
 		
 		<div class="panel panel-default">
-		  	<div class="panel-heading"><b>Näitused</b></div>
+		  	<div class="panel-heading">
+			  	<h3 class="panel-title">Näitused</h3>
+		  	</div>
 		  	<div class="panel-body">
 		    	<a href="et/projektid/projektid?action=show_project&amp;project_id=57">Eesti ekspositsioon 12. Veneetsia Arhitektuuribiennaalil</a><br>
                 <a href="et/projektid/projektid?action=show_project&amp;project_id=62">Eesti ekspositsioon 12. Veneetsia Arhitektuuribiennaalil - Näitus Soolalaos</a><br>
