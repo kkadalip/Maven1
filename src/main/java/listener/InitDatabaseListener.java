@@ -24,7 +24,7 @@ public class InitDatabaseListener implements ServletContextListener { // class n
 		
 		SetupDao setupDao = new SetupDao();
 		//setupDao.insertSampleDataUsers(); // WORKS! Not using anymore. Inserts sample users into database.
-		setupDao.insertSampleDataPersons();
+		setupDao.insertSampleData();
 		log.info("[contextInitialized] DONE");
 	}
 

@@ -38,11 +38,11 @@ public class ProjectGroup {
 	
 	@Nullable
 	//@Column(name="childProjects") // @Column(s) not allowed on a @ManyToOne property: model.Project.projectGroup
-    @OneToMany //(fetch=FetchType.EAGER) // LAZY // (cascade={CascadeType.ALL})
+    @OneToMany(mappedBy="projectGroup") // not the table project but PROPERTY // MANY SIDE IS OWNER AND TELLS MAPPING //default LAZY (fetch=FetchType.EAGER) // LAZY // (cascade={CascadeType.ALL})
     //@Cascade(value={CascadeType.ALL}) // save them to the database when saving their parent.
 	@OrderBy(value="name")
 	@SortNatural
-	@JoinColumn(name="projectID") //, insertable = false, updatable = false)
+	// Associations marked as mappedBy must not define database mappings like @JoinTable or @JoinColumn: model.ProjectGroup.childProjects @JoinColumn(name="projectID") //, insertable = false, updatable = false)
     private SortedSet<Project> childProjects = new TreeSet<>();
 
 	// CONSTRUCTORS:

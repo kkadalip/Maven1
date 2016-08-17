@@ -1,7 +1,9 @@
 package model;
 
 import java.time.LocalDateTime;
+import java.util.ArrayList;
 import java.util.HashSet;
+import java.util.List;
 import java.util.Set;
 
 import javax.persistence.Column;
@@ -45,13 +47,14 @@ public class Person {
 	@Column(name="lastName")
     private String lastName;
 	
-	@Nullable
-	@Column(name="projects")
-	@ManyToMany()
-	@Cascade(value={CascadeType.ALL})
-	@JoinColumn(name="projectID")
-	private Set<Project> projects = new HashSet<>();
-    
+//	@Nullable
+//	@Column(name="projects")
+//	@ManyToMany(mappedBy = "architects")
+//	@Cascade(value={CascadeType.ALL})
+//	//@JoinColumn(name="id") //(name="projectID")
+//	private List<Project> projects = new ArrayList<>();
+//	//private Set<Project> projects = new HashSet<>(); // projects as architect??
+//    
     // GETTERS & SETTERS:
     
 	public Long getId() {
@@ -71,6 +74,6 @@ public class Person {
 	}
 	public void setLastName(String lastName) {
 		this.lastName = lastName;
-	}   
+	}
     
 }

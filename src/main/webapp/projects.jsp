@@ -19,14 +19,32 @@
 
 <body>
 	<%@ include file="header.jsp"%>
-	swag
+	
+	swag<br>
 	<h2><c:out value="${message}" /></h2>
-	swag2
-	
+	swag2<br>
+	<br>
+	persons start<br>
 	<c:forEach items="${persons}" var="item">
-		<c:out value="First name: ${item.firstName} Last name: ${item.lastName}" />
+		<c:out value="${item.firstName} ${item.lastName}" /><br>
 	</c:forEach>
-	
+	persons end<br>
+	<br>
+	projectgroups start<br>
+	<c:forEach items="${projectGroups}" var="item">
+		<c:out value="Project group name: ${item.name}" /><br>
+	</c:forEach>
+	projectgroups end<br>
+	<br>
+	projects start<br>
+	<c:forEach items="${projects}" var="item">
+		<c:out value="Project name: ${item.name}" /><br>
+		<c:forEach items="${item.architects}" var="architect">
+			Architect name: ${architect.firstName} ${architect.lastName}
+		</c:forEach>
+	</c:forEach><br>
+	projects end<br>
+	<br>
 	<div class="container">	
 		<div class="panel panel-default">
 		  <div class="panel-heading">

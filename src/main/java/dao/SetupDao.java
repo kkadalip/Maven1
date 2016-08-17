@@ -2,6 +2,11 @@ package dao;
 
 import java.time.LocalDate;
 import java.time.LocalDateTime;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
 //import java.io.File;
 //import java.util.HashSet;
 //import java.util.Set;
@@ -31,6 +36,7 @@ import model.ProjectGroup;
 public class SetupDao { // extends AbstractDaoHibernate {
 	Logger log = LoggerFactory.getLogger(SetupDao.class); // info trace debug warn error
 	
+	// NOT USING ANYMORE
 	public void insertSampleDataPersons(){
 		log.info("[insertSampleDataPersons] START");
 		SessionFactory sessionFactory = HibernateUtil.getSessionFactory();
@@ -43,7 +49,9 @@ public class SetupDao { // extends AbstractDaoHibernate {
 		log.info("[insertSampleDataPersons] END");
 	}
 	
-	public void insertSampleDataProjects(){ // AND PROJECT GROUPS
+	
+	
+	public void insertSampleData(){ // AND PROJECT GROUPS
 		log.info("[insertSampleDataProjects] START");
 		SessionFactory sessionFactory = HibernateUtil.getSessionFactory();
 		Session session = sessionFactory.openSession();
@@ -71,16 +79,30 @@ public class SetupDao { // extends AbstractDaoHibernate {
 		pg5.setName("Planeeringud");
 		session.save(pg5);
 		
+		// PERSONS (people)
+		
+		Person velleKadalipp = new Person("Velle", "Kadalipp");
+		session.save(velleKadalipp);
+		Person kalleVellevoog = new Person("Kalle", "Vellevoog");
+		session.save(kalleVellevoog);
+		
+		log.debug("KALLE VELLEVOOG ID IS: " + kalleVellevoog.getId());
 		// PROJECTS
 		
 		Project p1 = new Project();
 		p1.setName("Eramute grupp Seedri ja Remmelga tänavate vahelisel alal Pärnus");
 		p1.setPlanningStartYear(2000);
-		
-		// PERSONS (people)
-		
-		Person velleKadalipp = new Person("Velle", "Kadalipp");
-		Person kalleVellevoog = new Person("Kalle", "Vellevoog");
+		p1.setPlanningEndYear(2001);
+		p1.setBuildingStartYear(2002);
+		p1.setBuildingEndYear(2003);
+		//Set<Person> p1set = new HashSet<Person>();
+		List<Person> p1list = new ArrayList<Person>();
+		p1list.add(kalleVellevoog); 
+		p1.setArchitects(p1list); // BROKEN
+		p1.setSizeQuantity(2026);
+		//p1.setSizeUnit("m2"); // Todo separate model for units so I can convert them on the fly
+		// BROKEN p1.setProjectGroup(pg1);
+		session.save(p1);
 		
 		transaction.commit();
 		session.close();

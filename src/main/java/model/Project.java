@@ -1,7 +1,9 @@
 package model;
 
 import java.time.LocalDateTime;
+import java.util.ArrayList;
 import java.util.HashSet;
+import java.util.List;
 import java.util.Set;
 import java.util.SortedSet;
 import java.util.TreeSet;
@@ -73,58 +75,59 @@ public class Project {
 	
 	@Nullable
     @Column(name="architects")
-    @ManyToMany() // fetch = FetchType.LAZY // EAGER // TODO IMPROVE with a separate method in DAO? //@ManyToOne // (cascade={CascadeType.ALL}) // @OneToMany(fetch = FetchType.LAZY, mappedBy = "user???")
+    @ManyToMany(fetch = FetchType.EAGER) // fetch = FetchType.LAZY // EAGER // TODO IMPROVE with a separate method in DAO? //@ManyToOne // (cascade={CascadeType.ALL}) // @OneToMany(fetch = FetchType.LAZY, mappedBy = "user???")
     @Cascade(value = { CascadeType.ALL })
-    @JoinColumn(name = "personID") // not parent_sector duh // <key column="sector_id"
-    private Set<Person> architects = new HashSet<>();
+    //@JoinColumn(name = "id") // PROPERTY NOT ID FIELD NAME? //"personID") // not parent_sector duh // <key column="sector_id"
+	private List<Person> architects = new ArrayList<>();
+	//private Set<Person> architects = new HashSet<>();
 	
-	// (Hoone algne autor)
-	@Nullable
-    @Column(name="originalAuthors")
-    @ManyToMany()
-    @Cascade(value = { CascadeType.ALL })
-    @JoinColumn(name = "personID")
-    private Set<Person> originalAuthors = new HashSet<>();
-	
-	// Kaastöö?? / Extra comment ???: (nt koostöös arhitektuuribürooga X, … arhitekt Y)
-	@Nullable
-    @Column(name="contributors")
-    @ManyToMany()
-    @Cascade(value = { CascadeType.ALL })
-    @JoinColumn(name = "personID")
-    private Set<Person> contributors = new HashSet<>();
-	
-	// konstruktor
-	@Nullable
-    @Column(name="constructors")
-    @ManyToMany()
-    @Cascade(value = { CascadeType.ALL })
-    @JoinColumn(name = "personID")
-    private Set<Person> constructors = new HashSet<>();
-
-	// sisekujundaja
-	@Nullable
-    @Column(name="interiorDesigners")
-    @ManyToMany()
-    @Cascade(value = { CascadeType.ALL })
-    @JoinColumn(name = "personID")
-    private Set<Person> interiorDesigners = new HashSet<>();
-	
-	// maastiku arhitekt
-	@Nullable
-    @Column(name="landscapeArchitects")
-    @ManyToMany()
-    @Cascade(value = { CascadeType.ALL })
-    @JoinColumn(name = "personID")
-    private Set<Person> landscapeArchitects = new HashSet<>();
-	
-	// valgustid
-	@Nullable
-    @Column(name="lightsDesigners")
-    @ManyToMany()
-    @Cascade(value = { CascadeType.ALL })
-    @JoinColumn(name = "personID")
-    private Set<Person> lightsDesigners = new HashSet<>();
+//	// (Hoone algne autor)
+//	@Nullable
+//    @Column(name="originalAuthors")
+//    @ManyToMany()
+//    @Cascade(value = { CascadeType.ALL })
+//    @JoinColumn(name = "id") //(name = "personID")
+//    private Set<Person> originalAuthors = new HashSet<>();
+//	
+//	// Kaastöö?? / Extra comment ???: (nt koostöös arhitektuuribürooga X, … arhitekt Y)
+//	@Nullable
+//    @Column(name="contributors")
+//    @ManyToMany()
+//    @Cascade(value = { CascadeType.ALL })
+//    @JoinColumn(name = "id") //(name = "personID")
+//    private Set<Person> contributors = new HashSet<>();
+//	
+//	// konstruktor
+//	@Nullable
+//    @Column(name="constructors")
+//    @ManyToMany()
+//    @Cascade(value = { CascadeType.ALL })
+//    @JoinColumn(name = "id") //(name = "personID")
+//    private Set<Person> constructors = new HashSet<>();
+//
+//	// sisekujundaja
+//	@Nullable
+//    @Column(name="interiorDesigners")
+//    @ManyToMany()
+//    @Cascade(value = { CascadeType.ALL })
+//    @JoinColumn(name = "id") //(name = "personID")
+//    private Set<Person> interiorDesigners = new HashSet<>();
+//	
+//	// maastiku arhitekt
+//	@Nullable
+//    @Column(name="landscapeArchitects")
+//    @ManyToMany()
+//    @Cascade(value = { CascadeType.ALL })
+//    @JoinColumn(name = "id") //(name = "personID")
+//    private Set<Person> landscapeArchitects = new HashSet<>();
+//	
+//	// valgustid
+//	@Nullable
+//    @Column(name="lightsDesigners")
+//    @ManyToMany()
+//    @Cascade(value = { CascadeType.ALL })
+//    @JoinColumn(name = "id") //(name = "personID")
+//    private Set<Person> lightsDesigners = new HashSet<>();
 	
 	// String Prize (preemia): nt Konkursitöö I preemia
 	@Column(name="prizeComment")
@@ -135,22 +138,22 @@ public class Project {
     @Column(name="addresses")
     @ManyToMany()
     @Cascade(value = { CascadeType.ALL })
-    @JoinColumn(name = "addressID")
-    private Set<Person> addresses = new HashSet<>();
+    @JoinColumn(name = "id") //(name = "addressID")
+    private Set<Address> addresses = new HashSet<>();
 	
 	// Image(s): promo pics
 	
 	// Image(s) drawings
 	
+	
 	////Project Group üks grupp, mitu projekti, OneToMany
 	// ManyToOne siin
 	@Nullable
     //@Column(name="projectGroup") // @Column(s) not allowed on a @ManyToOne property: model.Project.projectGroup
-    @ManyToOne()
+    @ManyToOne() 
     //@Cascade(value = { CascadeType.ALL })
-    @JoinColumn(name="projectGroupID")
+    @JoinColumn(name = "id") //(name="projectGroupID")
 	private ProjectGroup projectGroup;
-
 
 	// GETTERS & SETTERS:
 	
@@ -226,60 +229,12 @@ public class Project {
 		this.apartmentsQuantity = apartmentsQuantity;
 	}
 
-	public Set<Person> getArchitects() {
+	public List<Person> getArchitects() {
 		return architects;
 	}
 
-	public void setArchitects(Set<Person> architects) {
+	public void setArchitects(List<Person> architects) {
 		this.architects = architects;
-	}
-
-	public Set<Person> getOriginalAuthors() {
-		return originalAuthors;
-	}
-
-	public void setOriginalAuthors(Set<Person> originalAuthors) {
-		this.originalAuthors = originalAuthors;
-	}
-
-	public Set<Person> getContributors() {
-		return contributors;
-	}
-
-	public void setContributors(Set<Person> contributors) {
-		this.contributors = contributors;
-	}
-
-	public Set<Person> getConstructors() {
-		return constructors;
-	}
-
-	public void setConstructors(Set<Person> constructors) {
-		this.constructors = constructors;
-	}
-
-	public Set<Person> getInteriorDesigners() {
-		return interiorDesigners;
-	}
-
-	public void setInteriorDesigners(Set<Person> interiorDesigners) {
-		this.interiorDesigners = interiorDesigners;
-	}
-
-	public Set<Person> getLandscapeArchitects() {
-		return landscapeArchitects;
-	}
-
-	public void setLandscapeArchitects(Set<Person> landscapeArchitects) {
-		this.landscapeArchitects = landscapeArchitects;
-	}
-
-	public Set<Person> getLightsDesigners() {
-		return lightsDesigners;
-	}
-
-	public void setLightsDesigners(Set<Person> lightsDesigners) {
-		this.lightsDesigners = lightsDesigners;
 	}
 
 	public String getPrizeComment() {
@@ -290,11 +245,11 @@ public class Project {
 		this.prizeComment = prizeComment;
 	}
 
-	public Set<Person> getAddresses() {
+	public Set<Address> getAddresses() {
 		return addresses;
 	}
 
-	public void setAddresses(Set<Person> addresses) {
+	public void setAddresses(Set<Address> addresses) {
 		this.addresses = addresses;
 	}
 
@@ -305,4 +260,5 @@ public class Project {
 	public void setProjectGroup(ProjectGroup projectGroup) {
 		this.projectGroup = projectGroup;
 	}
+
 }

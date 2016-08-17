@@ -29,6 +29,11 @@ import model.Person; // bean
 public class PersonDao extends AbstractDao { // extends AbstractDao {
 	Logger log = LoggerFactory.getLogger(getClass()); // info trace debug warn error
 	
+	public PersonDao(){
+		super();
+	}
+	
+	
 	// READ THIS http://www.coderanch.com/t/434465/Servlets/java/request-Response-object-web-application
 	public Long addPerson(Person person) { // TODO FIX?
 		// (1. configuring hibernate & 2. create sessionfactory) 3. Get Session object
@@ -67,6 +72,11 @@ public class PersonDao extends AbstractDao { // extends AbstractDao {
 		} finally {
 			session.close();
 		}
+	}
+	
+	@SuppressWarnings("unchecked")
+	public List<Person> getAll(){
+		return super.getAll(Person.class);
 	}
 	
 	public List<Person> getAllPersons(){

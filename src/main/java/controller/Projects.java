@@ -12,8 +12,13 @@ import javax.servlet.http.HttpServletResponse;
 
 import org.slf4j.LoggerFactory;
 
+import dao.AbstractDao;
 import dao.PersonDao;
+import dao.ProjectDao;
+import dao.ProjectGroupDao;
 import model.Person;
+import model.Project;
+import model.ProjectGroup;
 
 /**
  * Servlet implementation class Projects
@@ -22,7 +27,7 @@ import model.Person;
 public class Projects extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 	
-	private final static org.slf4j.Logger logger = LoggerFactory.getLogger(Projects.class);
+	private final static org.slf4j.Logger log = LoggerFactory.getLogger(Projects.class);
 
     /**
      * @see HttpServlet#HttpServlet()
@@ -42,8 +47,21 @@ public class Projects extends HttpServlet {
 		request.setAttribute("message", "Welcome");
 		
 		PersonDao personDao = new PersonDao();
-		List<Person> persons = personDao.getAllPersons();
+		List<Person> persons = personDao.getAll(); //.getAllPersons();
+		log.debug("persons size: " + persons.size());
 		request.setAttribute("persons", persons);
+		
+		ProjectDao projectDao = new ProjectDao();
+		@SuppressWarnings("unchecked")
+		List<Project> projects = projectDao.getAll(); //getAllProjects();
+		log.debug("projects size: " + projects.size());
+		request.setAttribute("projects", projects);
+		
+		ProjectGroupDao projectGroupDao = new ProjectGroupDao();
+		@SuppressWarnings("unchecked")
+		List<ProjectGroup> projectGroups = projectGroupDao.getAll(); //getAllProjects();
+		log.debug("projectGroups size: " + projectGroups.size());
+		request.setAttribute("projectGroups", projectGroups);
 		
 		request.getRequestDispatcher("projects.jsp").forward(request, response); // jsp/
 	}

@@ -67,12 +67,12 @@ public class Address {
 		return id;
 	}
 	
-	@Nullable
-    @Column(name="projects")
-    @ManyToMany()
-    @Cascade(value = { CascadeType.ALL })
-    @JoinColumn(name = "projectID")
-    private Set<Project> projects = new HashSet<>();
+//	@Nullable
+//    @Column(name="projects")
+//    @ManyToMany()
+//    @Cascade(value = { CascadeType.ALL })
+//    @JoinColumn //(name = "projectID")
+//    private Set<Project> projects = new HashSet<>();
 	
 	// GETTERS & SETTERS
 	
@@ -127,11 +127,11 @@ public class Address {
 	public void setLatitude(Float latitude) {
 		this.latitude = latitude;
 	}
-	public Set<Project> getProjects() {
-		return projects;
-	}
-	public void setProjects(Set<Project> projects) {
-		this.projects = projects;
-	}
+//	public Set<Project> getProjects() {
+//		return projects;
+//	}
+//	public void setProjects(Set<Project> projects) {
+//		this.projects = projects;
+//	}
 	
 }

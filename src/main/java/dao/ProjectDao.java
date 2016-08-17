@@ -25,6 +25,10 @@ import model.Project; // bean
 public class ProjectDao extends AbstractDao {
 	Logger log = LoggerFactory.getLogger(ProjectDao.class); // info trace debug warn error
 
+	public ProjectDao(){
+		super();
+	}
+	
 	public Project getProjectByID (Long id){
 		log.info("[getProjectByID] ID: {}", id);
 		Session session = HibernateUtil.getSessionFactory().openSession();
@@ -41,21 +45,30 @@ public class ProjectDao extends AbstractDao {
 		}
 	}
 	
-	public List<Project> getAllProjects(){
-		Session session = HibernateUtil.getSessionFactory().openSession();
-		try {
-			session.beginTransaction();
-			@SuppressWarnings("unchecked")
-			List<Project> result = session.createQuery("select * from Project").getResultList();
-			log.debug("[getAllProjects] FOUND RESULTS (can be null if not found): {}", result);
-			return result;
-		} catch (HibernateException e) {
-			log.error("[getAllProjects] failed", e);
-			return null;
-		} finally {
-			session.close();
-		}
-	}
+//	public List<Project> getAllProjects(){
+//		Session session = HibernateUtil.getSessionFactory().openSession();
+//		try {
+//			session.beginTransaction();
+//			@SuppressWarnings("unchecked")
+//			List<Project> result = session.createQuery("from Project").getResultList();
+//			log.debug("[getAllProjects] FOUND RESULTS (can be null if not found): {}", result);
+//			return result;
+//		} catch (HibernateException e) {
+//			log.error("[getAllProjects] failed", e);
+//			return null;
+//		} finally {
+//			session.close();
+//		}
+//	}
+	
+	/**
+     * Finds all Events in the database.
+     * @return
+     */
+    public List getAll() { // throws DataAccessLayerException
+    	log.debug("GET ALL PROJECTS IN PROJECTDAO");
+        return super.getAll(Project.class);
+    }
 
 //	// FIND ALL ROOT SECTORS (find all level 0 aka root)
 //	public List<Sector> getAllRootSectors() {
