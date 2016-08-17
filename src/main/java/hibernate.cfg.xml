@@ -7,6 +7,7 @@
 	<session-factory>
 		<mapping class="model.Project" />
 		<mapping class="model.ProjectGroup" />
+		<mapping class="model.Person" />
 		<mapping class="model.Image" />
 		<!-- 
 		<mapping resource="model/user.hbm.xml" /> 
