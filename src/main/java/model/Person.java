@@ -22,7 +22,16 @@ import com.sun.istack.internal.Nullable;
 @Entity
 @Table(name="person")
 public class Person {
-
+	
+	// CONSTRUCTORS:
+	
+	public Person() {
+	}
+    public Person(String firstName, String lastName){
+    	this.firstName = firstName;
+    	this.lastName = lastName;
+    }
+    
 	// DATABASE FIELDS:
 	
 	@Id
@@ -42,16 +51,6 @@ public class Person {
 	@Cascade(value={CascadeType.ALL})
 	@JoinColumn(name="projectID")
 	private Set<Project> projects = new HashSet<>();
-
-	
-	// CONSTRUCTORS:
-	
-	public Person() {
-	}
-    public Person(String firstName, String lastName){
-    	this.firstName = firstName;
-    	this.lastName = lastName;
-    }
     
     // GETTERS & SETTERS:
     

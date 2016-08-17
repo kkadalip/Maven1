@@ -26,8 +26,8 @@ import org.slf4j.LoggerFactory;
 import model.Project;
 import model.Person; // bean
 
-public class PersonDao { // extends AbstractDao {
-	Logger log = LoggerFactory.getLogger(PersonDao.class); // info trace debug warn error
+public class PersonDao extends AbstractDao { // extends AbstractDao {
+	Logger log = LoggerFactory.getLogger(getClass()); // info trace debug warn error
 	
 	// READ THIS http://www.coderanch.com/t/434465/Servlets/java/request-Response-object-web-application
 	public Long addPerson(Person person) { // TODO FIX?

@@ -17,9 +17,8 @@ import org.hibernate.annotations.CascadeType;
 import org.hibernate.annotations.SortNatural;
 
 public class ProjectGroup {
-
-	public ProjectGroup() {
-	}
+	
+	// DATABASE FIELDS:
 	
 	@Id
 	@Column(name="projectGroupID")
@@ -35,4 +34,37 @@ public class ProjectGroup {
 	@SortNatural
 	@JoinColumn(name="parent_id") //, insertable = false, updatable = false)
     private SortedSet<Project> childProjects = new TreeSet<>();
+
+    
+	// CONSTRUCTORS:
+    
+	public ProjectGroup() {
+	}
+	
+    // GETTERS & SETTERS:
+	
+	public Long getId() {
+		return id;
+	}
+	public void setId(Long id) {
+		this.id = id;
+	}
+
+
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+
+
+	public SortedSet<Project> getChildProjects() {
+		return childProjects;
+	}
+
+	public void setChildProjects(SortedSet<Project> childProjects) {
+		this.childProjects = childProjects;
+	}
+    
 }

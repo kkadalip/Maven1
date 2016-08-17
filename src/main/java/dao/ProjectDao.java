@@ -22,7 +22,7 @@ import model.Person;
 import model.Project; // bean
 //import model.User;
 
-public class ProjectDao {
+public class ProjectDao extends AbstractDao {
 	Logger log = LoggerFactory.getLogger(ProjectDao.class); // info trace debug warn error
 
 	public Project getProjectByID (Long id){

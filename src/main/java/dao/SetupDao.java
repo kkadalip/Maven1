@@ -23,6 +23,7 @@ import model.Person;
 //import model.Project;
 //import model.ProjectGroup;
 //import model.Image;
+import model.ProjectGroup;
 
 public class SetupDao { // extends AbstractDaoHibernate {
 	Logger log = LoggerFactory.getLogger(SetupDao.class); // info trace debug warn error
@@ -38,6 +39,57 @@ public class SetupDao { // extends AbstractDaoHibernate {
 		session.close();
 		log.info("[insertSampleDataPersons] END");
 	}
+	
+	public void insertSampleDataProjects(){ // AND PROJECT GROUPS
+		log.info("[insertSampleDataProjects] START");
+		SessionFactory sessionFactory = HibernateUtil.getSessionFactory();
+		Session session = sessionFactory.openSession();
+		Transaction transaction = session.beginTransaction();
+		
+		// PROJECT GROUPS
+		
+		ProjectGroup pg1 = new ProjectGroup();
+		pg1.setName("Eramud");
+		session.save(pg1);
+		
+		ProjectGroup pg2 = new ProjectGroup();
+		pg2.setName("Korterelamud ja ühiskondlikud hooned");
+		session.save(pg2);
+		
+		ProjectGroup pg3 = new ProjectGroup();
+		pg3.setName("Konkursiprojektid");
+		session.save(pg3);
+		
+		ProjectGroup pg4 = new ProjectGroup();
+		pg4.setName("Planeeringud");
+		session.save(pg4);
+		
+		ProjectGroup pg5 = new ProjectGroup();
+		pg5.setName("Planeeringud");
+		session.save(pg5);
+		
+		// PROJECTS
+		
+		
+		transaction.commit();
+		session.close();
+		log.info("[insertSampleDataProjects] END");
+	}
+	
+//	public void insertSampleDataProjectGroups(){
+//		log.info("[insertSampleDataProjectGroups] START");
+//		SessionFactory sessionFactory = HibernateUtil.getSessionFactory();
+//		Session session = sessionFactory.openSession();
+//		Transaction transaction = session.beginTransaction();
+//		
+//
+//		
+//		transaction.commit();
+//		session.close();
+//		log.info("[insertSampleDataProjects] END");
+//	}
+	
+	
 
 //	public void insertSampleDataSectors(){
 //		log.info("[insertSampleDataSectors] START");

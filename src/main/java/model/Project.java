@@ -25,8 +25,12 @@ import model.Person;
 @Table(name="project")
 public class Project {
 
+	// CONSTRUCTORS:
+	
 	public Project() {
 	}
+	
+	// DATABASE FIELDS
 	
 	@Id
 	@Column(name="projectID")
@@ -50,20 +54,6 @@ public class Project {
 	@Column(name="buildingEndDate")
 	private LocalDateTime buildingEndDate;
 
-	@Nullable
-    @Column(name="architects")
-    @ManyToMany() // fetch = FetchType.LAZY // EAGER // TODO IMPROVE with a separate method in DAO? //@ManyToOne // (cascade={CascadeType.ALL}) // @OneToMany(fetch = FetchType.LAZY, mappedBy = "user???")
-    @Cascade(value = { CascadeType.ALL })
-    @JoinColumn(name = "personID") // not parent_sector duh // <key column="sector_id"
-    private Set<Person> architects = new HashSet<>();
-	
-	//Person Contributor(s): Kaastöö?? / Extra comment ???: (nt koostöös arhitektuuribürooga X, … arhitekt Y)
-	
-	//Person Constructor (konstruktor)
-	
-	//Person Interior designer(s)
-	
-	//Person Landscape architect
 	
 	@Nullable
 	@Column (name="sizeQuantity")
@@ -77,10 +67,62 @@ public class Project {
 	@Column(name="apartmentsQuantity")
 	private Integer apartmentsQuantity;
 	
-	// Person Lights: (valgustid)  nt Margus Triibmann (Keha3)
 	
-	// Person Original author: (Hoone algne autor)
+	@Nullable
+    @Column(name="architects")
+    @ManyToMany() // fetch = FetchType.LAZY // EAGER // TODO IMPROVE with a separate method in DAO? //@ManyToOne // (cascade={CascadeType.ALL}) // @OneToMany(fetch = FetchType.LAZY, mappedBy = "user???")
+    @Cascade(value = { CascadeType.ALL })
+    @JoinColumn(name = "personID") // not parent_sector duh // <key column="sector_id"
+    private Set<Person> architects = new HashSet<>();
 	
+	// (Hoone algne autor)
+	@Nullable
+    @Column(name="originalAuthors")
+    @ManyToMany()
+    @Cascade(value = { CascadeType.ALL })
+    @JoinColumn(name = "personID")
+    private Set<Person> originalAuthors = new HashSet<>();
+	
+	// Kaastöö?? / Extra comment ???: (nt koostöös arhitektuuribürooga X, … arhitekt Y)
+	@Nullable
+    @Column(name="contributors")
+    @ManyToMany()
+    @Cascade(value = { CascadeType.ALL })
+    @JoinColumn(name = "personID")
+    private Set<Person> contributors = new HashSet<>();
+	
+	// konstruktor
+	@Nullable
+    @Column(name="constructors")
+    @ManyToMany()
+    @Cascade(value = { CascadeType.ALL })
+    @JoinColumn(name = "personID")
+    private Set<Person> constructors = new HashSet<>();
+
+	// sisekujundaja
+	@Nullable
+    @Column(name="interiorDesigners")
+    @ManyToMany()
+    @Cascade(value = { CascadeType.ALL })
+    @JoinColumn(name = "personID")
+    private Set<Person> interiorDesigners = new HashSet<>();
+	
+	// maastiku arhitekt
+	@Nullable
+    @Column(name="landscapeArchitects")
+    @ManyToMany()
+    @Cascade(value = { CascadeType.ALL })
+    @JoinColumn(name = "personID")
+    private Set<Person> landscapeArchitects = new HashSet<>();
+	
+	// valgustid
+	@Nullable
+    @Column(name="lightsDesigners")
+    @ManyToMany()
+    @Cascade(value = { CascadeType.ALL })
+    @JoinColumn(name = "personID")
+    private Set<Person> lightsDesigners = new HashSet<>();
+		
 	// String Prize (preemia): nt Konkursitöö I preemia
 	
 	// Image(s): promo pics
@@ -94,5 +136,7 @@ public class Project {
 	// + LONG and LAT for GEO POSITIONING!!!
 	
 	//Project Group
+	
+	// GETTERS & SETTERS:
 
 }
