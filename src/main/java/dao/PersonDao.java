@@ -73,8 +73,8 @@ public class PersonDao { // extends AbstractDao {
 		log.info("[getAllPersons]");
 		Session session = HibernateUtil.getSessionFactory().openSession();
 		try {
-			@SuppressWarnings("unchecked")
-			List<Person> users = session.createQuery("select * from Person").getResultList(); //session.createCriteria(Person.class).list(); // .addOrder(Order.asc("name")).list(); 
+			@SuppressWarnings("unchecked")			
+			List<Person> users = session.createQuery("FROM Person").getResultList(); //session.createCriteria(Person.class).list(); // .addOrder(Order.asc("name")).list(); 
 			//List queryResult = session.createQuery("FROM User").list(); 
 			//for (Iterator iterator = queryResult.iterator(); iterator.hasNext();){
 			//	User user = (User) iterator.next(); 

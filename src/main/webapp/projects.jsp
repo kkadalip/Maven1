@@ -23,6 +23,10 @@
 	<h2><c:out value="${message}" /></h2>
 	swag2
 	
+	<c:forEach items="${persons}" var="item">
+		<c:out value="First name: ${item.firstName} Last name: ${item.lastName}" />
+	</c:forEach>
+	
 	<div class="container">	
 		<div class="panel panel-default">
 		  <div class="panel-heading">
