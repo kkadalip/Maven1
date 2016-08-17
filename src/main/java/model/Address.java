@@ -1,11 +1,19 @@
 package model;
 
+import java.util.HashSet;
+import java.util.Set;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToMany;
 import javax.persistence.Table;
+
+import org.hibernate.annotations.Cascade;
+import org.hibernate.annotations.CascadeType;
 
 import com.sun.istack.internal.Nullable;
 
@@ -59,6 +67,13 @@ public class Address {
 		return id;
 	}
 	
+	@Nullable
+    @Column(name="projects")
+    @ManyToMany()
+    @Cascade(value = { CascadeType.ALL })
+    @JoinColumn(name = "projectID")
+    private Set<Project> projects = new HashSet<>();
+	
 	// GETTERS & SETTERS
 	
 	public void setId(Long id) {
@@ -111,6 +126,12 @@ public class Address {
 	}
 	public void setLatitude(Float latitude) {
 		this.latitude = latitude;
+	}
+	public Set<Project> getProjects() {
+		return projects;
+	}
+	public void setProjects(Set<Project> projects) {
+		this.projects = projects;
 	}
 	
 }

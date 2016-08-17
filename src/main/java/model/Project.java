@@ -3,6 +3,8 @@ package model;
 import java.time.LocalDateTime;
 import java.util.HashSet;
 import java.util.Set;
+import java.util.SortedSet;
+import java.util.TreeSet;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -12,6 +14,7 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToMany;
+import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
 import org.hibernate.annotations.Cascade;
@@ -122,19 +125,184 @@ public class Project {
     @Cascade(value = { CascadeType.ALL })
     @JoinColumn(name = "personID")
     private Set<Person> lightsDesigners = new HashSet<>();
-		
+	
 	// String Prize (preemia): nt Konkursitöö I preemia
+	@Column(name="prizeComment")
+	private String prizeComment;
+	
+	// Address (multiple nt eramute kompleks!!!)
+	@Nullable
+    @Column(name="addresses")
+    @ManyToMany()
+    @Cascade(value = { CascadeType.ALL })
+    @JoinColumn(name = "addressID")
+    private Set<Person> addresses = new HashSet<>();
 	
 	// Image(s): promo pics
 	
 	// Image(s) drawings
 	
-	// String Location town:
-	
-	// Location address(es):
-	
-	//Project Group
-	
-	// GETTERS & SETTERS:
+	////Project Group üks grupp, mitu projekti, OneToMany
+	// ManyToOne siin
+	@Nullable
+    //@Column(name="projectGroup") // @Column(s) not allowed on a @ManyToOne property: model.Project.projectGroup
+    @ManyToOne()
+    //@Cascade(value = { CascadeType.ALL })
+    @JoinColumn(name="projectGroupID")
+	private ProjectGroup projectGroup;
 
+
+	// GETTERS & SETTERS:
+	
+	public Long getId() {
+		return id;
+	}
+
+	public void setId(Long id) {
+		this.id = id;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public LocalDateTime getPlanningStartDate() {
+		return planningStartDate;
+	}
+
+	public void setPlanningStartDate(LocalDateTime planningStartDate) {
+		this.planningStartDate = planningStartDate;
+	}
+
+	public LocalDateTime getPlanningEndDate() {
+		return planningEndDate;
+	}
+
+	public void setPlanningEndDate(LocalDateTime planningEndDate) {
+		this.planningEndDate = planningEndDate;
+	}
+
+	public LocalDateTime getBuildingStartDate() {
+		return buildingStartDate;
+	}
+
+	public void setBuildingStartDate(LocalDateTime buildingStartDate) {
+		this.buildingStartDate = buildingStartDate;
+	}
+
+	public LocalDateTime getBuildingEndDate() {
+		return buildingEndDate;
+	}
+
+	public void setBuildingEndDate(LocalDateTime buildingEndDate) {
+		this.buildingEndDate = buildingEndDate;
+	}
+
+	public Integer getSizeQuantity() {
+		return sizeQuantity;
+	}
+
+	public void setSizeQuantity(Integer sizeQuantity) {
+		this.sizeQuantity = sizeQuantity;
+	}
+
+	public String getSizeUnit() {
+		return sizeUnit;
+	}
+
+	public void setSizeUnit(String sizeUnit) {
+		this.sizeUnit = sizeUnit;
+	}
+
+	public Integer getApartmentsQuantity() {
+		return apartmentsQuantity;
+	}
+
+	public void setApartmentsQuantity(Integer apartmentsQuantity) {
+		this.apartmentsQuantity = apartmentsQuantity;
+	}
+
+	public Set<Person> getArchitects() {
+		return architects;
+	}
+
+	public void setArchitects(Set<Person> architects) {
+		this.architects = architects;
+	}
+
+	public Set<Person> getOriginalAuthors() {
+		return originalAuthors;
+	}
+
+	public void setOriginalAuthors(Set<Person> originalAuthors) {
+		this.originalAuthors = originalAuthors;
+	}
+
+	public Set<Person> getContributors() {
+		return contributors;
+	}
+
+	public void setContributors(Set<Person> contributors) {
+		this.contributors = contributors;
+	}
+
+	public Set<Person> getConstructors() {
+		return constructors;
+	}
+
+	public void setConstructors(Set<Person> constructors) {
+		this.constructors = constructors;
+	}
+
+	public Set<Person> getInteriorDesigners() {
+		return interiorDesigners;
+	}
+
+	public void setInteriorDesigners(Set<Person> interiorDesigners) {
+		this.interiorDesigners = interiorDesigners;
+	}
+
+	public Set<Person> getLandscapeArchitects() {
+		return landscapeArchitects;
+	}
+
+	public void setLandscapeArchitects(Set<Person> landscapeArchitects) {
+		this.landscapeArchitects = landscapeArchitects;
+	}
+
+	public Set<Person> getLightsDesigners() {
+		return lightsDesigners;
+	}
+
+	public void setLightsDesigners(Set<Person> lightsDesigners) {
+		this.lightsDesigners = lightsDesigners;
+	}
+
+	public String getPrizeComment() {
+		return prizeComment;
+	}
+
+	public void setPrizeComment(String prizeComment) {
+		this.prizeComment = prizeComment;
+	}
+
+	public Set<Person> getAddresses() {
+		return addresses;
+	}
+
+	public void setAddresses(Set<Person> addresses) {
+		this.addresses = addresses;
+	}
+
+	public ProjectGroup getProjectGroup() {
+		return projectGroup;
+	}
+
+	public void setProjectGroup(ProjectGroup projectGroup) {
+		this.projectGroup = projectGroup;
+	}
 }
