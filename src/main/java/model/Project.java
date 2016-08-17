@@ -133,8 +133,6 @@ public class Project {
 	
 	// Location address(es):
 	
-	// + LONG and LAT for GEO POSITIONING!!!
-	
 	//Project Group
 	
 	// GETTERS & SETTERS:

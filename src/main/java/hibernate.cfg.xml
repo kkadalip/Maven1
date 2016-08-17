@@ -5,10 +5,11 @@
 
 <hibernate-configuration>
 	<session-factory>
+		<mapping class="model.Address" />
+		<mapping class="model.Image" />
+		<mapping class="model.Person" />
 		<mapping class="model.Project" />
 		<mapping class="model.ProjectGroup" />
-		<mapping class="model.Person" />
-		<mapping class="model.Image" />
 		<!-- 
 		<mapping resource="model/user.hbm.xml" /> 
 		<mapping resource="model/sector.hbm.xml" />
