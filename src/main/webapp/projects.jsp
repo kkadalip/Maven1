@@ -19,6 +19,10 @@
 
 <body>
 	<%@ include file="header.jsp"%>
+	swag
+	<h2><c:out value="${message}" /></h2>
+	swag2
+	
 	<div class="container">	
 		<div class="panel panel-default">
 		  <div class="panel-heading">
