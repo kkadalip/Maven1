@@ -1,5 +1,7 @@
 package dao;
 
+import java.time.LocalDate;
+import java.time.LocalDateTime;
 //import java.io.File;
 //import java.util.HashSet;
 //import java.util.Set;
@@ -20,6 +22,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import model.Person;
+import model.Project;
 //import model.Project;
 //import model.ProjectGroup;
 //import model.Image;
@@ -70,6 +73,14 @@ public class SetupDao { // extends AbstractDaoHibernate {
 		
 		// PROJECTS
 		
+		Project p1 = new Project();
+		p1.setName("Eramute grupp Seedri ja Remmelga tänavate vahelisel alal Pärnus");
+		p1.setPlanningStartYear(2000);
+		
+		// PERSONS (people)
+		
+		Person velleKadalipp = new Person("Velle", "Kadalipp");
+		Person kalleVellevoog = new Person("Kalle", "Vellevoog");
 		
 		transaction.commit();
 		session.close();

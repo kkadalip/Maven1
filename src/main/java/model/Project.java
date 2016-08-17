@@ -44,18 +44,18 @@ public class Project {
     private String name;
 
 	@Nullable
-	@Column(name="planningStartDate")
-	private LocalDateTime planningStartDate;
+	@Column(name="planningStartYear")
+	private Integer planningStartYear;
 	@Nullable
-	@Column(name="planningEndDate")
-	private LocalDateTime planningEndDate;
+	@Column(name="planningEndYear")
+	private Integer planningEndYear;
 	
 	@Nullable
-	@Column(name="buildingStartDate")
-	private LocalDateTime buildingStartDate;
+	@Column(name="buildingStartYear")
+	private Integer buildingStartYear;
 	@Nullable
-	@Column(name="buildingEndDate")
-	private LocalDateTime buildingEndDate;
+	@Column(name="buildingEndYear")
+	private Integer buildingEndYear;
 
 	
 	@Nullable
@@ -170,36 +170,36 @@ public class Project {
 		this.name = name;
 	}
 
-	public LocalDateTime getPlanningStartDate() {
-		return planningStartDate;
+	public Integer getPlanningStartYear() {
+		return planningStartYear;
 	}
 
-	public void setPlanningStartDate(LocalDateTime planningStartDate) {
-		this.planningStartDate = planningStartDate;
+	public void setPlanningStartYear(Integer planningStartYear) {
+		this.planningStartYear = planningStartYear;
 	}
 
-	public LocalDateTime getPlanningEndDate() {
-		return planningEndDate;
+	public Integer getPlanningEndYear() {
+		return planningEndYear;
 	}
 
-	public void setPlanningEndDate(LocalDateTime planningEndDate) {
-		this.planningEndDate = planningEndDate;
+	public void setPlanningEndYear(Integer planningEndYear) {
+		this.planningEndYear = planningEndYear;
 	}
 
-	public LocalDateTime getBuildingStartDate() {
-		return buildingStartDate;
+	public Integer getBuildingStartYear() {
+		return buildingStartYear;
 	}
 
-	public void setBuildingStartDate(LocalDateTime buildingStartDate) {
-		this.buildingStartDate = buildingStartDate;
+	public void setBuildingStartYear(Integer buildingStartYear) {
+		this.buildingStartYear = buildingStartYear;
 	}
 
-	public LocalDateTime getBuildingEndDate() {
-		return buildingEndDate;
+	public Integer getBuildingEndYear() {
+		return buildingEndYear;
 	}
 
-	public void setBuildingEndDate(LocalDateTime buildingEndDate) {
-		this.buildingEndDate = buildingEndDate;
+	public void setBuildingEndYear(Integer buildingEndYear) {
+		this.buildingEndYear = buildingEndYear;
 	}
 
 	public Integer getSizeQuantity() {
