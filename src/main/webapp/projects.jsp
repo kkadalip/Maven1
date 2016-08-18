@@ -24,7 +24,7 @@
 		
 		<div class="panel panel-default">
 		  	<div class="panel-heading">
-			  	<h3 class="panel-title">People</h3>
+			  	<h3 class="panel-title">People (${fn:length(persons)})</h3>
 		  	</div>
 		  	<div class="panel-body">
 	    		<c:forEach items="${persons}" var="item">
@@ -35,18 +35,18 @@
 		
 		<div class="panel panel-default">
 		  	<div class="panel-heading">
-			  	<h3 class="panel-title">Project Groups</h3>
+			  	<h3 class="panel-title">Project Groups (${fn:length(projectGroups)})</h3>
 		  	</div>
 		  	<div class="panel-body">
 				<c:forEach items="${projectGroups}" var="item">
-					<c:out value="Project group name: ${item.name}" /><br>
+					<c:out value="${item.name}" /><br>
 				</c:forEach>
 		  	</div>
 		</div>
 		
 		<div class="panel panel-default">
 		  	<div class="panel-heading">
-			  	<h3 class="panel-title">Projects</h3>
+			  	<h3 class="panel-title">Projects (${fn:length(projects)})</h3>
 		  	</div>
 		  	<div class="panel-body">
 				<c:forEach items="${projects}" var="item">
