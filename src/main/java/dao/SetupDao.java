@@ -148,6 +148,7 @@ public class SetupDao { // extends AbstractDaoHibernate {
 		p1.setSizeQuantity(2026);
 		//p1.setSizeUnit("m2"); // Todo separate model for units so I can convert them on the fly
 		// BROKEN p1.setProjectGroup(pg1);
+		p1.setProjectGroup(pg1);
 		session.save(p1);
 		
 		Project p2 = new Project();
@@ -159,6 +160,7 @@ public class SetupDao { // extends AbstractDaoHibernate {
 		p2architects.add(personKalleVellevoog);
 		p2.setArchitects(p2architects);
 		p2.setSizeQuantity(260);
+		p2.setProjectGroup(pg1);
 		session.save(p2);
 		
 		Project p3 = new Project();
@@ -169,6 +171,7 @@ public class SetupDao { // extends AbstractDaoHibernate {
 		p3architects.add(personKalleVellevoog);
 		p3.setArchitects(p3architects);
 		p3.setSizeQuantity(441);
+		p3.setProjectGroup(pg1);
 		session.save(p3);
 		
 		Project p4 = new Project();
@@ -180,6 +183,7 @@ public class SetupDao { // extends AbstractDaoHibernate {
 		p4architects.add(personKalleVellevoog);
 		p4.setArchitects(p4architects);
 		p4.setSizeQuantity(250);
+		p4.setProjectGroup(pg1);
 		session.save(p4);
 		
 		Project p5 = new Project();
@@ -191,6 +195,7 @@ public class SetupDao { // extends AbstractDaoHibernate {
 		p5architects.add(personKalleVellevoog);
 		p5.setArchitects(p5architects);
 		p5.setSizeQuantity(35);
+		p5.setProjectGroup(pg1);
 		session.save(p5);
 		
 		Project p6 = new Project();
@@ -202,6 +207,7 @@ public class SetupDao { // extends AbstractDaoHibernate {
 		List<Person> p6contributors = new ArrayList<Person>();
 		p6contributors.add(personMartinPrommik);
 		p6.setContributors(p6contributors);
+		p6.setProjectGroup(pg1);
 		session.save(p6);
 		
 		Project p7 = new Project();
@@ -213,6 +219,7 @@ public class SetupDao { // extends AbstractDaoHibernate {
 		List<Person> p7contributors = new ArrayList<Person>();
 		p7contributors.add(personMartinPrommik);
 		p7.setContributors(p7contributors);
+		p7.setProjectGroup(pg1);
 		session.save(p7);
 		
 		

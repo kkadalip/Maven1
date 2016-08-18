@@ -51,6 +51,7 @@
 		  	<div class="panel-body">
 				<c:forEach items="${projects}" var="item">
 					<b><c:out value="${item.name}" /></b><br>
+					groupp: ${item.projectGroup.name}<br>
 					project: ${item.planningStartYear} - ${item.planningEndYear}<br>
 					ehitus: ${item.buildingStartYear} - ${item.buildingEndYear}<br>
 					<!--
@@ -68,8 +69,12 @@
 					 -->
 					<c:forEach items="${item.architects}" var="architect">
 						arhitekt: ${architect.firstName} ${architect.lastName}
+						<br>
+					</c:forEach>	
+					<c:forEach items="${item.contributors}" var="contributor">
+						kaastöö: ${contributor.firstName} ${contributor.lastName}
+						<br>
 					</c:forEach>
-					<br>
 					üldpind: ${item.sizeQuantity} m<sup>2</sup>
 					<br>
 					<br>

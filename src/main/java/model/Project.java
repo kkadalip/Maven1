@@ -96,7 +96,7 @@ public class Project {
 	@LazyCollection(LazyCollectionOption.FALSE)
 	@Nullable
     @Column(name="contributors")
-    @ManyToMany() //(fetch = FetchType.EAGER)
+    @ManyToMany()
 	@JoinTable(name="project_contributor", joinColumns=@JoinColumn(name="personID"), inverseJoinColumns=@JoinColumn(name="projectID"))
     @Cascade(value = { CascadeType.ALL })
 	private List<Person> contributors = new ArrayList<>();
@@ -145,7 +145,7 @@ public class Project {
 	
 	// Image(s) drawings
 	
-	
+	@LazyCollection(LazyCollectionOption.FALSE)
 	////Project Group üks grupp, mitu projekti, OneToMany
 	// ManyToOne siin
 	@Nullable
