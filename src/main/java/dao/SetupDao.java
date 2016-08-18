@@ -324,6 +324,45 @@ public class SetupDao { // extends AbstractDaoHibernate {
 		p11.setProjectGroup(pg2);
 		session.save(p11);
 		
+		Project p12 = new Project();
+		p12.setName("Naftatehase peahoone Jaroslavlis");
+		p12.setPlanningStartYear(2013);
+		List<Person> p12architects = new ArrayList<Person>();
+		p12architects.add(personKalleVellevoog);
+		p12architects.add(personTiiuTruus);
+		p12.setArchitects(p12architects);
+		List<Person> p12contributors = new ArrayList<Person>();
+		p12contributors.add(personMartinPrommik);
+		p12contributors.add(personPilleNoole);
+		p12contributors.add(personLidiaZarudnaja);
+		p12.setConstructors(p12contributors);
+		p12.setSizeQuantity(3650);
+		p12.setProjectGroup(pg2);
+		session.save(p12);
+		
+		Project p13 = new Project();
+		p13.setName("Korterelamu Tallinnas Tatari tn 9/11");
+		List<Address> p13addresses = new ArrayList<Address>();
+		Address p13address = new Address();
+		p13address.setCity("Tallinn");
+		p13address.setStreet("Tatari");
+		p13address.setBuilding("9/11");
+		p13addresses.add(p13address);
+		p13.setAddresses(p13addresses);
+		p13.setPlanningStartYear(2004);
+		p13.setBuildingStartYear(2005);
+		List<Person> p13architects = new ArrayList<Person>();
+		p13architects.add(personKalleVellevoog);
+		p13architects.add(personVelleKadalipp);
+		p13.setArchitects(p13architects);
+		List<Person> p13contributors = new ArrayList<Person>();
+		p13contributors.add(personAndrusAndrejev);
+		p13.setContributors(p13contributors);
+		p13.setSizeQuantity(2820);
+		p13.setApartmentsQuantity(24);
+		p13.setProjectGroup(pg2);
+		session.save(p13);
+		
 		transaction.commit();
 		session.close();
 		log.info("[insertSampleDataProjects] END");
