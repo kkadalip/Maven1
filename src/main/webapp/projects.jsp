@@ -57,21 +57,12 @@
 						aadress: ${address.city}, ${address.street} ${address.streetType} ${address.building}
 						<br>
 					</c:forEach>
-					project: ${project.planningStartYear} - ${project.planningEndYear}<br>
-					ehitus: ${project.buildingStartYear} - ${project.buildingEndYear}<br>
-					<!--
-					JSTL
-					<c:choose>
-					    <c:when test="${param.enter=='1'}">
-					        pizza. 
-					        <br />
-					    </c:when>    
-					    <c:otherwise>
-					        pizzas. 
-					        <br />
-					    </c:otherwise>
-					</c:choose>
-					 -->
+					<c:if test="${!empty project.planningStartYear}">
+						projekt: ${project.planningStartYear}<c:if test="${!empty project.planningEndYear}"> - ${project.planningEndYear}</c:if><br>
+					</c:if>
+					<c:if test="${!empty project.buildingStartYear}">
+						ehitus: ${project.buildingStartYear}<c:if test="${!empty project.buildingEndYear}"> - ${project.buildingEndYear}</c:if><br>
+					</c:if>
 					 <c:if test="${fn:length(project.architects) > 1}">
 					 	arhitektid: 
 					 </c:if>
