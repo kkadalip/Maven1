@@ -118,6 +118,18 @@ public class SetupDao { // extends AbstractDaoHibernate {
 		session.save(personMartinPedanik);
 		Person personKarenJagodin = new Person("Karen", "Jagodin");
 		session.save(personKarenJagodin);
+		Person personMihkelTuur = new Person("Mihkel", "Tüür");
+		session.save(personMihkelTuur);
+		Person personOttKadarik = new Person("Ott", "Kadarik");
+		session.save(personOttKadarik);
+		Person personReedikPoopuu = new Person("Reedik", "Poopuu");
+		session.save(personReedikPoopuu);
+		Person personMartenTuuling = new Person("Märten", "Tuuling");
+		session.save(personMartenTuuling);
+		Person personAivarHanniotti = new Person("Aivar", "Hanniotti");
+		session.save(personAivarHanniotti);
+		Person personArneMaasik = new Person("Arne", "Maasik");
+		session.save(personArneMaasik);
 		
 		log.debug("KALLE VELLEVOOG ID IS: " + personKalleVellevoog.getId());
 		// PROJECTS
