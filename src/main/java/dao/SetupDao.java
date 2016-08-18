@@ -258,6 +258,72 @@ public class SetupDao { // extends AbstractDaoHibernate {
 		p8.setProjectGroup(pg2);
 		session.save(p8);
 		
+		Project p9 = new Project();
+		p9.setName("Korterelamud Tallinnas Pähkli tänaval");
+		List<Address> p9addresses = new ArrayList<Address>();
+		Address p9address = new Address();
+		p9address.setCity("Tallinn");
+		p9address.setStreet("Pähkli");
+		p9addresses.add(p9address);
+		p9.setAddresses(p9addresses);
+		p9.setPlanningStartYear(2004);
+		p9.setBuildingStartYear(2005);
+		// Architects:
+		List<Person> p9architects = new ArrayList<Person>();
+		p9architects.add(personKalleVellevoog);
+		p9architects.add(personVelleKadalipp);
+		p9.setArchitects(p9architects);
+		p9.setSizeQuantity(903);
+		p9.setApartmentsQuantity(12);
+		p9.setProjectGroup(pg2);
+		session.save(p9);
+		
+		Project p10 = new Project();
+		p10.setName("Büroo- ja kortermaja Tallinnas Tartu mnt. 25");
+		p10.setPlanningStartYear(2014);
+		p10.setBuildingStartYear(2014);
+		List<Person> p10architects = new ArrayList<Person>();
+		p10architects.add(personKalleVellevoog);
+		p10architects.add(personAndrusAndrejev);
+		p10architects.add(personLidiaZarudnaja);
+		p10.setArchitects(p10architects);
+		// TODO? Koostöös arhitektibürooga Laan & Remi, arhitekt Malle Laan
+		List<Person> p10contributors = new ArrayList<Person>();
+		p10contributors.add(personMalleLaan);
+		p10.setContributors(p10contributors);
+		List<Person> p10interiorDesigners = new ArrayList<Person>();
+		p10interiorDesigners.add(personTiiuTruus);
+		p10.setInteriorDesigners(p10interiorDesigners);
+		p10.setSizeQuantity(9500);
+		p10.setApartmentsQuantity(13);
+		p10.setProjectGroup(pg2);
+		session.save(p10);
+
+		Project p11 = new Project();
+		p11.setName("EHL hoone rekonstrueerimine Eesti Helikunsti Keskuseks");
+		// ADDRESS
+		List<Address> p11addresses = new ArrayList<Address>();
+		Address p11address = new Address();
+		p11address.setCity("Tallinn");
+		p11address.setStreet("Lauteri");
+		p11address.setBuilding("7C");
+		p11addresses.add(p11address);
+		p11.setAddresses(p11addresses);
+		p11.setPlanningStartYear(2014);
+		List<Person> p11architects = new ArrayList<Person>();
+		p11architects.add(personKalleVellevoog);
+		p11architects.add(personLidiaZarudnaja);
+		p11.setArchitects(p11architects);
+		List<Person> p11contributors = new ArrayList<Person>();
+		p11contributors.add(personMartinPrommik);
+		p11.setContributors(p11contributors);
+		p11.setSizeQuantity(1500);
+		List<Person> p11originalAuthors = new ArrayList<Person>();
+		p11originalAuthors.add(personUdoIvask);
+		p11.setOriginalAuthors(p11originalAuthors);
+		p11.setProjectGroup(pg2);
+		session.save(p11);
+		
 		transaction.commit();
 		session.close();
 		log.info("[insertSampleDataProjects] END");

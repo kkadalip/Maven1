@@ -52,7 +52,7 @@
 				<c:forEach items="${projects}" var="project">
 					<b><c:out value="${project.name}" /></b><br>
 					groupp: ${project.projectGroup.name}<br>
-					aadresse on ${fn:length(project.addresses)}<br>
+					<!-- aadresse on ${fn:length(project.addresses)}<br>  -->
 					<c:forEach items="${project.addresses}" var="address">
 						aadress: ${address.city} ${address.street} tn ${address.building}
 						<br>
@@ -92,7 +92,7 @@
 						maastikuarhitekt: ${landscapeArchitect.firstName} ${landscapeArchitect.lastName}
 						<br>
 					</c:forEach>
-					üldpind: ${project.sizeQuantity} m<sup>2</sup>
+					üldpind: ${project.sizeQuantity} m<sup>2</sup>, ${project.apartmentsQuantity} korterit
 					<br>
 					<br>
 				</c:forEach>
