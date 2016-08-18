@@ -72,10 +72,19 @@
 					    </c:otherwise>
 					</c:choose>
 					 -->
-					<c:forEach items="${project.architects}" var="architect">
-						arhitekt: ${architect.firstName} ${architect.lastName}
+					 <c:if test="${fn:length(project.architects) > 1}">
+					 	arhitektid: 
+					 </c:if>
+					 <c:if test="${fn:length(project.architects) == 1}">
+					 	arhitekt: 
+					 </c:if>
+					<c:forEach items="${project.architects}" var="architect" varStatus="loop">
+						 ${architect.firstName} ${architect.lastName}${loop.last ? '<br>' : ','} 
+					</c:forEach>
+					<c:forEach items="${project.originalAuthors}" var="originalAuthor">
+						Hoone algne autor: ${originalAuthor.firstName} ${originalAuthor.lastName}
 						<br>
-					</c:forEach>	
+					</c:forEach>
 					<c:forEach items="${project.contributors}" var="contributor">
 						kaastöö: ${contributor.firstName} ${contributor.lastName}
 						<br>
@@ -92,7 +101,12 @@
 						maastikuarhitekt: ${landscapeArchitect.firstName} ${landscapeArchitect.lastName}
 						<br>
 					</c:forEach>
+					<c:forEach items="${project.lightsDesigners}" var="lightsDesigner">
+						sisekujundaja: ${lightsDesigner.firstName} ${lightsDesigner.lastName}
+						<br>
+					</c:forEach>
 					üldpind: ${project.sizeQuantity} m<sup>2</sup>, ${project.apartmentsQuantity} korterit
+					preemia: ${project.prizeComment}
 					<br>
 					<br>
 				</c:forEach>
