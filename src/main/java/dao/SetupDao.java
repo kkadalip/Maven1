@@ -90,6 +90,7 @@ public class SetupDao { // extends AbstractDaoHibernate {
 		// konstruktor
 		Person personMartinPrommik = new Person("Martin", "Prommik");
 		session.save(personMartinPrommik);
+		log.debug("MARTIN PROMMIK ID IS: " + personMartinPrommik.getId());
 		// kaastöö
 		Person personMargusTamm = new Person("Margus", "Tamm");
 		session.save(personMargusTamm);
@@ -191,6 +192,29 @@ public class SetupDao { // extends AbstractDaoHibernate {
 		p5.setArchitects(p5architects);
 		p5.setSizeQuantity(35);
 		session.save(p5);
+		
+		Project p6 = new Project();
+		p6.setName("Eramu Mäepea külas Harjumaal");
+		p6.setPlanningStartYear(2008);
+		List<Person> p6architects = new ArrayList<Person>();
+		p6architects.add(personKalleVellevoog);
+		p6.setArchitects(p6architects);
+		List<Person> p6contributors = new ArrayList<Person>();
+		p6contributors.add(personMartinPrommik);
+		p6.setContributors(p6contributors);
+		session.save(p6);
+		
+		Project p7 = new Project();
+		p7.setName("Suvila-vaatetorn põhjarannikul");
+		p7.setPlanningStartYear(2008);
+		List<Person> p7architects = new ArrayList<Person>();
+		p7architects.add(personKalleVellevoog);
+		p7.setArchitects(p7architects);
+		List<Person> p7contributors = new ArrayList<Person>();
+		p7contributors.add(personMartinPrommik);
+		p7.setContributors(p7contributors);
+		session.save(p7);
+		
 		
 		transaction.commit();
 		session.close();
