@@ -81,12 +81,45 @@ public class SetupDao { // extends AbstractDaoHibernate {
 		
 		// PERSONS (people)
 		
-		Person velleKadalipp = new Person("Velle", "Kadalipp");
-		session.save(velleKadalipp);
-		Person kalleVellevoog = new Person("Kalle", "Vellevoog");
-		session.save(kalleVellevoog);
+		Person personVelleKadalipp = new Person("Velle", "Kadalipp");
+		session.save(personVelleKadalipp);
+		Person personKalleVellevoog = new Person("Kalle", "Vellevoog");
+		session.save(personKalleVellevoog);
+		Person personTiiuTruus = new Person("Tiiu", "Truus");
+		session.save(personTiiuTruus);
+		// konstruktor
+		Person personMartinPrommik = new Person("Martin", "Prommik");
+		session.save(personMartinPrommik);
+		// kaastöö
+		Person personMargusTamm = new Person("Margus", "Tamm");
+		session.save(personMargusTamm);
+		// maastikuarhitekt
+		Person personAhtiLaane = new Person("Ahti", "Lääne");
+		session.save(personAhtiLaane);
+		Person personVaikeParker = new Person("Vaike", "Parker");
+		session.save(personVaikeParker);
+		Person personAndrusAndrejev = new Person("Andrus", "Andrejev");
+		session.save(personAndrusAndrejev);
+		Person personLidiaZarudnaja = new Person("Lidia", "Zarudnaja");
+		session.save(personLidiaZarudnaja);
+		Person personMalleLaan = new Person("Malle", "Laan");
+		session.save(personMalleLaan);
+		Person personUdoIvask = new Person("Udo", "Ivask");
+		session.save(personUdoIvask);
+		Person personPilleNoole = new Person("Pille", "Noole");
+		session.save(personPilleNoole);
+		Person personMartKadarik = new Person("Mart", "Kadarik");
+		session.save(personMartKadarik);
+		Person personMargusTriibmann = new Person("Margus", "Triibmann");
+		session.save(personMargusTriibmann);
+		Person personLailaPodra = new Person("Laila", "Põdra");
+		session.save(personLailaPodra);
+		Person personMartinPedanik = new Person("Martin", "Pedanik");
+		session.save(personMartinPedanik);
+		Person personKarenJagodin = new Person("Karen", "Jagodin");
+		session.save(personKarenJagodin);
 		
-		log.debug("KALLE VELLEVOOG ID IS: " + kalleVellevoog.getId());
+		log.debug("KALLE VELLEVOOG ID IS: " + personKalleVellevoog.getId());
 		// PROJECTS
 		
 		Project p1 = new Project();
@@ -97,7 +130,7 @@ public class SetupDao { // extends AbstractDaoHibernate {
 		p1.setBuildingEndYear(2003);
 		//Set<Person> p1set = new HashSet<Person>();
 		List<Person> p1list = new ArrayList<Person>();
-		p1list.add(kalleVellevoog); 
+		p1list.add(personKalleVellevoog); 
 		p1.setArchitects(p1list); // BROKEN
 		p1.setSizeQuantity(2026);
 		//p1.setSizeUnit("m2"); // Todo separate model for units so I can convert them on the fly

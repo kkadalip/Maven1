@@ -44,7 +44,7 @@ public class Projects extends HttpServlet {
 		// TODO Auto-generated method stub
 		response.getWriter().append("Served at: ").append(request.getContextPath());
 		
-		request.setAttribute("message", "Welcome");
+		//request.setAttribute("message", "Welcome"); // in JSP use ${message}
 		
 		PersonDao personDao = new PersonDao();
 		List<Person> persons = personDao.getAll(); //.getAllPersons();

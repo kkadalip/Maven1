@@ -20,32 +20,45 @@
 <body>
 	<%@ include file="header.jsp"%>
 	
-	swag<br>
-	<h2><c:out value="${message}" /></h2>
-	swag2<br>
-	<br>
-	persons start<br>
-	<c:forEach items="${persons}" var="item">
-		<c:out value="${item.firstName} ${item.lastName}" /><br>
-	</c:forEach>
-	persons end<br>
-	<br>
-	projectgroups start<br>
-	<c:forEach items="${projectGroups}" var="item">
-		<c:out value="Project group name: ${item.name}" /><br>
-	</c:forEach>
-	projectgroups end<br>
-	<br>
-	projects start<br>
-	<c:forEach items="${projects}" var="item">
-		<c:out value="Project name: ${item.name}" /><br>
-		<c:forEach items="${item.architects}" var="architect">
-			Architect name: ${architect.firstName} ${architect.lastName}
-		</c:forEach>
-	</c:forEach><br>
-	projects end<br>
-	<br>
 	<div class="container">	
+		
+		<div class="panel panel-default">
+		  	<div class="panel-heading">
+			  	<h3 class="panel-title">People</h3>
+		  	</div>
+		  	<div class="panel-body">
+	    		<c:forEach items="${persons}" var="item">
+					<c:out value="${item.firstName} ${item.lastName}" /><br>
+				</c:forEach>
+		  	</div>
+		</div>
+		
+		<div class="panel panel-default">
+		  	<div class="panel-heading">
+			  	<h3 class="panel-title">Project Groups</h3>
+		  	</div>
+		  	<div class="panel-body">
+				<c:forEach items="${projectGroups}" var="item">
+					<c:out value="Project group name: ${item.name}" /><br>
+				</c:forEach>
+		  	</div>
+		</div>
+		
+		<div class="panel panel-default">
+		  	<div class="panel-heading">
+			  	<h3 class="panel-title">Projects</h3>
+		  	</div>
+		  	<div class="panel-body">
+				<c:forEach items="${projects}" var="item">
+					<c:out value="Project name: ${item.name}" /><br>
+					<c:forEach items="${item.architects}" var="architect">
+						Architect name: ${architect.firstName} ${architect.lastName}
+					</c:forEach>
+				</c:forEach>
+				<br>
+		  	</div>
+		</div>
+
 		<div class="panel panel-default">
 		  <div class="panel-heading">
 			  <h3 class="panel-title">Eramud</h3>
