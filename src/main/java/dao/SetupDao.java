@@ -692,7 +692,48 @@ public class SetupDao { // extends AbstractDaoHibernate {
 		p26.setProjectGroup(pg2);
 		session.save(p26);
 		
+		Project p27 = new Project();
+		p27.setName("Korterelamu Tallinnas Kaupmehe tn 12");
+		// ADDRESS START
+		List<Address> p27addresses = new ArrayList<Address>();
+		Address p27address = new Address();
+		p27address.setCity("Tallinn");
+		p27address.setStreet("Kaupmehe");
+		p27address.setStreetType("tänav");
+		p27address.setBuilding("12");
+		p27addresses.add(p27address);
+		p27.setAddresses(p27addresses);
+		// ADDRESS END
+		p27.setPlanningStartYear(2005);
+		p27.setPlanningEndYear(2006);
+		p27.setBuildingStartYear(2006);
+		List<Person> p27architects = new ArrayList<Person>();
+		p27architects.add(personVelleKadalipp);
+		p27.setArchitects(p27architects);
+		List<Person> p27contributors = new ArrayList<Person>();
+		p27contributors.add(personAndrusAndrejev);
+		p27.setContributors(p27contributors);
+		p27.setSizeQuantity(1717.7f);
+		p27.setApartmentsQuantity(17);
+		p27.setProjectGroup(pg2);
+		session.save(p27);
 		
+		// KONKURSIPROJEKTID:
+		
+		Project p28 = new Project();
+		p28.setName("Narva linnuse arhitektuurivõistlus");
+		// narva linnuse aadress siia
+		p28.setPlanningStartYear(2015);
+		List<Person> p28architects = new ArrayList<Person>();
+		p28architects.add(personKalleVellevoog);
+		p28architects.add(personTiiuTruus);
+		p28architects.add(personLidiaZarudnaja);
+		p28architects.add(personMartinPrommik);
+		p28.setSizeQuantity(17000f); //(1.7f); // 1.7ha not square m !!!
+		p28.setArchitects(p28architects);
+		p28.setPrizeComment("Konkursitöö I preemia");
+		p28.setProjectGroup(pg3);
+		session.save(p28);
 		
 		transaction.commit();
 		session.close();
