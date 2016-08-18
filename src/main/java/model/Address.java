@@ -51,6 +51,9 @@ public class Address {
 	@Column(name="street")
 	private String street;
 	
+	@Column(name="streetType")
+	private String streetType;
+	
 	// building number with letter
 	@Column(name="building")
 	private String building;
@@ -63,9 +66,7 @@ public class Address {
 	private Float longitude;
 	@Column(name="latitude")
 	private Float latitude;
-	public Long getId() {
-		return id;
-	}
+
 	
 //	@Nullable
 //    @Column(name="projects")
@@ -76,8 +77,8 @@ public class Address {
 	
 	// GETTERS & SETTERS
 	
-	public void setId(Long id) {
-		this.id = id;
+	public Long getId() {
+		return id;
 	}
 	public String getCountry() {
 		return country;
@@ -103,6 +104,12 @@ public class Address {
 	public void setStreet(String street) {
 		this.street = street;
 	}
+	public String getStreetType() {
+		return streetType;
+	}
+	public void setStreetType(String streetType) {
+		this.streetType = streetType;
+	}
 	public String getBuilding() {
 		return building;
 	}
@@ -127,11 +134,7 @@ public class Address {
 	public void setLatitude(Float latitude) {
 		this.latitude = latitude;
 	}
-//	public Set<Project> getProjects() {
-//		return projects;
-//	}
-//	public void setProjects(Set<Project> projects) {
-//		this.projects = projects;
-//	}
-	
+	public void setId(Long id) {
+		this.id = id;
+	}
 }

@@ -229,6 +229,7 @@ public class SetupDao { // extends AbstractDaoHibernate {
 		Address p8address = new Address();
 		p8address.setCity("Pärnu");
 		p8address.setStreet("Seedri");
+		p8address.setStreetType("tänav");
 		p8address.setBuilding("4");
 		p8addresses.add(p8address);
 		p8.setAddresses(p8addresses);
@@ -264,6 +265,7 @@ public class SetupDao { // extends AbstractDaoHibernate {
 		Address p9address = new Address();
 		p9address.setCity("Tallinn");
 		p9address.setStreet("Pähkli");
+		p9address.setStreetType("tänav");
 		p9addresses.add(p9address);
 		p9.setAddresses(p9addresses);
 		p9.setPlanningStartYear(2004);
@@ -306,6 +308,7 @@ public class SetupDao { // extends AbstractDaoHibernate {
 		Address p11address = new Address();
 		p11address.setCity("Tallinn");
 		p11address.setStreet("Lauteri");
+		p11address.setStreetType("tänav");
 		p11address.setBuilding("7C");
 		p11addresses.add(p11address);
 		p11.setAddresses(p11addresses);
@@ -346,6 +349,7 @@ public class SetupDao { // extends AbstractDaoHibernate {
 		Address p13address = new Address();
 		p13address.setCity("Tallinn");
 		p13address.setStreet("Tatari");
+		p13address.setStreetType("tänav");
 		p13address.setBuilding("9/11");
 		p13addresses.add(p13address);
 		p13.setAddresses(p13addresses);
@@ -370,6 +374,7 @@ public class SetupDao { // extends AbstractDaoHibernate {
 		Address p14address = new Address();
 		p14address.setCity("Tallinn");
 		p14address.setStreet("Masti");
+		p14address.setStreetType("tänav");
 		p14address.setBuilding("15");
 		p14addresses.add(p14address);
 		p14.setAddresses(p14addresses);
@@ -395,6 +400,7 @@ public class SetupDao { // extends AbstractDaoHibernate {
 		Address p15address = new Address();
 		p15address.setCity("Tallinn");
 		p15address.setStreet("Tööstuse");
+		p15address.setStreetType("tänav");
 		p15address.setBuilding("54a");
 		p15addresses.add(p15address);
 		p15.setAddresses(p15addresses);
@@ -424,6 +430,7 @@ public class SetupDao { // extends AbstractDaoHibernate {
 		Address p16address = new Address();
 		p16address.setCity("Tallinn");
 		p16address.setStreet("Helme");
+		p16address.setStreetType("tänav");
 		p16addresses.add(p16address);
 		p16.setAddresses(p16addresses);
 		// ADDRESS END
@@ -450,6 +457,7 @@ public class SetupDao { // extends AbstractDaoHibernate {
 		Address p17address = new Address();
 		p17address.setCity("Tallinn");
 		p17address.setStreet("Suur-Patarei");
+		p17address.setStreetType("tänav");
 		p17address.setBuilding("16");
 		p17addresses.add(p17address);
 		p17.setAddresses(p17addresses);
@@ -468,7 +476,30 @@ public class SetupDao { // extends AbstractDaoHibernate {
 		p17.setProjectGroup(pg2);
 		session.save(p17);
 		
-		
+		Project p18 = new Project();
+		p18.setName("Äri- ja eluhoone Jõhvis Narva mnt 14");
+		// ADDRESS START
+		List<Address> p18addresses = new ArrayList<Address>();
+		Address p18address = new Address();
+		p18address.setCity("Jõhvi");
+		p18address.setStreet("Narva"); // tänav, maantee, põik
+		p18address.setStreetType("maantee");
+		p18address.setBuilding("14");
+		p18addresses.add(p17address);
+		p17.setAddresses(p17addresses);
+		// ADDRESS END
+		p18.setPlanningStartYear(2007);
+		List<Person> p18architects = new ArrayList<Person>();
+		p18architects.add(personKalleVellevoog);
+		p18architects.add(personVelleKadalipp);
+		p18.setArchitects(p18architects);
+		List<Person> p18contributors = new ArrayList<Person>();
+		p18contributors.add(personAndrusAndrejev);
+		p18contributors.add(personMargusTamm);
+		p18.setContributors(p18contributors);
+		p18.setSizeQuantity(13200f);
+		p18.setProjectGroup(pg2);
+		session.save(p18);
 		
 		
 		transaction.commit();

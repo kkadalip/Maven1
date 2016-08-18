@@ -54,7 +54,7 @@
 					groupp: ${project.projectGroup.name}<br>
 					<!-- aadresse on ${fn:length(project.addresses)}<br>  -->
 					<c:forEach items="${project.addresses}" var="address">
-						aadress: ${address.city} ${address.street} tn ${address.building}
+						aadress: ${address.city}, ${address.street} ${address.streetType} ${address.building}
 						<br>
 					</c:forEach>
 					project: ${project.planningStartYear} - ${project.planningEndYear}<br>
