@@ -70,7 +70,7 @@
 						arhitekt: ${architect.firstName} ${architect.lastName}
 					</c:forEach>
 					<br>
-					üldpind: ${item.sizeQuantity} m<sub>2</sub>
+					üldpind: ${item.sizeQuantity} m<sup>2</sup>
 					<br>
 					<br>
 				</c:forEach>
