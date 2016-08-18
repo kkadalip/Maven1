@@ -146,7 +146,7 @@ public class SetupDao { // extends AbstractDaoHibernate {
 		List<Person> p1architects = new ArrayList<Person>();
 		p1architects.add(personKalleVellevoog); 
 		p1.setArchitects(p1architects);
-		p1.setSizeQuantity(2026);
+		p1.setSizeQuantity(2026f);
 		//p1.setSizeUnit("m2"); // Todo separate model for units so I can convert them on the fly
 		// BROKEN p1.setProjectGroup(pg1);
 		p1.setProjectGroup(pg1);
@@ -160,7 +160,7 @@ public class SetupDao { // extends AbstractDaoHibernate {
 		List<Person> p2architects = new ArrayList<Person>();
 		p2architects.add(personKalleVellevoog);
 		p2.setArchitects(p2architects);
-		p2.setSizeQuantity(260);
+		p2.setSizeQuantity(260f);
 		p2.setProjectGroup(pg1);
 		session.save(p2);
 		
@@ -171,7 +171,7 @@ public class SetupDao { // extends AbstractDaoHibernate {
 		List<Person> p3architects = new ArrayList<Person>();
 		p3architects.add(personKalleVellevoog);
 		p3.setArchitects(p3architects);
-		p3.setSizeQuantity(441);
+		p3.setSizeQuantity(441f);
 		p3.setProjectGroup(pg1);
 		session.save(p3);
 		
@@ -183,7 +183,7 @@ public class SetupDao { // extends AbstractDaoHibernate {
 		List<Person> p4architects = new ArrayList<Person>();
 		p4architects.add(personKalleVellevoog);
 		p4.setArchitects(p4architects);
-		p4.setSizeQuantity(250);
+		p4.setSizeQuantity(250f);
 		p4.setProjectGroup(pg1);
 		session.save(p4);
 		
@@ -195,7 +195,7 @@ public class SetupDao { // extends AbstractDaoHibernate {
 		List<Person> p5architects = new ArrayList<Person>();
 		p5architects.add(personKalleVellevoog);
 		p5.setArchitects(p5architects);
-		p5.setSizeQuantity(35);
+		p5.setSizeQuantity(35f);
 		p5.setProjectGroup(pg1);
 		session.save(p5);
 		
@@ -254,7 +254,7 @@ public class SetupDao { // extends AbstractDaoHibernate {
 		List<Person> p8landscapeArchitects = new ArrayList<Person>();
 		p8landscapeArchitects.add(personVaikeParker);
 		p8.setLandscapeArchitects(p8landscapeArchitects);
-		p8.setSizeQuantity(4565);
+		p8.setSizeQuantity(4565f);
 		p8.setProjectGroup(pg2);
 		session.save(p8);
 		
@@ -273,7 +273,7 @@ public class SetupDao { // extends AbstractDaoHibernate {
 		p9architects.add(personKalleVellevoog);
 		p9architects.add(personVelleKadalipp);
 		p9.setArchitects(p9architects);
-		p9.setSizeQuantity(903);
+		p9.setSizeQuantity(903f);
 		p9.setApartmentsQuantity(12);
 		p9.setProjectGroup(pg2);
 		session.save(p9);
@@ -294,7 +294,7 @@ public class SetupDao { // extends AbstractDaoHibernate {
 		List<Person> p10interiorDesigners = new ArrayList<Person>();
 		p10interiorDesigners.add(personTiiuTruus);
 		p10.setInteriorDesigners(p10interiorDesigners);
-		p10.setSizeQuantity(9500);
+		p10.setSizeQuantity(9500f);
 		p10.setApartmentsQuantity(13);
 		p10.setProjectGroup(pg2);
 		session.save(p10);
@@ -317,7 +317,7 @@ public class SetupDao { // extends AbstractDaoHibernate {
 		List<Person> p11contributors = new ArrayList<Person>();
 		p11contributors.add(personMartinPrommik);
 		p11.setContributors(p11contributors);
-		p11.setSizeQuantity(1500);
+		p11.setSizeQuantity(1500f);
 		List<Person> p11originalAuthors = new ArrayList<Person>();
 		p11originalAuthors.add(personUdoIvask);
 		p11.setOriginalAuthors(p11originalAuthors);
@@ -336,7 +336,7 @@ public class SetupDao { // extends AbstractDaoHibernate {
 		p12contributors.add(personPilleNoole);
 		p12contributors.add(personLidiaZarudnaja);
 		p12.setConstructors(p12contributors);
-		p12.setSizeQuantity(3650);
+		p12.setSizeQuantity(3650f);
 		p12.setProjectGroup(pg2);
 		session.save(p12);
 		
@@ -358,10 +358,118 @@ public class SetupDao { // extends AbstractDaoHibernate {
 		List<Person> p13contributors = new ArrayList<Person>();
 		p13contributors.add(personAndrusAndrejev);
 		p13.setContributors(p13contributors);
-		p13.setSizeQuantity(2820);
+		p13.setSizeQuantity(2820f);
 		p13.setApartmentsQuantity(24);
 		p13.setProjectGroup(pg2);
 		session.save(p13);
+		
+		Project p14 = new Project();
+		p14.setName("Korterelamu Tallinnas Masti tänaval");
+		// ADDRESS START
+		List<Address> p14addresses = new ArrayList<Address>();
+		Address p14address = new Address();
+		p14address.setCity("Tallinn");
+		p14address.setStreet("Masti");
+		p14address.setBuilding("15");
+		p14addresses.add(p14address);
+		p14.setAddresses(p14addresses);
+		// ADDRESS END
+		p14.setPlanningStartYear(2013);
+		p14.setBuildingStartYear(2014);
+		p14.setBuildingEndYear(2015);
+		List<Person> p14architects = new ArrayList<Person>();
+		p14architects.add(personKalleVellevoog);
+		p14.setArchitects(p14architects);
+		List<Person> p14contributors = new ArrayList<Person>();
+		p14contributors.add(personMartinPrommik);
+		p14.setContributors(p14contributors);
+		p14.setSizeQuantity(600f);
+		p14.setApartmentsQuantity(4);
+		p14.setProjectGroup(pg2);
+		session.save(p14);
+		
+		Project p15 = new Project();
+		p15.setName("Tööstuse tn 54a hoone rekonstruktsioon");
+		// ADDRESS START
+		List<Address> p15addresses = new ArrayList<Address>();
+		Address p15address = new Address();
+		p15address.setCity("Tallinn");
+		p15address.setStreet("Tööstuse");
+		p15address.setBuilding("54a");
+		p15addresses.add(p15address);
+		p15.setAddresses(p15addresses);
+		// ADDRESS END
+		p15.setPlanningStartYear(2013);
+		p15.setPlanningEndYear(2014);
+		p15.setBuildingStartYear(2014);
+		p15.setBuildingEndYear(2015);
+		List<Person> p15architects = new ArrayList<Person>();
+		p15architects.add(personKalleVellevoog);
+		p15.setArchitects(p15architects);
+		List<Person> p15contributors = new ArrayList<Person>();
+		p15contributors.add(personMartKadarik);
+		p15contributors.add(personMartinPrommik);
+		p15.setContributors(p15contributors);
+		List<Person> p15lightsDesigners = new ArrayList<Person>();
+		p15lightsDesigners.add(personMargusTriibmann);
+		p15.setLightsDesigners(p15lightsDesigners);
+		p15.setSizeQuantity(9400f);
+		p15.setProjectGroup(pg2);
+		session.save(p15);
+		
+		Project p16 = new Project();
+		p16.setName("Kortermajad Tallinnas Helme tänaval");
+		// ADDRESS START
+		List<Address> p16addresses = new ArrayList<Address>();
+		Address p16address = new Address();
+		p16address.setCity("Tallinn");
+		p16address.setStreet("Helme");
+		p16addresses.add(p16address);
+		p16.setAddresses(p16addresses);
+		// ADDRESS END
+		p16.setPlanningStartYear(2009);
+		p16.setPlanningEndYear(2011);
+		p16.setBuildingStartYear(2010);
+		p16.setBuildingEndYear(2011);
+		List<Person> p16architects = new ArrayList<Person>();
+		p16architects.add(personKalleVellevoog);
+		p16architects.add(personVelleKadalipp);
+		p16.setArchitects(p16architects);
+		List<Person> p16contributors = new ArrayList<Person>();
+		p16contributors.add(personAndrusAndrejev);
+		p16.setContributors(p16contributors);
+		p16.setSizeQuantity(8960f);
+		p16.setApartmentsQuantity(98);
+		p16.setProjectGroup(pg2);
+		session.save(p16);
+		
+		Project p17 = new Project();
+		p17.setName("Kortermaja rekonstruktsioon Suur-Patarei 16, Tallinn");
+		// ADDRESS START
+		List<Address> p17addresses = new ArrayList<Address>();
+		Address p17address = new Address();
+		p17address.setCity("Tallinn");
+		p17address.setStreet("Suur-Patarei");
+		p17address.setBuilding("16");
+		p17addresses.add(p17address);
+		p17.setAddresses(p17addresses);
+		// ADDRESS END
+		p17.setPlanningStartYear(1997);
+		p17.setPlanningEndYear(1998);
+		p17.setBuildingStartYear(1998);
+		List<Person> p17architects = new ArrayList<Person>();
+		p17architects.add(personKalleVellevoog);
+		p17.setArchitects(p17architects);
+		List<Person> p17contributors = new ArrayList<Person>();
+		p17contributors.add(personAndrusAndrejev);
+		p17.setContributors(p17contributors);
+		p17.setSizeQuantity(989.9f);
+		p17.setApartmentsQuantity(14);
+		p17.setProjectGroup(pg2);
+		session.save(p17);
+		
+		
+		
 		
 		transaction.commit();
 		session.close();

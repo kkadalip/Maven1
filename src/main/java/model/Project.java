@@ -65,7 +65,7 @@ public class Project {
 	
 	@Nullable
 	@Column (name="sizeQuantity")
-	private Integer sizeQuantity;
+	private Float sizeQuantity;
 	
 	@Nullable
 	@Column (name="sizeUnit")
@@ -218,11 +218,11 @@ public class Project {
 		this.buildingEndYear = buildingEndYear;
 	}
 
-	public Integer getSizeQuantity() {
+	public Float getSizeQuantity() {
 		return sizeQuantity;
 	}
 
-	public void setSizeQuantity(Integer sizeQuantity) {
+	public void setSizeQuantity(Float sizeQuantity) {
 		this.sizeQuantity = sizeQuantity;
 	}
 
