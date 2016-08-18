@@ -96,7 +96,10 @@
 						sisekujundaja: ${lightsDesigner.firstName} ${lightsDesigner.lastName}
 						<br>
 					</c:forEach>
-					üldpind: ${project.sizeQuantity} m<sup>2</sup>, ${project.apartmentsQuantity} korterit
+					<c:if test="${!empty project.sizeQuantity}">
+						üldpind: ${project.sizeQuantity} m<sup>2</sup><c:if test="${!empty project.apartmentsQuantity}">, ${project.apartmentsQuantity} korterit</c:if><br>
+					</c:if>
+										
 					preemia: ${project.prizeComment}
 					<br>
 					<br>
