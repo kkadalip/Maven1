@@ -729,11 +729,136 @@ public class SetupDao { // extends AbstractDaoHibernate {
 		p28architects.add(personTiiuTruus);
 		p28architects.add(personLidiaZarudnaja);
 		p28architects.add(personMartinPrommik);
+		p28.setArchitects(p28architects);
 		p28.setSizeQuantity(17000f); //(1.7f); // 1.7ha not square m !!!
 		p28.setArchitects(p28architects);
 		p28.setPrizeComment("Konkursitöö I preemia");
 		p28.setProjectGroup(pg3);
 		session.save(p28);
+		
+		Project p29 = new Project();
+		p29.setName("Narva Joaoru puhkeala arhitektuurne ideekonkurss");
+		p29.setPlanningStartYear(2009);
+		List<Person> p29architects = new ArrayList<Person>();
+		p29architects.add(personKalleVellevoog);
+		p29architects.add(personTiiuTruus);
+		p29architects.add(personMartinPrommik);
+		p29.setArchitects(p29architects);
+		p29.setSizeQuantity(170000f); // 17ha
+		p29.setPrizeComment("Konkursitöö I preemia");
+		p29.setProjectGroup(pg3);
+		session.save(p29);
+		
+		Project p30 = new Project();
+		p30.setName("Eesti saatkond Pekingis");
+		p30.setPlanningStartYear(2008);
+		List<Person> p30architects = new ArrayList<Person>();
+		p30architects.add(personKalleVellevoog);
+		p30architects.add(personVelleKadalipp);
+		p30architects.add(personTiiuTruus);
+		p30architects.add(personMartinPrommik);
+		p30.setArchitects(p30architects);
+		p30.setPrizeComment("Konkursitöö III preemia");
+		p30.setProjectGroup(pg3);
+		session.save(p30);
+		
+		Project p31 = new Project();
+		p31.setName("Rakvere Pauluse kiriku rekonstrueerimise arhitektuurivõistlus");
+		p31.setPlanningStartYear(2008);
+		List<Person> p31architects = new ArrayList<Person>();
+		p31architects.add(personKalleVellevoog);
+		p31architects.add(personVelleKadalipp);
+		p31architects.add(personTiiuTruus);
+		p31architects.add(personMartinPrommik);
+		p31.setArchitects(p31architects);
+		p31.setProjectGroup(pg3);
+		session.save(p31);
+		
+		Project p32 = new Project();
+		p32.setName("Büroohoone Tallinnas");
+		p32.setPlanningStartYear(2005);
+		List<Person> p32architects = new ArrayList<Person>();
+		p32architects.add(personKalleVellevoog);
+		p32architects.add(personVelleKadalipp);
+		p32.setArchitects(p32architects);
+		p32.setProjectGroup(pg3);
+		session.save(p32);
+		
+		Project p33 = new Project();
+		p33.setName("Eesti Maaülikooli juurdeehitise arhitektuurivõistlus");
+		p33.setPlanningStartYear(2008);
+		List<Person> p33architects = new ArrayList<Person>();
+		p33architects.add(personKalleVellevoog);
+		p33architects.add(personVelleKadalipp);
+		p33architects.add(personTiiuTruus);
+		p33architects.add(personMartinPrommik);
+		p33.setArchitects(p33architects);
+		p33.setProjectGroup(pg3);
+		session.save(p33);
+		
+		Project p34 = new Project();
+		p34.setName("AS G4S büroohoone");
+		p34.setPlanningStartYear(2011);
+		List<Person> p34architects = new ArrayList<Person>();
+		p34architects.add(personKalleVellevoog);
+		p34architects.add(personVelleKadalipp);
+		p34.setArchitects(p34architects);
+		List<Person> p34contributors = new ArrayList<Person>();
+		p34contributors.add(personMartinPrommik);
+		p34.setContributors(p34contributors);
+		p34.setSizeQuantity(11489f);
+		p34.setProjectGroup(pg3);
+		session.save(p34);
+		
+		Project p35 = new Project();
+		p35.setName("Tartu raamatukogu ja kunstimuuseumi arhitektuurivõistlus");
+		p35.setPlanningStartYear(2011);
+		List<Person> p35architects = new ArrayList<Person>();
+		p35architects.add(personKalleVellevoog);
+		p35architects.add(personMartinPrommik);
+		p35architects.add(personTiiuTruus);
+		p35.setArchitects(p35architects);
+		p35.setSizeQuantity(18367f);
+		p35.setProjectGroup(pg3);
+		session.save(p35);
+		
+		Project p36 = new Project();
+		p36.setName("Vabaduse tn. 72, Narva-Jõesuu. Hoonestuskava.");
+		p36.setPlanningStartYear(2008);
+		List<Person> p36architects = new ArrayList<Person>();
+		p36architects.add(personKalleVellevoog);
+		p36architects.add(personVelleKadalipp);
+		p36.setArchitects(p36architects);
+		List<Person> p36interiorDesigners = new ArrayList<Person>();
+		p36interiorDesigners.add(personTiiuTruus);
+		p36.setInteriorDesigners(p36interiorDesigners);
+		p36.setProjectGroup(pg4);
+		session.save(p36);
+		
+		Project p37 = new Project();
+		p37.setName("Paldiski mnt. 50 mahuline planeering. Konkursitöö");
+		p37.setPlanningStartYear(2008);
+		List<Person> p37architects = new ArrayList<Person>();
+		p37architects.add(personKalleVellevoog);
+		p37architects.add(personVelleKadalipp);
+		p37.setArchitects(p37architects);
+		List<Person> p37contributors = new ArrayList<Person>();
+		p37contributors.add(personMartinPrommik);
+		p37contributors.add(personAndrusAndrejev);
+		p37.setContributors(p37contributors);
+		p37.setProjectGroup(pg4);
+		session.save(p37);
+		
+		// NÄITUSED: eraldi model luua? http://www.jvr.ee/#et/projektid
+		
+		//Project p38 = new Project();
+		//p38.setName("Eesti ekspositsioon 12. Veneetsia Arhitektuuribiennaalil");
+		// Veneetsia Arhitektuuribiennaal  29.08.-21.11.2010
+		// Autorid: Kalle Vellevoog, Tiiu Truus, Martin Pedanik, Karen Jagodin
+		// Makett Näitusel: Mihkel Tüür, Ott Kadarik, Reedik Poopuu, Märten Tuuling, Aivar Hanniotti
+
+		
+		
 		
 		transaction.commit();
 		session.close();
