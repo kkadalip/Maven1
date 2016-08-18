@@ -526,6 +526,174 @@ public class SetupDao { // extends AbstractDaoHibernate {
 		p19.setProjectGroup(pg2);
 		session.save(p19);
 		
+		Project p20 = new Project();
+		p20.setName("Büroohoone Tallinnas Metalli tänaval");
+		p20.setPlanningStartYear(2012);
+		p20.setPlanningEndYear(2013);
+		p20.setBuildingStartYear(2014);
+		List<Person> p20architects = new ArrayList<Person>();
+		p20architects.add(personKalleVellevoog);
+		p20.setArchitects(p20architects);
+		List<Person> p20contributors = new ArrayList<Person>();
+		p20contributors.add(personAndrusAndrejev);
+		p20contributors.add(personMartinPrommik);
+		p20.setContributors(p20contributors);
+		p20.setSizeQuantity(5133f);
+		p20.setProjectGroup(pg2);
+		session.save(p20);
+		
+		Project p21 = new Project();
+		p21.setName("Büroohoone Tallinnas Pärnu mnt 153");
+		// ADDRESS START
+		List<Address> p21addresses = new ArrayList<Address>();
+		Address p21address = new Address();
+		p21address.setCity("Tallinn");
+		p21address.setStreet("Pärnu"); // tänav, maantee, põik
+		p21address.setStreetType("maantee");
+		p21address.setBuilding("153");
+		p21addresses.add(p21address);
+		p21.setAddresses(p21addresses);
+		// ADDRESS END
+		p21.setPlanningStartYear(2005);
+		p21.setBuildingStartYear(2006);
+		List<Person> p21architects = new ArrayList<Person>();
+		p21architects.add(personKalleVellevoog);
+		p21architects.add(personLailaPodra);
+		p21.setArchitects(p21architects);
+		p21.setSizeQuantity(2121f);
+		p21.setProjectGroup(pg2);
+		session.save(p21);
+		
+		Project p22 = new Project();
+		p22.setName("Korterelamu Tallinnas Kaupmehe tn 6");
+		// ADDRESS START
+		List<Address> p22addresses = new ArrayList<Address>();
+		Address p22address = new Address();
+		p22address.setCity("Tallinn");
+		p22address.setStreet("Kaupmehe"); // tänav, maantee, põik
+		p22address.setStreetType("tänav");
+		p22address.setBuilding("6");
+		p22addresses.add(p22address);
+		p22.setAddresses(p22addresses);
+		// ADDRESS END
+		p22.setPlanningStartYear(2001);
+		p22.setPlanningEndYear(2002);
+		p22.setBuildingStartYear(2003);
+		// ARCHITECTS
+		List<Person> p22architects = new ArrayList<Person>();
+		p22architects.add(personKalleVellevoog);
+		p22architects.add(personVelleKadalipp);
+		p22.setArchitects(p22architects);
+		// CONTRIBUTORS
+		List<Person> p22contributors = new ArrayList<Person>();
+		p22contributors.add(personAndrusAndrejev);
+		p22contributors.add(personMargusTamm);
+		p22.setContributors(p22contributors);
+		p22.setSizeQuantity(11990f);
+		p22.setApartmentsQuantity(113);
+		p22.setProjectGroup(pg2);
+		session.save(p22);
+		
+		Project p23 = new Project();
+		p23.setName("Büroohoone Tallinnas Katusepapi tn 8");
+		// ADDRESS START
+		List<Address> p23addresses = new ArrayList<Address>();
+		Address p23address = new Address();
+		p23address.setCity("Tallinn");
+		p23address.setStreet("Katusepapi");
+		p23address.setStreetType("tänav");
+		p23address.setBuilding("8");
+		p23addresses.add(p23address);
+		p23.setAddresses(p23addresses);
+		// ADDRESS END
+		p23.setPlanningStartYear(2005);
+		p23.setBuildingStartYear(2006);
+		List<Person> p23architects = new ArrayList<Person>();
+		p23architects.add(personVelleKadalipp);
+		p23.setArchitects(p23architects);
+		List<Person> p23contributors = new ArrayList<Person>();
+		p23contributors.add(personMartinPrommik);
+		p23.setContributors(p23contributors);
+		p23.setProjectGroup(pg2);
+		session.save(p23);
+		
+		Project p24 = new Project();
+		p24.setName("Korterelamu Pärnus Papli tn 34");
+		// ADDRESS START
+		List<Address> p24addresses = new ArrayList<Address>();
+		Address p24address = new Address();
+		p24address.setCity("Pärnu");
+		p24address.setStreet("Papli");
+		p24address.setStreetType("tänav");
+		p24address.setBuilding("34");
+		p24addresses.add(p24address);
+		p24.setAddresses(p24addresses);
+		// ADDRESS END
+		p24.setPlanningStartYear(2003);
+		p24.setBuildingStartYear(2004);
+		List<Person> p24architects = new ArrayList<Person>();
+		p24architects.add(personKalleVellevoog);
+		p24.setArchitects(p24architects);
+		List<Person> p24contributors = new ArrayList<Person>();
+		p24contributors.add(personAndrusAndrejev);
+		p24.setContributors(p24contributors);
+		p24.setSizeQuantity(517f);
+		p24.setApartmentsQuantity(8);
+		p24.setProjectGroup(pg2);
+		session.save(p24);
+		
+		Project p25 = new Project();
+		p25.setName("Kortermaja Ristiku tänaval");
+		// ADDRESS START
+		List<Address> p25addresses = new ArrayList<Address>();
+		Address p25address = new Address();
+		p25address.setCity("Tallinn");
+		p25address.setStreet("Ristiku");
+		p25address.setStreetType("tänav");
+		p25address.setBuilding("33A");
+		p25addresses.add(p25address);
+		p25.setAddresses(p25addresses);
+		// ADDRESS END
+		p25.setPlanningStartYear(2007);
+		List<Person> p25architects = new ArrayList<Person>();
+		p25architects.add(personKalleVellevoog);
+		p25.setArchitects(p25architects);
+		List<Person> p25contributors = new ArrayList<Person>();
+		p25contributors.add(personMartinPrommik);
+		p25.setContributors(p25contributors);
+		p25.setSizeQuantity(472f);
+		p25.setApartmentsQuantity(6);
+		p25.setProjectGroup(pg2);
+		session.save(p25);
+		
+		Project p26 = new Project();
+		p26.setName("Korterelamu Tallinnas Luige tn 3");
+		// ADDRESS START
+		List<Address> p26addresses = new ArrayList<Address>();
+		Address p26address = new Address();
+		p26address.setCity("Tallinn");
+		p26address.setStreet("Luige");
+		p26address.setStreetType("tänav");
+		p26address.setBuilding("3");
+		p26addresses.add(p26address);
+		p26.setAddresses(p26addresses);
+		// ADDRESS END
+		p26.setPlanningStartYear(2005);
+		p26.setPlanningEndYear(2006);
+		List<Person> p26architects = new ArrayList<Person>();
+		p26architects.add(personKalleVellevoog);
+		p26architects.add(personVelleKadalipp);
+		p26.setArchitects(p26architects);
+		List<Person> p26contributors = new ArrayList<Person>();
+		p26contributors.add(personAndrusAndrejev);
+		p26.setContributors(p26contributors);
+		p26.setSizeQuantity(6400f);
+		p26.setApartmentsQuantity(48);
+		p26.setProjectGroup(pg2);
+		session.save(p26);
+		
+		
+		
 		transaction.commit();
 		session.close();
 		log.info("[insertSampleDataProjects] END");
