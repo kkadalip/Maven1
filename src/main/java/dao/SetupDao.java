@@ -485,8 +485,8 @@ public class SetupDao { // extends AbstractDaoHibernate {
 		p18address.setStreet("Narva"); // tänav, maantee, põik
 		p18address.setStreetType("maantee");
 		p18address.setBuilding("14");
-		p18addresses.add(p17address);
-		p17.setAddresses(p17addresses);
+		p18addresses.add(p18address);
+		p18.setAddresses(p18addresses);
 		// ADDRESS END
 		p18.setPlanningStartYear(2007);
 		List<Person> p18architects = new ArrayList<Person>();
@@ -501,6 +501,30 @@ public class SetupDao { // extends AbstractDaoHibernate {
 		p18.setProjectGroup(pg2);
 		session.save(p18);
 		
+		Project p19 = new Project();
+		p19.setName("Korterelamu Haapsalus Suur-Liiva tn 15");
+		// ADDRESS START
+		List<Address> p19addresses = new ArrayList<Address>();
+		Address p19address = new Address();
+		p19address.setCity("Haapsalu");
+		p19address.setStreet("Suur-Liiva"); // tänav, maantee, põik
+		p19address.setStreetType("tänav");
+		p19address.setBuilding("15");
+		p19addresses.add(p19address);
+		p19.setAddresses(p19addresses);
+		// ADDRESS END
+		p19.setPlanningStartYear(2005);
+		p19.setBuildingStartYear(2006);
+		List<Person> p19architects = new ArrayList<Person>();
+		p19architects.add(personKalleVellevoog);
+		p19.setArchitects(p19architects);
+		List<Person> p19contributors = new ArrayList<Person>();
+		p19contributors.add(personAndrusAndrejev);
+		p19.setContributors(p19contributors);
+		p19.setSizeQuantity(2870f);
+		p19.setApartmentsQuantity(35);
+		p19.setProjectGroup(pg2);
+		session.save(p19);
 		
 		transaction.commit();
 		session.close();
