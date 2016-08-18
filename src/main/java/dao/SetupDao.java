@@ -26,6 +26,7 @@ import org.hibernate.Transaction;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import model.Address;
 import model.Person;
 import model.Project;
 //import model.Project;
@@ -222,6 +223,40 @@ public class SetupDao { // extends AbstractDaoHibernate {
 		p7.setProjectGroup(pg1);
 		session.save(p7);
 		
+		Project p8 = new Project();
+		p8.setName("Pansionaat Pärnus Seedri tn 4");
+		List<Address> p8addresses = new ArrayList<Address>();
+		Address p8address = new Address();
+		p8address.setCity("Pärnu");
+		p8address.setStreet("Seedri");
+		p8address.setBuilding("4");
+		p8addresses.add(p8address);
+		p8.setAddresses(p8addresses);
+		p8.setPlanningStartYear(2005);
+		p8.setBuildingStartYear(2007);
+		// Architects:
+		List<Person> p8architects = new ArrayList<Person>();
+		p8architects.add(personKalleVellevoog);
+		p8.setArchitects(p8architects);
+		// Contributors:
+		List<Person> p8contributors = new ArrayList<Person>();
+		p8contributors.add(personMargusTamm);
+		p8.setContributors(p8contributors);
+		// Constructors:
+		List<Person> p8constructors = new ArrayList<Person>();
+		p8constructors.add(personAhtiLaane);
+		p8.setConstructors(p8constructors);
+		// Interior designers:
+		List<Person> p8interiorDesigners = new ArrayList<Person>();
+		p8interiorDesigners.add(personTiiuTruus);
+		p8.setInteriorDesigners(p8interiorDesigners);
+		// Landscape architects:
+		List<Person> p8landscapeArchitects = new ArrayList<Person>();
+		p8landscapeArchitects.add(personVaikeParker);
+		p8.setLandscapeArchitects(p8landscapeArchitects);
+		p8.setSizeQuantity(4565);
+		p8.setProjectGroup(pg2);
+		session.save(p8);
 		
 		transaction.commit();
 		session.close();

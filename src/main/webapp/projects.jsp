@@ -49,11 +49,16 @@
 			  	<h3 class="panel-title">Projects (${fn:length(projects)})</h3>
 		  	</div>
 		  	<div class="panel-body">
-				<c:forEach items="${projects}" var="item">
-					<b><c:out value="${item.name}" /></b><br>
-					groupp: ${item.projectGroup.name}<br>
-					project: ${item.planningStartYear} - ${item.planningEndYear}<br>
-					ehitus: ${item.buildingStartYear} - ${item.buildingEndYear}<br>
+				<c:forEach items="${projects}" var="project">
+					<b><c:out value="${project.name}" /></b><br>
+					groupp: ${project.projectGroup.name}<br>
+					aadresse on ${fn:length(project.addresses)}<br>
+					<c:forEach items="${project.addresses}" var="address">
+						aadress: ${address.city} ${address.street} tn ${address.building}
+						<br>
+					</c:forEach>
+					project: ${project.planningStartYear} - ${project.planningEndYear}<br>
+					ehitus: ${project.buildingStartYear} - ${project.buildingEndYear}<br>
 					<!--
 					JSTL
 					<c:choose>
@@ -67,15 +72,27 @@
 					    </c:otherwise>
 					</c:choose>
 					 -->
-					<c:forEach items="${item.architects}" var="architect">
+					<c:forEach items="${project.architects}" var="architect">
 						arhitekt: ${architect.firstName} ${architect.lastName}
 						<br>
 					</c:forEach>	
-					<c:forEach items="${item.contributors}" var="contributor">
+					<c:forEach items="${project.contributors}" var="contributor">
 						kaastöö: ${contributor.firstName} ${contributor.lastName}
 						<br>
 					</c:forEach>
-					üldpind: ${item.sizeQuantity} m<sup>2</sup>
+					<c:forEach items="${project.constructors}" var="constructor">
+						konstruktor: ${constructor.firstName} ${constructor.lastName}
+						<br>
+					</c:forEach>
+					<c:forEach items="${project.interiorDesigners}" var="interiorDesigner">
+						sisekujundaja: ${interiorDesigner.firstName} ${interiorDesigner.lastName}
+						<br>
+					</c:forEach>
+					<c:forEach items="${project.landscapeArchitects}" var="landscapeArchitect">
+						maastikuarhitekt: ${landscapeArchitect.firstName} ${landscapeArchitect.lastName}
+						<br>
+					</c:forEach>
+					üldpind: ${project.sizeQuantity} m<sup>2</sup>
 					<br>
 					<br>
 				</c:forEach>
