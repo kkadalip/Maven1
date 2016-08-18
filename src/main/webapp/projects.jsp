@@ -50,10 +50,29 @@
 		  	</div>
 		  	<div class="panel-body">
 				<c:forEach items="${projects}" var="item">
-					<c:out value="Project name: ${item.name}" /><br>
+					<b><c:out value="${item.name}" /></b><br>
+					project: ${item.planningStartYear} - ${item.planningEndYear}<br>
+					ehitus: ${item.buildingStartYear} - ${item.buildingEndYear}<br>
+					<!--
+					JSTL
+					<c:choose>
+					    <c:when test="${param.enter=='1'}">
+					        pizza. 
+					        <br />
+					    </c:when>    
+					    <c:otherwise>
+					        pizzas. 
+					        <br />
+					    </c:otherwise>
+					</c:choose>
+					 -->
 					<c:forEach items="${item.architects}" var="architect">
-						Architect name: ${architect.firstName} ${architect.lastName}
+						arhitekt: ${architect.firstName} ${architect.lastName}
 					</c:forEach>
+					<br>
+					üldpind: ${item.sizeQuantity} m<sub>2</sub>
+					<br>
+					<br>
 				</c:forEach>
 				<br>
 		  	</div>

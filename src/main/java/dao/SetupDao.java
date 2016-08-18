@@ -141,13 +141,56 @@ public class SetupDao { // extends AbstractDaoHibernate {
 		p1.setBuildingStartYear(2002);
 		p1.setBuildingEndYear(2003);
 		//Set<Person> p1set = new HashSet<Person>();
-		List<Person> p1list = new ArrayList<Person>();
-		p1list.add(personKalleVellevoog); 
-		p1.setArchitects(p1list); // BROKEN
+		List<Person> p1architects = new ArrayList<Person>();
+		p1architects.add(personKalleVellevoog); 
+		p1.setArchitects(p1architects);
 		p1.setSizeQuantity(2026);
 		//p1.setSizeUnit("m2"); // Todo separate model for units so I can convert them on the fly
 		// BROKEN p1.setProjectGroup(pg1);
 		session.save(p1);
+		
+		Project p2 = new Project();
+		p2.setName("Eramu Rohuneemes");
+		p2.setPlanningStartYear(2002);
+		p2.setBuildingStartYear(2002);
+		p2.setBuildingEndYear(2003);
+		List<Person> p2architects = new ArrayList<Person>();
+		p2architects.add(personKalleVellevoog);
+		p2.setArchitects(p2architects);
+		p2.setSizeQuantity(260);
+		session.save(p2);
+		
+		Project p3 = new Project();
+		p3.setName("Eramu Rohuneemes 2");
+		p3.setPlanningStartYear(2005);
+		p3.setBuildingStartYear(2011);
+		List<Person> p3architects = new ArrayList<Person>();
+		p3architects.add(personKalleVellevoog);
+		p3.setArchitects(p3architects);
+		p3.setSizeQuantity(441);
+		session.save(p3);
+		
+		Project p4 = new Project();
+		p4.setName("Eramu Tallinnas Aate tänaval");
+		p4.setPlanningStartYear(2000);
+		p4.setBuildingStartYear(2000);
+		p4.setBuildingEndYear(2001);
+		List<Person> p4architects = new ArrayList<Person>();
+		p4architects.add(personKalleVellevoog);
+		p4.setArchitects(p4architects);
+		p4.setSizeQuantity(250);
+		session.save(p4);
+		
+		Project p5 = new Project();
+		p5.setName("Suvila Karepal Lääne-Virumaal");
+		p5.setPlanningStartYear(1999);
+		p5.setBuildingStartYear(2000);
+		p5.setBuildingEndYear(2002);
+		List<Person> p5architects = new ArrayList<Person>();
+		p5architects.add(personKalleVellevoog);
+		p5.setArchitects(p5architects);
+		p5.setSizeQuantity(35);
+		session.save(p5);
 		
 		transaction.commit();
 		session.close();
