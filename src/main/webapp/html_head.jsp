@@ -29,5 +29,10 @@
 <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.6/slate/bootstrap.min.css">
 
 <!-- My CSS and JS -->
+
+<link rel="stylesheet" type="text/css" href="<c:url value="/static/style.css"/>">
+<script type="text/javascript" src="<c:url value="/static/default.js"/>"></script>
+<!-- 
 <link rel="stylesheet" type="text/css" href="static/style.css">
 <script type="text/javascript" src="static/default.js"></script>
+ -->
