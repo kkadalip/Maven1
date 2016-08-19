@@ -97,11 +97,11 @@
 						<br>
 					</c:forEach>
 					<c:if test="${!empty project.sizeQuantity}">
-						üldpind: ${project.sizeQuantity} m<sup>2</sup><c:if test="${!empty project.apartmentsQuantity}">, ${project.apartmentsQuantity} korterit</c:if><br>
+						üldpind: ${project.sizeQuantity}m<sup>2</sup><c:if test="${!empty project.apartmentsQuantity}">, ${project.apartmentsQuantity} korterit</c:if><br>
 					</c:if>
-										
-					preemia: ${project.prizeComment}
-					<br>
+					<c:if test="${!empty project.prizeComment}">
+						preemia: ${project.prizeComment}
+					</c:if>
 					<br>
 				</c:forEach>
 				<br>
