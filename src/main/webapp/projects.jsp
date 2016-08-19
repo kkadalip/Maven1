@@ -100,7 +100,7 @@
 						üldpind: ${project.sizeQuantity}m<sup>2</sup><c:if test="${!empty project.apartmentsQuantity}">, ${project.apartmentsQuantity} korterit</c:if><br>
 					</c:if>
 					<c:if test="${!empty project.prizeComment}">
-						preemia: ${project.prizeComment}
+						preemia: ${project.prizeComment}<br>
 					</c:if>
 					<br>
 				</c:forEach>
