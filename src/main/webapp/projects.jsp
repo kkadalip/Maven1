@@ -22,6 +22,13 @@
 	
 	<div class="container">	
 		
+		scheme: ${scheme}<br>
+		serverName: ${serverName}<br>
+		serverPort: ${serverPort}<br>
+		pathInfo: ${pathInfo}<br>
+		servletPath: ${servletPath}<br>
+		contextPath: ${contextPath}<br>
+		
 		<div class="panel panel-default">
 		  	<div class="panel-heading">
 			  	<h3 class="panel-title">People (${fn:length(persons)})</h3>

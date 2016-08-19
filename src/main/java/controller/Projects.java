@@ -45,6 +45,41 @@ public class Projects extends HttpServlet {
 		response.getWriter().append("Served at: ").append(request.getContextPath());
 		
 		//request.setAttribute("message", "Welcome"); // in JSP use ${message}
+
+		// http://stackoverflow.com/questions/14065257/how-to-get-only-part-of-url-from-httpservletrequest
+
+		// http://localhost:8080/Maven1/projects/swag
+		// scheme: http
+		// serverName (server host name): localhost
+		// serverPort: 8080
+		// contextPath: /Maven1
+		// servletPath: /projects
+		// pathInfo: /swag
+		
+		String scheme = request.getScheme();
+		log.debug("scheme is: " + scheme);
+		request.setAttribute("scheme", scheme);
+		
+		String serverName = request.getServerName();
+		log.debug("serverName is: " + serverName);
+		request.setAttribute("serverName", serverName);
+		
+		int serverPort = request.getServerPort();
+		log.debug("serverPort is: " + serverPort);
+		request.setAttribute("serverPort",serverPort);
+		
+		String contextPath = request.getContextPath();
+		log.debug("contextPath is: " + contextPath);
+		request.setAttribute("contextPath", contextPath);
+		
+		String servletPath = request.getServletPath();
+		log.debug("servletPath is: " + servletPath);
+		request.setAttribute("servletPath", servletPath);
+		
+		String pathInfo = request.getPathInfo();
+		log.debug("pathInfo is: " + pathInfo);
+		request.setAttribute("pathInfo", pathInfo);
+
 		
 		PersonDao personDao = new PersonDao();
 		List<Person> persons = personDao.getAll(); //.getAllPersons();
@@ -63,7 +98,8 @@ public class Projects extends HttpServlet {
 		log.debug("projectGroups size: " + projectGroups.size());
 		request.setAttribute("projectGroups", projectGroups);
 		
-		request.getRequestDispatcher("projects.jsp").forward(request, response); // jsp/
+		// You need to forward using an absolute path instead. Prefix it with /
+		request.getRequestDispatcher("/projects.jsp").forward(request, response); // jsp/
 	}
 
 	/**
