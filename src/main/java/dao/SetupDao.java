@@ -77,7 +77,7 @@ public class SetupDao { // extends AbstractDaoHibernate {
 		session.save(pg4);
 		
 		ProjectGroup pg5 = new ProjectGroup();
-		pg5.setName("Planeeringud");
+		pg5.setName("Näitused");
 		session.save(pg5);
 		
 		// PERSONS (people)

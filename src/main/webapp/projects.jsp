@@ -19,24 +19,8 @@
 
 <body>
 	<%@ include file="header.jsp"%>
-	
 	<div class="container">	
-		
-		scheme: ${scheme}<br>
-		serverName: ${serverName}<br>
-		serverPort: ${serverPort}<br>
-		pathInfo: ${pathInfo}<br>
-		servletPath: ${servletPath}<br>
-		contextPath: ${contextPath}<br>
-		host: ${host}<br>
-		url: ${url}<br>
-		uri: ${uri}<br>
-		
-		Selected project:<br>
-		${selectedProject.id}<br>
-		${selectedProject.name}<br>
-		
-		<h2>PROJECT GROUPS AND LINKS:</h2>
+		<!-- <h3>PROJECT GROUPS AND LINKS:</h3> -->
 		<!-- example link: 
 		<a href="et/projektid/projektid?action=show_project&amp;project_id=5">Eramute grupp Seedri ja Remmelga tänavate vahelisel alal Pärnus</a><br>
 		-->
@@ -161,7 +145,21 @@
 		<br>
 		 -->
 		 
-		 
+ 		<!-- 
+		scheme: ${scheme}<br>
+		serverName: ${serverName}<br>
+		serverPort: ${serverPort}<br>
+		pathInfo: ${pathInfo}<br>
+		servletPath: ${servletPath}<br>
+		contextPath: ${contextPath}<br>
+		host: ${host}<br>
+		url: ${url}<br>
+		uri: ${uri}<br>
+		
+		Selected project:<br>
+		${selectedProject.id}<br>
+		${selectedProject.name}<br>
+		 -->
 	</div>
 	<%@ include file="footer.jsp"%>
 </body>
