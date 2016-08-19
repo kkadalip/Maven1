@@ -28,6 +28,13 @@
 		pathInfo: ${pathInfo}<br>
 		servletPath: ${servletPath}<br>
 		contextPath: ${contextPath}<br>
+		host: ${host}<br>
+		url: ${url}<br>
+		uri: ${uri}<br>
+		
+		Selected project:<br>
+		${selectedProject.id}<br>
+		${selectedProject.name}<br>
 		
 		<div class="panel panel-default">
 		  	<div class="panel-heading">
@@ -66,6 +73,7 @@
 				  	</div>
 		  		  	<div class="panel-body">
 						<!-- <b><c:out value="${project.name}" /></b><br>  -->
+						id: ${project.id}<br>
 						grupp: ${project.projectGroup.name}<br>
 						<!-- aadresse on ${fn:length(project.addresses)}<br>  -->
 						<c:forEach items="${project.addresses}" var="address">
