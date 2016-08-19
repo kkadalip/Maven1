@@ -23,12 +23,12 @@
 	<div class="container">
 		<div class="panel panel-default">
 		  	<div class="panel-heading">
-			  	<h3 class="panel-title"><b><c:out value="${project.name}" /></b></h3>
+			  	<h3 class="panel-title"><c:out value="${project.name}" /></h3>
 		  	</div>
   		  	<div class="panel-body">
 				<!-- <b><c:out value="${project.name}" /></b><br>  -->
-				id: ${project.id}<br>
-				grupp: ${project.projectGroup.name}<br>
+				<!-- id: ${project.id}<br> -->
+				<!-- grupp: ${project.projectGroup.name}<br>  -->
 				<!-- aadresse on ${fn:length(project.addresses)}<br>  -->
 				<c:forEach items="${project.addresses}" var="address">
 					aadress: ${address.city}, ${address.street} ${address.streetType} ${address.building}
