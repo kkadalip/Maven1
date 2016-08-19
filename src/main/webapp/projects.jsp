@@ -82,10 +82,17 @@
 							${contributor.firstName} ${contributor.lastName}${loop.last ? '<br>' : ','} 
 						</c:forEach>
 					</c:if>
-					<c:forEach items="${project.constructors}" var="constructor">
-						konstruktor: ${constructor.firstName} ${constructor.lastName}
-						<br>
-					</c:forEach>
+					<c:if test="${!empty project.constructors}">
+						 <c:if test="${fn:length(project.constructors) > 1}">
+						 	konstruktorid: 
+						 </c:if>
+						 <c:if test="${fn:length(project.constructors) == 1}">
+						 	konstruktor: 
+						 </c:if>
+						<c:forEach items="${project.constructors}" var="constructor" varStatus="loop">
+							${constructor.firstName} ${constructor.lastName}${loop.last ? '<br>' : ','}
+						</c:forEach>
+					</c:if>
 					<c:forEach items="${project.interiorDesigners}" var="interiorDesigner">
 						sisekujundaja: ${interiorDesigner.firstName} ${interiorDesigner.lastName}
 						<br>
