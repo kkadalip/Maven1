@@ -51,7 +51,7 @@
 		  	<div class="panel-body">
 				<c:forEach items="${projects}" var="project">
 					<b><c:out value="${project.name}" /></b><br>
-					groupp: ${project.projectGroup.name}<br>
+					grupp: ${project.projectGroup.name}<br>
 					<!-- aadresse on ${fn:length(project.addresses)}<br>  -->
 					<c:forEach items="${project.addresses}" var="address">
 						aadress: ${address.city}, ${address.street} ${address.streetType} ${address.building}
@@ -73,13 +73,15 @@
 						 ${architect.firstName} ${architect.lastName}${loop.last ? '<br>' : ','} 
 					</c:forEach>
 					<c:forEach items="${project.originalAuthors}" var="originalAuthor">
-						Hoone algne autor: ${originalAuthor.firstName} ${originalAuthor.lastName}
+						hoone algne autor: ${originalAuthor.firstName} ${originalAuthor.lastName}
 						<br>
 					</c:forEach>
-					<c:forEach items="${project.contributors}" var="contributor">
-						kaastöö: ${contributor.firstName} ${contributor.lastName}
-						<br>
-					</c:forEach>
+					<c:if test="${!empty project.contributors}">
+						kaastöö: 
+						<c:forEach items="${project.contributors}" var="contributor" varStatus="loop">
+							${contributor.firstName} ${contributor.lastName}${loop.last ? '<br>' : ','} 
+						</c:forEach>
+					</c:if>
 					<c:forEach items="${project.constructors}" var="constructor">
 						konstruktor: ${constructor.firstName} ${constructor.lastName}
 						<br>
