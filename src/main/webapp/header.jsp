@@ -15,7 +15,7 @@
 			<!-- <a class="navbar-brand" href="<c:url value="/"/>"><img style="max-height: 50px;" src="static/JVR_logo_big.png" alt="JVR logo" class="img-responsive"></a>  -->
 			<!--navbar-brand-centered width: auto; max-height: 60px; center-block -->
 			<a class="navbar-brand" href="<c:url value="/"/>">
-				<img id="top-logo" src="static/logo_red.png" alt="JVR logo" class="img-responsive">
+				<img id="top-logo" src="<c:url value="/static/logo_red.png"/>" alt="JVR logo" class="img-responsive">
 			</a>
 		</div>
 		<div id="navbar" class="navbar-collapse collapse">
