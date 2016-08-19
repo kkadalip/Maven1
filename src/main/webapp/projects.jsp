@@ -20,7 +20,7 @@
 <body>
 	<%@ include file="header.jsp"%>
 	<div class="container">	
-		<!-- <h3>PROJECT GROUPS AND LINKS:</h3> -->
+		<h3>Projektid (${fn:length(projects)})</h3><br>
 		<!-- example link: 
 		<a href="et/projektid/projektid?action=show_project&amp;project_id=5">Eramute grupp Seedri ja Remmelga tänavate vahelisel alal Pärnus</a><br>
 		-->
@@ -41,7 +41,7 @@
 		
 		<div class="panel panel-default">
 		  	<div class="panel-heading">
-			  	<h3 class="panel-title">People (${fn:length(persons)})</h3>
+			  	<h3 class="panel-title">Inimesed (${fn:length(persons)})</h3>
 		  	</div>
 		  	<div class="panel-body">
 	    		<c:forEach items="${persons}" var="item">
@@ -52,7 +52,7 @@
 		
 		<div class="panel panel-default">
 		  	<div class="panel-heading">
-			  	<h3 class="panel-title">Project Groups (${fn:length(projectGroups)})</h3>
+			  	<h3 class="panel-title">Projektide grupid (${fn:length(projectGroups)})</h3>
 		  	</div>
 		  	<div class="panel-body">
 				<c:forEach items="${projectGroups}" var="item">
@@ -60,15 +60,6 @@
 				</c:forEach>
 		  	</div>
 		</div>
-		
-		<div class="panel panel-default">
-		  	<div class="panel-heading">
-			  	<h3 class="panel-title">Projects (${fn:length(projects)})</h3>
-		  	</div>
-		  	<div class="panel-body">
-				body
-		  	</div>
-	  	</div>
 		
 		<!--
 		<c:forEach items="${projects}" var="project">
