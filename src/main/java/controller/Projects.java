@@ -121,29 +121,32 @@ public class Projects extends HttpServlet {
 			}
 			if(projectID > 0){
 				Project selectedProject = projectDao.getProjectByID(projectID);
-				request.setAttribute("selectedProject", selectedProject);
+				request.setAttribute("project", selectedProject);
 			}
+			request.getRequestDispatcher("/projectSingle.jsp").forward(request, response); // jsp/
+		}else{
+			PersonDao personDao = new PersonDao();
+			List<Person> persons = personDao.getAll(); //.getAllPersons();
+			log.debug("persons size: " + persons.size());
+			request.setAttribute("persons", persons);
+			
+
+			@SuppressWarnings("unchecked")
+			List<Project> projects = projectDao.getAll(); //getAllProjects();
+			log.debug("projects size: " + projects.size());
+			request.setAttribute("projects", projects);
+			
+			ProjectGroupDao projectGroupDao = new ProjectGroupDao();
+			@SuppressWarnings("unchecked")
+			List<ProjectGroup> projectGroups = projectGroupDao.getAll(); //getAllProjects();
+			log.debug("projectGroups size: " + projectGroups.size());
+			request.setAttribute("projectGroups", projectGroups);
+			
+			// You need to forward using an absolute path instead. Prefix it with /
+			request.getRequestDispatcher("/projects.jsp").forward(request, response); // jsp/
 		}
 		
-		PersonDao personDao = new PersonDao();
-		List<Person> persons = personDao.getAll(); //.getAllPersons();
-		log.debug("persons size: " + persons.size());
-		request.setAttribute("persons", persons);
-		
 
-		@SuppressWarnings("unchecked")
-		List<Project> projects = projectDao.getAll(); //getAllProjects();
-		log.debug("projects size: " + projects.size());
-		request.setAttribute("projects", projects);
-		
-		ProjectGroupDao projectGroupDao = new ProjectGroupDao();
-		@SuppressWarnings("unchecked")
-		List<ProjectGroup> projectGroups = projectGroupDao.getAll(); //getAllProjects();
-		log.debug("projectGroups size: " + projectGroups.size());
-		request.setAttribute("projectGroups", projectGroups);
-		
-		// You need to forward using an absolute path instead. Prefix it with /
-		request.getRequestDispatcher("/projects.jsp").forward(request, response); // jsp/
 	}
 
 	/**

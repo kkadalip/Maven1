@@ -36,6 +36,25 @@
 		${selectedProject.id}<br>
 		${selectedProject.name}<br>
 		
+		<h2>PROJECT GROUPS AND LINKS:</h2>
+		<!-- example link: 
+		<a href="et/projektid/projektid?action=show_project&amp;project_id=5">Eramute grupp Seedri ja Remmelga tänavate vahelisel alal Pärnus</a><br>
+		-->
+		<c:if test="${!empty projectGroups}">
+			<c:forEach items="${projectGroups}" var="projectGroup">
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<h3 class="panel-title">${projectGroup.name}</h3>
+						</div>
+						<div class="panel-body">
+								<c:forEach items="${projectGroup.childProjects}" var="project">
+									<a href="<c:url value="/projects/${project.id}"/>">${project.name}</a><br> <!-- et/projektid/projektid?action=show_project&amp;project_id=4 -->
+								</c:forEach>
+						</div>
+					</div>
+			</c:forEach>
+		</c:if>
+		
 		<div class="panel panel-default">
 		  	<div class="panel-heading">
 			  	<h3 class="panel-title">People (${fn:length(persons)})</h3>
@@ -66,162 +85,83 @@
 				body
 		  	</div>
 	  	</div>
-			<c:forEach items="${projects}" var="project">
-				<div class="panel panel-default">
-				  	<div class="panel-heading">
-					  	<h3 class="panel-title"><b><c:out value="${project.name}" /></b></h3>
-				  	</div>
-		  		  	<div class="panel-body">
-						<!-- <b><c:out value="${project.name}" /></b><br>  -->
-						id: ${project.id}<br>
-						grupp: ${project.projectGroup.name}<br>
-						<!-- aadresse on ${fn:length(project.addresses)}<br>  -->
-						<c:forEach items="${project.addresses}" var="address">
-							aadress: ${address.city}, ${address.street} ${address.streetType} ${address.building}
-							<br>
+		
+		<!--
+		<c:forEach items="${projects}" var="project">
+			<div class="panel panel-default">
+			  	<div class="panel-heading">
+				  	<h3 class="panel-title"><b><c:out value="${project.name}" /></b></h3>
+			  	</div>
+	  		  	<div class="panel-body">
+					id: ${project.id}<br>
+					grupp: ${project.projectGroup.name}<br>
+					aadresse on ${fn:length(project.addresses)} tükki<br>
+					<c:forEach items="${project.addresses}" var="address">
+						aadress: ${address.city}, ${address.street} ${address.streetType} ${address.building}
+						<br>
+					</c:forEach>
+					<c:if test="${!empty project.planningStartYear}">
+						projekt: ${project.planningStartYear}<c:if test="${!empty project.planningEndYear}"> - ${project.planningEndYear}</c:if><br>
+					</c:if>
+					<c:if test="${!empty project.buildingStartYear}">
+						ehitus: ${project.buildingStartYear}<c:if test="${!empty project.buildingEndYear}"> - ${project.buildingEndYear}</c:if><br>
+					</c:if>
+					 <c:if test="${fn:length(project.architects) > 1}">
+					 	arhitektid: 
+					 </c:if>
+					 <c:if test="${fn:length(project.architects) == 1}">
+					 	arhitekt: 
+					 </c:if>
+					<c:forEach items="${project.architects}" var="architect" varStatus="loop">
+						 ${architect.firstName} ${architect.lastName}${loop.last ? '<br>' : ','} 
+					</c:forEach>
+					<c:forEach items="${project.originalAuthors}" var="originalAuthor">
+						hoone algne autor: ${originalAuthor.firstName} ${originalAuthor.lastName}
+						<br>
+					</c:forEach>
+					<c:if test="${!empty project.contributors}">
+						kaastöö: 
+						<c:forEach items="${project.contributors}" var="contributor" varStatus="loop">
+							${contributor.firstName} ${contributor.lastName}${loop.last ? '<br>' : ','} 
 						</c:forEach>
-						<c:if test="${!empty project.planningStartYear}">
-							projekt: ${project.planningStartYear}<c:if test="${!empty project.planningEndYear}"> - ${project.planningEndYear}</c:if><br>
-						</c:if>
-						<c:if test="${!empty project.buildingStartYear}">
-							ehitus: ${project.buildingStartYear}<c:if test="${!empty project.buildingEndYear}"> - ${project.buildingEndYear}</c:if><br>
-						</c:if>
-						 <c:if test="${fn:length(project.architects) > 1}">
-						 	arhitektid: 
+					</c:if>
+					<c:if test="${!empty project.constructors}">
+						 <c:if test="${fn:length(project.constructors) > 1}">
+						 	konstruktorid: 
 						 </c:if>
-						 <c:if test="${fn:length(project.architects) == 1}">
-						 	arhitekt: 
+						 <c:if test="${fn:length(project.constructors) == 1}">
+						 	konstruktor: 
 						 </c:if>
-						<c:forEach items="${project.architects}" var="architect" varStatus="loop">
-							 ${architect.firstName} ${architect.lastName}${loop.last ? '<br>' : ','} 
+						<c:forEach items="${project.constructors}" var="constructor" varStatus="loop">
+							${constructor.firstName} ${constructor.lastName}${loop.last ? '<br>' : ','}
 						</c:forEach>
-						<c:forEach items="${project.originalAuthors}" var="originalAuthor">
-							hoone algne autor: ${originalAuthor.firstName} ${originalAuthor.lastName}
-							<br>
-						</c:forEach>
-						<c:if test="${!empty project.contributors}">
-							kaastöö: 
-							<c:forEach items="${project.contributors}" var="contributor" varStatus="loop">
-								${contributor.firstName} ${contributor.lastName}${loop.last ? '<br>' : ','} 
-							</c:forEach>
-						</c:if>
-						<c:if test="${!empty project.constructors}">
-							 <c:if test="${fn:length(project.constructors) > 1}">
-							 	konstruktorid: 
-							 </c:if>
-							 <c:if test="${fn:length(project.constructors) == 1}">
-							 	konstruktor: 
-							 </c:if>
-							<c:forEach items="${project.constructors}" var="constructor" varStatus="loop">
-								${constructor.firstName} ${constructor.lastName}${loop.last ? '<br>' : ','}
-							</c:forEach>
-						</c:if>
-						<c:forEach items="${project.interiorDesigners}" var="interiorDesigner">
-							sisekujundaja: ${interiorDesigner.firstName} ${interiorDesigner.lastName}
-							<br>
-						</c:forEach>
-						<c:forEach items="${project.landscapeArchitects}" var="landscapeArchitect">
-							maastikuarhitekt: ${landscapeArchitect.firstName} ${landscapeArchitect.lastName}
-							<br>
-						</c:forEach>
-						<c:forEach items="${project.lightsDesigners}" var="lightsDesigner">
-							sisekujundaja: ${lightsDesigner.firstName} ${lightsDesigner.lastName}
-							<br>
-						</c:forEach>
-						<c:if test="${!empty project.sizeQuantity}">
-							üldpind: ${project.sizeQuantity}m<sup>2</sup><c:if test="${!empty project.apartmentsQuantity}">, ${project.apartmentsQuantity} korterit</c:if><br>
-						</c:if>
-						<c:if test="${!empty project.prizeComment}">
-							preemia: ${project.prizeComment}<br>
-						</c:if>
-					</div>
+					</c:if>
+					<c:forEach items="${project.interiorDesigners}" var="interiorDesigner">
+						sisekujundaja: ${interiorDesigner.firstName} ${interiorDesigner.lastName}
+						<br>
+					</c:forEach>
+					<c:forEach items="${project.landscapeArchitects}" var="landscapeArchitect">
+						maastikuarhitekt: ${landscapeArchitect.firstName} ${landscapeArchitect.lastName}
+						<br>
+					</c:forEach>
+					<c:forEach items="${project.lightsDesigners}" var="lightsDesigner">
+						sisekujundaja: ${lightsDesigner.firstName} ${lightsDesigner.lastName}
+						<br>
+					</c:forEach>
+					<c:if test="${!empty project.sizeQuantity}">
+						üldpind: ${project.sizeQuantity}m<sup>2</sup><c:if test="${!empty project.apartmentsQuantity}">, ${project.apartmentsQuantity} korterit</c:if><br>
+					</c:if>
+					<c:if test="${!empty project.prizeComment}">
+						preemia: ${project.prizeComment}<br>
+					</c:if>
 				</div>
-				<br>
-			</c:forEach>
+			</div>
 			<br>
-		</div>
-
-		<div class="panel panel-default">
-		  <div class="panel-heading">
-			  <h3 class="panel-title">Eramud</h3>
-		  </div>
-		  <div class="panel-body">
-	          <a href="et/projektid/projektid?action=show_project&amp;project_id=5">Eramute grupp Seedri ja Remmelga tänavate vahelisel alal Pärnus</a><br>
-	          <a href="et/projektid/projektid?action=show_project&amp;project_id=4">Eramu Rohuneemes</a><br>
-	          <a href="et/projektid/projektid?action=show_project&amp;project_id=60">Eramu Rohuneemes 2</a><br>
-	          <a href="et/projektid/projektid?action=show_project&amp;project_id=3">Eramu Tallinnas Aate  tänaval</a><br>
-	          <a href="et/projektid/projektid?action=show_project&amp;project_id=6">Suvila Karepal Lääne-Virumaal</a><br>
-	          <a href="et/projektid/projektid?action=show_project&amp;project_id=50">Eramu Mäepea külas Harjumaal</a><br>
-	          <a href="et/projektid/projektid?action=show_project&amp;project_id=48">Suvila-vaatetorn põhjarannikul</a><br>
-		  </div>
-		</div>
-		
-		<div class="panel panel-default">
-		  	<div class="panel-heading">
-			  	<h3 class="panel-title">Korterelamud ja ühiskondlikud hooned</h3>
-		  	</div>
-		  	<div class="panel-body">
-				<a href="et/projektid/projektid?action=show_project&amp;project_id=27">Pansionaat Pärnus Seedri tn 4</a><br>
-				<a href="et/projektid/projektid?action=show_project&amp;project_id=28">Korterelamud Tallinnas Pähkli tänaval</a><br>
-				<a href="et/projektid/projektid?action=show_project&amp;project_id=65">Büroo- ja kortermaja Tallinnas Tartu mnt. 25</a><br>
-				<a href="et/projektid/projektid?action=show_project&amp;project_id=67">EHL hoone rekonstrueerimine Eesti Helikunsti Keskuseks</a><br>
-				<a href="et/projektid/projektid?action=show_project&amp;project_id=66">Naftatehase peahoone Jaroslavlis</a><br>
-				<a href="et/projektid/projektid?action=show_project&amp;project_id=32">Korterelamu Tallinnas Tatari tn 9/11</a><br>
-				<a href="et/projektid/projektid?action=show_project&amp;project_id=69">Korterelamu Tallinnas Masti tänaval</a><br>
-				<a href="et/projektid/projektid?action=show_project&amp;project_id=68">Tööstuse tn 54a hoone rekonstruktsioon</a><br>
-				<a href="et/projektid/projektid?action=show_project&amp;project_id=61">Kortermajad Tallinnas Helme tänaval</a><br>
-				<a href="et/projektid/projektid?action=show_project&amp;project_id=31">Kortermaja rekonstruktsioon Suur-Patarei 16, Tallinn</a><br>
-				<a href="et/projektid/projektid?action=show_project&amp;project_id=38">Äri- ja eluhoone Jõhvis Narva mnt 14</a><br>
-				<a href="et/projektid/projektid?action=show_project&amp;project_id=23">Korterelamu Haapsalus Suur-Liiva tn 15</a><br>
-				<a href="et/projektid/projektid?action=show_project&amp;project_id=64">Büroohoone Tallinnas Metalli tänaval</a><br>
-				<a href="et/projektid/projektid?action=show_project&amp;project_id=17">Büroohoone Tallinnas Pärnu mnt 153</a><br>
-				<a href="et/projektid/projektid?action=show_project&amp;project_id=21">Korterelamu Tallinnas Kaupmehe tn 6</a><br>
-				<a href="et/projektid/projektid?action=show_project&amp;project_id=16">Büroohoone Tallinnas Katusepapi tn 8</a><br>
-				<a href="et/projektid/projektid?action=show_project&amp;project_id=25">Korterelamu Pärnus Papli tn 34</a><br>
-				<a href="et/projektid/projektid?action=show_project&amp;project_id=40">Kortermaja Ristiku tänaval</a><br>
-				<a href="et/projektid/projektid?action=show_project&amp;project_id=24">Korterelamu Tallinnas Luige tn 3</a><br>
-				<a href="et/projektid/projektid?action=show_project&amp;project_id=22">Korterelamu Tallinnas Kaupmehe tn 12</a><br>
-		  	</div>
-		</div>
-		
-		
-		<div class="panel panel-default">
-		  	<div class="panel-heading">
-			  	<h3 class="panel-title">Konkursiprojektid</h3>
-		  	</div>
-		  	<div class="panel-body">
-		    	<a href="et/projektid/projektid?action=show_project&amp;project_id=70">Narva linnuse arhitektuurivõistlus</a><br>
-                <a href="et/projektid/projektid?action=show_project&amp;project_id=54">Narva Joaoru puhkeala arhitektuurne ideekonkurss</a><br>
-                <a href="et/projektid/projektid?action=show_project&amp;project_id=37">Eesti saatkond Pekingis</a><br>
-                <a href="et/projektid/projektid?action=show_project&amp;project_id=52">Rakvere Pauluse kiriku rekonstrueerimise arhitektuurivõistlus</a><br>
-                <a href="et/projektid/projektid?action=show_project&amp;project_id=14">Büroohoone Tallinnas</a><br>
-                <a href="et/projektid/projektid?action=show_project&amp;project_id=53">Eesti Maaülikooli juurdeehitise arhitektuurivõistlus</a><br>
-                <a href="et/projektid/projektid?action=show_project&amp;project_id=56">AS G4S büroohoone</a><br>
-                <a href="et/projektid/projektid?action=show_project&amp;project_id=63">Tartu raamatukogu ja kunstimuuseumi arhitektuurivõistlus</a><br>
-	  		</div>
-		</div>
-		
-		<div class="panel panel-default">
-		  	<div class="panel-heading">
-			  	<h3 class="panel-title">Planeeringud</h3>
-		  	</div>
-		  	<div class="panel-body">
-		    	<a href="et/projektid/projektid?action=show_project&amp;project_id=55">Vabaduse tn. 72, Narva-Jõesuu. Hoonestuskava.</a><br>
-                <a href="et/projektid/projektid?action=show_project&amp;project_id=47">Paldiski mnt. 50 mahuline planeering. Konkursitöö</a><br>
-		  	</div>
-		</div>
-		
-		<div class="panel panel-default">
-		  	<div class="panel-heading">
-			  	<h3 class="panel-title">Näitused</h3>
-		  	</div>
-		  	<div class="panel-body">
-		    	<a href="et/projektid/projektid?action=show_project&amp;project_id=57">Eesti ekspositsioon 12. Veneetsia Arhitektuuribiennaalil</a><br>
-                <a href="et/projektid/projektid?action=show_project&amp;project_id=62">Eesti ekspositsioon 12. Veneetsia Arhitektuuribiennaalil - Näitus Soolalaos</a><br>
-                <a href="et/projektid/projektid?action=show_project&amp;project_id=58">Näitus MAJAD</a><br>
-                <a href="et/projektid/projektid?action=show_project&amp;project_id=59">Näitus MAJA</a><br>
- 	 		</div>
-		</div>
+		</c:forEach>
+		<br>
+		 -->
+		 
+		 
 	</div>
 	<%@ include file="footer.jsp"%>
 </body>

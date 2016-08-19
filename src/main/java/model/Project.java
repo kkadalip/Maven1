@@ -31,7 +31,7 @@ import model.Person;
 
 @Entity
 @Table(name="project")
-public class Project {
+public class Project implements Comparable<Project> {
 
 	// CONSTRUCTORS:
 	
@@ -320,6 +320,12 @@ public class Project {
 
 	public void setProjectGroup(ProjectGroup projectGroup) {
 		this.projectGroup = projectGroup;
+	}
+
+	@Override
+	public int compareTo(Project o) {
+		//System.out.println("[Project][compareTo] this name: " + this.name + " comparing to " + o.getName());
+		return this.name.compareTo( o.getName() );
 	}
 	
 }

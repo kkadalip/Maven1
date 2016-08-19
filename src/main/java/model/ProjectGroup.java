@@ -18,6 +18,8 @@ import javax.persistence.Table;
 
 import org.hibernate.annotations.Cascade;
 import org.hibernate.annotations.CascadeType;
+import org.hibernate.annotations.LazyCollection;
+import org.hibernate.annotations.LazyCollectionOption;
 import org.hibernate.annotations.SortNatural;
 
 import com.sun.istack.internal.Nullable;
@@ -36,6 +38,7 @@ public class ProjectGroup {
 	@Column(name="name")
     private String name;
 	
+	@LazyCollection(LazyCollectionOption.FALSE)
 	@Nullable
 	//@Column(name="childProjects") // @Column(s) not allowed on a @ManyToOne property: model.Project.projectGroup
     @OneToMany(mappedBy="projectGroup") // not the table project but PROPERTY // MANY SIDE IS OWNER AND TELLS MAPPING //default LAZY (fetch=FetchType.EAGER) // LAZY // (cascade={CascadeType.ALL})

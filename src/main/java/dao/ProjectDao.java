@@ -62,7 +62,7 @@ public class ProjectDao extends AbstractDao {
 //	}
 	
 	/**
-     * Finds all Events in the database.
+     * Finds all Projects in the database.
      * @return
      */
     public List getAll() { // throws DataAccessLayerException
