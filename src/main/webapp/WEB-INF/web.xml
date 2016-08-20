@@ -34,4 +34,14 @@
     <servlet-name>projects</servlet-name>
     <url-pattern>/projects/*</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <servlet-name>persons</servlet-name>
+    <servlet-class>
+	    	controller.Persons
+	  	</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>persons</servlet-name>
+    <url-pattern>/people/*</url-pattern>
+  </servlet-mapping>
 </web-app>

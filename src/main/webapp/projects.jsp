@@ -39,6 +39,7 @@
 			</c:forEach>
 		</c:if>
 		
+		<!-- 
 		<div class="panel panel-default">
 		  	<div class="panel-heading">
 			  	<h3 class="panel-title">Inimesed (${fn:length(persons)})</h3>
@@ -60,7 +61,8 @@
 				</c:forEach>
 		  	</div>
 		</div>
-		
+		-->
+		 
 		<!--
 		<c:forEach items="${projects}" var="project">
 			<div class="panel panel-default">
