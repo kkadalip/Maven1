@@ -27,6 +27,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import model.Address;
+import model.Image;
 import model.Person;
 import model.Project;
 //import model.Project;
@@ -57,6 +58,8 @@ public class SetupDao { // extends AbstractDaoHibernate {
 		SessionFactory sessionFactory = HibernateUtil.getSessionFactory();
 		Session session = sessionFactory.openSession();
 		Transaction transaction = session.beginTransaction();
+		
+		//String images_root_folder = "static/images/";
 		
 		// PROJECT GROUPS
 		
@@ -150,6 +153,19 @@ public class SetupDao { // extends AbstractDaoHibernate {
 		//p1.setSizeUnit("m2"); // Todo separate model for units so I can convert them on the fly
 		// BROKEN p1.setProjectGroup(pg1);
 		p1.setProjectGroup(pg1);
+		
+		List<Image> p1imagesPromo = new ArrayList<Image>();
+		p1imagesPromo.add(new Image("eramu_seedri","1.jpg"));
+		p1imagesPromo.add(new Image("eramu_seedri","2.jpg"));
+		p1imagesPromo.add(new Image("eramu_seedri","3.jpg"));
+		p1imagesPromo.add(new Image("eramu_seedri","4.jpg"));
+		p1imagesPromo.add(new Image("eramu_seedri","5.jpg"));
+		p1imagesPromo.add(new Image("eramu_seedri","6.jpg"));
+		p1imagesPromo.add(new Image("eramu_seedri","7.jpg"));
+		p1imagesPromo.add(new Image("eramu_seedri","8.jpg"));
+		p1imagesPromo.add(new Image("eramu_seedri","9.jpg"));
+		p1.setImagesPromo(p1imagesPromo);
+		
 		session.save(p1);
 		
 		Project p2 = new Project();

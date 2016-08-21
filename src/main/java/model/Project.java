@@ -154,6 +154,13 @@ public class Project implements Comparable<Project> {
     private List<Address> addresses = new ArrayList<>();
 	
 	// Image(s): promo pics
+	@LazyCollection(LazyCollectionOption.FALSE)
+	@Nullable
+    @Column(name="imagesPromo")
+    @ManyToMany()
+	@JoinTable(name="project_imagesPromo", joinColumns=@JoinColumn(name="imageID"), inverseJoinColumns=@JoinColumn(name="projectID"))
+    @Cascade(value = { CascadeType.ALL })
+	private List<Image> imagesPromo = new ArrayList<>();
 	
 	// Image(s) drawings
 	
@@ -322,6 +329,16 @@ public class Project implements Comparable<Project> {
 		this.projectGroup = projectGroup;
 	}
 
+	public List<Image> getImagesPromo() {
+		return imagesPromo;
+	}
+
+	public void setImagesPromo(List<Image> imagesPromo) {
+		this.imagesPromo = imagesPromo;
+	}
+
+	// EXTRA METHODS
+	
 	@Override
 	public int compareTo(Project o) {
 		//System.out.println("[Project][compareTo] this name: " + this.name + " comparing to " + o.getName());
