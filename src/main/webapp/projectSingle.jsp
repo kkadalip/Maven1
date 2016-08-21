@@ -33,7 +33,7 @@
 <link rel="stylesheet" href="<c:url value="/static/PhotoSwipe/default-skin/default-skin.css"/>">
 
 <!-- Core JS file -->
-<script src="<c:url value="/static/PhotoSwipe/photoswipe.js" />"></script> <!-- .min.js -->
+<script src="<c:url value="/static/PhotoSwipe/photoswipe-mod.js" />"></script> <!-- .min.js -->
 
 <!-- UI JS file -->
 <script src="<c:url value="/static/PhotoSwipe/photoswipe-ui-default.js" />"></script> <!-- .min.js -->
