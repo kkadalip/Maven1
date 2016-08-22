@@ -118,66 +118,73 @@ $(document).ready(function() { //window.onload = function () {
 	
 				<!-- example image location http://localhost:8080/Maven1/static/images/eramu_seedri/1.jpg -->
 				
+				<!-- 
 				<div style="background: white; color:black;">
-					<c:forEach items="${project.addresses}" var="address">
-					aadress: ${address.city}, ${address.street} ${address.streetType} ${address.building}
 					<br>
-					</c:forEach>
-					<c:if test="${!empty project.planningStartYear}">
-						projekt: ${project.planningStartYear}<c:if test="${!empty project.planningEndYear}"> - ${project.planningEndYear}</c:if><br>
-					</c:if>
-					<c:if test="${!empty project.buildingStartYear}">
-						ehitus: ${project.buildingStartYear}<c:if test="${!empty project.buildingEndYear}"> - ${project.buildingEndYear}</c:if><br>
-					</c:if>
-					 <c:if test="${fn:length(project.architects) > 1}">
-					 	arhitektid: 
-					 </c:if>
-					 <c:if test="${fn:length(project.architects) == 1}">
-					 	arhitekt: 
-					 </c:if>
-					<c:forEach items="${project.architects}" var="architect" varStatus="loop">
-						 ${architect.firstName} ${architect.lastName}${loop.last ? '<br>' : ','} 
-					</c:forEach>
-					<c:forEach items="${project.originalAuthors}" var="originalAuthor">
-						hoone algne autor: ${originalAuthor.firstName} ${originalAuthor.lastName}
-						<br>
-					</c:forEach>
-					<c:if test="${!empty project.contributors}">
-						kaastöö: 
-						<c:forEach items="${project.contributors}" var="contributor" varStatus="loop">
-							${contributor.firstName} ${contributor.lastName}${loop.last ? '<br>' : ','} 
-						</c:forEach>
-					</c:if>
-					<c:if test="${!empty project.constructors}">
-						 <c:if test="${fn:length(project.constructors) > 1}">
-						 	konstruktorid: 
-						 </c:if>
-						 <c:if test="${fn:length(project.constructors) == 1}">
-						 	konstruktor: 
-						 </c:if>
-						<c:forEach items="${project.constructors}" var="constructor" varStatus="loop">
-							${constructor.firstName} ${constructor.lastName}${loop.last ? '<br>' : ','}
-						</c:forEach>
-					</c:if>
-					<c:forEach items="${project.interiorDesigners}" var="interiorDesigner">
-						sisekujundaja: ${interiorDesigner.firstName} ${interiorDesigner.lastName}
-						<br>
-					</c:forEach>
-					<c:forEach items="${project.landscapeArchitects}" var="landscapeArchitect">
-						maastikuarhitekt: ${landscapeArchitect.firstName} ${landscapeArchitect.lastName}
-						<br>
-					</c:forEach>
-					<c:forEach items="${project.lightsDesigners}" var="lightsDesigner">
-						sisekujundaja: ${lightsDesigner.firstName} ${lightsDesigner.lastName}
-						<br>
-					</c:forEach>
-					<c:if test="${!empty project.sizeQuantity}">
-						üldpind: ${project.sizeQuantity}m<sup>2</sup><c:if test="${!empty project.apartmentsQuantity}">, ${project.apartmentsQuantity} korterit</c:if><br>
-					</c:if>
-					<c:if test="${!empty project.prizeComment}">
-						preemia: ${project.prizeComment}<br>
-					</c:if>
+					<br>
 				</div>
+				<br>
+				-->
+				 
+				<c:forEach items="${project.addresses}" var="address">
+				aadress: ${address.city}, ${address.street} ${address.streetType} ${address.building}
+				<br>
+				</c:forEach>
+				<c:if test="${!empty project.planningStartYear}">
+					projekt: ${project.planningStartYear}<c:if test="${!empty project.planningEndYear}"> - ${project.planningEndYear}</c:if><br>
+				</c:if>
+				<c:if test="${!empty project.buildingStartYear}">
+					ehitus: ${project.buildingStartYear}<c:if test="${!empty project.buildingEndYear}"> - ${project.buildingEndYear}</c:if><br>
+				</c:if>
+				 <c:if test="${fn:length(project.architects) > 1}">
+				 	arhitektid: 
+				 </c:if>
+				 <c:if test="${fn:length(project.architects) == 1}">
+				 	arhitekt: 
+				 </c:if>
+				<c:forEach items="${project.architects}" var="architect" varStatus="loop">
+					 ${architect.firstName} ${architect.lastName}${loop.last ? '<br>' : ','} 
+				</c:forEach>
+				<c:forEach items="${project.originalAuthors}" var="originalAuthor">
+					hoone algne autor: ${originalAuthor.firstName} ${originalAuthor.lastName}
+					<br>
+				</c:forEach>
+				<c:if test="${!empty project.contributors}">
+					kaastöö: 
+					<c:forEach items="${project.contributors}" var="contributor" varStatus="loop">
+						${contributor.firstName} ${contributor.lastName}${loop.last ? '<br>' : ','} 
+					</c:forEach>
+				</c:if>
+				<c:if test="${!empty project.constructors}">
+					 <c:if test="${fn:length(project.constructors) > 1}">
+					 	konstruktorid: 
+					 </c:if>
+					 <c:if test="${fn:length(project.constructors) == 1}">
+					 	konstruktor: 
+					 </c:if>
+					<c:forEach items="${project.constructors}" var="constructor" varStatus="loop">
+						${constructor.firstName} ${constructor.lastName}${loop.last ? '<br>' : ','}
+					</c:forEach>
+				</c:if>
+				<c:forEach items="${project.interiorDesigners}" var="interiorDesigner">
+					sisekujundaja: ${interiorDesigner.firstName} ${interiorDesigner.lastName}
+					<br>
+				</c:forEach>
+				<c:forEach items="${project.landscapeArchitects}" var="landscapeArchitect">
+					maastikuarhitekt: ${landscapeArchitect.firstName} ${landscapeArchitect.lastName}
+					<br>
+				</c:forEach>
+				<c:forEach items="${project.lightsDesigners}" var="lightsDesigner">
+					sisekujundaja: ${lightsDesigner.firstName} ${lightsDesigner.lastName}
+					<br>
+				</c:forEach>
+				<c:if test="${!empty project.sizeQuantity}">
+					üldpind: ${project.sizeQuantity}m<sup>2</sup><c:if test="${!empty project.apartmentsQuantity}">, ${project.apartmentsQuantity} korterit</c:if><br>
+				</c:if>
+				<c:if test="${!empty project.prizeComment}">
+					preemia: ${project.prizeComment}<br>
+				</c:if>
+			
 				
 				<!-- 
 				<c:forEach items="${project.imagesPromo}" var="imagePromo">
@@ -194,12 +201,14 @@ $(document).ready(function() { //window.onload = function () {
 				<h2>JVR gallery:</h2>
 				<div class="photoswipe-gallery" itemscope itemtype="http://schema.org/ImageGallery">
 					<c:forEach items="${project.imagesPromo}" var="imagePromo">
-						<figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-							<a href="<c:url value="/static/images/${imagePromo.folderName}/${imagePromo.fileName}"/>" itemprop="contentUrl" > <!-- data-size="370x500" -->
-							<img src="<c:url value="/static/images/${imagePromo.folderName}/${imagePromo.fileName}"/>" itemprop="thumbnail" alt="Promo picture X" />
-							</a>
-							<figcaption itemprop="caption description">Whatever caption</figcaption>
-						</figure>
+						<div class="col-md-2">
+							<figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+								<a href="<c:url value="/static/images/${imagePromo.folderName}/${imagePromo.fileName}"/>" class="thumbnail" itemprop="contentUrl" > <!-- data-size="370x500" -->
+								<img src="<c:url value="/static/images/${imagePromo.folderName}/${imagePromo.fileName}"/>" class="img-responsive" itemprop="thumbnail" alt="Promo picture X" />
+								</a>
+								<figcaption itemprop="caption description">Whatever caption</figcaption>
+							</figure>
+						</div>
 					</c:forEach>
 				</div>
 			</div>
