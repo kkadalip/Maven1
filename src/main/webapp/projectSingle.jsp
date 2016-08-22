@@ -214,7 +214,8 @@ $(document).ready(function() { //window.onload = function () {
 			</div>
 		</div>
 
-
+		<!-- http://photoswipe.com/documentation/getting-started.html -->
+		<!-- 
 		<h2>First gallery:</h2>
 
 		<div class="my-gallery" itemscope itemtype="http://schema.org/ImageGallery">
@@ -271,7 +272,8 @@ $(document).ready(function() { //window.onload = function () {
 				<figcaption itemprop="caption description">Image caption 2.3</figcaption>
 			</figure>
 		</div>
-
+ 		-->
+ 		
 		<button id="btnOpenPhotoSwipe">Open PhotoSwipe</button>
 		
 		<!-- Root element of PhotoSwipe. Must have class pswp. -->
