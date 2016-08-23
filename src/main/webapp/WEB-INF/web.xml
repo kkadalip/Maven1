@@ -6,6 +6,7 @@
   <listener>
     <listener-class>listener.InitDatabaseListener</listener-class>
   </listener>
+
   <servlet>
     <servlet-name>simple</servlet-name>
     <servlet-class>
@@ -16,6 +17,7 @@
     <servlet-name>simple</servlet-name>
     <url-pattern>/simple</url-pattern>
   </servlet-mapping>
+
   <servlet>
     <servlet-name>contact</servlet-name>
     <jsp-file>/contact.jsp</jsp-file>
@@ -24,6 +26,25 @@
     <servlet-name>contact</servlet-name>
     <url-pattern>/contact</url-pattern>
   </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>velle_kadalipp</servlet-name>
+    <jsp-file>/cvVelleKadalipp.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>velle_kadalipp</servlet-name>
+    <url-pattern>/velle_kadalipp</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>kalle_vellevoog</servlet-name>
+    <jsp-file>/cvKalleVellevoog.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>kalle_vellevoog</servlet-name>
+    <url-pattern>/kalle_vellevoog</url-pattern>
+  </servlet-mapping>
+
   <servlet>
     <servlet-name>projects</servlet-name>
     <servlet-class>
@@ -34,6 +55,7 @@
     <servlet-name>projects</servlet-name>
     <url-pattern>/projects/*</url-pattern>
   </servlet-mapping>
+
   <servlet>
     <servlet-name>persons</servlet-name>
     <servlet-class>
