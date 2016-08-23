@@ -155,11 +155,94 @@
 					<tr>																
 				</table>
 			</div>
-
-
-
 			<br>
-			<p><b>Asd:</b></p>		
+			<p><b>Arhitektuurivõistlused ja preemiad:</b></p>		
+			<div class="table-responsive">
+				<table class="table">
+				  	<tr>
+						<td>1990</td>
+						<td>Jõhvi raamatukogu, arhitektuurivõistlus.</td>
+						<td>I koht, arh.-id I. Jalas, K. Vellevoog, Velle Kadalipp</td>
+					<tr>
+				  	<tr>
+						<td>2000</td>
+						<td>Tartu Ülikooli ühiselamu arhitektuurivõistlus.</td>
+						<td>Ostupreemia, arh.-id V. Kadalipp, I. Jalas, K. Vellevoog, E. Rajasaar</td>
+					<tr>
+				  	<tr>
+						<td>2001</td>
+						<td>Korterelamu Tallinnas Kaupmehe tn.-l. kutsutud konkurss.</td>
+						<td>I koht arh.-id K. Vellevoog, V. Kadalipp, O. Kadarik, E. Rajasaar</td>
+					<tr>
+				  	<tr>
+						<td>2001</td>
+						<td>Pärnu Vanalinna Põhikooli juurdeehituse arhitektuurivõistlus.</td>
+						<td>III koht arhitekt V. Kadalipp</td>
+					<tr>
+				  	<tr>
+						<td>2002</td>
+						<td>Kuressaare sanatoorium "Rüütli" kutsutud arhitektuurivõistlus</td>
+						<td>II koht arh.-id K. Vellevoog, V. Kadalipp</td>
+					<tr>
+				  	<tr>
+						<td>2007</td>
+						<td>Eesti Vabariigi Pekingi saatkond</td>
+						<td>III koht, arh-id K. Vellevoog, V. Kadalipp, T. Truus, M. Prommik</td>						
+					<tr>					
+				</table>
+			</div>
+			<br>
+			<p><b>Näitused:</b></p>		
+			<div class="table-responsive">
+				<table class="table">
+				  	<tr>
+						<td>2004</td>
+						<td>EAL näitus KORTERELAMU JA ASUM Rotermanni soolalaos</td>
+					<tr>
+				  	<tr>
+						<td>2005</td>
+						<td>Deutsches Architektur Zentrum näitus EMERGING IDENTITIES - EAST, Berliinis</td>
+					<tr>
+				</table>
+			</div>			
+			<br>
+			<p><b>Publikatsioonid:</b></p>		
+			<div class="table-responsive">
+				<table class="table">
+				  	<tr>
+						<td>1994</td>
+						<td>"Üldplaneerimise arendamine Eestis, Kehtna valla ja Järvakandi alevi üldplaneeringu põhjal", 1994 Eesti Keskkonnaministeeriumi trükis, (koostööprojekt Eesti Keskkonnaministeerium, Soome Keskkonnaministeerium, Maaja Vesi OY, Entec AS, Eesti Maauuringud Maaplaneeringud AS)</td>
+					<tr>
+				  	<tr>
+						<td>1998</td>
+						<td>Turuhoone Tallinnas, MAJA 3/1998</td>
+					<tr>
+				  	<tr>
+						<td>2000</td>
+						<td>Väike-Tallinna Ärimaja, MAJA 1/2000</td>
+					<tr>
+				  	<tr>
+						<td>2005</td>
+						<td>Kortermaja Kaupmehe tn.6, MAJA 1/2005</td>
+					<tr>
+				  	<tr>
+						<td>2005</td>
+						<td>Kortermajad Pähkli tänaval, MAJA 3/2005</td>
+					<tr>	
+				  	<tr>
+						<td>2005</td>
+						<td>Kortermaja Tallinnas Kaupmehe tänaval ARHITEKTUURIAASTA 2004 (arhitektuuripreemiate nominendid)</td>
+					<tr>
+					<tr>
+						<td>2006</td>
+						<td>Kortermaja Tallinnas Tatari tänaval, kortermajad Tallinnas Pähkli tänaval ARHITEKTUURIAASTA 2005 (arhitektuuripreemiate nominendid)</td>
+					</tr>								
+				</table>
+			</div>
+			
+			<!-- 
+			<br>
+			<p><b>Example:</b></p>		
 			<div class="table-responsive">
 				<table class="table">
 				  	<tr>
@@ -175,7 +258,8 @@
 						<td></td>
 					<tr>
 				</table>
-			</div>			
+			</div>	
+			 -->	
 		</div>
 	</div>
 	<%@ include file="footer.jsp"%>
