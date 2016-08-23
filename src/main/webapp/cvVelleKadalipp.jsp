@@ -239,7 +239,10 @@
 					</tr>								
 				</table>
 			</div>
-			
+			<br>
+			<br>
+			<h4><a class="link_back" href="javascript:history.back();">Tagasi</a></h4>
+			<br>
 			<!-- 
 			<br>
 			<p><b>Example:</b></p>		

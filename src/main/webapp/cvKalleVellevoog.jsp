@@ -306,7 +306,8 @@
 			<br>
 			<br>
 			<br>
-			<a class="link_back" href="javascript:history.back();">Tagasi</a>
+			<h4><a class="link_back" href="javascript:history.back();">Tagasi</a></h4>
+			<br>
 			
 			<!-- 
 			<p><strong>Example:</strong></p>
