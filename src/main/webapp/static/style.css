@@ -22,8 +22,8 @@ body {
 	/*background: rgb(42, 42, 42);*/
 	background: rgb(239, 239, 239);
 	color: black;
-	/* for sticky footer: Margin bottom by footer height */
-	margin-bottom: 40px;
+	/* for sticky footer: Margin bottom by at least footer height */
+	margin-bottom: 100px;
 }
 
 .noselect {
