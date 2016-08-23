@@ -20,7 +20,7 @@
 <body>
 	<%@ include file="header.jsp"%>
 	<div class="container">
-		<div class="darkBackground col-md-12">		
+		<div class="brightBackground col-md-12">		
 			<h2>Arhitektuuribüroo JVR OÜ</h2>
 			<br>
 			<p>
@@ -40,8 +40,7 @@
 			<!-- https://developers.google.com/maps/documentation/javascript/tutorials/adding-a-google-map -->
 			<!-- https://developers.google.com/maps/documentation/javascript/infowindows -->
 			<h3>Asukoht:</h3>
-			<div id="map"
-				style='height: 300px; width: auto; margin-bottom: 10px; color: black;'></div>
+			<div id="map" style='height: 300px; width: auto; margin-bottom: 10px; color: black;'></div>
 	
 			<script>
 				function initMap() {

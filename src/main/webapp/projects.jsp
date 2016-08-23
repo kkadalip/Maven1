@@ -32,7 +32,7 @@
 						</div>
 						<div class="panel-body">
 								<c:forEach items="${projectGroup.childProjects}" var="project">
-									<a href="<c:url value="/projects/${project.id}"/>">${project.name}</a><br> <!-- et/projektid/projektid?action=show_project&amp;project_id=4 -->
+									<a href="<c:url value="/projects/${project.id}"/>">${project.name} (${project.planningStartYear})</a><br> <!-- et/projektid/projektid?action=show_project&amp;project_id=4 -->
 								</c:forEach>
 						</div>
 					</div>

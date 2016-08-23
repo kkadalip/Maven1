@@ -18,7 +18,7 @@
 		<%@ include file="header.jsp"%>
 
 		<div class="container">
-			<div class="darkBackground col-md-12">
+			<div class="brightBackground col-md-12">
 				<p>
 					<b>Arhitektuuribüroo JVR OÜ</b> asutasid 1990. aastal Ilmar Jalas,
 					Enn Rajasaar ja Kalle Vellevoog. 1998 aastal liitus bürooga Velle
