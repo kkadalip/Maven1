@@ -19,16 +19,19 @@
 
 <body>
 	<%@ include file="header.jsp"%>
-	<div class="container">	
-		<div class="panel panel-default">
-		  	<div class="panel-heading">
-			  	<h3 class="panel-title">Inimesed (${fn:length(persons)})</h3>
-		  	</div>
-		  	<div class="panel-body">
-	    		<c:forEach items="${persons}" var="item">
-					<c:out value="${item.firstName} ${item.lastName}" /><br>
-				</c:forEach>
-		  	</div>
+	<div class="container">
+		<div class="brightBackground col-md-12">
+			<h3>Inimesed</h3><br>
+			<div class="panel panel-default">
+			  	<div class="panel-heading">
+				  	<h3 class="panel-title">Inimesed (${fn:length(persons)})</h3>
+			  	</div>
+			  	<div class="panel-body">
+		    		<c:forEach items="${persons}" var="item">
+						<c:out value="${item.firstName} ${item.lastName}" /><br>
+					</c:forEach>
+			  	</div>
+			</div>
 		</div>
 	</div>
 	<%@ include file="footer.jsp"%>

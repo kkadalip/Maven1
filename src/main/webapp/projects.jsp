@@ -19,25 +19,27 @@
 
 <body>
 	<%@ include file="header.jsp"%>
-	<div class="container">	
-		<h3>Projektid (${fn:length(projects)})</h3><br>
-		<!-- example link: 
-		<a href="et/projektid/projektid?action=show_project&amp;project_id=5">Eramute grupp Seedri ja Remmelga tänavate vahelisel alal Pärnus</a><br>
-		-->
-		<c:if test="${!empty projectGroups}">
-			<c:forEach items="${projectGroups}" var="projectGroup">
-					<div class="panel panel-default">
-						<div class="panel-heading">
-							<h3 class="panel-title">${projectGroup.name}</h3>
+	<div class="container">
+		<div class="brightBackground col-md-12">
+			<h3>Projektid (${fn:length(projects)})</h3><br>
+			<!-- example link: 
+			<a href="et/projektid/projektid?action=show_project&amp;project_id=5">Eramute grupp Seedri ja Remmelga tänavate vahelisel alal Pärnus</a><br>
+			-->
+			<c:if test="${!empty projectGroups}">
+				<c:forEach items="${projectGroups}" var="projectGroup">
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<h3 class="panel-title">${projectGroup.name}</h3>
+							</div>
+							<div class="panel-body">
+									<c:forEach items="${projectGroup.childProjects}" var="project">
+										<a href="<c:url value="/projects/${project.id}"/>">${project.name} (${project.planningStartYear})</a><br> <!-- et/projektid/projektid?action=show_project&amp;project_id=4 -->
+									</c:forEach>
+							</div>
 						</div>
-						<div class="panel-body">
-								<c:forEach items="${projectGroup.childProjects}" var="project">
-									<a href="<c:url value="/projects/${project.id}"/>">${project.name} (${project.planningStartYear})</a><br> <!-- et/projektid/projektid?action=show_project&amp;project_id=4 -->
-								</c:forEach>
-						</div>
-					</div>
-			</c:forEach>
-		</c:if>
+				</c:forEach>
+			</c:if>
+		</div>
 		
 		<!-- 
 		<div class="panel panel-default">
