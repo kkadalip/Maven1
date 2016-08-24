@@ -20,19 +20,24 @@
 		<div class="container">
 			<div class="brightBackground col-md-12">
 				<p>
-					<b>Arhitektuuribüroo JVR OÜ</b> asutasid 1990. aastal Ilmar Jalas,
-					Enn Rajasaar ja Kalle Vellevoog. 1998 aastal liitus bürooga Velle
-					Kadalipp.<br> <br> Täna on büroo osanikeks ja
-					vastutavateks arhitektideks: <br> <a href="<c:url value="/velle_kadalipp" />">Velle Kadalipp</a> (Tallinna Kunstiakadeemia 1986) Volitatud arhitekt VII<br>
-					<a href="<c:url value="/kalle_vellevoog" />">Kalle Vellevoog</a> (Tallinna Kunstiakadeemia 1986) Volitatud arhitekt-ekspert VIII
+					<h1><fmt:message key="index.title.JVR" /></h1>
+					<br>
+					<fmt:message key="index.titleSentence" />
 					<br>
 					<br>
-					Büroos töötavad:
+					<b><fmt:message key="index.architects.title" /></b>
 					<br>
-					sisekujundaja Sirje Kadalipp (Tallinna Kunstiakadeemia 1989)<br>
-					insener-arhitekt Andrus Andrejev (Tallinna Tehnikaülikool 1996)<br>
-					ehitusarhitekt Martin Prommik (Tallinna Tehnikakõrgkool 2004)<br>
-					ehitusarhitekt Lidia Zarudnaya (Eesti Kunstiakadeemia Magistrantuur Linnamaastike erialal, Peterburi riiklik arhitektuuri ja ehituse ülikool 2008).
+					<a href="<c:url value="/velle_kadalipp" />">Velle Kadalipp</a> <fmt:message key="index.architects1" />
+					<br>
+					<a href="<c:url value="/kalle_vellevoog" />">Kalle Vellevoog</a> <fmt:message key="index.architects2" />
+					<br>
+					<br>
+					<b><fmt:message key="index.workers.title" />:</b>
+					<br>
+					<fmt:message key="index.workers1" /><br>
+					<fmt:message key="index.workers2" /><br>
+					<fmt:message key="index.workers3" /><br>
+					<fmt:message key="index.workers4" /><br>
 				</p>
 			</div>
 		</div>

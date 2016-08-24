@@ -42,7 +42,7 @@
 							<li><a href="#">Separated link</a></li>
 							<li><a href="#">One more separated link</a></li>
 						</ul></li>
-					<li id="header_li_contact"><a href="./contact">Kontakt</a></li>
+					<li id="header_li_contact"><a href="./contact"><fmt:message key="header.button.contact" /></a></li>
 				</ul>
 			</form>
 			<!-- 
