@@ -1,3 +1,7 @@
+
+<%@ page pageEncoding="UTF-8" %>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
+
 <!-- <div class="container">  -->
 <!-- Static navbar -->
 <nav class="navbar navbar-default navbar-static-top">
@@ -20,25 +24,49 @@
 		</div>
 		<div id="navbar" class="navbar-collapse collapse">
 			<ul class="nav navbar-nav">
-				<li id="header_li_index"><a href="<c:url value="/"/>">B�roo</a></li> <!-- li class="active" -->
-				<li id="header_li_projects"><a href="<c:url value="/projects"/>">Projektid</a></li>
-				<li id="header_li_people"><a href="<c:url value="/people"/>">Inimesed</a></li>
+				<li id="header_li_index"><a href="<c:url value="/"/>"><fmt:message key="header.button.index" /></a></li> <!-- li class="active" -->
+				<li id="header_li_projects"><a href="<c:url value="/projects"/>"><fmt:message key="header.button.projects" /></a></li>
+				<li id="header_li_people"><a href="<c:url value="/people"/>"><fmt:message key="header.button.people" /></a></li>
 			</ul>
-			<ul class="nav navbar-nav navbar-right">
-				<li class="dropdown"><a href="#" class="dropdown-toggle"
-					data-toggle="dropdown" role="button" aria-haspopup="true"
-					aria-expanded="false">Keel<span class="caret"></span></a>
-					<ul class="dropdown-menu">
-						<li><a href="#">Eesti</a></li>
-						<li><a href="#">Inglise</a></li>
-						<li><a href="#">Vene</a></li>
-						<li role="separator" class="divider"></li>
-						<li class="dropdown-header">Nav header</li>
-						<li><a href="#">Separated link</a></li>
-						<li><a href="#">One more separated link</a></li>
-					</ul></li>
-				<li id="header_li_contact"><a href="./contact">Kontakt</a></li>
-			</ul>
+			<form>
+				<ul class="nav navbar-nav navbar-right">
+					<li class="dropdown"><a href="#" class="dropdown-toggle"
+						data-toggle="dropdown" role="button" aria-haspopup="true"
+						aria-expanded="false"><fmt:message key="header.button.language" /><span class="caret"></span></a>
+						<ul class="dropdown-menu" id="language" onchange="submit()">
+							<li><a href="?language=et">Eesti</a></li>
+							<li><a href="?language=en">English</a></li>
+							<li><a href="?language=ru">Русский</a></li>
+							<li role="separator" class="divider"></li>
+							<li class="dropdown-header">Nav header</li>
+							<li><a href="#">Separated link</a></li>
+							<li><a href="#">One more separated link</a></li>
+						</ul></li>
+					<li id="header_li_contact"><a href="./contact">Kontakt</a></li>
+				</ul>
+			</form>
+			<!-- 
+			<form>
+			    <select id="language" name="language" onchange="submit()">
+			        <option value="en" ${language == 'en' ? 'selected' : ''}>English</option>
+			        <option value="et" ${language == 'et' ? 'selected' : ''}>Estonian</option>
+			        <option value="ru" ${language == 'ru' ? 'selected' : ''}>Russian</option>
+			    </select>
+			</form>
+			-->
+			<!-- 
+			<form method="post">
+			    <label for="username"><fmt:message key="login.label.username" />:</label>
+			    <input type="text" id="username" name="username">
+			    <br>
+			    <label for="password"><fmt:message key="login.label.password" />:</label>
+			    <input type="password" id="password" name="password">
+			    <br>
+			    <fmt:message key="login.button.submit" var="buttonValue" />
+			    <input type="submit" name="submit" value="${buttonValue}">
+			</form>
+			 -->
+			<!-- <p>language is ${language}</p>  -->  <!-- et_EE -->
 		</div>
 		<!--/.nav-collapse -->
 	</div>
