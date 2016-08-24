@@ -27,17 +27,17 @@
 					<br>
 					<b><fmt:message key="index.architects.title" /></b>
 					<br>
-					<a href="<c:url value="/velle_kadalipp" />">Velle Kadalipp</a> <fmt:message key="index.architects1" />
+					<a href="<c:url value="/velle_kadalipp" />">Velle Kadalipp</a> <fmt:message key="index.architects.1" />
 					<br>
-					<a href="<c:url value="/kalle_vellevoog" />">Kalle Vellevoog</a> <fmt:message key="index.architects2" />
+					<a href="<c:url value="/kalle_vellevoog" />">Kalle Vellevoog</a> <fmt:message key="index.architects.2" />
 					<br>
 					<br>
 					<b><fmt:message key="index.workers.title" />:</b>
 					<br>
-					<fmt:message key="index.workers1" /><br>
-					<fmt:message key="index.workers2" /><br>
-					<fmt:message key="index.workers3" /><br>
-					<fmt:message key="index.workers4" /><br>
+					<fmt:message key="index.workers.1" /><br>
+					<fmt:message key="index.workers.2" /><br>
+					<fmt:message key="index.workers.3" /><br>
+					<fmt:message key="index.workers.4" /><br>
 				</p>
 			</div>
 		</div>
