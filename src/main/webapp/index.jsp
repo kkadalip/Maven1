@@ -25,7 +25,7 @@
 					<fmt:message key="index.titleSentence" />
 					<br>
 					<br>
-					<b><fmt:message key="index.architects.title" /></b>
+					<b><fmt:message key="index.architects.title" />:</b>
 					<br>
 					<a href="<c:url value="/velle_kadalipp" />">Velle Kadalipp</a> <fmt:message key="index.architects.1" />
 					<br>

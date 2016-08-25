@@ -29,126 +29,126 @@
 				<table class="table">
 					<tr>
 					  	<td>1963</td>
-					  	<td>Sündinud Tallinnas</td>
+					  	<td><fmt:message key="kalle.table1.1963" /></td>
 					</tr>
 					<tr>
 					  	<td>1981-1986</td>
-					  	<td>ERKI, arhitektuuri eriala (cum laude)</td> 
+					  	<td><fmt:message key="kalle.table1.1981-1986" /></td> 
 					</tr>
 					<tr>
 						<td>1985-1990</td>
-						<td>PI Tsentrosojuzprojekt, arhitekt</td>
+						<td><fmt:message key="kalle.table1.1985-1990" /></td>
 					</tr>
 					<tr>
 						<td>1990-1991</td>
-						<td>Arkkitehtitoimisto Raimo Teränne Ky, Kaupunkkisuunnittelu Oy, Arhitekt</td>
+						<td><fmt:message key="kalle.table1.1990-1991" /></td>
 					<tr>
 				  	<tr>
 						<td>1990-...</td>
-						<td>Arhitektuuribüroo JVR OÜ, arhitekt/omanik</td>
+						<td><fmt:message key="kalle.table1.1990-X" /></td>
 					<tr>
 				  	<tr>
 						<td>1992-...</td>
-						<td>EAL juhatuse liige</td>
-					<tr>
-					<tr>
-						<td>1998-2002</td>
-						<td>EAL esimees</td>
-					<tr>
-				  	<tr>
-						<td>2002-2004</td>
-						<td>EAL aseesimees</td>
+						<td><fmt:message key="kalle.table1.1992-X" /></td>
 					<tr>
 				  	<tr>
 						<td>1994-...</td>
-						<td>Arhitektuuriajakirja "Maja" toimetuskolleegiumi liige</td>
+						<td><fmt:message key="kalle.table1.1994-X" /></td>
+					<tr>
+					<tr>
+						<td>1998-2002</td>
+						<td><fmt:message key="kalle.table1.1998-2002" /></td>
+					<tr>
+				  	<tr>
+						<td>2002-2004</td>
+						<td><fmt:message key="kalle.table1.2002-2004" /></td>
 					<tr>
 					<tr>
 						<td>2000-2003</td>
-						<td>Kultuuriministeeriumi arhitektuurinõukogu liige</td>
+						<td><fmt:message key="kalle.table1.2000-2003" /></td>
 					<tr>
 				  	<tr>
 						<td>2001-2003</td>
-						<td>Tallinna Arhitektuurinõukogu liige</td>
+						<td><fmt:message key="kalle.table1.2001-2003" /></td>
 					<tr>
 				  	<tr>
 						<td>2001-2004</td>
-						<td>Eesti Kunstiakadeemia kuratooriumi liige</td>
+						<td><fmt:message key="kalle.table1.2001-2004" /></td>
 					<tr>
 				  	<tr>
 						<td>2004-2008</td>
-						<td>Kultuuriministeeriumi Arhitektuurikomisjoni liige</td>
+						<td><fmt:message key="kalle.table1.2004-2008" /></td>
 					<tr>
 				  	<tr>
 						<td>2004-...</td>
-						<td>EAL Kutsekomisjoni liige</td>
+						<td><fmt:message key="kalle.table1.2004-X" /></td>
 					<tr>
 				  	<tr>
 						<td>2010-...</td>
-						<td>EAL aseesimees</td>
+						<td><fmt:message key="kalle.table1.2010-X" /></td>
 					<tr>														
 				</table>
 			</div>
 			<br>
-			<p><b>Valik töid:</b></p>
+			<p><b><fmt:message key="kalle.table2.title" />:</b></p>
 			<div class="table-responsive">
 				<table class="table">
 				  	<tr>
 						<td>1997-1998</td>
-						<td>Korterelamu Suur-Patarei 16 Tallinnas, arh. K. Vellevoog</td>
+						<td><fmt:message key="kalle.table2.1997-1998" /></td>
 					<tr>
 				  	<tr>
 						<td>2000-2003</td>
-						<td>Eramuansambel Pärnus, Seedri ja Remmelga tänavate vahelisele alale (kuus neofunktsionalistlikku eramut), arh. K. Vellevoog</td>
+						<td><fmt:message key="kalle.table2.2000-2003" /></td>
 					<tr>
 				  	<tr>
 						<td>2001-2004</td>
-						<td>Korterelamu Tallinnas Kaupmehe tn. 6, arh.-id K. Vellevoog, V. Kadalipp</td>
+						<td><fmt:message key="kalle.table2.2001-2004" /></td>
 					<tr>
 				  	<tr>
 						<td>2003-2004</td>
-						<td>Korterelamu Pärnus Papli tn. 34, arh. K. Vellevoog</td>
+						<td><fmt:message key="kalle.table2.2003-2004" /></td>
 					<tr>
 				  	<tr>
 						<td>2003-2005</td>
-						<td>Korterelamute grupp Tallinnas Pähkli tänaval, arh.-id K. Vellevoog, V. Kadalipp</td>
+						<td><fmt:message key="kalle.table2.2003-2005_1" /></td>
 					<tr>
 				  	<tr>
 						<td>2003-2005</td>
-						<td>Korterelamu Tallinnas Tatari tn 9/11, arh.-id K. Vellevoog, V. Kadalipp</td>
+						<td><fmt:message key="kalle.table2.2003-2005_2" /></td>
 					<tr>
 				  	<tr>
 						<td>2004-2006</td>
-						<td>Korterelamu Haapsalus, Suur-Liiva tn.15, arh. K. Vellevoog</td>
+						<td><fmt:message key="kalle.table2.2004-2006_1" /></td>
 					<tr>
 				  	<tr>
 						<td>2004-2006</td>
-						<td>Büroohoone Tallinnas Pärnu mnt. 153, arh. K. Vellevoog</td>
+						<td><fmt:message key="kalle.table2.2004-2006_2" /></td>
 					<tr>
 				  	<tr>
 						<td>2005-2007</td>
-						<td>Pansionaat Pärnus Seedri tn. 4, arh. K. Vellevoog</td>
+						<td><fmt:message key="kalle.table2.2005-2007" /></td>
 					<tr>
 				  	<tr>
 						<td>2005-...</td>
-						<td>Korterelamu Tallinnas, Luige tn. 3, arh.-id K. Vellevoog, V. Kadalipp</td>
+						<td><fmt:message key="kalle.table2.2005-X" /></td>
 					<tr>
 				  	<tr>
 						<td>2006-...</td>
-						<td>Äri-ja büroohoone Jõhvis, Narva mnt. 14, arh.-id K. Vellevoog, V. Kadalipp</td>
+						<td><fmt:message key="kalle.table2.2006-X" /></td>
 					<tr>
 				  	<tr>
 						<td>2009-2011</td>
-						<td>Korterelamud Helme tn. 14, 16, arh.-id K. Vellevoog, V. Kadalipp</td>
+						<td><fmt:message key="kalle.table2.2009-2011" /></td>
 					<tr>
 				  	<tr>
 						<td>2010-...</td>
-						<td>Narva Joaoru puhkeala (17ha) ja Narva rannahoone, arh.-id K. Vellevoog, T. Truus, M. Prommik, A. Andrejev</td>
+						<td><fmt:message key="kalle.table2.2010-X" /></td>
 					<tr>																				
 				</table>
 			</div>
 			<br>
-			<p><strong>Arhitektuurivõistlused:</strong></p>
+			<p><b><fmt:message key="kalle.table3.title" />:</b></p>
 			<div class="table-responsive">
 				<table class="table">
 				  	<tr>
