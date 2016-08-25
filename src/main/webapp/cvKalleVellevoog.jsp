@@ -90,13 +90,15 @@
 				</table>
 			</div>
 			<br>
-			<p><h3><fmt:message key="kalle.cv.projects.title" />:</h3></p>
+			<h3><fmt:message key="cv.projects.title" />:</h3>
 			<div class="table-responsive">
 				<table class="table">
 					<tr>
-						<th><fmt:message key="kalle.cv.projects.header.year" /></th>
-						<th><fmt:message key="kalle.cv.projects.header.object" /></th>
-						<th><fmt:message key="kalle.cv.projects.header.architects" /></th>
+						<th><fmt:message key="cv.projects.header.year" /></th>
+						<th><fmt:message key="cv.projects.header.object" /></th>
+						<th><fmt:message key="cv.projects.header.location" /></th>
+						<!-- <th><fmt:message key="cv.projects.header.size" /></th>  -->
+						<th><fmt:message key="cv.projects.header.architects" /></th>
 					<tr>
 				  	<tr>
 						<td>1997-1998</td>
@@ -166,7 +168,7 @@
 				</table>
 			</div>
 			<br>
-			<p><h3><fmt:message key="kalle.cv.competitions.title" />:</h3></p>
+			<h3><fmt:message key="kalle.cv.competitions.title" />:</h3>
 			<div class="table-responsive">
 				<table class="table">
 					<tr>
@@ -256,7 +258,7 @@
 				</table>
 			</div>
 			<br>
-			<p><h3><fmt:message key="kalle.cv.awards.title" />:</h3></p>
+			<h3><fmt:message key="kalle.cv.awards.title" />:</h3>
 			<div class="table-responsive">
 				<table class="table">
 				  	<tr>
@@ -274,7 +276,7 @@
 				</table>
 			</div>
 			<br>
-			<p><h3><fmt:message key="kalle.cv.exhibitions.title" />:</h3></p>
+			<h3><fmt:message key="kalle.cv.exhibitions.title" />:</h3>
 			<div class="table-responsive">
 				<table class="table">
 				  	<tr>
@@ -300,7 +302,7 @@
 				</table>
 			</div>
 			<br>
-			<p><h3><fmt:message key="kalle.cv.publications.title" />:</h3></p>
+			<h3><fmt:message key="kalle.cv.publications.title" />:</h3>
 			<div class="table-responsive">
 				<table class="table">
 				  	<tr>
