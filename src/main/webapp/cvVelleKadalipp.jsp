@@ -108,7 +108,7 @@
 				  	<tr>
 						<td>1998-1999</td>
 						<td><fmt:message key="velle.cv.projects.1998-1999_2" /></td>
-						<td><fmt:message key="velle.cv.projects.1998-1999_2-sreet" /></td>
+						<td><fmt:message key="velle.cv.projects.1998-1999_2-street" /></td>
 						<td>Tallinn</td>
 						<td>6575m<sup>2</sup></td>
 						<td>Velle Kadalipp, Kalle Vellevoog</td>
