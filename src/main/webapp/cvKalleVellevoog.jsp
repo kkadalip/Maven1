@@ -172,72 +172,84 @@
 					<tr>
 						<th><fmt:message key="kalle.cv.competitions.header.year" /></th>
 						<th><fmt:message key="kalle.cv.competitions.header.object" /></th>
+						<th><fmt:message key="kalle.cv.competitions.header.location" /></th>
 						<th><fmt:message key="kalle.cv.competitions.header.prize" /></th>
 						<th><fmt:message key="kalle.cv.competitions.header.architects" /></th>
 					<tr>
 				  	<tr>
 						<td>1989</td>
 						<td><fmt:message key="kalle.cv.competitions.1989" /></td>
+						<td><fmt:message key="kalle.cv.competitions.1989-location" /></td>
 						<td><fmt:message key="kalle.cv.competitions.1989-prize" /></td>
 						<td>K. Vellevoog, E. Rajasaar, I. Jalas</td>
 					<tr>
 				  	<tr>
 						<td>1990</td>
 						<td><fmt:message key="kalle.cv.competitions.1990" /></td>
+						<td>Jõhvi</td>
 						<td><fmt:message key="kalle.cv.competitions.1990-prize" /></td>
 						<td>K. Vellevoog, V. Kadalipp, I. Jalas</td>
 					<tr>
 				  	<tr>
 						<td>1997</td>
 						<td><fmt:message key="kalle.cv.competitions.1997" /></td>
+						<td>Tartu</td>
 						<td><fmt:message key="kalle.cv.competitions.1997-prize" /></td>
 						<td>K. Vellevoog, E. Rajasaar, I. Jalas,  M. Kadarik</td>
 					<tr>
 				  	<tr>
 						<td>1998</td>
 						<td><fmt:message key="kalle.cv.competitions.1998" /></td>
+						<td>Jõhvi</td>
 						<td><fmt:message key="kalle.cv.competitions.1998-prize" /></td>
 						<td>K. Vellevoog, I. Jalas</td>
 					<tr>
 				  	<tr>
 						<td>1999</td>
 						<td><fmt:message key="kalle.cv.competitions.1999" /></td>
+						<td>Saaremaa</td>
 						<td><fmt:message key="kalle.cv.competitions.1999-prize" /></td>
 						<td>K. Vellevoog</td>
 					<tr>
 				  	<tr>
 						<td>2000</td>
 						<td><fmt:message key="kalle.cv.competitions.2000" /></td>
+						<td>Tartu</td>
 						<td><fmt:message key="kalle.cv.competitions.2000-prize" /></td>
 						<td>K. Vellevoog, V. Kadalipp, I. Jalas, E. Rajasaar</td>
 					<tr>
 				  	<tr>
 						<td>2001</td>
 						<td><fmt:message key="kalle.cv.competitions.2001" /></td>
+						<td>Tallinn</td>
 						<td><fmt:message key="kalle.cv.competitions.2001-prize" /></td>
 						<td>K. Vellevoog, V. Kadalipp, O. Kadarik, E. Rajasaar</td>
 					<tr>
 				  	<tr>
 						<td>2004</td>
 						<td><fmt:message key="kalle.cv.competitions.2004" /></td>
+						<td><fmt:message key="kalle.cv.competitions.2004-location" /></td>
 						<td><fmt:message key="kalle.cv.competitions.2004-prize" /></td>
 						<td>K. Vellevoog, L. Põdra</td>
 					<tr>
 				  	<tr>
 						<td>2007</td>
 						<td><fmt:message key="kalle.cv.competitions.2007" /></td>
+						<td><fmt:message key="kalle.cv.competitions.2007-location" /></td>
 						<td><fmt:message key="kalle.cv.competitions.2007-prize" /></td>
 						<td>K. Vellevoog, V. Kadalipp, T. Truus, M. Prommik</td>
 					<tr>
 				  	<tr>
 						<td>2009</td>
 						<td><fmt:message key="kalle.cv.competitions.2009" /></td>
+						<td>Narva</td>
 						<td><fmt:message key="kalle.cv.competitions.2009-prize" /></td>
 						<td>K. Vellevoog, T. Truus, M. Prommik</td>
 					<tr>
 				  	<tr>
 						<td>2010</td>
 						<td><fmt:message key="kalle.cv.competitions.2010" /></td>
+						<td><fmt:message key="kalle.cv.competitions.2010-location" /></td>
 						<td><fmt:message key="kalle.cv.competitions.2010-prize" /></td>
 						<td>K. Vellevoog, T. Truus, K. Jagodin, M. Pedanik</td>
 					<tr>			
