@@ -131,11 +131,11 @@
 					<tr>
 				  	<tr>
 						<td>2005-...</td>
-						<td><fmt:message key="kalle.cv.projects.2005-X" /></td>
+						<td><fmt:message key="kalle.cv.projects.2005" /></td>
 					<tr>
 				  	<tr>
 						<td>2006-...</td>
-						<td><fmt:message key="kalle.cv.projects.2006-X" /></td>
+						<td><fmt:message key="kalle.cv.projects.2006" /></td>
 					<tr>
 				  	<tr>
 						<td>2009-2011</td>
@@ -143,7 +143,7 @@
 					<tr>
 				  	<tr>
 						<td>2010-...</td>
-						<td><fmt:message key="kalle.cv.projects.2010-X" /></td>
+						<td><fmt:message key="kalle.cv.projects.2010" /></td>
 					<tr>																				
 				</table>
 			</div>
@@ -151,67 +151,95 @@
 			<p><b><fmt:message key="kalle.cv.competitions.title" />:</b></p>
 			<div class="table-responsive">
 				<table class="table">
+					<tr>
+						<th><fmt:message key="kalle.cv.competitions.header.year" /></th>
+						<th><fmt:message key="kalle.cv.competitions.header.object" /></th>
+						<th><fmt:message key="kalle.cv.competitions.header.prize" /></th>
+						<th><fmt:message key="kalle.cv.competitions.header.architects" /></th>
+					<tr>
 				  	<tr>
 						<td>1989</td>
 						<td><fmt:message key="kalle.cv.competitions.1989" /></td>
+						<td><fmt:message key="kalle.cv.competitions.1989-prize" /></td>
+						<td>K. Vellevoog, E. Rajasaar, I. Jalas</td>
 					<tr>
 				  	<tr>
 						<td>1990</td>
 						<td><fmt:message key="kalle.cv.competitions.1990" /></td>
+						<td><fmt:message key="kalle.cv.competitions.1990-prize" /></td>
+						<td>K. Vellevoog, V. Kadalipp, I. Jalas</td>
 					<tr>
 				  	<tr>
 						<td>1997</td>
 						<td><fmt:message key="kalle.cv.competitions.1997" /></td>
+						<td><fmt:message key="kalle.cv.competitions.1997-prize" /></td>
+						<td>K. Vellevoog, E. Rajasaar, I. Jalas,  M. Kadarik</td>
 					<tr>
 				  	<tr>
 						<td>1998</td>
 						<td><fmt:message key="kalle.cv.competitions.1998" /></td>
+						<td><fmt:message key="kalle.cv.competitions.1998-prize" /></td>
+						<td>K. Vellevoog, I. Jalas</td>
 					<tr>
 				  	<tr>
 						<td>1999</td>
 						<td><fmt:message key="kalle.cv.competitions.1999" /></td>
+						<td><fmt:message key="kalle.cv.competitions.1999-prize" /></td>
+						<td>K. Vellevoog</td>
 					<tr>
 				  	<tr>
 						<td>2000</td>
 						<td><fmt:message key="kalle.cv.competitions.2000" /></td>
+						<td><fmt:message key="kalle.cv.competitions.2000-prize" /></td>
+						<td>K. Vellevoog, V. Kadalipp, I. Jalas, E. Rajasaar</td>
 					<tr>
 				  	<tr>
 						<td>2001</td>
 						<td><fmt:message key="kalle.cv.competitions.2001" /></td>
+						<td><fmt:message key="kalle.cv.competitions.2001-prize" /></td>
+						<td>K. Vellevoog, V. Kadalipp, O. Kadarik, E. Rajasaar</td>
 					<tr>
 				  	<tr>
 						<td>2004</td>
 						<td><fmt:message key="kalle.cv.competitions.2004" /></td>
+						<td><fmt:message key="kalle.cv.competitions.2004-prize" /></td>
+						<td>K. Vellevoog, L. Põdra</td>
 					<tr>
 				  	<tr>
 						<td>2007</td>
 						<td><fmt:message key="kalle.cv.competitions.2007" /></td>
+						<td><fmt:message key="kalle.cv.competitions.2007-prize" /></td>
+						<td>K. Vellevoog, V. Kadalipp, T. Truus, M. Prommik</td>
 					<tr>
 				  	<tr>
 						<td>2009</td>
 						<td><fmt:message key="kalle.cv.competitions.2009" /></td>
+						<td><fmt:message key="kalle.cv.competitions.2009-prize" /></td>
+						<td>K. Vellevoog, T. Truus, M. Prommik</td>
 					<tr>
 				  	<tr>
 						<td>2010</td>
 						<td><fmt:message key="kalle.cv.competitions.2010" /></td>
-					<tr>				
+						<td><fmt:message key="kalle.cv.competitions.2010-prize" /></td>
+						<td>K. Vellevoog, T. Truus, K. Jagodin, M. Pedanik</td>
+					<tr>			
 				</table>
 			</div>
 			<br>
-			<p><b><fmt:message key="kalle.cv.prizes.title" />:</b></p>
+			<p><b><fmt:message key="kalle.cv.awards.title" />:</b></p>
 			<div class="table-responsive">
 				<table class="table">
 				  	<tr>
 						<td>1998</td>
-						<td><fmt:message key="kalle.cv.prizes.1998" /></td>
+						<td><fmt:message key="kalle.cv.awards.1998" /></td>
 					<tr>
 				  	<tr>
 						<td>2002</td>
-						<td><fmt:message key="kalle.cv.prizes.2002" /></td>
+						<td><fmt:message key="kalle.cv.awards.2002" /></td>
 					<tr>
 				  	<tr>
 						<td>2007</td>
-						<td><fmt:message key="kalle.cv.prizes.2007" /></td>
+						<td><fmt:message key="kalle.cv.awards.2007" /></td>
 					<tr>
 				</table>
 			</div>
@@ -287,11 +315,7 @@
 					<tr>
 				  	<tr>
 						<td>2010</td>
-						<td><fmt:message key="kalle.cv.publications.2010_1" /></td>
-					<tr>
-				  	<tr>
-						<td>2010</td>
-						<td><fmt:message key="kalle.cv.publications.2010_2" /></td>
+						<td><fmt:message key="kalle.cv.publications.2010" /></td>
 					<tr>															
 				</table>
 			</div>       
