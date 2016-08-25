@@ -90,65 +90,83 @@
 				</table>
 			</div>
 			<br>
-			<p><b><fmt:message key="kalle.cv.projects.title" />:</b></p>
+			<p><h3><fmt:message key="kalle.cv.projects.title" />:</h3></p>
 			<div class="table-responsive">
 				<table class="table">
+					<tr>
+						<th><fmt:message key="kalle.cv.projects.header.year" /></th>
+						<th><fmt:message key="kalle.cv.projects.header.object" /></th>
+						<th><fmt:message key="kalle.cv.projects.header.architects" /></th>
+					<tr>
 				  	<tr>
 						<td>1997-1998</td>
 						<td><fmt:message key="kalle.cv.projects.1997-1998" /></td>
+						<td>K. Vellevoog</td>
 					<tr>
 				  	<tr>
 						<td>2000-2003</td>
 						<td><fmt:message key="kalle.cv.projects.2000-2003" /></td>
+						<td>K. Vellevoog</td>
 					<tr>
 				  	<tr>
 						<td>2001-2004</td>
 						<td><fmt:message key="kalle.cv.projects.2001-2004" /></td>
+						<td>K. Vellevoog, V. Kadalipp</td>
 					<tr>
 				  	<tr>
 						<td>2003-2004</td>
 						<td><fmt:message key="kalle.cv.projects.2003-2004" /></td>
+						<td>K. Vellevoog</td>
 					<tr>
 				  	<tr>
 						<td>2003-2005</td>
 						<td><fmt:message key="kalle.cv.projects.2003-2005_1" /></td>
+						<td>K. Vellevoog, V. Kadalipp</td>
 					<tr>
 				  	<tr>
 						<td>2003-2005</td>
 						<td><fmt:message key="kalle.cv.projects.2003-2005_2" /></td>
+						<td>K. Vellevoog, V. Kadalipp</td>
 					<tr>
 				  	<tr>
 						<td>2004-2006</td>
 						<td><fmt:message key="kalle.cv.projects.2004-2006_1" /></td>
+						<td>K. Vellevoog</td>
 					<tr>
 				  	<tr>
 						<td>2004-2006</td>
 						<td><fmt:message key="kalle.cv.projects.2004-2006_2" /></td>
+						<td>K. Vellevoog</td>
 					<tr>
 				  	<tr>
 						<td>2005-2007</td>
 						<td><fmt:message key="kalle.cv.projects.2005-2007" /></td>
+						<td>K. Vellevoog</td>
 					<tr>
 				  	<tr>
-						<td>2005-...</td>
+						<td>2005</td>
 						<td><fmt:message key="kalle.cv.projects.2005" /></td>
+						<td>K. Vellevoog, V. Kadalipp</td>
 					<tr>
 				  	<tr>
 						<td>2006-...</td>
 						<td><fmt:message key="kalle.cv.projects.2006" /></td>
+						<td>K. Vellevoog, V. Kadalipp</td>
 					<tr>
 				  	<tr>
 						<td>2009-2011</td>
 						<td><fmt:message key="kalle.cv.projects.2009-2011" /></td>
+						<td>K. Vellevoog, V. Kadalipp</td>
 					<tr>
 				  	<tr>
 						<td>2010-...</td>
 						<td><fmt:message key="kalle.cv.projects.2010" /></td>
+						<td>K. Vellevoog, T. Truus, M. Prommik, A. Andrejev</td>
 					<tr>																				
 				</table>
 			</div>
 			<br>
-			<p><b><fmt:message key="kalle.cv.competitions.title" />:</b></p>
+			<p><h3><fmt:message key="kalle.cv.competitions.title" />:</h3></p>
 			<div class="table-responsive">
 				<table class="table">
 					<tr>
@@ -226,7 +244,7 @@
 				</table>
 			</div>
 			<br>
-			<p><b><fmt:message key="kalle.cv.awards.title" />:</b></p>
+			<p><h3><fmt:message key="kalle.cv.awards.title" />:</h3></p>
 			<div class="table-responsive">
 				<table class="table">
 				  	<tr>
@@ -244,7 +262,7 @@
 				</table>
 			</div>
 			<br>
-			<p><b><fmt:message key="kalle.cv.exhibitions.title" />:</b></p>
+			<p><h3><fmt:message key="kalle.cv.exhibitions.title" />:</h3></p>
 			<div class="table-responsive">
 				<table class="table">
 				  	<tr>
@@ -270,7 +288,7 @@
 				</table>
 			</div>
 			<br>
-			<p><b><fmt:message key="kalle.cv.publications.title" />:</b></p>
+			<p><h3><fmt:message key="kalle.cv.publications.title" />:</h3></p>
 			<div class="table-responsive">
 				<table class="table">
 				  	<tr>
