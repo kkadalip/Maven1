@@ -149,7 +149,7 @@
 						<td>K. Vellevoog, V. Kadalipp</td>
 					<tr>
 				  	<tr>
-						<td>2006-...</td>
+						<td>2006</td>
 						<td><fmt:message key="kalle.cv.projects.2006" /></td>
 						<td>K. Vellevoog, V. Kadalipp</td>
 					<tr>
@@ -159,7 +159,7 @@
 						<td>K. Vellevoog, V. Kadalipp</td>
 					<tr>
 				  	<tr>
-						<td>2010-...</td>
+						<td>2010</td>
 						<td><fmt:message key="kalle.cv.projects.2010" /></td>
 						<td>K. Vellevoog, T. Truus, M. Prommik, A. Andrejev</td>
 					<tr>																				
