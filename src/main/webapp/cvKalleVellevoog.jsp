@@ -170,11 +170,11 @@
 			<div class="table-responsive">
 				<table class="table">
 					<tr>
-						<th><fmt:message key="kalle.cv.competitions.header.year" /></th>
-						<th><fmt:message key="kalle.cv.competitions.header.object" /></th>
-						<th><fmt:message key="kalle.cv.competitions.header.location" /></th>
-						<th><fmt:message key="kalle.cv.competitions.header.prize" /></th>
-						<th><fmt:message key="kalle.cv.competitions.header.architects" /></th>
+						<th><fmt:message key="cv.competitions.header.year" /></th>
+						<th><fmt:message key="cv.competitions.header.object" /></th>
+						<th><fmt:message key="cv.competitions.header.location" /></th>
+						<th><fmt:message key="cv.competitions.header.prize" /></th>
+						<th><fmt:message key="cv.competitions.header.architects" /></th>
 					<tr>
 				  	<tr>
 						<td>1989</td>

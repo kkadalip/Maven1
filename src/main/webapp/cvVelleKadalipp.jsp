@@ -159,35 +159,54 @@
 			<p><b><fmt:message key="velle.cv.competitions.title" />:</b></p>		
 			<div class="table-responsive">
 				<table class="table">
+					<tr>
+						<th><fmt:message key="cv.competitions.header.year" /></th>
+						<th><fmt:message key="cv.competitions.header.object" /></th>
+						<th><fmt:message key="cv.competitions.header.location" /></th>
+						<th><fmt:message key="cv.competitions.header.prize" /></th>
+						<th><fmt:message key="cv.competitions.header.architects" /></th>
+					<tr>
 				  	<tr>
 						<td>1990</td>
 						<td><fmt:message key="velle.cv.competitions.1990" /></td>
+						<td>Jõhvi</td>
 						<td><fmt:message key="velle.cv.competitions.1990-prize" /></td>
+						<td>Velle Kadalipp, Kalle Vellevoog, Ilmar Jalas</td>
 					<tr>
 				  	<tr>
 						<td>2000</td>
 						<td><fmt:message key="velle.cv.competitions.2000" /></td>
+						<td>Tartu</td>
 						<td><fmt:message key="velle.cv.competitions.2000-prize" /></td>
+						<td>Velle Kadalipp, Ilmar Jalas, Kalle Vellevoog, Enn Rajasaar</td>
 					<tr>
 				  	<tr>
 						<td>2001</td>
 						<td><fmt:message key="velle.cv.competitions.2001_1" /></td>
+						<td>Tallinn</td>
 						<td><fmt:message key="velle.cv.competitions.2001_1-prize" /></td>
+						<td>Velle Kadalipp, Kalle Vellevoog, Ott Kadarik, Enn Rajasaar</td>
 					<tr>
 				  	<tr>
 						<td>2001</td>
 						<td><fmt:message key="velle.cv.competitions.2001_2"/></td>
+						<td>Pärnu</td>
 						<td><fmt:message key="velle.cv.competitions.2001_2-prize" /></td>
+						<td>Velle Kadalipp</td>
 					<tr>
 				  	<tr>
 						<td>2002</td>
 						<td><fmt:message key="velle.cv.competitions.2002" /></td>
+						<td>Kuressaare</td>
 						<td><fmt:message key="velle.cv.competitions.2002-prize" /></td>
+						<td>Velle Kadalipp, Kalle Vellevoog</td>
 					<tr>
 				  	<tr>
 						<td>2007</td>
 						<td><fmt:message key="velle.cv.competitions.2007" /></td>
-						<td><fmt:message key="velle.cv.competitions.2007-prize" /></td>						
+						<td><fmt:message key="velle.cv.competitions.2007-location" /></td>
+						<td><fmt:message key="velle.cv.competitions.2007-prize" /></td>
+						<td>Velle Kadalipp, Kalle Vellevoog Tiiu Truus, Martin Prommik</td>				
 					<tr>					
 				</table>
 			</div>
