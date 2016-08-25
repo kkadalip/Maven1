@@ -59,22 +59,22 @@
 						<td>1998-2002</td>
 						<td><fmt:message key="kalle.cv.1998-2002" /></td>
 					<tr>
-				  	<tr>
-						<td>2002-2004</td>
-						<td><fmt:message key="kalle.cv.2002-2004" /></td>
-					<tr>
 					<tr>
 						<td>2000-2003</td>
 						<td><fmt:message key="kalle.cv.2000-2003" /></td>
 					<tr>
 				  	<tr>
-						<td>2001-2003</td>
-						<td><fmt:message key="kalle.cv.2001-2003" /></td>
-					<tr>
-				  	<tr>
 						<td>2001-2004</td>
 						<td><fmt:message key="kalle.cv.2001-2004" /></td>
 					<tr>
+				  	<tr>
+						<td>2001-2005</td>
+						<td><fmt:message key="kalle.cv.2001-2005" /></td>
+					<tr>					
+					<tr>
+						<td>2002-2004</td>
+						<td><fmt:message key="kalle.cv.2002-2004" /></td>
+					<tr>					
 				  	<tr>
 						<td>2004-2008</td>
 						<td><fmt:message key="kalle.cv.2004-2008" /></td>
@@ -298,7 +298,7 @@
 			<br>
 			<br>
 			<br>
-			<h4><a class="link_back" href="javascript:history.back();">Tagasi</a></h4>
+			<h4><a class="link_back" href="javascript:history.back();"><fmt:message key="label.back" /></a></h4>
 			<br>
 			
 			<!-- 
