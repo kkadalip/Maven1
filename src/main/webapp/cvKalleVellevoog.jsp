@@ -96,74 +96,101 @@
 					<tr>
 						<th><fmt:message key="cv.projects.header.year" /></th>
 						<th><fmt:message key="cv.projects.header.object" /></th>
-						<th><fmt:message key="cv.projects.header.location" /></th>
+						<th><fmt:message key="cv.projects.header.locationStreet" /></th>
+						<th><fmt:message key="cv.projects.header.locationTown" /></th>
 						<!-- <th><fmt:message key="cv.projects.header.size" /></th>  -->
 						<th><fmt:message key="cv.projects.header.architects" /></th>
 					<tr>
 				  	<tr>
 						<td>1997-1998</td>
 						<td><fmt:message key="kalle.cv.projects.1997-1998" /></td>
-						<td>K. Vellevoog</td>
+						<td><fmt:message key="kalle.cv.projects.1997-1998-street" /></td>
+						<td><fmt:message key="kalle.cv.projects.1997-1998-town" /></td>
+						<td>Kalle Vellevoog</td>
 					<tr>
 				  	<tr>
 						<td>2000-2003</td>
 						<td><fmt:message key="kalle.cv.projects.2000-2003" /></td>
-						<td>K. Vellevoog</td>
+						<td><fmt:message key="kalle.cv.projects.2000-2003-street" /></td>
+						<td><fmt:message key="kalle.cv.projects.2000-2003-town" /></td>
+						<td>Kalle Vellevoog</td>
 					<tr>
 				  	<tr>
 						<td>2001-2004</td>
 						<td><fmt:message key="kalle.cv.projects.2001-2004" /></td>
-						<td>K. Vellevoog, V. Kadalipp</td>
+						<td><fmt:message key="kalle.cv.projects.2001-2004-street" /></td>
+						<td><fmt:message key="kalle.cv.projects.2001-2004-town" /></td>
+						<td>Kalle Vellevoog, Velle Kadalipp</td>
 					<tr>
 				  	<tr>
 						<td>2003-2004</td>
 						<td><fmt:message key="kalle.cv.projects.2003-2004" /></td>
-						<td>K. Vellevoog</td>
+						<td><fmt:message key="kalle.cv.projects.2003-2004-street" /></td>
+						<td><fmt:message key="kalle.cv.projects.2003-2004-town" /></td>
+						<td>Kalle Vellevoog</td>
 					<tr>
 				  	<tr>
 						<td>2003-2005</td>
 						<td><fmt:message key="kalle.cv.projects.2003-2005_1" /></td>
-						<td>K. Vellevoog, V. Kadalipp</td>
+						<td><fmt:message key="kalle.cv.projects.2003-2005_1-street" /></td>
+						<td><fmt:message key="kalle.cv.projects.2003-2005_1-town" /></td>
+						<td>Kalle Vellevoog, Velle Kadalipp</td>
 					<tr>
 				  	<tr>
 						<td>2003-2005</td>
 						<td><fmt:message key="kalle.cv.projects.2003-2005_2" /></td>
-						<td>K. Vellevoog, V. Kadalipp</td>
+						<td><fmt:message key="kalle.cv.projects.2003-2005_2-street" /></td>
+						<td><fmt:message key="kalle.cv.projects.2003-2005_2-town" /></td>
+						<td>Kalle Vellevoog, Velle Kadalipp</td>
 					<tr>
 				  	<tr>
 						<td>2004-2006</td>
 						<td><fmt:message key="kalle.cv.projects.2004-2006_1" /></td>
-						<td>K. Vellevoog</td>
+						<td><fmt:message key="kalle.cv.projects.2004-2006_1-street" /></td>
+						<td><fmt:message key="kalle.cv.projects.2004-2006_1-town" /></td>
+						<td>Kalle Vellevoog</td>
 					<tr>
 				  	<tr>
 						<td>2004-2006</td>
 						<td><fmt:message key="kalle.cv.projects.2004-2006_2" /></td>
-						<td>K. Vellevoog</td>
+						<td><fmt:message key="kalle.cv.projects.2004-2006_2-street" /></td>
+						<td><fmt:message key="kalle.cv.projects.2004-2006_2-town" /></td>
+						<td>Kalle Vellevoog</td>
 					<tr>
 				  	<tr>
 						<td>2005-2007</td>
 						<td><fmt:message key="kalle.cv.projects.2005-2007" /></td>
-						<td>K. Vellevoog</td>
+						<td><fmt:message key="kalle.cv.projects.2005-2007-street" /></td>
+						<td><fmt:message key="kalle.cv.projects.2005-2007-town" /></td>
+						<td>Kalle Vellevoog</td>
 					<tr>
 				  	<tr>
 						<td>2005</td>
 						<td><fmt:message key="kalle.cv.projects.2005" /></td>
-						<td>K. Vellevoog, V. Kadalipp</td>
+						<td><fmt:message key="kalle.cv.projects.2005-street" /></td>
+						<td><fmt:message key="kalle.cv.projects.2005-town" /></td>
+						<td>Kalle Vellevoog, Velle Kadalipp</td>
 					<tr>
 				  	<tr>
 						<td>2006</td>
 						<td><fmt:message key="kalle.cv.projects.2006" /></td>
-						<td>K. Vellevoog, V. Kadalipp</td>
+						<td><fmt:message key="kalle.cv.projects.2006-street" /></td>
+						<td><fmt:message key="kalle.cv.projects.2006-town" /></td>
+						<td>Kalle Vellevoog, Velle Kadalipp</td>
 					<tr>
 				  	<tr>
 						<td>2009-2011</td>
 						<td><fmt:message key="kalle.cv.projects.2009-2011" /></td>
-						<td>K. Vellevoog, V. Kadalipp</td>
+						<td><fmt:message key="kalle.cv.projects.2009-2011-street" /></td>
+						<td><fmt:message key="kalle.cv.projects.2009-2011-town" /></td>
+						<td>Kalle Vellevoog, Velle Kadalipp</td>
 					<tr>
 				  	<tr>
 						<td>2010</td>
 						<td><fmt:message key="kalle.cv.projects.2010" /></td>
-						<td>K. Vellevoog, T. Truus, M. Prommik, A. Andrejev</td>
+						<td><fmt:message key="kalle.cv.projects.2010-street" /></td>
+						<td><fmt:message key="kalle.cv.projects.2010-town" /></td>
+						<td>Kalle Vellevoog, T. Truus, M. Prommik, A. Andrejev</td>
 					<tr>																				
 				</table>
 			</div>
