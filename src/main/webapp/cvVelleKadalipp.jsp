@@ -190,7 +190,7 @@
 						<td><fmt:message key="velle.cv.projects.2004-2011" /></td>
 						<td><fmt:message key="velle.cv.projects.2004-2011-street" /></td>
 						<td>Tallinn</td>
-						<td>5082,0m<sup>2</sup></td>
+						<td>5082m<sup>2</sup></td>
 						<td>Velle Kadalipp</td>
 					<tr>
 				  	<tr>
@@ -198,7 +198,7 @@
 						<td><fmt:message key="velle.cv.projects.2005" /></td>
 						<td><fmt:message key="velle.cv.projects.2005-street" /></td>
 						<td>Tallinn</td>
-						<td>1820,0m<sup>2</sup></td>
+						<td>1820m<sup>2</sup></td>
 						<td>Velle Kadalipp, Kalle Vellevoog</td>
 					<tr>
 				  	<tr>
@@ -324,33 +324,45 @@
 			<h3><fmt:message key="velle.cv.publications.title" />:</h3>
 			<div class="table-responsive">
 				<table class="table">
+					<tr>
+						<th>Year</th>
+						<th>Name</th>
+						<th>Publisher</th>
+					</tr>
 				  	<tr>
 						<td>1994</td>
 						<td><fmt:message key="velle.cv.publications.1994" /></td>
+						<td><fmt:message key="velle.cv.publications.1994-publisher" /></td>
 					<tr>
 				  	<tr>
 						<td>1998</td>
 						<td><fmt:message key="velle.cv.publications.1998" /></td>
+						<td><fmt:message key="velle.cv.publications.1998-publisher" /></td>
 					<tr>
 				  	<tr>
 						<td>2000</td>
 						<td><fmt:message key="velle.cv.publications.2000" /></td>
+						<td><fmt:message key="velle.cv.publications.2000-publisher" /></td>
 					<tr>
 				  	<tr>
 						<td>2005</td>
 						<td><fmt:message key="velle.cv.publications.2005_1" /></td>
+						<td><fmt:message key="velle.cv.publications.2005_1-publisher" /></td>
 					<tr>
 				  	<tr>
 						<td>2005</td>
 						<td><fmt:message key="velle.cv.publications.2005_2" /></td>
+						<td><fmt:message key="velle.cv.publications.2005_2-publisher" /></td>
 					<tr>	
 				  	<tr>
 						<td>2005</td>
 						<td><fmt:message key="velle.cv.publications.2005_3" /></td>
+						<td><fmt:message key="velle.cv.publications.2005_3-publisher" /></td>
 					<tr>
 					<tr>
 						<td>2006</td>
 						<td><fmt:message key="velle.cv.publications.2006" /></td>
+						<td><fmt:message key="velle.cv.publications.2006-publisher" /></td>
 					</tr>								
 				</table>
 			</div>
