@@ -329,7 +329,7 @@
 				</table>
 			</div>
 			<br>
-			<h3><fmt:message key="kalle.cv.publications.title" />:</h3>
+			<h3><fmt:message key="cv.publications.title" />:</h3>
 			<div class="table-responsive">
 				<table class="table">
 				  	<tr>
