@@ -23,7 +23,7 @@ jQuery(function($){
 		$frame.sly({
 			horizontal: 1,
 			itemNav: 'centered',
-			smart: 1,
+			smart: 0, // centers to mid if 1
 			activateOn: 'click',
 			mouseDragging: 1,
 			touchDragging: 1,
