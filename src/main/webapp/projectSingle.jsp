@@ -100,6 +100,126 @@ $(document).ready(function() { //window.onload = function () {
 	*/
 });
 </script>
+
+
+
+<script>
+/*
+	$(document).ready(function(){
+	    var sly = new Sly('.frame');
+	    sly.init();
+	});
+	
+	$(window).resize(function(e) {
+	      $frame.sly('reload');
+	});
+*/
+</script>
+
+<style type="text/css">
+/*
+.frame { width: 100%; height: 160px; padding: 0; }
+.frame .slidee { margin: 0; padding: 0; height: 100%; list-style: none; }
+.frame .slidee li { float: left; margin: 0 5px 0 0; padding: 0; width: 120px; height: 100%; }
+*/
+body { background: #e8e8e8; }
+.container { margin: 0 auto; }
+
+/* Example wrapper */
+.wrap {
+	position: relative;
+	margin: 3em 0;
+}
+
+/* Frame */
+.frame {
+	height: 250px;
+	line-height: 250px;
+	overflow: hidden;
+}
+.frame ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	font-size: 50px;
+}
+.frame ul li {
+	float: left;
+	width: 227px;
+	height: 100%;
+	margin: 0 1px 0 0;
+	padding: 0;
+	background: #333;
+	color: #ddd;
+	text-align: center;
+	cursor: pointer;
+}
+.frame ul li.active {
+	color: #fff;
+	background: #a03232;
+}
+
+/* Scrollbar */
+.scrollbar {
+	margin: 0 0 1em 0;
+	height: 2px;
+	background: #ccc;
+	line-height: 0;
+}
+.scrollbar .handle {
+	width: 100px;
+	height: 100%;
+	background: #292a33;
+	cursor: pointer;
+}
+.scrollbar .handle .mousearea {
+	position: absolute;
+	top: -9px;
+	left: 0;
+	width: 100%;
+	height: 20px;
+}
+
+/* Pages */
+.pages {
+	list-style: none;
+	margin: 20px 0;
+	padding: 0;
+	text-align: center;
+}
+.pages li {
+	display: inline-block;
+	width: 14px;
+	height: 14px;
+	margin: 0 4px;
+	text-indent: -999px;
+	border-radius: 10px;
+	cursor: pointer;
+	overflow: hidden;
+	background: #fff;
+	box-shadow: inset 0 0 0 1px rgba(0,0,0,.2);
+}
+.pages li:hover {
+	background: #aaa;
+}
+.pages li.active {
+	background: #666;
+}
+
+/* Controls */
+.controls { margin: 25px 0; text-align: center; }
+
+/* One Item Per Frame example*/
+.oneperframe { height: 300px; line-height: 300px; }
+.oneperframe ul li { width: 1140px; }
+.oneperframe ul li.active { background: #333; }
+
+/* Crazy example */
+.crazy ul li:nth-child(2n) { width: 100px; margin: 0 4px 0 20px; }
+.crazy ul li:nth-child(3n) { width: 300px; margin: 0 10px 0 5px; }
+.crazy ul li:nth-child(4n) { width: 400px; margin: 0 30px 0 2px; }
+</style>
 </head>
 
 <body>
@@ -125,6 +245,55 @@ $(document).ready(function() { //window.onload = function () {
 				</div>
 				<br>
 				-->
+
+				<div class="scrollbar">
+					<div class="handle"></div>
+				</div>
+				<div class="frame" id="oneperframe">
+
+					<div class="slidee">
+						<h2>This is a heading</h2>
+						<p>This is a paragraph</p>
+					</div>
+
+					<div class="slidee">
+						<h2>This is a heading</h2>
+						<p>This is a paragraph</p>
+					</div>
+
+					<div class="slidee">
+						<h2>This is a heading</h2>
+						<p>This is a paragraph</p>
+					</div>
+
+				</div>
+
+
+
+
+				<div class="scrollbar">
+				    <div class="handle"></div>
+				</div>
+				<div class="frame">
+				    <div class="slidee">
+				        <h2>This in here...</h2>
+				        <p>...can be anything. <strong>Anything!</strong></p>
+				    </div>
+				</div>
+				<div class="frame">
+				    <ul class="slidee">
+				        <li>asd1</li>
+				        <li>asd2</li>
+				        <li>asd3</li>
+				        <li>asd4</li>
+				        <li>asd5</li>
+				        <li>asd6</li>
+				        <li>asd7</li>
+				        <li>asd8</li>
+				        <li>asd9</li>
+				        <li>asd10</li>
+				    </ul>
+				</div>
 				 
 				<c:forEach items="${project.addresses}" var="address">
 				aadress: ${address.city}, ${address.street} ${address.streetType} ${address.building}
@@ -539,7 +708,10 @@ $(document).ready(function() { //window.onload = function () {
 			} // for-in
 		});
 		/** photoswipe   end **/
-
 	</script>
+	
+	<!-- SLY JavaScript library for one-directional scrolling with item based navigation support: -->
+	<script src="<c:url value="/static/js/sly/sly.js" />"></script>
+	<script src="<c:url value="/static/js/sly/horizontal.js" />"></script>
 </body>
 </html>

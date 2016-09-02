@@ -1,7 +1,8 @@
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
 <div class="footer-wide">
 	<div class="container">
 		<footer class="footer">
-			<span class="noselect">&copy; 2016 Arhitektuuribüroo JVR OÜ</span>
+			<span class="noselect">&copy; <fmt:message key="footer.title" /></span>
 		</footer>
 	</div>
-</div>
+</div> 
