@@ -24,7 +24,8 @@
 <!-- http://photoswipe.com/documentation/getting-started.html -->
 
 <!-- Core CSS file -->
-<link rel="stylesheet" href="<c:url value="/static/PhotoSwipe/photoswipe.css"/>">
+<link rel="stylesheet"
+	href="<c:url value="/static/PhotoSwipe/photoswipe.css"/>">
 
 <!-- Skin CSS file (styling of UI - buttons, caption, etc.)
      In the folder of skin CSS file there are also:
@@ -33,211 +34,50 @@
 <link rel="stylesheet" href="<c:url value="/static/PhotoSwipe/default-skin/default-skin.css"/>">
 
 <!-- Core JS file -->
-<script src="<c:url value="/static/PhotoSwipe/photoswipe-mod.js" />"></script> <!-- .min.js -->
+<script src="<c:url value="/static/PhotoSwipe/photoswipe-mod.js" />"></script>
+<!-- .min.js -->
 
 <!-- UI JS file -->
-<script src="<c:url value="/static/PhotoSwipe/photoswipe-ui-default.js" />"></script> <!-- .min.js -->
+<script src="<c:url value="/static/PhotoSwipe/photoswipe-ui-default.js" />"></script>
+<!-- .min.js -->
 
 <!-- INIT from tutorial: -->
 <script src="<c:url value="/static/PhotoSwipe/photoswipe-init.js" />"></script>
 
+<!-- PhotoSwipe initializing -->
+<script src="<c:url value="/static/PhotoSwipe/script-init.js" />"></script>
 <!-- Extra stuff: -->
 <script src="<c:url value="/static/js/jquery.dragchanged.js" />"></script>
 
-<script>
-var openPhotoSwipe = function() {
-    var pswpElement = document.querySelectorAll('.pswp')[0];
-
-    // build items array
-    var items = [
-        {
-            src: 'https://farm2.staticflickr.com/1043/5186867718_06b2e9e551_b.jpg',
-            w: 964,
-            h: 1024
-        },
-        {
-            src: 'https://farm7.staticflickr.com/6175/6176698785_7dee72237e_b.jpg',
-            w: 1024,
-            h: 683
-        }
-    ];
-    
-    // define options (if needed)
-    var options = {
-             // history & focus options are disabled on CodePen        
-        history: false,
-        focus: false,
-
-        showAnimationDuration: 0,
-        hideAnimationDuration: 0
-        
-    };
-    
-    var gallery = new PhotoSwipe( pswpElement, PhotoSwipeUI_Default, items, options);
-    gallery.init();
-};
-
-//openPhotoSwipe();
-
-$(document).ready(function() { //window.onload = function () { 
-	initPhotoSwipeFromDOM('.my-gallery');
-	$("#btnOpenPhotoSwipe").click(function(){ openPhotoSwipe(); });
-	//openPhotoSwipe();
-	
-	/*
-	function clearTransition() {
-		// $(".pswp__container").css({ "transition": "" });
-	}
-	function setTransition() {
-		// $(".pswp__container").css({ "transition": "transform 0.35s ease-in-out 0s" });
-	}
-	// set transition on arrow keys down
-	$(".pswp").on("keydown", function(evt){
-		// set transition if arrow keys are used
-		if (evt.which == 37 || evt.which == 39)
-			setTransition();
-	});
-	*/
-});
-</script>
-
-
+<!-- Sly style -->
+<link rel="stylesheet" href="<c:url value="/static/Sly/style.css"/>">
 
 <script>
-/*
-	$(document).ready(function(){
-	    var sly = new Sly('.frame');
-	    sly.init();
-	});
-	
-	$(window).resize(function(e) {
-	      $frame.sly('reload');
-	});
-*/
 </script>
 
 <style type="text/css">
-/*
-.frame { width: 100%; height: 160px; padding: 0; }
-.frame .slidee { margin: 0; padding: 0; height: 100%; list-style: none; }
-.frame .slidee li { float: left; margin: 0 5px 0 0; padding: 0; width: 120px; height: 100%; }
-*/
-body { background: #e8e8e8; }
-.container { margin: 0 auto; }
-
-/* Example wrapper */
-.wrap {
-	position: relative;
-	margin: 3em 0;
-}
-
-/* Frame */
-.frame {
-	height: 250px;
-	line-height: 250px;
-	overflow: hidden;
-}
-.frame ul {
-	list-style: none;
-	margin: 0;
-	padding: 0;
-	height: 100%;
-	font-size: 50px;
-}
-.frame ul li {
-	float: left;
-	width: 227px;
-	height: 100%;
-	margin: 0 1px 0 0;
-	padding: 0;
-	background: #333;
-	color: #ddd;
-	text-align: center;
-	cursor: pointer;
-}
-.frame ul li.active {
-	color: #fff;
-	background: #a03232;
-}
-
-/* Scrollbar */
-.scrollbar {
-	margin: 0 0 1em 0;
-	height: 2px;
-	background: #ccc;
-	line-height: 0;
-}
-.scrollbar .handle {
-	width: 100px;
-	height: 100%;
-	background: #292a33;
-	cursor: pointer;
-}
-.scrollbar .handle .mousearea {
-	position: absolute;
-	top: -9px;
-	left: 0;
-	width: 100%;
-	height: 20px;
-}
-
-/* Pages */
-.pages {
-	list-style: none;
-	margin: 20px 0;
-	padding: 0;
-	text-align: center;
-}
-.pages li {
-	display: inline-block;
-	width: 14px;
-	height: 14px;
-	margin: 0 4px;
-	text-indent: -999px;
-	border-radius: 10px;
-	cursor: pointer;
-	overflow: hidden;
-	background: #fff;
-	box-shadow: inset 0 0 0 1px rgba(0,0,0,.2);
-}
-.pages li:hover {
-	background: #aaa;
-}
-.pages li.active {
-	background: #666;
-}
-
-/* Controls */
-.controls { margin: 25px 0; text-align: center; }
-
-/* One Item Per Frame example*/
-.oneperframe { height: 300px; line-height: 300px; }
-.oneperframe ul li { width: 1140px; }
-.oneperframe ul li.active { background: #333; }
-
-/* Crazy example */
-.crazy ul li:nth-child(2n) { width: 100px; margin: 0 4px 0 20px; }
-.crazy ul li:nth-child(3n) { width: 300px; margin: 0 10px 0 5px; }
-.crazy ul li:nth-child(4n) { width: 400px; margin: 0 30px 0 2px; }
 </style>
+
 </head>
 
 <body>
 	<%@ include file="header.jsp"%>
-	
+
 	<div class="container">
 		<div class="panel panel-default">
-		  	<div class="panel-heading">
-			  	<h3 class="panel-title"><c:out value="${project.name}" /></h3>
-		  	</div>
-	  		<div class="panel-body">
+			<div class="panel-heading">
+				<h3 class="panel-title">
+					<c:out value="${project.name}" />
+				</h3>
+			</div>
+			<div class="panel-body">
 				<!-- <b><c:out value="${project.name}" /></b><br>  -->
 				<!-- id: ${project.id}<br> -->
 				<!-- grupp: ${project.projectGroup.name}<br>  -->
 				<!-- aadresse on ${fn:length(project.addresses)}<br>  -->
-	
+
 				<!-- example image location http://localhost:8080/Maven1/static/images/eramu_seedri/1.jpg -->
-				
+
 				<!-- 
 				<div style="background: white; color:black;">
 					<br>
@@ -246,9 +86,7 @@ body { background: #e8e8e8; }
 				<br>
 				-->
 
-				<div class="scrollbar">
-					<div class="handle"></div>
-				</div>
+	
 				<div class="frame" id="oneperframe">
 
 					<div class="slidee">
@@ -268,50 +106,51 @@ body { background: #e8e8e8; }
 
 				</div>
 
-
-
-
-				<div class="scrollbar">
-				    <div class="handle"></div>
+				<div class="frame">
+					<div class="slidee">
+						<h2>This in here...</h2>
+						<p>
+							...can be anything. <strong>Anything!</strong>
+						</p>
+					</div>
 				</div>
 				<div class="frame">
-				    <div class="slidee">
-				        <h2>This in here...</h2>
-				        <p>...can be anything. <strong>Anything!</strong></p>
-				    </div>
+					<ul class="slidee">
+						<li>asd1</li>
+						<li>asd2</li>
+						<li>asd3</li>
+						<li>asd4</li>
+						<li>asd5</li>
+						<li>asd6</li>
+						<li>asd7</li>
+						<li>asd8</li>
+						<li>asd9</li>
+						<li>asd10</li>
+					</ul>
 				</div>
-				<div class="frame">
-				    <ul class="slidee">
-				        <li>asd1</li>
-				        <li>asd2</li>
-				        <li>asd3</li>
-				        <li>asd4</li>
-				        <li>asd5</li>
-				        <li>asd6</li>
-				        <li>asd7</li>
-				        <li>asd8</li>
-				        <li>asd9</li>
-				        <li>asd10</li>
-				    </ul>
-				</div>
-				 
+
 				<c:forEach items="${project.addresses}" var="address">
 				aadress: ${address.city}, ${address.street} ${address.streetType} ${address.building}
 				<br>
 				</c:forEach>
 				<c:if test="${!empty project.planningStartYear}">
-					projekt: ${project.planningStartYear}<c:if test="${!empty project.planningEndYear}"> - ${project.planningEndYear}</c:if><br>
+					projekt: ${project.planningStartYear}<c:if
+						test="${!empty project.planningEndYear}"> - ${project.planningEndYear}</c:if>
+					<br>
 				</c:if>
 				<c:if test="${!empty project.buildingStartYear}">
-					ehitus: ${project.buildingStartYear}<c:if test="${!empty project.buildingEndYear}"> - ${project.buildingEndYear}</c:if><br>
+					ehitus: ${project.buildingStartYear}<c:if
+						test="${!empty project.buildingEndYear}"> - ${project.buildingEndYear}</c:if>
+					<br>
 				</c:if>
-				 <c:if test="${fn:length(project.architects) > 1}">
+				<c:if test="${fn:length(project.architects) > 1}">
 				 	arhitektid: 
 				 </c:if>
-				 <c:if test="${fn:length(project.architects) == 1}">
+				<c:if test="${fn:length(project.architects) == 1}">
 				 	arhitekt: 
 				 </c:if>
-				<c:forEach items="${project.architects}" var="architect" varStatus="loop">
+				<c:forEach items="${project.architects}" var="architect"
+					varStatus="loop">
 					 ${architect.firstName} ${architect.lastName}${loop.last ? '<br>' : ','} 
 				</c:forEach>
 				<c:forEach items="${project.originalAuthors}" var="originalAuthor">
@@ -320,26 +159,30 @@ body { background: #e8e8e8; }
 				</c:forEach>
 				<c:if test="${!empty project.contributors}">
 					kaastöö: 
-					<c:forEach items="${project.contributors}" var="contributor" varStatus="loop">
+					<c:forEach items="${project.contributors}" var="contributor"
+						varStatus="loop">
 						${contributor.firstName} ${contributor.lastName}${loop.last ? '<br>' : ','} 
 					</c:forEach>
 				</c:if>
 				<c:if test="${!empty project.constructors}">
-					 <c:if test="${fn:length(project.constructors) > 1}">
+					<c:if test="${fn:length(project.constructors) > 1}">
 					 	konstruktorid: 
 					 </c:if>
-					 <c:if test="${fn:length(project.constructors) == 1}">
+					<c:if test="${fn:length(project.constructors) == 1}">
 					 	konstruktor: 
 					 </c:if>
-					<c:forEach items="${project.constructors}" var="constructor" varStatus="loop">
+					<c:forEach items="${project.constructors}" var="constructor"
+						varStatus="loop">
 						${constructor.firstName} ${constructor.lastName}${loop.last ? '<br>' : ','}
 					</c:forEach>
 				</c:if>
-				<c:forEach items="${project.interiorDesigners}" var="interiorDesigner">
+				<c:forEach items="${project.interiorDesigners}"
+					var="interiorDesigner">
 					sisekujundaja: ${interiorDesigner.firstName} ${interiorDesigner.lastName}
 					<br>
 				</c:forEach>
-				<c:forEach items="${project.landscapeArchitects}" var="landscapeArchitect">
+				<c:forEach items="${project.landscapeArchitects}"
+					var="landscapeArchitect">
 					maastikuarhitekt: ${landscapeArchitect.firstName} ${landscapeArchitect.lastName}
 					<br>
 				</c:forEach>
@@ -348,13 +191,15 @@ body { background: #e8e8e8; }
 					<br>
 				</c:forEach>
 				<c:if test="${!empty project.sizeQuantity}">
-					üldpind: ${project.sizeQuantity}m<sup>2</sup><c:if test="${!empty project.apartmentsQuantity}">, ${project.apartmentsQuantity} korterit</c:if><br>
+					üldpind: ${project.sizeQuantity}m<sup>2</sup>
+					<c:if test="${!empty project.apartmentsQuantity}">, ${project.apartmentsQuantity} korterit</c:if>
+					<br>
 				</c:if>
 				<c:if test="${!empty project.prizeComment}">
 					preemia: ${project.prizeComment}<br>
 				</c:if>
-			
-				
+
+
 				<!-- 
 				<c:forEach items="${project.imagesPromo}" var="imagePromo">
 					  <div class="col-md-4">
@@ -366,13 +211,40 @@ body { background: #e8e8e8; }
 					<br>
 				</c:forEach>
 				 -->
-				 
+
+				<h2>JVR gallery:</h2>
+				<div class="scrollbar">
+					<div class="handle"></div>
+				</div>
+				<div class="photoswipe-gallery" data-itemscope
+					data-itemtype="http://schema.org/ImageGallery">
+					<div class="frame" style="overflow: hidden;">
+						<ul class="slidee">
+							<c:forEach items="${project.imagesPromo}" var="imagePromo">
+								<li>
+									<figure data-itemprop="associatedMedia" data-itemscope data-itemtype="http://schema.org/ImageObject">
+										<a href="<c:url value="/static/images/${imagePromo.folderName}/${imagePromo.fileName}"/>" data-itemprop="contentUrl" >
+										<img src="<c:url value="/static/images/${imagePromo.folderName}/${imagePromo.fileName}"/>" class="img-responsive" data-itemprop="thumbnail" alt="Promo picture X" />
+										</a>
+										<figcaption data-itemprop="caption description">Whatever caption</figcaption>
+									</figure>
+								</li>
+							</c:forEach>
+						</ul>
+					</div>
+
+
+
+
+
+					<!-- image thumbnail had eg data-size="370x500" -->
+					<!--  
 				<h2>JVR gallery:</h2>
 				<div class="photoswipe-gallery" itemscope itemtype="http://schema.org/ImageGallery">
 					<c:forEach items="${project.imagesPromo}" var="imagePromo">
 						<div class="col-md-2">
 							<figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-								<a href="<c:url value="/static/images/${imagePromo.folderName}/${imagePromo.fileName}"/>" class="thumbnail" itemprop="contentUrl" > <!-- data-size="370x500" -->
+								<a href="<c:url value="/static/images/${imagePromo.folderName}/${imagePromo.fileName}"/>" class="thumbnail" itemprop="contentUrl" >
 								<img src="<c:url value="/static/images/${imagePromo.folderName}/${imagePromo.fileName}"/>" class="img-responsive" itemprop="thumbnail" alt="Promo picture X" />
 								</a>
 								<figcaption itemprop="caption description">Whatever caption</figcaption>
@@ -380,11 +252,12 @@ body { background: #e8e8e8; }
 						</div>
 					</c:forEach>
 				</div>
+				-->
+				</div>
 			</div>
-		</div>
 
-		<!-- http://photoswipe.com/documentation/getting-started.html -->
-		<!-- 
+			<!-- http://photoswipe.com/documentation/getting-started.html -->
+			<!-- 
 		<h2>First gallery:</h2>
 
 		<div class="my-gallery" itemscope itemtype="http://schema.org/ImageGallery">
@@ -442,276 +315,89 @@ body { background: #e8e8e8; }
 			</figure>
 		</div>
  		-->
- 		
-		<button id="btnOpenPhotoSwipe">Open PhotoSwipe</button>
-		
-		<!-- Root element of PhotoSwipe. Must have class pswp. -->
-		<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
-		
-		    <!-- Background of PhotoSwipe. 
+
+			<button id="btnOpenPhotoSwipe">Open PhotoSwipe</button>
+
+			<!-- Root element of PhotoSwipe. Must have class pswp. -->
+			<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+				<!-- Background of PhotoSwipe. 
 		         It's a separate element as animating opacity is faster than rgba(). -->
-		    <div class="pswp__bg"></div>
-		
-		    <!-- Slides wrapper with overflow:hidden. -->
-		    <div class="pswp__scroll-wrap">
-		
-		        <!-- Container that holds slides. 
+				<div class="pswp__bg"></div>
+
+				<!-- Slides wrapper with overflow:hidden. -->
+				<div class="pswp__scroll-wrap">
+
+					<!-- Container that holds slides. 
 		            PhotoSwipe keeps only 3 of them in the DOM to save memory.
 		            Don't modify these 3 pswp__item elements, data is added later on. -->
-		        <div class="pswp__container">
-		            <div class="pswp__item"></div>
-		            <div class="pswp__item"></div>
-		            <div class="pswp__item"></div>
-		        </div>
-		
-		        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
-		        <div class="pswp__ui pswp__ui--hidden">
-		
-		            <div class="pswp__top-bar">
-		
-		                <!--  Controls are self-explanatory. Order can be changed. -->
-		
-		                <div class="pswp__counter"></div>
-		
-		                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
-		
-		                <button class="pswp__button pswp__button--share" title="Share"></button>
-		
-		                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
-		
-		                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
-		
-		                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
-		                <!-- element will get class pswp__preloader--active when preloader is running -->
-		                <div class="pswp__preloader">
-		                    <div class="pswp__preloader__icn">
-		                      <div class="pswp__preloader__cut">
-		                        <div class="pswp__preloader__donut"></div>
-		                      </div>
-		                    </div>
-		                </div>
-		            </div>
-		
-		            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
-		                <div class="pswp__share-tooltip"></div> 
-		            </div>
-		
-		            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
-		            </button>
-		
-		            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
-		            </button>
-		
-		            <div class="pswp__caption">
-		                <div class="pswp__caption__center"></div>
-		            </div>
-		
-		        </div>
-		
-		    </div>
-		
+					<div class="pswp__container">
+						<div class="pswp__item"></div>
+						<div class="pswp__item"></div>
+						<div class="pswp__item"></div>
+					</div>
+
+					<!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+					<div class="pswp__ui pswp__ui--hidden">
+
+						<div class="pswp__top-bar">
+
+							<!--  Controls are self-explanatory. Order can be changed. -->
+
+							<div class="pswp__counter"></div>
+
+							<button class="pswp__button pswp__button--close"
+								title="Close (Esc)"></button>
+
+							<button class="pswp__button pswp__button--share" title="Share"></button>
+
+							<button class="pswp__button pswp__button--fs"
+								title="Toggle fullscreen"></button>
+
+							<button class="pswp__button pswp__button--zoom"
+								title="Zoom in/out"></button>
+
+							<!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+							<!-- element will get class pswp__preloader--active when preloader is running -->
+							<div class="pswp__preloader">
+								<div class="pswp__preloader__icn">
+									<div class="pswp__preloader__cut">
+										<div class="pswp__preloader__donut"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div
+							class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+							<div class="pswp__share-tooltip"></div>
+						</div>
+
+						<button class="pswp__button pswp__button--arrow--left"
+							title="Previous (arrow left)"></button>
+
+						<button class="pswp__button pswp__button--arrow--right"
+							title="Next (arrow right)"></button>
+
+						<div class="pswp__caption">
+							<div class="pswp__caption__center"></div>
+						</div>
+
+					</div>
+
+				</div>
+
+			</div>
 		</div>
-		
-		
-	</div> <!-- end container -->
-	
+	</div>
+	<!-- end container -->
+
 	<%@ include file="footer.jsp"%>
-    
-    <script>
-    	/** photoswipe begin **/
 
-    	/*
-		function clearTransition() {
-			// $(".pswp__container").css({ "transition": "" });
-		}
-
-		function setTransition() {
-			// $(".pswp__container").css({ "transition": "transform 0.35s ease-in-out 0s" });
-		}
-
-
-		$(function(){
-
-			// set transition on arrow keys down
-			$(".pswp").on("keydown", function(evt){
-				// set transition if arrow keys are used
-				if (evt.which == 37 || evt.which == 39)
-					setTransition();
-			});
-
-			// listen to dragchanged events and set transion on drag end
-			$(".pswp__container")
-				.on("drag:changed", function(evt, isDragging){
-
-					if (isDragging)
-						clearTransition();	// clear transition that was set on mouseUsed event
-					else
-						setTimeout(setTransition, 500);
-				})
-				.dragchanged();				// wire plugin so the events will fire
-		});
-		//*/
-
-
-    	$(function(){
-
-    		var pswp = $(".pswp")[0];
-    		var slides = [];
-    		var photoSwipe;
-
-			function getSlideDimensions(slide, photoSwipe) {
-
-// console.log("getSlideDimensions:717", slide.src)
-
-				if (!slide.doGetSlideDimensions)
-					return;
-
-				var isPrefetch = (typeof photoSwipe == "undefined");
-
-// console.log("getSlideDimensions:722", isPrefetch, slide.src)
-
-
-				var img = new Image();
-
-				$(img).on("error", function(evt){
-
-					if (!isPrefetch)
-						slide.doGetSlideDimensions = false;
-				});
-
-				$(img).on("load", function(evt){
-
-					slide.doGetSlideDimensions = false;
-
-					slide.w = img.naturalWidth;
-					slide.h = img.naturalHeight;
-
-					if (!isPrefetch) {
-
-						photoSwipe.invalidateCurrItems();
-						photoSwipe.updateSize(true);
-					}
-				});
-
-				img.src = slide.src;
-			}
-
-			/** return the thumbnail's bounds for zomm-in and zoom-out animation */
-			function getThumbBounds(index) {
-
-				var slide = slides[index];
-
-				var  thumbnail   = slide.$figure.find("a img")//.find("img")
-					,thumbOffset = thumbnail.offset()
-					,thumbWidth  = thumbnail.width();
-
-				return { x: thumbOffset.left, y: thumbOffset.top, w: thumbWidth };
-			}
-
-			$(".photoswipe-gallery")
-				.find("figure")
-					.each(function(ix, el){
-						// parse markup and retrieve slides information from ".photoswipe-gallery figure"
-						var  $figure = $(this);
-						var  $anchor = $figure.find("a");
-
-						var size = ($anchor.data("size") || "0x0").split("x");
-						// var thumbOffset = $figure.offset();
-
-						var slide = {
-
-							 $figure : $figure
-							,src     : $anchor.attr("href")
-							,w       : size[0]
-							,h       : size[1]
-
-							,title   : $figure.find("figcaption").html()
-						};
-
-						slide.doGetSlideDimensions = (slide.w == 0 || slide.h == 0);
-
-						slides.push(slide);
-
-						$figure.on("click", function(evt){
-
-							evt.preventDefault();
-
-							var options = {
-								 index                 : ix
-								,bgOpacity             : 0.90
-								,showHideOpacity       : false
-								,getThumbBoundsFn      : getThumbBounds
-								// ,showAnimationDuration : 500
-								// ,hideAnimationDuration : 500
-
-								,preload               : [5, 5]
-								,shareButtons: [
-									 {id:'facebook', label:'Share on <b>Facebook</b>', url:'https://www.facebook.com/sharer/sharer.php?u={{url}}'}
-									,{id:'twitter', label:'<b>Tweet</b>', url:'https://twitter.com/intent/tweet?text={{text}}&url={{url}}'}
-									,{id:'pinterest', label:'<b>Pin it</b>', url:'http://www.pinterest.com/pin/create/button/'+
-													'?url={{url}}&media={{image_url}}&description={{text}}'}
-													// ,{id:'download', label:'Download image', url:'{{raw_image_url}}', download:true}
-			]
-							}
-
-
-							photoSwipe = new PhotoSwipe(pswp, PhotoSwipeUI_Default, slides, options);
-
-							photoSwipe.listen("gettingData", function(index, slide){
-
-								if (slide.doGetSlideDimensions) {
-
-									setTimeout(
-										// use setTimeout to run in the event loop
-										 function(){ getSlideDimensions(slide, photoSwipe); }
-										,300
-									);
-								}
-							}); // .listen(gettingData)
-
-							photoSwipe.listen("imageLoadComplete", function(index, slide){
-
-								if (slide.doGetSlideDimensions)
-									getSlideDimensions(slide, photoSwipe);
-							}); // .listen(imageLoadComplete)
-
-							// photoSwipe.listen("mouseUsed", setTransition);
-
-							// photoSwipe.listen("pointerDown", function(){ console.log("pointerDown") });
-							// photoSwipe.listen("dragStart", function(){ console.log("dragStart") });
-							// photoSwipe.listen("dragEnd", function(){ console.log("dragEnd") });
-
-							// photoSwipe.listen("beforeChange", function(){});
-							// photoSwipe.listen("afterChange", function(){});
-
-							photoSwipe.init();
-
-							window.photoSwipe = photoSwipe;
-
-							// $("body").on("photoswipe:refresh", function(){
-							// 	console.log("photoswipe:refresh", photoSwipe);
-							// });
-						});
-					}); // .each()
-
-    		// console.dir(slides);
-
-
-			// prefetch slides images
-			var i;
-			for (i in slides) {
-				setTimeout(
-					getSlideDimensions
-					,1000 + i*20
-					,slides[i]
-				);
-			} // for-in
-		});
-		/** photoswipe   end **/
-	</script>
+	<script src="<c:url value="/static/PhotoSwipe/script.js" />"></script>
 	
 	<!-- SLY JavaScript library for one-directional scrolling with item based navigation support: -->
-	<script src="<c:url value="/static/js/sly/sly.js" />"></script>
-	<script src="<c:url value="/static/js/sly/horizontal.js" />"></script>
+	<script src="<c:url value="/static/Sly/sly.js" />"></script>
+	<script src="<c:url value="/static/Sly/horizontal.js" />"></script>
 </body>
 </html>

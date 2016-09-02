@@ -1,3 +1,14 @@
+/*
+	$(document).ready(function(){
+	    var sly = new Sly('.frame');
+	    sly.init();
+	});
+	
+	$(window).resize(function(e) {
+	      $frame.sly('reload');
+	});
+*/
+
 jQuery(function($){
 	'use strict';
 
