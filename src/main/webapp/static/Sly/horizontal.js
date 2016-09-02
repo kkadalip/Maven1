@@ -1,3 +1,5 @@
+// http://darsa.in/sly/examples/js/horizontal.js
+
 /*
 	$(document).ready(function(){
 	    var sly = new Sly('.frame');
@@ -11,10 +13,6 @@
 
 jQuery(function($){
 	'use strict';
-
-	// -------------------------------------------------------------
-	//   Basic Navigation
-	// -------------------------------------------------------------
 	(function () {
 		//var $frame  = $('#basic');
 		var $frame = $('.frame');
@@ -24,23 +22,24 @@ jQuery(function($){
 		// Call Sly on frame
 		$frame.sly({
 			horizontal: 1,
-			itemNav: 'basic',
+			itemNav: 'centered',
 			smart: 1,
 			activateOn: 'click',
 			mouseDragging: 1,
 			touchDragging: 1,
 			releaseSwing: 1,
 			startAt: 3,
-			scrollBar: $wrap.find('.scrollbar'),
+			scrollBar: $('#scrollbar'), //$wrap.find('.scrollbar'),
 			scrollBy: 1,
-			pagesBar: $wrap.find('.pages'),
-			activatePageOn: 'click',
 			speed: 300,
 			elasticBounds: 1,
 			easing: 'easeOutExpo',
 			dragHandle: 1,
 			dynamicHandle: 1,
 			clickBar: 1,
+
+			pagesBar: $wrap.find('.pages'),
+			activatePageOn: 'click',
 
 			// Buttons
 			forward: $wrap.find('.forward'),

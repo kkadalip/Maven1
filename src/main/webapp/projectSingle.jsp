@@ -50,7 +50,7 @@
 <script src="<c:url value="/static/js/jquery.dragchanged.js" />"></script>
 
 <!-- Sly style -->
-<link rel="stylesheet" href="<c:url value="/static/Sly/style.css"/>">
+<link rel="stylesheet" href="<c:url value="/static/Sly/sly-horizontal.css"/>">
 
 <script>
 </script>
@@ -86,7 +86,7 @@
 				<br>
 				-->
 
-	
+				<!-- 
 				<div class="frame" id="oneperframe">
 
 					<div class="slidee">
@@ -128,7 +128,8 @@
 						<li>asd10</li>
 					</ul>
 				</div>
-
+ 				-->
+ 				
 				<c:forEach items="${project.addresses}" var="address">
 				aadress: ${address.city}, ${address.street} ${address.streetType} ${address.building}
 				<br>
@@ -213,30 +214,23 @@
 				 -->
 
 				<h2>JVR gallery:</h2>
-				<div class="scrollbar">
+				<div id="scrollbar" class="scrollbar">
 					<div class="handle"></div>
 				</div>
-				<div class="photoswipe-gallery" data-itemscope
-					data-itemtype="http://schema.org/ImageGallery">
-					<div class="frame" style="overflow: hidden;">
+				<div class="photoswipe-gallery" data-itemscope data-itemtype="http://schema.org/ImageGallery">
+					<div class="frame" id="centered">
 						<ul class="slidee">
 							<c:forEach items="${project.imagesPromo}" var="imagePromo">
 								<li>
-									<figure data-itemprop="associatedMedia" data-itemscope data-itemtype="http://schema.org/ImageObject">
+									<figure style="padding:0; margin: 0;" data-itemprop="associatedMedia" data-itemscope data-itemtype="http://schema.org/ImageObject">
 										<a href="<c:url value="/static/images/${imagePromo.folderName}/${imagePromo.fileName}"/>" data-itemprop="contentUrl" >
 										<img src="<c:url value="/static/images/${imagePromo.folderName}/${imagePromo.fileName}"/>" class="img-responsive" data-itemprop="thumbnail" alt="Promo picture X" />
 										</a>
-										<figcaption data-itemprop="caption description">Whatever caption</figcaption>
 									</figure>
 								</li>
 							</c:forEach>
 						</ul>
 					</div>
-
-
-
-
-
 					<!-- image thumbnail had eg data-size="370x500" -->
 					<!--  
 				<h2>JVR gallery:</h2>

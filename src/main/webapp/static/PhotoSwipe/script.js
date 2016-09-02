@@ -118,11 +118,12 @@ $(function(){
 
 			var options = {
 					index                 : ix
-					,bgOpacity             : 0.90
+					,bgOpacity             : 0.92
 					,showHideOpacity       : false
 					,getThumbBoundsFn      : getThumbBounds
-					// ,showAnimationDuration : 500
-					// ,hideAnimationDuration : 500
+				
+					//,showAnimationDuration : 300
+					//,hideAnimationDuration : 300
 
 					,preload               : [5, 5]
 			,shareButtons: [
