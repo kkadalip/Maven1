@@ -221,7 +221,7 @@
 								<li>
 									<figure style="padding:0; margin: 0;" data-itemprop="associatedMedia" data-itemscope data-itemtype="http://schema.org/ImageObject">
 										<a href="<c:url value="/static/images/${imagePromo.folderName}/${imagePromo.fileName}"/>" data-itemprop="contentUrl" >
-										<img src="<c:url value="/static/images/${imagePromo.folderName}/${imagePromo.fileName}"/>" class="img-responsive" data-itemprop="thumbnail" alt="Promo picture X" />
+										<img src="<c:url value="/static/images/${imagePromo.folderName}/${imagePromo.fileName}"/>" class="img-responsive image-mod" data-itemprop="thumbnail" alt="Promo picture X" />
 										</a>
 									</figure>
 								</li>

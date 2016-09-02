@@ -9,9 +9,21 @@ body { background: #e8e8e8; }
 
 /* Frame */
 .frame {
+	/*
 	height: 250px;
 	line-height: 250px;
+	*/
+	height: auto;
+	line-height: auto;
 	overflow: hidden;
+}
+.image-mod{
+	height: 200px;
+}
+.img-responsive{
+	display: block;
+    width: auto;
+    max-height: 100%;
 }
 .frame ul {
 	list-style: none;
@@ -22,7 +34,7 @@ body { background: #e8e8e8; }
 }
 .frame ul li {
 	float: left;
-	width: 227px;
+	/*width: 227px;*/
 	height: 100%;
 	margin: 0 1px 0 0;
 	padding: 0;
