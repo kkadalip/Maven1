@@ -214,9 +214,6 @@
 				 -->
 
 				<h2>JVR gallery:</h2>
-				<div id="scrollbar" class="scrollbar">
-					<div class="handle"></div>
-				</div>
 				<div class="photoswipe-gallery" data-itemscope data-itemtype="http://schema.org/ImageGallery">
 					<div class="frame" id="centered">
 						<ul class="slidee">
@@ -230,6 +227,10 @@
 								</li>
 							</c:forEach>
 						</ul>
+					</div>
+					<br>
+					<div id="scrollbar" class="scrollbar">
+						<div class="handle"></div>
 					</div>
 					<!-- image thumbnail had eg data-size="370x500" -->
 					<!--  

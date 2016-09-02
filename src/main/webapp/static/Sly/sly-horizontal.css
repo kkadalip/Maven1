@@ -39,7 +39,7 @@ body { background: #e8e8e8; }
 /* Scrollbar */
 .scrollbar {
 	margin: 0 0 1em 0;
-	height: 3px;
+	height: 10px;
 	background: #ccc;
 	line-height: 0;
 }

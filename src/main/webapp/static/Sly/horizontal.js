@@ -28,7 +28,7 @@ jQuery(function($){
 			mouseDragging: 1,
 			touchDragging: 1,
 			releaseSwing: 1,
-			startAt: 3,
+			//startAt: 3,
 			scrollBar: $('#scrollbar'), //$wrap.find('.scrollbar'),
 			scrollBy: 1,
 			speed: 300,
