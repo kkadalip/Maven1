@@ -229,7 +229,7 @@ $(function(){
 					// Background (.pswp__bg) opacity. Should be a number from 0 to 1, e.g. 0.7. This style is defined via JS, not via CSS, as this value is used for a few gesture-based transitions.
 					bgOpacity             : 0.92,
 					// Spacing ratio between slides. For example, 0.12 will render as a 12% of sliding viewport width (rounded).
-					spacing               : 0.1,
+					spacing               : 0.12,
 					// Allow swipe navigation to next/prev item when current item is zoomed. Option is always false on devices that don't have hardware touch support.
 					allowPanToNext        : false,
 					// Maximum zoom level when performing spread (zoom) gesture. 2 means that image can be zoomed 2x from original size. Try to avoid huge values here, as too big image may cause memory issues on mobile (especially on iOS).

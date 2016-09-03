@@ -30,22 +30,30 @@ body { background: #e8e8e8; }
 	margin: 0;
 	padding: 0;
 	height: 100%;
-	font-size: 50px;
+	/* font-size: 50px; */
+	font-size: 12px;
 }
 .frame ul li {
 	float: left;
 	/*width: 227px;*/
 	height: 100%;
-	margin: 0 1px 0 0;
+	/*margin: 0 1px 0 0; SPACING BETWEEN ITEMS*/
+	margin: 0;
 	padding: 0;
+	/* NOT ACTIVE */
+	/*
 	background: #333;
 	color: #ddd;
+	*/
 	text-align: center;
 	cursor: pointer;
 }
 .frame ul li.active {
+	/* ACTIVE */
+	/*
 	color: #fff;
 	background: #a03232;
+	*/
 }
 
 /* Scrollbar */

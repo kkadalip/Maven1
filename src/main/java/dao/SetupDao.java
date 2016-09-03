@@ -216,6 +216,14 @@ public class SetupDao { // extends AbstractDaoHibernate {
 		p4.setArchitects(p4architects);
 		p4.setSizeQuantity(250f);
 		p4.setProjectGroup(pg1);
+		List<Image> p4imagesPromo = new ArrayList<Image>();
+		String p4imagesPromo_folder = "eramu_aate";
+		p4imagesPromo.add(new Image(p4imagesPromo_folder,"1.jpg"));
+		p4imagesPromo.add(new Image(p4imagesPromo_folder,"2.jpg"));
+		p4imagesPromo.add(new Image(p4imagesPromo_folder,"3.jpg"));
+		p4imagesPromo.add(new Image(p4imagesPromo_folder,"4.jpg"));
+		p4imagesPromo.add(new Image(p4imagesPromo_folder,"5.jpg"));
+		p4.setImagesPromo(p4imagesPromo);
 		session.save(p4);
 		
 		Project p5 = new Project();
