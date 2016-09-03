@@ -87,6 +87,16 @@
 				-->
  				
  				<!-- <h2>JVR gallery:</h2> -->
+
+				Count of images: ${fn:length(project.imagesPromo)} <br>
+				<c:if test="${!empty project.imagesPromo}">
+					I HAVE IMAGES!
+				</c:if> 		
+				
+				<c:if test="${empty project.imagesPromo}">
+					no images bruh
+				</c:if> 		
+ 				
 				<div class="photoswipe-gallery" data-itemscope data-itemtype="http://schema.org/ImageGallery">
 					<div class="frame" id="centered">
 						<ul class="slidee">
