@@ -580,6 +580,7 @@ public class SetupDao { // extends AbstractDaoHibernate {
 		p20.setContributors(p20contributors);
 		p20.setSizeQuantity(5133f);
 		p20.setProjectGroup(pg2);
+		p20.setImagesArray(pg2.getImagesRootFolder() + "/Büroohoone Tallinn Metalli", new String[]{"1.jpg","2.jpg","3.jpg","4.jpg","Joonis (1. korrus).png","Joonis (2. korrus).png","Joonis (6. korrus).png","Joonis (keldrikorrus).png"});
 		session.save(p20);
 		
 		Project p21 = new Project();
