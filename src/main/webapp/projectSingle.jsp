@@ -16,7 +16,7 @@
 	});
 </script>
 
-<c:if test="${!empty project.imagesPromo}">
+<c:if test="${!empty project.images}">
 	<!-- PhotoSwipe: -->
 	<!--[if lt IE 9]>
 	    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -82,17 +82,17 @@
 				-->
  				
  				<!-- <h2>JVR gallery:</h2> -->
-				<!-- Count of images: ${fn:length(project.imagesPromo)} <br>  -->
-				<c:if test="${!empty project.imagesPromo}">
+				<!-- Count of images: ${fn:length(project.images)} <br>  -->
+				<c:if test="${!empty project.images}">
 					<!-- I HAVE IMAGES! -->
 					<div class="photoswipe-gallery" data-itemscope data-itemtype="http://schema.org/ImageGallery">
 						<div class="frame" id="centered">
 							<ul class="slidee">
-								<c:forEach items="${project.imagesPromo}" var="imagePromo">
+								<c:forEach items="${project.images}" var="image">
 									<li>
 										<figure style="padding:0; margin: 0;" data-itemprop="associatedMedia" data-itemscope data-itemtype="http://schema.org/ImageObject">
-											<a href="<c:url value="/static/images/${imagePromo.folderName}/${imagePromo.fileName}"/>" data-itemprop="contentUrl" >
-											<img src="<c:url value="/static/images/${imagePromo.folderName}/${imagePromo.fileName}"/>" class="img-responsive image-mod" data-itemprop="thumbnail" alt="Picture" />
+											<a href="<c:url value="/static/images/${image.folderName}/${image.fileName}"/>" data-itemprop="contentUrl" >
+											<img src="<c:url value="/static/images/${image.folderName}/${image.fileName}"/>" class="img-responsive image-mod" data-itemprop="thumbnail" alt="Picture" />
 											</a>
 										</figure>
 									</li>

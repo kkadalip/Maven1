@@ -65,22 +65,27 @@ public class SetupDao { // extends AbstractDaoHibernate {
 		
 		ProjectGroup pg1 = new ProjectGroup();
 		pg1.setName("Eramud");
+		pg1.setImagesRootFolder("Eramud");
 		session.save(pg1);
 		
 		ProjectGroup pg2 = new ProjectGroup();
 		pg2.setName("Korterelamud ja ühiskondlikud hooned");
+		pg2.setImagesRootFolder("Korterelamud ja ühisk hooned");
 		session.save(pg2);
 		
 		ProjectGroup pg3 = new ProjectGroup();
 		pg3.setName("Konkursiprojektid");
+		pg3.setImagesRootFolder("Konkursiprojektid");
 		session.save(pg3);
 		
 		ProjectGroup pg4 = new ProjectGroup();
 		pg4.setName("Planeeringud");
+		pg4.setImagesRootFolder("Planeeringud");
 		session.save(pg4);
 		
 		ProjectGroup pg5 = new ProjectGroup();
 		pg5.setName("Näitused");
+		pg5.setImagesRootFolder("Näitused");
 		session.save(pg5);
 		
 		// PERSONS (people)
@@ -153,18 +158,18 @@ public class SetupDao { // extends AbstractDaoHibernate {
 		//p1.setSizeUnit("m2"); // Todo separate model for units so I can convert them on the fly
 		// BROKEN p1.setProjectGroup(pg1);
 		p1.setProjectGroup(pg1);
-		List<Image> p1imagesPromo = new ArrayList<Image>();
-		String p1imagesPromo_folder = "eramute_grupp_seedri_remmelga";
-		p1imagesPromo.add(new Image(p1imagesPromo_folder,"1.jpg"));
-		p1imagesPromo.add(new Image(p1imagesPromo_folder,"2.jpg"));
-		p1imagesPromo.add(new Image(p1imagesPromo_folder,"3.jpg"));
-		p1imagesPromo.add(new Image(p1imagesPromo_folder,"4.jpg"));
-		p1imagesPromo.add(new Image(p1imagesPromo_folder,"5.jpg"));
-		p1imagesPromo.add(new Image(p1imagesPromo_folder,"6.jpg"));
-		p1imagesPromo.add(new Image(p1imagesPromo_folder,"7.jpg"));
-		p1imagesPromo.add(new Image(p1imagesPromo_folder,"8.jpg"));
-		p1imagesPromo.add(new Image(p1imagesPromo_folder,"9.jpg"));
-		p1.setImagesPromo(p1imagesPromo);
+		String p1images_folder = pg1.getImagesRootFolder() + "/Eramute grupp seedri remmelga";
+		List<Image> p1images = new ArrayList<Image>();		
+		p1images.add(new Image(p1images_folder,"1.jpg"));
+		p1images.add(new Image(p1images_folder,"2.jpg"));
+		p1images.add(new Image(p1images_folder,"3.jpg"));
+		p1images.add(new Image(p1images_folder,"4.jpg"));
+		p1images.add(new Image(p1images_folder,"5.jpg"));
+		p1images.add(new Image(p1images_folder,"6.jpg"));
+		p1images.add(new Image(p1images_folder,"7.jpg"));
+		p1images.add(new Image(p1images_folder,"8.jpg"));
+		p1images.add(new Image(p1images_folder,"9.jpg"));
+		p1.setImages(p1images);
 		session.save(p1);
 		
 		Project p2 = new Project();
@@ -177,15 +182,15 @@ public class SetupDao { // extends AbstractDaoHibernate {
 		p2.setArchitects(p2architects);
 		p2.setSizeQuantity(260f);
 		p2.setProjectGroup(pg1);
-		List<Image> p2imagesPromo = new ArrayList<Image>();
-		String p2imagesPromo_folder = "eramu_rohuneeme";
-		p2imagesPromo.add(new Image(p2imagesPromo_folder,"1.jpg"));
-		p2imagesPromo.add(new Image(p2imagesPromo_folder,"2.jpg"));
-		p2imagesPromo.add(new Image(p2imagesPromo_folder,"3.jpg"));
-		p2imagesPromo.add(new Image(p2imagesPromo_folder,"4.jpg"));
-		p2imagesPromo.add(new Image(p2imagesPromo_folder,"5.jpg"));
-		p2imagesPromo.add(new Image(p2imagesPromo_folder,"6.jpg"));
-		p2.setImagesPromo(p2imagesPromo);
+		String p2images_folder = pg1.getImagesRootFolder() + "/Rohuneeme";
+		List<Image> p2images = new ArrayList<Image>();		
+		p2images.add(new Image(p2images_folder,"1.jpg"));
+		p2images.add(new Image(p2images_folder,"2.jpg"));
+		p2images.add(new Image(p2images_folder,"3.jpg"));
+		p2images.add(new Image(p2images_folder,"4.jpg"));
+		p2images.add(new Image(p2images_folder,"5.jpg"));
+		p2images.add(new Image(p2images_folder,"6.jpg"));
+		p2.setImages(p2images);
 		session.save(p2);
 		
 		Project p3 = new Project();
@@ -197,13 +202,13 @@ public class SetupDao { // extends AbstractDaoHibernate {
 		p3.setArchitects(p3architects);
 		p3.setSizeQuantity(441f);
 		p3.setProjectGroup(pg1);
-		List<Image> p3imagesPromo = new ArrayList<Image>();
-		String p3imagesPromo_folder = "eramu_rohuneeme_2";
-		p3imagesPromo.add(new Image(p3imagesPromo_folder,"1.jpg"));
-		p3imagesPromo.add(new Image(p3imagesPromo_folder,"2.jpg"));
-		p3imagesPromo.add(new Image(p3imagesPromo_folder,"3.jpg"));
-		p3imagesPromo.add(new Image(p3imagesPromo_folder,"4.jpg"));
-		p3.setImagesPromo(p3imagesPromo);
+		String p3images_folder = pg1.getImagesRootFolder() + "/Rohuneeme 2";
+		List<Image> p3images = new ArrayList<Image>();
+		p3images.add(new Image(p3images_folder,"1.jpg"));
+		p3images.add(new Image(p3images_folder,"2.jpg"));
+		p3images.add(new Image(p3images_folder,"3.jpg"));
+		p3images.add(new Image(p3images_folder,"4.jpg"));
+		p3.setImages(p3images);
 		session.save(p3);
 		
 		Project p4 = new Project();
@@ -216,16 +221,17 @@ public class SetupDao { // extends AbstractDaoHibernate {
 		p4.setArchitects(p4architects);
 		p4.setSizeQuantity(250f);
 		p4.setProjectGroup(pg1);
-		List<Image> p4imagesPromo = new ArrayList<Image>();
-		String p4imagesPromo_folder = "eramu_aate";
-		p4imagesPromo.add(new Image(p4imagesPromo_folder,"1.jpg"));
-		p4imagesPromo.add(new Image(p4imagesPromo_folder,"2.jpg"));
-		p4imagesPromo.add(new Image(p4imagesPromo_folder,"3.jpg"));
-		p4imagesPromo.add(new Image(p4imagesPromo_folder,"4.jpg"));
-		p4imagesPromo.add(new Image(p4imagesPromo_folder,"5.jpg"));
-		p4.setImagesPromo(p4imagesPromo);
+		String p4images_folder = pg1.getImagesRootFolder() + "/Aate";
+		List<Image> p4images = new ArrayList<Image>();
+		p4images.add(new Image(p4images_folder,"1.jpg"));
+		p4images.add(new Image(p4images_folder,"2.jpg"));
+		p4images.add(new Image(p4images_folder,"3.jpg"));
+		p4images.add(new Image(p4images_folder,"4.jpg"));
+		p4images.add(new Image(p4images_folder,"5.jpg"));
+		p4images.add(new Image(p4images_folder,"joonis.jpg"));
+		p4.setImages(p4images);
 		session.save(p4);
-		
+	
 		Project p5 = new Project();
 		p5.setName("Suvila Karepal Lääne-Virumaal");
 		p5.setPlanningStartYear(1999);
@@ -236,6 +242,7 @@ public class SetupDao { // extends AbstractDaoHibernate {
 		p5.setArchitects(p5architects);
 		p5.setSizeQuantity(35f);
 		p5.setProjectGroup(pg1);
+		p5.setImagesArray(pg1.getImagesRootFolder() + "/Karepa", new String[]{"1.jpg","2.jpg","3.jpg","4.jpg","5.jpg","6.jpg","7.jpg","8.jpg","joonis.jpg"});
 		session.save(p5);
 		
 		Project p6 = new Project();
@@ -248,6 +255,14 @@ public class SetupDao { // extends AbstractDaoHibernate {
 		p6contributors.add(personMartinPrommik);
 		p6.setContributors(p6contributors);
 		p6.setProjectGroup(pg1);
+		String p6images_folder = pg1.getImagesRootFolder() + "/Karepa";
+		List<Image> p6images = new ArrayList<Image>();
+		p6images.add(new Image(p6images_folder,"1.jpg"));
+		p6images.add(new Image(p6images_folder,"2.jpg"));
+		p6images.add(new Image(p6images_folder,"3.jpg"));
+		p6images.add(new Image(p6images_folder,"4.jpg"));
+		p6images.add(new Image(p6images_folder,"5.jpg"));
+		p6.setImages(p6images);
 		session.save(p6);
 		
 		Project p7 = new Project();

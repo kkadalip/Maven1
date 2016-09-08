@@ -48,6 +48,11 @@ public class ProjectGroup {
 	// Associations marked as mappedBy must not define database mappings like @JoinTable or @JoinColumn: model.ProjectGroup.childProjects @JoinColumn(name="projectID") //, insertable = false, updatable = false)
     private SortedSet<Project> childProjects = new TreeSet<>();
 
+	
+	@Column(name="imagesRootFolder")
+    private String imagesRootFolder;
+	
+	
 	// CONSTRUCTORS:
     
 	public ProjectGroup() {
@@ -77,6 +82,14 @@ public class ProjectGroup {
 
 	public void setChildProjects(SortedSet<Project> childProjects) {
 		this.childProjects = childProjects;
+	}
+
+	public String getImagesRootFolder() {
+		return imagesRootFolder;
+	}
+
+	public void setImagesRootFolder(String imagesRootFolder) {
+		this.imagesRootFolder = imagesRootFolder;
 	}
 	
 	

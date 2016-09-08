@@ -153,14 +153,14 @@ public class Project implements Comparable<Project> {
     //@JoinColumn(name = "id") //(name = "addressID")
     private List<Address> addresses = new ArrayList<>();
 	
-	// Image(s): promo pics
+	// Image(s):  pics
 	@LazyCollection(LazyCollectionOption.FALSE)
 	@Nullable
-    @Column(name="imagesPromo")
+    @Column(name="images")
     @ManyToMany()
-	@JoinTable(name="project_imagesPromo", joinColumns=@JoinColumn(name="imageID"), inverseJoinColumns=@JoinColumn(name="projectID"))
+	@JoinTable(name="project_images", joinColumns=@JoinColumn(name="imageID"), inverseJoinColumns=@JoinColumn(name="projectID"))
     @Cascade(value = { CascadeType.ALL })
-	private List<Image> imagesPromo = new ArrayList<>();
+	private List<Image> images = new ArrayList<>();
 	
 	// Image(s) drawings
 	
@@ -329,12 +329,20 @@ public class Project implements Comparable<Project> {
 		this.projectGroup = projectGroup;
 	}
 
-	public List<Image> getImagesPromo() {
-		return imagesPromo;
+	public List<Image> getImages() {
+		return images;
 	}
 
-	public void setImagesPromo(List<Image> imagesPromo) {
-		this.imagesPromo = imagesPromo;
+	public void setImages(List<Image> images) {
+		this.images = images;
+	}
+	
+	public void setImagesArray(String folder, String[] imageNames) {
+		List<Image> images = new ArrayList<Image>();
+		for(String image : imageNames){
+			images.add(new Image(folder,image));
+		}
+		this.images = images;
 	}
 
 	// EXTRA METHODS
