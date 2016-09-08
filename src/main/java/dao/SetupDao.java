@@ -209,7 +209,7 @@ public class SetupDao { // extends AbstractDaoHibernate {
 		p4.setArchitects(p4architects);
 		p4.setSizeQuantity(250f);
 		p4.setProjectGroup(pg1);
-		p4.setImagesArray(pg1.getImagesRootFolder() + "/Aate", new String[]{"1.jpg","2.jpg","3.jpg","4.jpg","5.jpg","joonis.jpg"});
+		p4.setImagesArray(pg1.getImagesRootFolder() + "/Aate", new String[]{"1.jpg","2.jpg","3.jpg","4.jpg","5.jpg","Joonis.jpg"});
 		session.save(p4);
 	
 		Project p5 = new Project();
@@ -329,6 +329,7 @@ public class SetupDao { // extends AbstractDaoHibernate {
 		p10.setSizeQuantity(9500f);
 		p10.setApartmentsQuantity(13);
 		p10.setProjectGroup(pg2);
+		p10.setImagesArray(pg2.getImagesRootFolder() + "/Büroo ja kortermaja Tartu mnt 25", new String[]{"1.jpg","2.jpg","3.jpg","4.jpg","5.jpg","Joonis (1. korrus).png","Joonis (5. korrus).png","Joonis (14. korrus).png"});
 		session.save(p10);
 
 		Project p11 = new Project();
@@ -355,6 +356,7 @@ public class SetupDao { // extends AbstractDaoHibernate {
 		p11originalAuthors.add(personUdoIvask);
 		p11.setOriginalAuthors(p11originalAuthors);
 		p11.setProjectGroup(pg2);
+		p11.setImagesArray(pg2.getImagesRootFolder() + "/Rekonstruktsioon EHL", new String[]{"1.jpg","2.jpg","3.jpg"});
 		session.save(p11);
 		
 		Project p12 = new Project();
@@ -371,6 +373,7 @@ public class SetupDao { // extends AbstractDaoHibernate {
 		p12.setConstructors(p12contributors);
 		p12.setSizeQuantity(3650f);
 		p12.setProjectGroup(pg2);
+		p12.setImagesArray(pg2.getImagesRootFolder() + "/Naftatehase peahoone Jaroslavis", new String[]{"1.jpg","2.jpg","Joonis (1. korrus).jpg","Joonis (2. korrus).jpg","Joonis (asendiplaan).jpg"});
 		session.save(p12);
 		
 		Project p13 = new Project();
@@ -395,6 +398,7 @@ public class SetupDao { // extends AbstractDaoHibernate {
 		p13.setSizeQuantity(2820f);
 		p13.setApartmentsQuantity(24);
 		p13.setProjectGroup(pg2);
+		p12.setImagesArray(pg2.getImagesRootFolder() + "/Korterelamu Tallinn Tatari 9 ja 11", new String[]{"1.jpg","2.jpg","3.jpg","4.jpg","5.jpg","6.jpg","7.jpg","8.jpg","Joonis (asendiplaan).jpg","Joonis (plaanid).jpg"});
 		session.save(p13);
 		
 		Project p14 = new Project();
