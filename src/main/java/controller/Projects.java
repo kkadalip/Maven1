@@ -115,6 +115,7 @@ public class Projects extends HttpServlet {
 			long projectID = 0;
 			// IMPORTANT PROJECT TO DISPLAY BY ID:
 			try {
+				log.debug("projectID to parse: " + importantPart);
 				projectID = Long.parseLong(importantPart);
 			} catch (NumberFormatException e) {
 				log.error("cant parse projectID");
