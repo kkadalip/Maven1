@@ -398,7 +398,7 @@ public class SetupDao { // extends AbstractDaoHibernate {
 		p13.setSizeQuantity(2820f);
 		p13.setApartmentsQuantity(24);
 		p13.setProjectGroup(pg2);
-		p12.setImagesArray(pg2.getImagesRootFolder() + "/Korterelamu Tallinn Tatari 9 ja 11", new String[]{"1.jpg","2.jpg","3.jpg","4.jpg","5.jpg","6.jpg","7.jpg","8.jpg","Joonis (asendiplaan).jpg","Joonis (plaanid).jpg"});
+		p13.setImagesArray(pg2.getImagesRootFolder() + "/Korterelamu Tallinn Tatari 9 ja 11", new String[]{"1.jpg","2.jpg","3.jpg","4.jpg","5.jpg","6.jpg","7.jpg","8.jpg","Joonis (asendiplaan).jpg","Joonis (plaanid).jpg"});
 		session.save(p13);
 		
 		Project p14 = new Project();
@@ -634,7 +634,7 @@ public class SetupDao { // extends AbstractDaoHibernate {
 		p22.setSizeQuantity(11990f);
 		p22.setApartmentsQuantity(113);
 		p22.setProjectGroup(pg2);
-		p22.setImagesArray(pg2.getImagesRootFolder() + "/Korterelamu Tallinn Kaupmehe 6", new String[]{"1.jpg","2.jpg","3.jpg","4.jpg","Joonis (asendiplaan).jpg","Joonis (3. korrus).jpg","Joonis (korruseplaan).jpg"});
+		p22.setImagesArray(pg2.getImagesRootFolder() + "/Korterelamu Tallinn Kaupmehe 6", new String[]{"1.jpg","2.jpg","3.jpg","4.jpg","Joonis (asendiplaan).jpg","Joonis (korruseplaan).jpg"});
 		session.save(p22);
 		
 		Project p23 = new Project();
