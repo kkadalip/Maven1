@@ -120,7 +120,7 @@
 						<td><fmt:message key="kalle.cv.projects.2001-2004" /></td>
 						<td><fmt:message key="kalle.cv.projects.2001-2004-street" /></td>
 						<td><fmt:message key="kalle.cv.projects.2001-2004-town" /></td>
-						<td>Kalle&nbsp;Vellevoog, Velle Kadalipp</td>
+						<td>Kalle&nbsp;Vellevoog, Velle&nbsp;Kadalipp</td>
 					<tr>
 				  	<tr>
 						<td>2003-2004</td>
@@ -134,14 +134,14 @@
 						<td><fmt:message key="kalle.cv.projects.2003-2005_1" /></td>
 						<td><fmt:message key="kalle.cv.projects.2003-2005_1-street" /></td>
 						<td><fmt:message key="kalle.cv.projects.2003-2005_1-town" /></td>
-						<td>Kalle&nbsp;Vellevoog, Velle Kadalipp</td>
+						<td>Kalle&nbsp;Vellevoog, Velle&nbsp;Kadalipp</td>
 					<tr>
 				  	<tr>
 						<td>2003-2005</td>
 						<td><fmt:message key="kalle.cv.projects.2003-2005_2" /></td>
 						<td><fmt:message key="kalle.cv.projects.2003-2005_2-street" /></td>
 						<td><fmt:message key="kalle.cv.projects.2003-2005_2-town" /></td>
-						<td>Kalle&nbsp;Vellevoog, Velle Kadalipp</td>
+						<td>Kalle&nbsp;Vellevoog, Velle&nbsp;Kadalipp</td>
 					<tr>
 				  	<tr>
 						<td>2004-2006</td>
@@ -169,21 +169,21 @@
 						<td><fmt:message key="kalle.cv.projects.2005" /></td>
 						<td><fmt:message key="kalle.cv.projects.2005-street" /></td>
 						<td><fmt:message key="kalle.cv.projects.2005-town" /></td>
-						<td>Kalle&nbsp;Vellevoog, Velle Kadalipp</td>
+						<td>Kalle&nbsp;Vellevoog, Velle&nbsp;Kadalipp</td>
 					<tr>
 				  	<tr>
 						<td>2006</td>
 						<td><fmt:message key="kalle.cv.projects.2006" /></td>
 						<td><fmt:message key="kalle.cv.projects.2006-street" /></td>
 						<td><fmt:message key="kalle.cv.projects.2006-town" /></td>
-						<td>Kalle&nbsp;Vellevoog, Velle Kadalipp</td>
+						<td>Kalle&nbsp;Vellevoog, Velle&nbsp;Kadalipp</td>
 					<tr>
 				  	<tr>
 						<td>2009-2011</td>
 						<td><fmt:message key="kalle.cv.projects.2009-2011" /></td>
 						<td><fmt:message key="kalle.cv.projects.2009-2011-street" /></td>
 						<td><fmt:message key="kalle.cv.projects.2009-2011-town" /></td>
-						<td>Kalle&nbsp;Vellevoog, Velle Kadalipp</td>
+						<td>Kalle&nbsp;Vellevoog, Velle&nbsp;Kadalipp</td>
 					<tr>
 				  	<tr>
 						<td>2010</td>
