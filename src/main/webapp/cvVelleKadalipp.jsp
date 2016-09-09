@@ -4,7 +4,7 @@
 <html>
 <head>
 <%@ include file="html_head.jsp"%>
-<title>JVR | Velle&nbsp;Kadalipp</title>
+<title>JVR | Velle Kadalipp</title>
 
 <style type="text/css">
 </style>

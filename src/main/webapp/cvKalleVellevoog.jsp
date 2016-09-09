@@ -20,9 +20,9 @@
 	<%@ include file="header.jsp"%>
 	<div class="container">
 		<div class="brightBackground col-md-12">
-			<h1>Kalle Vellevoog</h1>
+			<h1>Kalle&nbsp;Vellevoog</h1>
 			<br>
-			<img width="135" height="200" alt="Kalle Vellevoog pilt" src="<c:url value="/static/images/CV/Kalle_Vellevoog.jpg" />">
+			<img width="135" height="200" alt="Kalle&nbsp;Vellevoog pilt" src="<c:url value="/static/images/CV/Kalle_Vellevoog.jpg" />">
 			<br>
 			<br>
 			<div class="table-responsive">
@@ -86,7 +86,7 @@
 				  	<tr>
 						<td>2010-...</td>
 						<td><fmt:message key="kalle.cv.2010-X" /></td>
-					<tr>														
+					<tr>
 				</table>
 			</div>
 			<br>
@@ -106,91 +106,91 @@
 						<td><fmt:message key="kalle.cv.projects.1997-1998" /></td>
 						<td><fmt:message key="kalle.cv.projects.1997-1998-street" /></td>
 						<td><fmt:message key="kalle.cv.projects.1997-1998-town" /></td>
-						<td>Kalle Vellevoog</td>
+						<td>Kalle&nbsp;Vellevoog</td>
 					<tr>
 				  	<tr>
 						<td>2000-2003</td>
 						<td><fmt:message key="kalle.cv.projects.2000-2003" /></td>
 						<td><fmt:message key="kalle.cv.projects.2000-2003-street" /></td>
 						<td><fmt:message key="kalle.cv.projects.2000-2003-town" /></td>
-						<td>Kalle Vellevoog</td>
+						<td>Kalle&nbsp;Vellevoog</td>
 					<tr>
 				  	<tr>
 						<td>2001-2004</td>
 						<td><fmt:message key="kalle.cv.projects.2001-2004" /></td>
 						<td><fmt:message key="kalle.cv.projects.2001-2004-street" /></td>
 						<td><fmt:message key="kalle.cv.projects.2001-2004-town" /></td>
-						<td>Kalle Vellevoog, Velle Kadalipp</td>
+						<td>Kalle&nbsp;Vellevoog, Velle Kadalipp</td>
 					<tr>
 				  	<tr>
 						<td>2003-2004</td>
 						<td><fmt:message key="kalle.cv.projects.2003-2004" /></td>
 						<td><fmt:message key="kalle.cv.projects.2003-2004-street" /></td>
 						<td><fmt:message key="kalle.cv.projects.2003-2004-town" /></td>
-						<td>Kalle Vellevoog</td>
+						<td>Kalle&nbsp;Vellevoog</td>
 					<tr>
 				  	<tr>
 						<td>2003-2005</td>
 						<td><fmt:message key="kalle.cv.projects.2003-2005_1" /></td>
 						<td><fmt:message key="kalle.cv.projects.2003-2005_1-street" /></td>
 						<td><fmt:message key="kalle.cv.projects.2003-2005_1-town" /></td>
-						<td>Kalle Vellevoog, Velle Kadalipp</td>
+						<td>Kalle&nbsp;Vellevoog, Velle Kadalipp</td>
 					<tr>
 				  	<tr>
 						<td>2003-2005</td>
 						<td><fmt:message key="kalle.cv.projects.2003-2005_2" /></td>
 						<td><fmt:message key="kalle.cv.projects.2003-2005_2-street" /></td>
 						<td><fmt:message key="kalle.cv.projects.2003-2005_2-town" /></td>
-						<td>Kalle Vellevoog, Velle Kadalipp</td>
+						<td>Kalle&nbsp;Vellevoog, Velle Kadalipp</td>
 					<tr>
 				  	<tr>
 						<td>2004-2006</td>
 						<td><fmt:message key="kalle.cv.projects.2004-2006_1" /></td>
 						<td><fmt:message key="kalle.cv.projects.2004-2006_1-street" /></td>
 						<td><fmt:message key="kalle.cv.projects.2004-2006_1-town" /></td>
-						<td>Kalle Vellevoog</td>
+						<td>Kalle&nbsp;Vellevoog</td>
 					<tr>
 				  	<tr>
 						<td>2004-2006</td>
 						<td><fmt:message key="kalle.cv.projects.2004-2006_2" /></td>
 						<td><fmt:message key="kalle.cv.projects.2004-2006_2-street" /></td>
 						<td><fmt:message key="kalle.cv.projects.2004-2006_2-town" /></td>
-						<td>Kalle Vellevoog</td>
+						<td>Kalle&nbsp;Vellevoog</td>
 					<tr>
 				  	<tr>
 						<td>2005-2007</td>
 						<td><fmt:message key="kalle.cv.projects.2005-2007" /></td>
 						<td><fmt:message key="kalle.cv.projects.2005-2007-street" /></td>
 						<td><fmt:message key="kalle.cv.projects.2005-2007-town" /></td>
-						<td>Kalle Vellevoog</td>
+						<td>Kalle&nbsp;Vellevoog</td>
 					<tr>
 				  	<tr>
 						<td>2005</td>
 						<td><fmt:message key="kalle.cv.projects.2005" /></td>
 						<td><fmt:message key="kalle.cv.projects.2005-street" /></td>
 						<td><fmt:message key="kalle.cv.projects.2005-town" /></td>
-						<td>Kalle Vellevoog, Velle Kadalipp</td>
+						<td>Kalle&nbsp;Vellevoog, Velle Kadalipp</td>
 					<tr>
 				  	<tr>
 						<td>2006</td>
 						<td><fmt:message key="kalle.cv.projects.2006" /></td>
 						<td><fmt:message key="kalle.cv.projects.2006-street" /></td>
 						<td><fmt:message key="kalle.cv.projects.2006-town" /></td>
-						<td>Kalle Vellevoog, Velle Kadalipp</td>
+						<td>Kalle&nbsp;Vellevoog, Velle Kadalipp</td>
 					<tr>
 				  	<tr>
 						<td>2009-2011</td>
 						<td><fmt:message key="kalle.cv.projects.2009-2011" /></td>
 						<td><fmt:message key="kalle.cv.projects.2009-2011-street" /></td>
 						<td><fmt:message key="kalle.cv.projects.2009-2011-town" /></td>
-						<td>Kalle Vellevoog, Velle Kadalipp</td>
+						<td>Kalle&nbsp;Vellevoog, Velle Kadalipp</td>
 					<tr>
 				  	<tr>
 						<td>2010</td>
 						<td><fmt:message key="kalle.cv.projects.2010" /></td>
 						<td><fmt:message key="kalle.cv.projects.2010-street" /></td>
 						<td><fmt:message key="kalle.cv.projects.2010-town" /></td>
-						<td>Kalle Vellevoog, T. Truus, M. Prommik, A. Andrejev</td>
+						<td>Kalle&nbsp;Vellevoog, Tiiu&nbsp;Truus, Martin&nbsp;Prommik, Anrus&nbsp;Andrejev</td>
 					<tr>																				
 				</table>
 			</div>
@@ -210,77 +210,77 @@
 						<td><fmt:message key="kalle.cv.competitions.1989" /></td>
 						<td><fmt:message key="kalle.cv.competitions.1989-location" /></td>
 						<td><fmt:message key="kalle.cv.competitions.1989-prize" /></td>
-						<td>K. Vellevoog, E. Rajasaar, I. Jalas</td>
+						<td>Kalle&nbsp;Vellevoog, Enn&nbsp;Rajasaar, Ilmar&nbsp;Jalas</td>
 					<tr>
 				  	<tr>
 						<td>1990</td>
 						<td><fmt:message key="kalle.cv.competitions.1990" /></td>
 						<td>Jõhvi</td>
 						<td><fmt:message key="kalle.cv.competitions.1990-prize" /></td>
-						<td>K. Vellevoog, V. Kadalipp, I. Jalas</td>
+						<td>Kalle&nbsp;Vellevoog, Velle&nbsp;Kadalipp, Ilmar&nbsp;Jalas</td>
 					<tr>
 				  	<tr>
 						<td>1997</td>
 						<td><fmt:message key="kalle.cv.competitions.1997" /></td>
 						<td>Tartu</td>
 						<td><fmt:message key="kalle.cv.competitions.1997-prize" /></td>
-						<td>K. Vellevoog, E. Rajasaar, I. Jalas,  M. Kadarik</td>
+						<td>Kalle&nbsp;Vellevoog, Enn&nbsp;Rajasaar, Ilmar&nbsp;Jalas,  Mart&nbsp;Kadarik</td>
 					<tr>
 				  	<tr>
 						<td>1998</td>
 						<td><fmt:message key="kalle.cv.competitions.1998" /></td>
 						<td>Jõhvi</td>
 						<td><fmt:message key="kalle.cv.competitions.1998-prize" /></td>
-						<td>K. Vellevoog, I. Jalas</td>
+						<td>Kalle&nbsp;Vellevoog, Ilmar&nbsp;Jalas</td>
 					<tr>
 				  	<tr>
 						<td>1999</td>
 						<td><fmt:message key="kalle.cv.competitions.1999" /></td>
 						<td>Saaremaa</td>
 						<td><fmt:message key="kalle.cv.competitions.1999-prize" /></td>
-						<td>K. Vellevoog</td>
+						<td>Kalle&nbsp;Vellevoog</td>
 					<tr>
 				  	<tr>
 						<td>2000</td>
 						<td><fmt:message key="kalle.cv.competitions.2000" /></td>
 						<td>Tartu</td>
 						<td><fmt:message key="kalle.cv.competitions.2000-prize" /></td>
-						<td>K. Vellevoog, V. Kadalipp, I. Jalas, E. Rajasaar</td>
+						<td>Kalle&nbsp;Vellevoog, Velle&nbsp;Kadalipp, Ilmar&nbsp;Jalas, Enn&nbsp;Rajasaar</td>
 					<tr>
 				  	<tr>
 						<td>2001</td>
 						<td><fmt:message key="kalle.cv.competitions.2001" /></td>
 						<td>Tallinn</td>
 						<td><fmt:message key="kalle.cv.competitions.2001-prize" /></td>
-						<td>K. Vellevoog, V. Kadalipp, O. Kadarik, E. Rajasaar</td>
+						<td>Kalle&nbsp;Vellevoog, Velle&nbsp;Kadalipp, Ott&nbsp;Kadarik, Enn&nbsp;Rajasaar</td>
 					<tr>
 				  	<tr>
 						<td>2004</td>
 						<td><fmt:message key="kalle.cv.competitions.2004" /></td>
 						<td><fmt:message key="kalle.cv.competitions.2004-location" /></td>
 						<td><fmt:message key="kalle.cv.competitions.2004-prize" /></td>
-						<td>K. Vellevoog, L. Põdra</td>
+						<td>Kalle&nbsp;Vellevoog, Laila&nbsp;Põdra</td>
 					<tr>
 				  	<tr>
 						<td>2007</td>
 						<td><fmt:message key="kalle.cv.competitions.2007" /></td>
 						<td><fmt:message key="kalle.cv.competitions.2007-location" /></td>
 						<td><fmt:message key="kalle.cv.competitions.2007-prize" /></td>
-						<td>K. Vellevoog, V. Kadalipp, T. Truus, M. Prommik</td>
+						<td>Kalle&nbsp;Vellevoog, Velle&nbsp;Kadalipp, Tiiu&nbsp;Truus, Martin&nbsp;Prommik</td>
 					<tr>
 				  	<tr>
 						<td>2009</td>
 						<td><fmt:message key="kalle.cv.competitions.2009" /></td>
 						<td>Narva</td>
 						<td><fmt:message key="kalle.cv.competitions.2009-prize" /></td>
-						<td>K. Vellevoog, T. Truus, M. Prommik</td>
+						<td>Kalle&nbsp;Vellevoog, Tiiu&nbsp;Truus, Martin&nbsp;Prommik</td>
 					<tr>
 				  	<tr>
 						<td>2010</td>
 						<td><fmt:message key="kalle.cv.competitions.2010" /></td>
 						<td><fmt:message key="kalle.cv.competitions.2010-location" /></td>
 						<td><fmt:message key="kalle.cv.competitions.2010-prize" /></td>
-						<td>K. Vellevoog, T. Truus, K. Jagodin, M. Pedanik</td>
+						<td>Kalle&nbsp;Vellevoog, Tiiu&nbsp;Truus, Karen&nbsp;Jagodin, Martin&nbsp;Pedanik</td>
 					<tr>			
 				</table>
 			</div>
@@ -312,7 +312,7 @@
 					<tr>
 				  	<tr>
 						<td>2003</td>
-						<td><fmt:message key="kalle.cv.exhibitions.2003" /></td>
+						<td><fmt:message key="kalle.cv.exhibitions.2003" />; Kalle&nbsp;Vellevoog, Arne&nbsp;Maasik</td>
 					<tr>
 				  	<tr>
 						<td>2005</td>
@@ -320,11 +320,11 @@
 					<tr>
 				  	<tr>
 						<td>2008</td>
-						<td><fmt:message key="kalle.cv.exhibitions.2008" /></td>
+						<td><fmt:message key="kalle.cv.exhibitions.2008" />; Kalle&nbsp;Vellevoog, Arne&nbsp;Maasik</td>
 					<tr>
 				  	<tr>
 						<td>2010</td>
-						<td><fmt:message key="kalle.cv.exhibitions.2010" /></td>
+						<td><fmt:message key="kalle.cv.exhibitions.2010" />; Kalle&nbsp;Vellevoog, Tiiu&nbsp;Truus, Karin&nbsp;Jagodin, Martin&nbsp;Pedanik</td>
 					<tr>									
 				</table>
 			</div>
