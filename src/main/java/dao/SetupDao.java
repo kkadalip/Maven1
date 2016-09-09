@@ -782,6 +782,7 @@ public class SetupDao { // extends AbstractDaoHibernate {
 		p28.setArchitects(p28architects);
 		p28.setPrizeComment("Konkursitöö I preemia");
 		p28.setProjectGroup(pg3);
+		p28.setImagesArray(pg3.getImagesRootFolder() + "/Narva Linnus", new String[]{"1.jpg","2.jpg","3.jpg","4.jpg","5.jpg","6.jpg","7.jpg","8.jpg","Joonis (asendiplaan).jpg","Joonis (linnuse plaanid).jpg"});
 		session.save(p28);
 		
 		Project p29 = new Project();
@@ -795,6 +796,7 @@ public class SetupDao { // extends AbstractDaoHibernate {
 		p29.setSizeQuantity(170000f); // 17ha
 		p29.setPrizeComment("Konkursitöö I preemia");
 		p29.setProjectGroup(pg3);
+		p29.setImagesArray(pg3.getImagesRootFolder() + "/Narva Joaoru Puhkeala", new String[]{"1.jpg","2.jpg","3.jpg","4.jpg","5.jpg","6.jpg","Joonis (asendiplaan).jpg","Joonis (rannahoone).jpg","Joonis (valgustuse plaan).jpg"});
 		session.save(p29);
 		
 		Project p30 = new Project();
@@ -808,6 +810,7 @@ public class SetupDao { // extends AbstractDaoHibernate {
 		p30.setArchitects(p30architects);
 		p30.setPrizeComment("Konkursitöö III preemia");
 		p30.setProjectGroup(pg3);
+		p30.setImagesArray(pg3.getImagesRootFolder() + "/Eesti saatkond Pekingis", new String[]{"1.jpg","2.jpg","3.jpg","4.jpg","5.jpg","6.jpg","7.jpg","8.jpg","9.jpg","10.jpg","11.jpg","12.jpg","Joonis (1. korrus).jpg","Joonis (2. korrus).jpg","Joonis (3. korrus).jpg","Joonis (4. korrus).jpg","Joonis (keldrikorrus).jpg", "Joonis (lõiked).jpg", "Joonis (vaated I).jpg", "Joonis (vaated II).jpg"});
 		session.save(p30);
 		
 		Project p31 = new Project();
