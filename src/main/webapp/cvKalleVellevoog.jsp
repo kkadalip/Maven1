@@ -22,7 +22,7 @@
 		<div class="brightBackground col-md-12">
 			<h1>Kalle Vellevoog</h1>
 			<br>
-			<img width="135" height="200" alt="Kalle Vellevoog pilt" src="<c:url value="/static/images/cv/kalle_vellevoog.jpg" />">
+			<img width="135" height="200" alt="Kalle Vellevoog pilt" src="<c:url value="/static/images/CV/Kalle_Vellevoog.jpg" />">
 			<br>
 			<br>
 			<div class="table-responsive">

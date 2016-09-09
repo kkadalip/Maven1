@@ -4,7 +4,7 @@
 <html>
 <head>
 <%@ include file="html_head.jsp"%>
-<title>JVR | Velle Kadalipp</title>
+<title>JVR | Velle&nbsp;Kadalipp</title>
 
 <style type="text/css">
 </style>
@@ -20,9 +20,9 @@
 	<%@ include file="header.jsp"%>
 	<div class="container">
 		<div class="brightBackground col-md-12">
-			<h1>Velle Kadalipp</h1>
+			<h1>Velle&nbsp;Kadalipp</h1>
 			<br>
-			<img width="135" height="200" alt="Velle Kadalipp pilt" src="<c:url value="/static/images/cv/velle_kadalipp.jpg" />">
+			<img width="135" height="200" alt="Velle&nbsp;Kadalipp pilt" src="<c:url value="/static/images/CV/Velle_Kadalipp.jpg" />">
 			<br>
 			<br>
 			<div class="table-responsive">
@@ -79,7 +79,7 @@
 						<td></td>
 						<td>Kehtna vald</td>
 						<td></td>
-						<td>Velle Kadalipp, Jörgen Vähi</td>
+						<td>Velle&nbsp;Kadalipp, Jörgen&nbsp;Vähi</td>
 					<tr>
 				  	<tr>
 						<td>1995-1996</td>
@@ -87,7 +87,7 @@
 						<td></td>
 						<td>Kilingi-Nõmme</td>
 						<td></td>
-						<td>Velle Kadalipp</td>
+						<td>Velle&nbsp;Kadalipp</td>
 					<tr>
 				  	<tr>
 						<td>1997</td>
@@ -95,7 +95,7 @@
 						<td><fmt:message key="velle.cv.projects.1997-street" /></td>
 						<td>Tartu</td>
 						<td></td>
-						<td>Velle Kadalipp, Ilmar Jalas</td>
+						<td>Velle&nbsp;Kadalipp, Ilmar&nbsp;Jalas</td>
 					<tr>
 				  	<tr>
 						<td>1998-1999</td>
@@ -103,7 +103,7 @@
 						<td><fmt:message key="velle.cv.projects.1998-1999_1-street" /></td>
 						<td>Võru</td>
 						<td></td>
-						<td>Velle Kadalipp, Ilmar Jalas</td>
+						<td>Velle&nbsp;Kadalipp, Ilmar&nbsp;Jalas</td>
 					<tr>
 				  	<tr>
 						<td>1998-1999</td>
@@ -111,7 +111,7 @@
 						<td><fmt:message key="velle.cv.projects.1998-1999_2-street" /></td>
 						<td>Tallinn</td>
 						<td>6575m<sup>2</sup></td>
-						<td>Velle Kadalipp, Kalle Vellevoog</td>
+						<td>Velle&nbsp;Kadalipp, Kalle&nbsp;Vellevoog</td>
 					<tr>
 				  	<tr>
 						<td>2000</td>
@@ -119,7 +119,7 @@
 						<td><fmt:message key="velle.cv.projects.2000-street" /></td>
 						<td>Pärnu</td>
 						<td></td>
-						<td>Velle Kadalipp, Kalle Vellevoog</td>
+						<td>Velle&nbsp;Kadalipp, Kalle&nbsp;Vellevoog</td>
 					<tr>
 				  	<tr>
 						<td>2001-2004</td>
@@ -127,7 +127,7 @@
 						<td><fmt:message key="velle.cv.projects.2001-2004-street" /></td>
 						<td>Tallinn</td>
 						<td>11890m<sup>2</sup></td>
-						<td>Velle Kadalipp, Kalle Vellevoog</td>
+						<td>Velle&nbsp;Kadalipp, Kalle&nbsp;Vellevoog</td>
 					<tr>
 				  	<tr>
 						<td>2002-2003</td>
@@ -135,7 +135,7 @@
 						<td><fmt:message key="velle.cv.projects.2002-2003-street" /></td>
 						<td>Viljandi</td>
 						<td>2570m<sup>2</sup></td>
-						<td>Velle Kadalipp</td>
+						<td>Velle&nbsp;Kadalipp</td>
 					<tr>
 				  	<tr>
 						<td>2003</td>
@@ -143,7 +143,7 @@
 						<td><fmt:message key="velle.cv.projects.2003-street"/></td>
 						<td>Tallinn</td>
 						<td></td>
-						<td>Velle Kadalipp, Kalle Vellevoog</td>
+						<td>Velle&nbsp;Kadalipp, Kalle&nbsp;Vellevoog</td>
 					<tr>
 				  	<tr>
 						<td>2003-2005</td>
@@ -151,7 +151,7 @@
 						<td><fmt:message key="velle.cv.projects.2003-2005-street" /></td>
 						<td>Tallinn</td>
 						<td></td>
-						<td>Velle Kadalipp, Kalle Vellevoog</td>
+						<td>Velle&nbsp;Kadalipp, Kalle&nbsp;Vellevoog</td>
 					<tr>
 				  	<tr>
 						<td>2004-2011</td>
@@ -159,7 +159,7 @@
 						<td><fmt:message key="velle.cv.projects.2004-2011-street" /></td>
 						<td>Tallinn</td>
 						<td>2277m<sup>2</sup></td>
-						<td>Velle Kadalipp</td>
+						<td>Velle&nbsp;Kadalipp</td>
 					<tr>
 				  	<tr>
 						<td>2004-2005</td>
@@ -167,7 +167,7 @@
 						<td><fmt:message key="velle.cv.projects.2004-2005_1-street" /></td>
 						<td>Tallinn</td>
 						<td>3269m<sup>2</sup></td>
-						<td>Velle Kadalipp, Kalle Vellevoog</td>
+						<td>Velle&nbsp;Kadalipp, Kalle&nbsp;Vellevoog</td>
 					<tr>
 				  	<tr>
 						<td>2004-2005</td>
@@ -175,7 +175,7 @@
 						<td></td>
 						<td>Viljandi</td>
 						<td>3824m<sup>2</sup></td>
-						<td>Velle Kadalipp</td>
+						<td>Velle&nbsp;Kadalipp</td>
 					<tr>
 				  	<tr>
 						<td>2005-2006</td>
@@ -183,7 +183,7 @@
 						<td><fmt:message key="velle.cv.projects.2005-2006-street" /></td>
 						<td>Tallinn</td>
 						<td>3221,2m<sup>2</sup></td>
-						<td>Velle Kadalipp</td>
+						<td>Velle&nbsp;Kadalipp</td>
 					<tr>
 				  	<tr>
 						<td>2004-2011</td>
@@ -191,7 +191,7 @@
 						<td><fmt:message key="velle.cv.projects.2004-2011-street" /></td>
 						<td>Tallinn</td>
 						<td>5082m<sup>2</sup></td>
-						<td>Velle Kadalipp</td>
+						<td>Velle&nbsp;Kadalipp</td>
 					<tr>
 				  	<tr>
 						<td>2005</td>
@@ -199,7 +199,7 @@
 						<td><fmt:message key="velle.cv.projects.2005-street" /></td>
 						<td>Tallinn</td>
 						<td>1820m<sup>2</sup></td>
-						<td>Velle Kadalipp, Kalle Vellevoog</td>
+						<td>Velle&nbsp;Kadalipp, Kalle&nbsp;Vellevoog</td>
 					<tr>
 				  	<tr>
 						<td>2006</td>
@@ -207,7 +207,7 @@
 						<td><fmt:message key="velle.cv.projects.2006-street" /></td>
 						<td>Jõhvi</td>
 						<td>15393m<sup>2</sup></td>
-						<td>Velle Kadalipp, Kalle Vellevoog</td>
+						<td>Velle&nbsp;Kadalipp, Kalle&nbsp;Vellevoog</td>
 					<tr>
 				  	<tr>
 						<td>2006-2007</td>
@@ -215,7 +215,7 @@
 						<td><fmt:message key="velle.cv.projects.2006-2007-street" /></td>
 						<td>Tallinn</td>
 						<td>11520m<sup>2</sup></td>
-						<td>Velle Kadalipp</td>
+						<td>Velle&nbsp;Kadalipp</td>
 					<tr>
 				  	<tr>
 						<td>2009</td>
@@ -223,7 +223,7 @@
 						<td><fmt:message key="velle.cv.projects.2009_1-street" /></td>
 						<td>Tarvastu vald</td>
 						<td>1302m<sup>2</sup></td>
-						<td>Velle Kadalipp</td>
+						<td>Velle&nbsp;Kadalipp</td>
 					<tr>
 				  	<tr>
 						<td>2009</td>
@@ -231,7 +231,7 @@
 						<td><fmt:message key="velle.cv.projects.2009_2-street" /></td>
 						<td>Tallinn</td>
 						<td>6500m<sup>2</sup></td>
-						<td>Velle Kadalipp</td>
+						<td>Velle&nbsp;Kadalipp</td>
 					<tr>
 				  	<tr>
 						<td>2010</td>
@@ -239,7 +239,7 @@
 						<td><fmt:message key="velle.cv.projects.2010-street" /></td>
 						<td>Tallinn</td>
 						<td>6500m<sup>2</sup></td>
-						<td>Velle Kadalipp</td>
+						<td>Velle&nbsp;Kadalipp</td>
 					<tr>
 				  	<tr>
 						<td>2011</td>
@@ -247,7 +247,7 @@
 						<td><fmt:message key="velle.cv.projects.2011-street" /></td>
 						<td>Tallinn</td>
 						<td>1515m<sup>2</sup></td>
-						<td>Velle Kadalipp</td>
+						<td>Velle&nbsp;Kadalipp</td>
 					<tr>																
 				</table>
 			</div>
@@ -267,42 +267,42 @@
 						<td><fmt:message key="velle.cv.competitions.1990" /></td>
 						<td>Jõhvi</td>
 						<td><fmt:message key="velle.cv.competitions.1990-prize" /></td>
-						<td>Velle Kadalipp, Kalle Vellevoog, Ilmar Jalas</td>
+						<td>Velle&nbsp;Kadalipp, Kalle&nbsp;Vellevoog, Ilmar&nbsp;Jalas</td>
 					<tr>
 				  	<tr>
 						<td>2000</td>
 						<td><fmt:message key="velle.cv.competitions.2000" /></td>
 						<td>Tartu</td>
 						<td><fmt:message key="velle.cv.competitions.2000-prize" /></td>
-						<td>Velle Kadalipp, Ilmar Jalas, Kalle Vellevoog, Enn Rajasaar</td>
+						<td>Velle&nbsp;Kadalipp, Ilmar&nbsp;Jalas, Kalle&nbsp;Vellevoog, Enn&nbsp;Rajasaar</td>
 					<tr>
 				  	<tr>
 						<td>2001</td>
 						<td><fmt:message key="velle.cv.competitions.2001_1" /></td>
 						<td>Tallinn</td>
 						<td><fmt:message key="velle.cv.competitions.2001_1-prize" /></td>
-						<td>Velle Kadalipp, Kalle Vellevoog, Ott Kadarik, Enn Rajasaar</td>
+						<td>Velle&nbsp;Kadalipp, Kalle&nbsp;Vellevoog, Ott&nbsp;Kadarik, Enn&nbsp;Rajasaar</td>
 					<tr>
 				  	<tr>
 						<td>2001</td>
 						<td><fmt:message key="velle.cv.competitions.2001_2"/></td>
 						<td>Pärnu</td>
 						<td><fmt:message key="velle.cv.competitions.2001_2-prize" /></td>
-						<td>Velle Kadalipp</td>
+						<td>Velle&nbsp;Kadalipp</td>
 					<tr>
 				  	<tr>
 						<td>2002</td>
 						<td><fmt:message key="velle.cv.competitions.2002" /></td>
 						<td>Kuressaare</td>
 						<td><fmt:message key="velle.cv.competitions.2002-prize" /></td>
-						<td>Velle Kadalipp, Kalle Vellevoog</td>
+						<td>Velle&nbsp;Kadalipp, Kalle&nbsp;Vellevoog</td>
 					<tr>
 				  	<tr>
 						<td>2007</td>
 						<td><fmt:message key="velle.cv.competitions.2007" /></td>
 						<td><fmt:message key="velle.cv.competitions.2007-location" /></td>
 						<td><fmt:message key="velle.cv.competitions.2007-prize" /></td>
-						<td>Velle Kadalipp, Kalle Vellevoog Tiiu Truus, Martin Prommik</td>				
+						<td>Velle&nbsp;Kadalipp, Kalle&nbsp;Vellevoog, Tiiu&nbsp;Truus, Martin&nbsp;Prommik</td>				
 					<tr>					
 				</table>
 			</div>
