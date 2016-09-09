@@ -823,6 +823,7 @@ public class SetupDao { // extends AbstractDaoHibernate {
 		p31architects.add(personMartinPrommik);
 		p31.setArchitects(p31architects);
 		p31.setProjectGroup(pg3);
+		p31.setImagesArray(pg3.getImagesRootFolder() + "/Rakvere Pauluse kirik", new String[]{"1.jpg","2.jpg","3.jpg","4.jpg","5.jpg","6.jpg","7.jpg","8.jpg","9.jpg","Joonis (1. korrus).jpg","Joonis (2. korrus).jpg","Joonis (3. korrus).jpg","Joonis (asendiplaan).jpg","Joonis (keldrikorrus).jpg", "Joonis (lõige A-A).jpg", "Joonis (lõige B-B).jpg", "Joonis (lõige C-C).jpg", "Joonis (lõige D-D).jpg", "Joonis (vaade 1).jpg", "Joonis (vaade 2).jpg", "Joonis (vaade 3).jpg", "Joonis (vaade 4).jpg"});
 		session.save(p31);
 		
 		Project p32 = new Project();
@@ -833,6 +834,7 @@ public class SetupDao { // extends AbstractDaoHibernate {
 		p32architects.add(personVelleKadalipp);
 		p32.setArchitects(p32architects);
 		p32.setProjectGroup(pg3);
+		p32.setImagesArray(pg3.getImagesRootFolder() + "/Büroohoone Tallinn", new String[]{"1.jpg","2.jpg","3.jpg","4.jpg","5.jpg","Joonis (makett 1).jpg","Joonis (makett 2).jpg", "Joonis (makett 3).jpg"});
 		session.save(p32);
 		
 		Project p33 = new Project();
@@ -845,6 +847,7 @@ public class SetupDao { // extends AbstractDaoHibernate {
 		p33architects.add(personMartinPrommik);
 		p33.setArchitects(p33architects);
 		p33.setProjectGroup(pg3);
+		p33.setImagesArray(pg3.getImagesRootFolder() + "/Maaülikool", new String[]{"1.jpg","2.jpg","3.jpg","4.jpg","5.jpg","6.jpg","7.jpg","8.jpg"});
 		session.save(p33);
 		
 		Project p34 = new Project();
@@ -859,6 +862,7 @@ public class SetupDao { // extends AbstractDaoHibernate {
 		p34.setContributors(p34contributors);
 		p34.setSizeQuantity(11489f);
 		p34.setProjectGroup(pg3);
+		p34.setImagesArray(pg3.getImagesRootFolder() + "/G4S", new String[]{"1.jpg","2.jpg","3.jpg","Joonis (asendiplaan).jpg"});
 		session.save(p34);
 		
 		Project p35 = new Project();
@@ -871,6 +875,7 @@ public class SetupDao { // extends AbstractDaoHibernate {
 		p35.setArchitects(p35architects);
 		p35.setSizeQuantity(18367f);
 		p35.setProjectGroup(pg3);
+		p35.setImagesArray(pg3.getImagesRootFolder() + "/Tartu raamatukogu ja kunstimuuseum", new String[]{"1.jpg","2.jpg","3.jpg","4.jpg","5.jpg","6.jpg","7.jpg","Joonis (1. korrus).jpg","Joonis (2. korrus).jpg","Joonis (3. korrus).jpg","Joonis (4. korrus).jpg","Joonis (aksonomeetriline vaade 1).jpg","Joonis (aksonomeetriline vaade 2).jpg","Joonis (aksonomeetrilised skeemid).jpg", "Joonis (keldrikorrus).jpg","Joonis (lõige A-A).jpg", "Joonis (lõige B-B).jpg", "Joonis (lõige C-C).jpg", "Joonis (vaade).jpg"});
 		session.save(p35);
 		
 		Project p36 = new Project();
@@ -884,6 +889,7 @@ public class SetupDao { // extends AbstractDaoHibernate {
 		p36interiorDesigners.add(personTiiuTruus);
 		p36.setInteriorDesigners(p36interiorDesigners);
 		p36.setProjectGroup(pg4);
+		p36.setImagesArray(pg4.getImagesRootFolder() + "/Narva-Jõesuu Vabaduse 72", new String[]{"1.jpg","2.jpg","3.jpg","4.jpg","5.jpg","6.jpg","7.jpg"});
 		session.save(p36);
 		
 		Project p37 = new Project();
@@ -898,6 +904,7 @@ public class SetupDao { // extends AbstractDaoHibernate {
 		p37contributors.add(personAndrusAndrejev);
 		p37.setContributors(p37contributors);
 		p37.setProjectGroup(pg4);
+		p37.setImagesArray(pg4.getImagesRootFolder() + "/Tallinn Paldiski mnt 50", new String[]{"1.jpg","2.jpg","3.jpg","4.jpg","5.jpg","6.jpg","7.jpg","8.jpg","Joonis (asendiplaan).jpg"});
 		session.save(p37);
 		
 		// NÄITUSED: eraldi model luua? http://www.jvr.ee/#et/projektid
