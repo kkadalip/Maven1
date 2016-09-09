@@ -87,12 +87,12 @@
 					<!-- I HAVE IMAGES! -->
 					<div class="photoswipe-gallery" data-itemscope data-itemtype="http://schema.org/ImageGallery">
 						<div class="frame" id="centered">
-							<ul class="slidee">
+							<ul class="slidee"> <!-- clearfix -->
 								<c:forEach items="${project.images}" var="image">
 									<li>
 										<figure style="padding:0; margin: 0;" data-itemprop="associatedMedia" data-itemscope data-itemtype="http://schema.org/ImageObject">
 											<a href="<c:url value="/static/images/${image.folderName}/${image.fileName}"/>" data-itemprop="contentUrl" >
-											<img src="<c:url value="/static/images/${image.folderName}/${image.fileName}"/>" class="img-responsive image-mod" data-itemprop="thumbnail" alt="Picture" />
+											<img src="<c:url value="/static/images/${image.folderName}/${image.fileName}"/>" class="image-mod img-responsive" data-itemprop="thumbnail" alt="Picture" /> <!-- img-responsive -->
 											</a>
 										</figure>
 									</li>
