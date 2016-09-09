@@ -42,9 +42,13 @@ body { background: #e8e8e8; }
 	float: left;
 	/*width: 227px;*/
 	height: 100%;
-	/*margin: 0 1px 0 0; SPACING BETWEEN ITEMS*/
-	margin: 0;
+	/*margin: 0 5px 0 0; SPACING BETWEEN ITEMS*/
+	margin-right: 5px;
 	padding: 0;
+	
+	/*margin: 0;
+	padding: 0;*/
+	
 	/* NOT ACTIVE */
 	/*
 	background: #333;
