@@ -203,7 +203,7 @@ public class SetupDao { // extends AbstractDaoHibernate {
 		session.save(p3);
 		
 		Project p4 = new Project();
-		p4.setName("Eramu Tallinnas Aate tänaval");
+		p4.setName("eramu.aate"); // Eramu Tallinnas Aate tänaval
 		p4.setPlanningStartYear(2000);
 		p4.setBuildingStartYear(2000);
 		p4.setBuildingEndYear(2001);
@@ -217,7 +217,7 @@ public class SetupDao { // extends AbstractDaoHibernate {
 		session.save(p4);
 	
 		Project p5 = new Project();
-		p5.setName("Suvila Karepal Lääne-Virumaal");
+		p5.setName("eramu.karepa"); // Suvila Karepal Lääne-Virumaal
 		p5.setPlanningStartYear(1999);
 		p5.setBuildingStartYear(2000);
 		p5.setBuildingEndYear(2002);
@@ -231,7 +231,7 @@ public class SetupDao { // extends AbstractDaoHibernate {
 		session.save(p5);
 		
 		Project p6 = new Project();
-		p6.setName("Eramu Mäepea külas Harjumaal");
+		p6.setName("eramu.mäepea"); // Eramu Mäepea külas Harjumaal
 		p6.setPlanningStartYear(2008);
 		List<Person> p6architects = new ArrayList<Person>();
 		p6architects.add(personKalleVellevoog);
@@ -245,7 +245,7 @@ public class SetupDao { // extends AbstractDaoHibernate {
 		session.save(p6);
 		
 		Project p7 = new Project();
-		p7.setName("Suvila-vaatetorn põhjarannikul");
+		p7.setName("eramu.vaatetorn"); // Suvila-vaatetorn põhjarannikul
 		p7.setPlanningStartYear(2008);
 		List<Person> p7architects = new ArrayList<Person>();
 		p7architects.add(personKalleVellevoog);
@@ -259,7 +259,7 @@ public class SetupDao { // extends AbstractDaoHibernate {
 		session.save(p7);
 		
 		Project p8 = new Project();
-		p8.setName("Pansionaat Pärnus Seedri tn 4");
+		p8.setName("pansionaat.seedri.4"); // Pansionaat Pärnus Seedri tn 4
 		List<Address> p8addresses = new ArrayList<Address>();
 		Address p8address = new Address();
 		p8address.setCity("Pärnu");
@@ -297,7 +297,7 @@ public class SetupDao { // extends AbstractDaoHibernate {
 		session.save(p8);
 		
 		Project p9 = new Project();
-		p9.setName("Korterelamud Tallinnas Pähkli tänaval");
+		p9.setName("korterelamud.pähkli"); // Korterelamud Tallinnas Pähkli tänaval
 		List<Address> p9addresses = new ArrayList<Address>();
 		Address p9address = new Address();
 		p9address.setCity("Tallinn");
@@ -320,7 +320,7 @@ public class SetupDao { // extends AbstractDaoHibernate {
 		session.save(p9);
 		
 		Project p10 = new Project();
-		p10.setName("Büroo- ja kortermaja Tallinnas Tartu mnt. 25");
+		p10.setName("büroo.ja.kortermaja.tartu.mnt.25"); // Büroo- ja kortermaja Tallinnas Tartu mnt. 25
 		p10.setPlanningStartYear(2014);
 		p10.setBuildingStartYear(2014);
 		List<Person> p10architects = new ArrayList<Person>();
@@ -343,7 +343,7 @@ public class SetupDao { // extends AbstractDaoHibernate {
 		session.save(p10);
 
 		Project p11 = new Project();
-		p11.setName("EHL hoone rekonstrueerimine Eesti Helikunsti Keskuseks");
+		p11.setName("rekonstrueerimine.EHL"); // EHL hoone rekonstrueerimine Eesti Helikunsti Keskuseks
 		// ADDRESS
 		List<Address> p11addresses = new ArrayList<Address>();
 		Address p11address = new Address();
@@ -371,7 +371,7 @@ public class SetupDao { // extends AbstractDaoHibernate {
 		session.save(p11);
 		
 		Project p12 = new Project();
-		p12.setName("Naftatehase peahoone Jaroslavlis");
+		p12.setName("naftatehas.jaroslav"); // Naftatehase peahoone Jaroslavlis
 		p12.setPlanningStartYear(2013);
 		List<Person> p12architects = new ArrayList<Person>();
 		p12architects.add(personKalleVellevoog);
@@ -389,7 +389,7 @@ public class SetupDao { // extends AbstractDaoHibernate {
 		session.save(p12);
 		
 		Project p13 = new Project();
-		p13.setName("Korterelamu Tallinnas Tatari tn 9/11");
+		p13.setName("korterelamu.tallinn.tatari.tn.9.11"); // Korterelamu Tallinnas Tatari tn 9/11
 		List<Address> p13addresses = new ArrayList<Address>();
 		Address p13address = new Address();
 		p13address.setCity("Tallinn");
@@ -415,7 +415,7 @@ public class SetupDao { // extends AbstractDaoHibernate {
 		session.save(p13);
 		
 		Project p14 = new Project();
-		p14.setName("Korterelamu Tallinnas Masti tänaval");
+		p14.setName("korterelamu.tallinn.masti"); // Korterelamu Tallinnas Masti tänaval
 		// ADDRESS START
 		List<Address> p14addresses = new ArrayList<Address>();
 		Address p14address = new Address();
@@ -443,7 +443,7 @@ public class SetupDao { // extends AbstractDaoHibernate {
 		session.save(p14);
 		
 		Project p15 = new Project();
-		p15.setName("Tööstuse tn 54a hoone rekonstruktsioon");
+		p15.setName("rekonstruksioon.tööstuse.54a"); // Tööstuse tn 54a hoone rekonstruktsioon
 		// ADDRESS START
 		List<Address> p15addresses = new ArrayList<Address>();
 		Address p15address = new Address();
@@ -475,7 +475,7 @@ public class SetupDao { // extends AbstractDaoHibernate {
 		session.save(p15);
 		
 		Project p16 = new Project();
-		p16.setName("Kortermajad Tallinnas Helme tänaval");
+		p16.setName("kortermajad.tallinn.helme"); // Kortermajad Tallinnas Helme tänaval
 		// ADDRESS START
 		List<Address> p16addresses = new ArrayList<Address>();
 		Address p16address = new Address();
@@ -504,7 +504,7 @@ public class SetupDao { // extends AbstractDaoHibernate {
 		session.save(p16);
 		
 		Project p17 = new Project();
-		p17.setName("Kortermaja rekonstruktsioon Suur-Patarei 16, Tallinn");
+		p17.setName("rekonstruktsioon.kortermaja.suur-patarei.16"); // Kortermaja rekonstruktsioon Suur-Patarei 16, Tallinn
 		// ADDRESS START
 		List<Address> p17addresses = new ArrayList<Address>();
 		Address p17address = new Address();
@@ -532,7 +532,7 @@ public class SetupDao { // extends AbstractDaoHibernate {
 		session.save(p17);
 		
 		Project p18 = new Project();
-		p18.setName("Äri- ja eluhoone Jõhvis Narva mnt 14");
+		p18.setName("äri.ja.eluhoone.jõhvi.narva.mnt.14"); // Äri- ja eluhoone Jõhvis Narva mnt 14
 		// ADDRESS START
 		List<Address> p18addresses = new ArrayList<Address>();
 		Address p18address = new Address();
@@ -559,7 +559,7 @@ public class SetupDao { // extends AbstractDaoHibernate {
 		session.save(p18);
 		
 		Project p19 = new Project();
-		p19.setName("Korterelamu Haapsalus Suur-Liiva tn 15");
+		p19.setName("korterelamu.haapsalu.suur-liiva.15"); // Korterelamu Haapsalus Suur-Liiva tn 15
 		// ADDRESS START
 		List<Address> p19addresses = new ArrayList<Address>();
 		Address p19address = new Address();
@@ -586,7 +586,7 @@ public class SetupDao { // extends AbstractDaoHibernate {
 		session.save(p19);
 		
 		Project p20 = new Project();
-		p20.setName("Büroohoone Tallinnas Metalli tänaval");
+		p20.setName("büroohoone.tallinn.metalli");
 		p20.setPlanningStartYear(2012);
 		p20.setPlanningEndYear(2013);
 		p20.setBuildingStartYear(2014);
@@ -604,7 +604,7 @@ public class SetupDao { // extends AbstractDaoHibernate {
 		session.save(p20);
 		
 		Project p21 = new Project();
-		p21.setName("Büroohoone Tallinnas Pärnu mnt 153");
+		p21.setName("büroohoone.tallinn.pärnu.mnt.153"); // Büroohoone Tallinnas Pärnu mnt 153
 		// ADDRESS START
 		List<Address> p21addresses = new ArrayList<Address>();
 		Address p21address = new Address();
@@ -628,7 +628,7 @@ public class SetupDao { // extends AbstractDaoHibernate {
 		session.save(p21);
 		
 		Project p22 = new Project();
-		p22.setName("Korterelamu Tallinnas Kaupmehe tn 6");
+		p22.setName("korterelamu.tallinn.kaupmehe.6"); // Korterelamu Tallinnas Kaupmehe tn 6
 		// ADDRESS START
 		List<Address> p22addresses = new ArrayList<Address>();
 		Address p22address = new Address();
@@ -660,7 +660,7 @@ public class SetupDao { // extends AbstractDaoHibernate {
 		session.save(p22);
 		
 		Project p23 = new Project();
-		p23.setName("Büroohoone Tallinnas Katusepapi tn 8");
+		p23.setName("büroohoone.tallinn.katusepapi.8"); // Büroohoone Tallinnas Katusepapi tn 8
 		// ADDRESS START
 		List<Address> p23addresses = new ArrayList<Address>();
 		Address p23address = new Address();
@@ -685,7 +685,7 @@ public class SetupDao { // extends AbstractDaoHibernate {
 		session.save(p23);
 		
 		Project p24 = new Project();
-		p24.setName("Korterelamu Pärnus Papli tn 34");
+		p24.setName("korterelamu.pärnu.papli.34"); // Korterelamu Pärnus Papli tn 34
 		// ADDRESS START
 		List<Address> p24addresses = new ArrayList<Address>();
 		Address p24address = new Address();
@@ -712,7 +712,7 @@ public class SetupDao { // extends AbstractDaoHibernate {
 		session.save(p24);
 		
 		Project p25 = new Project();
-		p25.setName("Kortermaja Ristiku tänaval");
+		p25.setName("kortermaja.ristiku.33a"); // Kortermaja Ristiku tänaval
 		// ADDRESS START
 		List<Address> p25addresses = new ArrayList<Address>();
 		Address p25address = new Address();
@@ -738,7 +738,7 @@ public class SetupDao { // extends AbstractDaoHibernate {
 		session.save(p25);
 		
 		Project p26 = new Project();
-		p26.setName("Korterelamu Tallinnas Luige tn 3");
+		p26.setName("korterelamu.tallinn.luige.3"); // Korterelamu Tallinnas Luige tn 3
 		// ADDRESS START
 		List<Address> p26addresses = new ArrayList<Address>();
 		Address p26address = new Address();
@@ -766,7 +766,7 @@ public class SetupDao { // extends AbstractDaoHibernate {
 		session.save(p26);
 		
 		Project p27 = new Project();
-		p27.setName("Korterelamu Tallinnas Kaupmehe tn 12");
+		p27.setName("korterelamu.tallinn.kaupmehe.12"); // Korterelamu Tallinnas Kaupmehe tn 12
 		// ADDRESS START
 		List<Address> p27addresses = new ArrayList<Address>();
 		Address p27address = new Address();
@@ -796,7 +796,7 @@ public class SetupDao { // extends AbstractDaoHibernate {
 		// KONKURSIPROJEKTID:
 		
 		Project p28 = new Project();
-		p28.setName("Narva linnuse arhitektuurivõistlus");
+		p28.setName("narva.linnus.võistlus"); // Narva linnuse arhitektuurivõistlus
 		// narva linnuse aadress siia
 		p28.setPlanningStartYear(2015);
 		List<Person> p28architects = new ArrayList<Person>();
@@ -814,7 +814,7 @@ public class SetupDao { // extends AbstractDaoHibernate {
 		session.save(p28);
 		
 		Project p29 = new Project();
-		p29.setName("Narva Joaoru puhkeala arhitektuurne ideekonkurss");
+		p29.setName("narva.joaoru.konkurss"); // Narva Joaoru puhkeala arhitektuurne ideekonkurss
 		p29.setPlanningStartYear(2009);
 		List<Person> p29architects = new ArrayList<Person>();
 		p29architects.add(personKalleVellevoog);
@@ -829,7 +829,7 @@ public class SetupDao { // extends AbstractDaoHibernate {
 		session.save(p29);
 		
 		Project p30 = new Project();
-		p30.setName("Eesti saatkond Pekingis");
+		p30.setName("eesti.saatkond.peking"); // Eesti saatkond Pekingis
 		p30.setPlanningStartYear(2008);
 		List<Person> p30architects = new ArrayList<Person>();
 		p30architects.add(personKalleVellevoog);
@@ -844,7 +844,7 @@ public class SetupDao { // extends AbstractDaoHibernate {
 		session.save(p30);
 		
 		Project p31 = new Project();
-		p31.setName("Rakvere Pauluse kiriku rekonstrueerimise arhitektuurivõistlus");
+		p31.setName("rakvere.pauluse.kirik"); // Rakvere Pauluse kiriku rekonstrueerimise arhitektuurivõistlus
 		p31.setPlanningStartYear(2008);
 		List<Person> p31architects = new ArrayList<Person>();
 		p31architects.add(personKalleVellevoog);
@@ -858,7 +858,7 @@ public class SetupDao { // extends AbstractDaoHibernate {
 		session.save(p31);
 		
 		Project p32 = new Project();
-		p32.setName("Büroohoone Tallinnas");
+		p32.setName("büroohoone.tallinn.võistlus"); // Büroohoone Tallinnas
 		p32.setPlanningStartYear(2005);
 		List<Person> p32architects = new ArrayList<Person>();
 		p32architects.add(personKalleVellevoog);
@@ -870,7 +870,7 @@ public class SetupDao { // extends AbstractDaoHibernate {
 		session.save(p32);
 		
 		Project p33 = new Project();
-		p33.setName("Eesti Maaülikooli juurdeehitise arhitektuurivõistlus");
+		p33.setName("eesti.maaülikool.võistlus"); // Eesti Maaülikooli juurdeehitise arhitektuurivõistlus
 		p33.setPlanningStartYear(2008);
 		List<Person> p33architects = new ArrayList<Person>();
 		p33architects.add(personKalleVellevoog);
@@ -884,7 +884,7 @@ public class SetupDao { // extends AbstractDaoHibernate {
 		session.save(p33);
 		
 		Project p34 = new Project();
-		p34.setName("AS G4S büroohoone");
+		p34.setName("g4s.office"); // AS G4S büroohoone
 		p34.setPlanningStartYear(2011);
 		List<Person> p34architects = new ArrayList<Person>();
 		p34architects.add(personKalleVellevoog);
@@ -900,7 +900,7 @@ public class SetupDao { // extends AbstractDaoHibernate {
 		session.save(p34);
 		
 		Project p35 = new Project();
-		p35.setName("Tartu raamatukogu ja kunstimuuseumi arhitektuurivõistlus");
+		p35.setName("tartu.raamatukogu.ja.kunstimuuseum"); // Tartu raamatukogu ja kunstimuuseumi arhitektuurivõistlus
 		p35.setPlanningStartYear(2011);
 		List<Person> p35architects = new ArrayList<Person>();
 		p35architects.add(personKalleVellevoog);
@@ -914,7 +914,7 @@ public class SetupDao { // extends AbstractDaoHibernate {
 		session.save(p35);
 		
 		Project p36 = new Project();
-		p36.setName("Vabaduse tn. 72, Narva-Jõesuu. Hoonestuskava.");
+		p36.setName("narva-jõesuu.hoonestuskava.vabaduse.72"); // Vabaduse tn. 72, Narva-Jõesuu. Hoonestuskava.
 		p36.setPlanningStartYear(2008);
 		List<Person> p36architects = new ArrayList<Person>();
 		p36architects.add(personKalleVellevoog);
@@ -929,7 +929,7 @@ public class SetupDao { // extends AbstractDaoHibernate {
 		session.save(p36);
 		
 		Project p37 = new Project();
-		p37.setName("Paldiski mnt. 50 mahuline planeering. Konkursitöö");
+		p37.setName("planeering.paldiski.mnt.50"); // Paldiski mnt. 50 mahuline planeering. Konkursitöö
 		p37.setPlanningStartYear(2008);
 		List<Person> p37architects = new ArrayList<Person>();
 		p37architects.add(personKalleVellevoog);
