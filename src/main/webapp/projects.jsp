@@ -27,8 +27,10 @@
 
 <body>
 	<%@ include file="header.jsp"%>
+	<div class="mainTitleProjectsContainer">
+		<span class="mainTitleProjects">${fn:length(projects)} projekti</span>
+	</div>
 	<div class="container">
-		<h3>Projektid (${fn:length(projects)})</h3><br>
 		<c:if test="${!empty projectGroups}">
 			<c:forEach items="${projectGroups}" var="projectGroup">
 				<div class="projectGroupBackground">
