@@ -174,6 +174,8 @@ public class Project implements Comparable<Project> {
     @JoinColumn(name = "id") //(name="projectGroupID")
 	private ProjectGroup projectGroup;
 
+	@Column(name="imagesRootFolder")
+	private String imagesRootFolder;
 
 	// GETTERS & SETTERS:
 	
@@ -344,9 +346,16 @@ public class Project implements Comparable<Project> {
 		}
 		this.images = images;
 	}
-
-	// EXTRA METHODS
 	
+	public String getImagesRootFolder() {
+		return imagesRootFolder;
+	}
+
+	public void setImagesRootFolder(String imagesRootFolder) {
+		this.imagesRootFolder = imagesRootFolder;
+	}
+
+	// EXTRA METHODS:
 	@Override
 	public int compareTo(Project o) {
 		//System.out.println("[Project][compareTo] this name: " + this.name + " comparing to " + o.getName());

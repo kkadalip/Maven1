@@ -33,6 +33,7 @@
 							</div>
 							<div class="panel-body">
 									<c:forEach items="${projectGroup.childProjects}" var="project">
+										<img src="<c:url value="/static/images/${projectGroup.imagesRootFolder}/${project.imagesRootFolder}/thumbnail.png"/>" alt="Thumbnail">
 										<a href="<c:url value="/projects/${project.id}"/>">${project.name} (${project.planningStartYear})</a><br> <!-- et/projektid/projektid?action=show_project&amp;project_id=4 -->
 									</c:forEach>
 							</div>

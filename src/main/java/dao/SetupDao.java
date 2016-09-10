@@ -158,7 +158,8 @@ public class SetupDao { // extends AbstractDaoHibernate {
 		//p1.setSizeUnit("m2"); // Todo separate model for units so I can convert them on the fly
 		// BROKEN p1.setProjectGroup(pg1);
 		p1.setProjectGroup(pg1);
-		p1.setImagesArray(pg1.getImagesRootFolder() + "/Eramute grupp seedri remmelga", new String[]{"1.jpg","2.jpg","3.jpg","4.jpg","5.jpg","6.jpg","7.jpg","8.jpg","9.jpg","10.jpg","Joonis.jpg"});
+		p1.setImagesRootFolder("Eramute grupp seedri remmelga");
+		p1.setImagesArray(p1.getProjectGroup().getImagesRootFolder() + "/" + p1.getImagesRootFolder(), new String[]{"1.jpg","2.jpg","3.jpg","4.jpg","5.jpg","6.jpg","7.jpg","8.jpg","9.jpg","10.jpg","Joonis.jpg"});
 //      OLD WAY OF ADDING IMAGES
 //		String p1images_folder = pg1.getImagesRootFolder() + "/Eramute grupp seedri remmelga";
 //		List<Image> p1images = new ArrayList<Image>();		
@@ -184,7 +185,8 @@ public class SetupDao { // extends AbstractDaoHibernate {
 		p2.setArchitects(p2architects);
 		p2.setSizeQuantity(260f);
 		p2.setProjectGroup(pg1);
-		p2.setImagesArray(pg1.getImagesRootFolder() + "/Rohuneeme", new String[]{"1.jpg","2.jpg","3.jpg","4.jpg","5.jpg","6.jpg","Joonis.jpg"});
+		p2.setImagesRootFolder("Rohuneeme");
+		p2.setImagesArray(p2.getProjectGroup().getImagesRootFolder() + "/" + p2.getImagesRootFolder(), new String[]{"1.jpg","2.jpg","3.jpg","4.jpg","5.jpg","6.jpg","Joonis.jpg"});
 		session.save(p2);
 		
 		Project p3 = new Project();
