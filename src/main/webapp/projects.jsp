@@ -15,16 +15,45 @@
 		$("#header_li_projects").addClass("active");
 	});
 </script>
+<!-- 
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto">
+<style>
+  .container {
+    font-family: 'Roboto', serif;
+  }
+</style>
+ -->
 </head>
 
 <body>
 	<%@ include file="header.jsp"%>
 	<div class="container">
+		<h3>Projektid (${fn:length(projects)})</h3><br>
+		<c:if test="${!empty projectGroups}">
+			<c:forEach items="${projectGroups}" var="projectGroup">
+				<div class="projectGroupBackground">
+					<p class="projectGroupTitle">${projectGroup.name}</p>
+					<c:forEach items="${projectGroup.childProjects}" var="project">
+						<div class="projectBackground">
+						<div class="projectLink">
+							<img class="projectThumbnail" src="<c:url value="/static/images/${projectGroup.imagesRootFolder}/${project.imagesRootFolder}/thumbnail.png"/>" alt="Thumbnail">
+								<a class="projectTitle"  href="<c:url value="/projects/${project.id}"/>">${project.name}</a> <!-- et/projektid/projektid?action=show_project&amp;project_id=4 -->
+								<span class="projectYear">${project.planningStartYear}</span>
+							</div>
+						</div>
+					</c:forEach>
+				</div>
+			</c:forEach>
+		</c:if>
+		
+	
+		<!-- GOOD OLD: -->
+		<!-- example link: 
+		<a href="et/projektid/projektid?action=show_project&amp;project_id=5">Eramute grupp Seedri ja Remmelga tänavate vahelisel alal Pärnus</a><br>
+		-->
+		<!-- 
 		<div class="brightBackground col-md-12">
 			<h3>Projektid (${fn:length(projects)})</h3><br>
-			<!-- example link: 
-			<a href="et/projektid/projektid?action=show_project&amp;project_id=5">Eramute grupp Seedri ja Remmelga tänavate vahelisel alal Pärnus</a><br>
-			-->
 			<c:if test="${!empty projectGroups}">
 				<c:forEach items="${projectGroups}" var="projectGroup">
 						<div class="panel panel-default">
@@ -34,14 +63,16 @@
 							<div class="panel-body">
 									<c:forEach items="${projectGroup.childProjects}" var="project">
 										<img src="<c:url value="/static/images/${projectGroup.imagesRootFolder}/${project.imagesRootFolder}/thumbnail.png"/>" alt="Thumbnail">
-										<a href="<c:url value="/projects/${project.id}"/>">${project.name} (${project.planningStartYear})</a><br> <!-- et/projektid/projektid?action=show_project&amp;project_id=4 -->
+										<a href="<c:url value="/projects/${project.id}"/>">${project.name} (${project.planningStartYear})</a><br>
 									</c:forEach>
 							</div>
 						</div>
 				</c:forEach>
 			</c:if>
 		</div>
-		
+		-->
+		<!-- et/projektid/projektid?action=show_project&amp;project_id=4 -->
+		 
 		<!-- 
 		<div class="panel panel-default">
 		  	<div class="panel-heading">
