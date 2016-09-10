@@ -28,14 +28,14 @@
 <body>
 	<%@ include file="header.jsp"%>
 	<div class="mainTitleProjectsContainer">
-		<span class="mainTitleProjects">${fn:length(projects)} projekti</span>
+		<span class="mainTitleProjects">${fn:length(projects)} <fmt:message key="projects.main.title"/></span>
 	</div>
 	<div class="container">
 		<c:if test="${!empty projectGroups}">
 			<c:forEach items="${projectGroups}" var="projectGroup">
 				<div class="projectGroupBackground">
 					<div class="projectGroupTitle">
-						<span>${projectGroup.name}</span>
+						<span><fmt:message key="${projectGroup.name}"/></span> <!-- ${projectGroup.name} -->
 						<span class="projectGroupChildProjectsAmount">${fn:length(projectGroup.childProjects)}</span>
 					</div>
 					<c:forEach items="${projectGroup.childProjects}" var="project">
@@ -43,7 +43,7 @@
 								<div class="projectLink">
 									<a class="projectLink" href="<c:url value="/projects/${project.id}"/>">
 										<img class="projectThumbnail" src="<c:url value="/static/images/${projectGroup.imagesRootFolder}/${project.imagesRootFolder}/thumbnail.png"/>" alt="Thumbnail">
-										<span class="projectTitle">${project.name}</span>
+										<span class="projectTitle"><fmt:message key="${project.name}"/></span>
 										 <!-- et/projektid/projektid?action=show_project&amp;project_id=4 -->
 										<span class="projectYear">${project.planningStartYear}</span>
 									</a>

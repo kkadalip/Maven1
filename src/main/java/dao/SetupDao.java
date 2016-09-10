@@ -64,27 +64,27 @@ public class SetupDao { // extends AbstractDaoHibernate {
 		// PROJECT GROUPS
 		
 		ProjectGroup pg1 = new ProjectGroup();
-		pg1.setName("Eramud");
+		pg1.setName("eramud");
 		pg1.setImagesRootFolder("Eramud");
 		session.save(pg1);
 		
 		ProjectGroup pg2 = new ProjectGroup();
-		pg2.setName("Korterelamud ja ühiskondlikud hooned");
+		pg2.setName("korterelamud.ja.ühiskondlikud.hooned"); // <- for translation files
 		pg2.setImagesRootFolder("Korterelamud ja ühisk hooned");
 		session.save(pg2);
 		
 		ProjectGroup pg3 = new ProjectGroup();
-		pg3.setName("Konkursiprojektid");
+		pg3.setName("konkursiprojektid");
 		pg3.setImagesRootFolder("Konkursiprojektid");
 		session.save(pg3);
 		
 		ProjectGroup pg4 = new ProjectGroup();
-		pg4.setName("Planeeringud");
+		pg4.setName("planeeringud");
 		pg4.setImagesRootFolder("Planeeringud");
 		session.save(pg4);
 		
 		ProjectGroup pg5 = new ProjectGroup();
-		pg5.setName("Näitused");
+		pg5.setName("näitused");
 		pg5.setImagesRootFolder("Näitused");
 		session.save(pg5);
 		
@@ -145,7 +145,7 @@ public class SetupDao { // extends AbstractDaoHibernate {
 		// PROJECTS
 		
 		Project p1 = new Project();
-		p1.setName("Eramute grupp Seedri ja Remmelga tänavate vahelisel alal Pärnus");
+		p1.setName("eramute.grupp.seedri.remmelga"); // Eramute grupp Seedri ja Remmelga tänavate vahelisel alal Pärnus
 		p1.setPlanningStartYear(2000);
 		p1.setPlanningEndYear(2001);
 		p1.setBuildingStartYear(2002);
@@ -176,7 +176,7 @@ public class SetupDao { // extends AbstractDaoHibernate {
 		session.save(p1);
 		
 		Project p2 = new Project();
-		p2.setName("Eramu Rohuneemes");
+		p2.setName("eramu.rohuneeme"); // Eramu Rohuneemes
 		p2.setPlanningStartYear(2002);
 		p2.setBuildingStartYear(2002);
 		p2.setBuildingEndYear(2003);
@@ -190,7 +190,7 @@ public class SetupDao { // extends AbstractDaoHibernate {
 		session.save(p2);
 		
 		Project p3 = new Project();
-		p3.setName("Eramu Rohuneemes 2");
+		p3.setName("eramu.rohuneeme.2"); // Eramu Rohuneemes 2
 		p3.setPlanningStartYear(2005);
 		p3.setBuildingStartYear(2011);
 		List<Person> p3architects = new ArrayList<Person>();
