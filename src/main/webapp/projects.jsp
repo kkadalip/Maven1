@@ -36,13 +36,17 @@
 				<div class="projectGroupBackground">
 					<p class="projectGroupTitle">${projectGroup.name}</p>
 					<c:forEach items="${projectGroup.childProjects}" var="project">
-						<div class="projectBackground">
-						<div class="projectLink">
-							<img class="projectThumbnail" src="<c:url value="/static/images/${projectGroup.imagesRootFolder}/${project.imagesRootFolder}/thumbnail.png"/>" alt="Thumbnail">
-								<a class="projectTitle"  href="<c:url value="/projects/${project.id}"/>">${project.name}</a> <!-- et/projektid/projektid?action=show_project&amp;project_id=4 -->
-								<span class="projectYear">${project.planningStartYear}</span>
+							<div class="projectBackground">
+								<div class="projectLink">
+									<a class="projectLink" href="<c:url value="/projects/${project.id}"/>">
+										<img class="projectThumbnail" src="<c:url value="/static/images/${projectGroup.imagesRootFolder}/${project.imagesRootFolder}/thumbnail.png"/>" alt="Thumbnail">
+										<span class="projectTitle">${project.name}</span>
+										 <!-- et/projektid/projektid?action=show_project&amp;project_id=4 -->
+										<span class="projectYear">${project.planningStartYear}</span>
+									</a>
+								</div>
 							</div>
-						</div>
+						
 					</c:forEach>
 				</div>
 			</c:forEach>
