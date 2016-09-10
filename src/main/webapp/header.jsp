@@ -31,7 +31,7 @@
 				<ul class="nav navbar-nav navbar-right">
 					<li class="dropdown"><a href="#" class="dropdown-toggle"
 						data-toggle="dropdown" role="button" aria-haspopup="true"
-						aria-expanded="false"><fmt:message key="header.button.language" /><span class="caret"></span></a>
+						aria-expanded="false"><i class="fa fa-globe fa-lg" aria-hidden="true"></i><span class="caret"></span></a> <!-- fa-2x -->
 						<ul class="dropdown-menu" id="language" onchange="submit()">
 							<li><a href="?language=et">Eesti</a></li>
 							<li><a href="?language=en">English</a></li>

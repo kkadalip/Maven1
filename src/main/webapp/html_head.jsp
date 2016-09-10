@@ -49,5 +49,3 @@
 <link rel="stylesheet" type="text/css" href="static/style.css">
 <script type="text/javascript" src="static/default.js"></script>
  -->
-
- 
