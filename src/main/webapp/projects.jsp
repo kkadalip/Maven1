@@ -34,7 +34,10 @@
 		<c:if test="${!empty projectGroups}">
 			<c:forEach items="${projectGroups}" var="projectGroup">
 				<div class="projectGroupBackground">
-					<p class="projectGroupTitle">${projectGroup.name}</p>
+					<div class="projectGroupTitle">
+						<span>${projectGroup.name}</span>
+						<span class="projectGroupChildProjectsAmount">${fn:length(projectGroup.childProjects)}</span>
+					</div>
 					<c:forEach items="${projectGroup.childProjects}" var="project">
 							<div class="projectBackground">
 								<div class="projectLink">
