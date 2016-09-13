@@ -180,75 +180,122 @@
 					<script src="<c:url value="/static/Sly/sly.js" />"></script>
 					<script src="<c:url value="/static/Sly/horizontal.js" />"></script>
 				</c:if>
- 				
-				<c:forEach items="${project.addresses}" var="address">
-				aadress: ${address.city}, ${address.street} ${address.streetType} ${address.building}
-				<br>
-				</c:forEach>
+
+				<c:if test="${!empty project.addresses}">
+					<c:forEach items="${project.addresses}" var="address">
+						<fmt:message key="project.address" />:&nbsp;${address.city}, ${address.street} ${address.streetType} ${address.building}
+					<br>
+					</c:forEach>
+				</c:if>
+
 				<c:if test="${!empty project.planningStartYear}">
-					projekt: ${project.planningStartYear}<c:if
+					<fmt:message key="project.project" />:&nbsp;${project.planningStartYear}<c:if
 						test="${!empty project.planningEndYear}"> - ${project.planningEndYear}</c:if>
 					<br>
 				</c:if>
+
 				<c:if test="${!empty project.buildingStartYear}">
-					ehitus: ${project.buildingStartYear}<c:if
+					<fmt:message key="project.building" />:&nbsp;${project.buildingStartYear}<c:if
 						test="${!empty project.buildingEndYear}"> - ${project.buildingEndYear}</c:if>
 					<br>
 				</c:if>
-				<c:if test="${fn:length(project.architects) > 1}">
-				 	arhitektid: 
-				 </c:if>
-				<c:if test="${fn:length(project.architects) == 1}">
-				 	arhitekt: 
-				 </c:if>
-				<c:forEach items="${project.architects}" var="architect"
-					varStatus="loop">
-					 ${architect.firstName} ${architect.lastName}${loop.last ? '<br>' : ','} 
-				</c:forEach>
-				<c:forEach items="${project.originalAuthors}" var="originalAuthor">
-					hoone algne autor: ${originalAuthor.firstName} ${originalAuthor.lastName}
-					<br>
-				</c:forEach>
-				<c:if test="${!empty project.contributors}">
-					kaastöö: 
-					<c:forEach items="${project.contributors}" var="contributor"
+
+				<c:if test="${!empty project.architects}">
+					<c:if test="${fn:length(project.architects) > 1}">
+						<fmt:message key="project.architects"/>:&nbsp;
+					</c:if>
+					<c:if test="${fn:length(project.architects) == 1}">
+						<fmt:message key="project.architect"/>:&nbsp;
+					</c:if>
+					<c:forEach items="${project.architects}" var="architect"
 						varStatus="loop">
+					${architect.firstName} ${architect.lastName}${loop.last ? '<br>' : ','} 
+					</c:forEach>
+				</c:if>
+
+				<c:if test="${!empty project.originalAuthors}">
+					<c:if test="${fn:length(project.originalAuthors) > 1}">
+						<fmt:message key="project.original.authors" />:&nbsp;
+					 </c:if>
+					<c:if test="${fn:length(project.originalAuthors) == 1}">
+						<fmt:message key="project.original.author" />:&nbsp;
+					 </c:if>
+					 <c:forEach items="${project.architects}" var="originalAuthor" varStatus="loop">
+						 ${originalAuthor.firstName} ${originalAuthor.lastName}${loop.last ? '<br>' : ','} 
+					</c:forEach>
+				</c:if>
+
+				<c:if test="${!empty project.contributors}">
+					<c:if test="${fn:length(project.contributors) > 1}">
+						<fmt:message key="project.contributors" />:&nbsp;
+					</c:if>
+					<c:if test="${fn:length(project.contributors) == 1}">
+						<fmt:message key="project.contributor" />:&nbsp;
+				 	</c:if>
+					<c:forEach items="${project.contributors}" var="contributor" varStatus="loop">
 						${contributor.firstName} ${contributor.lastName}${loop.last ? '<br>' : ','} 
 					</c:forEach>
 				</c:if>
+
 				<c:if test="${!empty project.constructors}">
 					<c:if test="${fn:length(project.constructors) > 1}">
-					 	konstruktorid: 
+						<fmt:message key="project.constructors" />:&nbsp;
 					 </c:if>
 					<c:if test="${fn:length(project.constructors) == 1}">
-					 	konstruktor: 
+						<fmt:message key="project.constructor" />:&nbsp;
 					 </c:if>
-					<c:forEach items="${project.constructors}" var="constructor"
-						varStatus="loop">
+					<c:forEach items="${project.constructors}" var="constructor" varStatus="loop">
 						${constructor.firstName} ${constructor.lastName}${loop.last ? '<br>' : ','}
 					</c:forEach>
 				</c:if>
-				<c:forEach items="${project.interiorDesigners}"
-					var="interiorDesigner">
-					sisekujundaja: ${interiorDesigner.firstName} ${interiorDesigner.lastName}
+
+				<c:if test="${!empty project.interiorDesigners}">
+					<c:if test="${fn:length(project.interiorDesigners) > 1}">
+						<fmt:message key="project.interior.designers" />:&nbsp;
+					 </c:if>
+					<c:if test="${fn:length(project.interiorDesigners) == 1}">
+						<fmt:message key="project.interior.designer" />:&nbsp;
+					 </c:if>
+					<c:forEach items="${project.interiorDesigners}" var="interiorDesigner">
+						${interiorDesigner.firstName} ${interiorDesigner.lastName}
+						<br>
+					</c:forEach>
+				</c:if>
+
+				<c:if test="${!empty project.landscapeArchitects}">
+					<c:if test="${fn:length(project.landscapeArchitects) > 1}">
+						<fmt:message key="project.landscape.architects" />:&nbsp;
+					 </c:if>
+					<c:if test="${fn:length(project.landscapeArchitects) == 1}">
+						<fmt:message key="project.landscape.architect" />:&nbsp;
+					 </c:if>
+ 					<c:forEach items="${project.landscapeArchitects}" var="landscapeArchitect">
+					${landscapeArchitect.firstName} ${landscapeArchitect.lastName}
+					<br>
+					</c:forEach>
+				</c:if>
+
+				<c:if test="${!empty project.lightsDesigners}">
+					<c:if test="${fn:length(project.lightsDesigners) > 1}">
+						<fmt:message key="project.lights.designers" />:&nbsp;
+					</c:if>
+					<c:if test="${fn:length(project.lightsDesigners) == 1}">
+							<fmt:message key="project.lights.designers" />:&nbsp;
+					</c:if>
+					<c:forEach items="${project.lightsDesigners}" var="lightsDesigner">
+					${lightsDesigner.firstName} ${lightsDesigner.lastName}
 					<br>
 				</c:forEach>
-				<c:forEach items="${project.landscapeArchitects}"
-					var="landscapeArchitect">
-					maastikuarhitekt: ${landscapeArchitect.firstName} ${landscapeArchitect.lastName}
-					<br>
-				</c:forEach>
-				<c:forEach items="${project.lightsDesigners}" var="lightsDesigner">
-					sisekujundaja: ${lightsDesigner.firstName} ${lightsDesigner.lastName}
-					<br>
-				</c:forEach>
+				</c:if>
+				
 				<c:if test="${!empty project.sizeQuantity}">
-					üldpind: ${project.sizeQuantity}m<sup>2</sup>
+					<fmt:message key="project.size"/>:&nbsp;${project.sizeQuantity}m<sup>2</sup>
 					<c:if test="${!empty project.apartmentsQuantity}">, ${project.apartmentsQuantity} korterit</c:if>
 					<br>
 				</c:if>
+				
 				<c:if test="${!empty project.prizeComment}">
-					preemia: ${project.prizeComment}<br>
+					<fmt:message key="project.prize"/>:&nbsp;${project.prizeComment}<br>
 				</c:if>
 			</div>
 		</div>
