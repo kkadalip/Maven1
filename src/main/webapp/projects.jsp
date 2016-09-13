@@ -58,7 +58,7 @@
 	
 		<!-- GOOD OLD: -->
 		<!-- example link: 
-		<a href="et/projektid/projektid?action=show_project&amp;project_id=5">Eramute grupp Seedri ja Remmelga tänavate vahelisel alal Pärnus</a><br>
+		<a href="et/projektid/projektid?action=show_project&amp;project_id=5">Eramute grupp Seedri ja Remmelga tÃ¤navate vahelisel alal PÃ¤rnus</a><br>
 		-->
 		<!-- 
 		<div class="brightBackground col-md-12">
@@ -117,7 +117,7 @@
 	  		  	<div class="panel-body">
 					id: ${project.id}<br>
 					grupp: ${project.projectGroup.name}<br>
-					aadresse on ${fn:length(project.addresses)} tükki<br>
+					aadresse on ${fn:length(project.addresses)} tÃ¼kki<br>
 					<c:forEach items="${project.addresses}" var="address">
 						aadress: ${address.city}, ${address.street} ${address.streetType} ${address.building}
 						<br>
@@ -142,7 +142,7 @@
 						<br>
 					</c:forEach>
 					<c:if test="${!empty project.contributors}">
-						kaastöö: 
+						kaastÃ¶Ã¶: 
 						<c:forEach items="${project.contributors}" var="contributor" varStatus="loop">
 							${contributor.firstName} ${contributor.lastName}${loop.last ? '<br>' : ','} 
 						</c:forEach>
@@ -171,7 +171,7 @@
 						<br>
 					</c:forEach>
 					<c:if test="${!empty project.sizeQuantity}">
-						üldpind: ${project.sizeQuantity}m<sup>2</sup><c:if test="${!empty project.apartmentsQuantity}">, ${project.apartmentsQuantity} korterit</c:if><br>
+						Ã¼ldpind: ${project.sizeQuantity}m<sup>2</sup><c:if test="${!empty project.apartmentsQuantity}">, ${project.apartmentsQuantity} korterit</c:if><br>
 					</c:if>
 					<c:if test="${!empty project.prizeComment}">
 						preemia: ${project.prizeComment}<br>

@@ -21,25 +21,25 @@
 	<%@ include file="header.jsp"%>
 	<div class="container">
 		<div class="brightBackground col-md-12">		
-			<h2>Arhitektuuribüroo JVR OÜ</h2>
+			<h2><fmt:message key="contact.title"/></h2>
 			<br>
 			<p>
-				<b>Aadress:</b> Paldiski mnt. 26A, 10149, Tallinn<br>
-				<b>Reg nr:</b> 10382089<br>
-				<b>Tel:</b> (+372) 661 3753<br>
-				<b>Fax:</b> (+372) 661 3754<br>
+				<b><fmt:message key="contact.address"/>:</b> <fmt:message key="contact.addressJVR"/><br>
+				<b><fmt:message key="contact.regnr"/>:</b> 10382089<br>
+				<b><fmt:message key="contact.phone"/>:</b> (+372) 661 3753<br>
+				<b><fmt:message key="contact.FAX"/>:</b> (+372) 661 3754<br>
 				<br>
-				Arhitekt Velle Kadalipp:<br>
-				<b>Mob:</b> (+372) 56 905 411<br>
-				<b>E-mail:</b> velle@jvr.ee<br>
+				<fmt:message key="contact.architect"/> Velle Kadalipp:<br>
+				<b><fmt:message key="contact.mobilephone"/>:</b> (+372) 56 905 411<br>
+				<b><fmt:message key="contact.e-mail"/>:</b> velle@jvr.ee<br>
 				<br>
-				Arhitekt Kalle Vellevoog:<br>
-				<b>Mob:</b> (+372) 50 675 86<br>
-				<b>E-mail:</b> kalle@jvr.ee<br>
+				<fmt:message key="contact.architect"/> Kalle Vellevoog:<br>
+				<b><fmt:message key="contact.mobilephone"/>:</b> (+372) 50 675 86<br>
+				<b><fmt:message key="contact.e-mail"/>:</b> kalle@jvr.ee<br>
 			</p>
 			<!-- https://developers.google.com/maps/documentation/javascript/tutorials/adding-a-google-map -->
 			<!-- https://developers.google.com/maps/documentation/javascript/infowindows -->
-			<h3>Asukoht:</h3>
+			<h3><fmt:message key="contact.location"/>:</h3>
 			<div id="map" style='height: 300px; width: auto; margin-bottom: 10px; color: black;'></div>
 	
 			<script>
@@ -54,7 +54,7 @@
 						center : myLatLng
 					});
 	
-					var contentString = '<strong>Arhitektuuribüroo JVR OÜ';
+					var contentString = '<strong><fmt:message key="contact.title"/></strong>';
 					var infowindow = new google.maps.InfoWindow({
 						content : contentString
 					});
@@ -62,7 +62,7 @@
 					var marker = new google.maps.Marker({
 						position : myLatLng,
 						map : map,
-						title : 'Arhitektuuribüroo JVR'
+						title : '<fmt:message key="contact.title"/>'
 					});
 					marker.addListener('click', function() {
 						infowindow.open(map, marker);
