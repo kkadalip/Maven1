@@ -3,7 +3,6 @@
 <!DOCTYPE html>
 <html lang="${language}">
 <head>
-<meta charset="UTF-8">
 <%@ include file="html_head.jsp"%>
 <title>JVR | Project</title>
 
@@ -147,7 +146,7 @@
 										title="Zoom in/out"></button>
 		
 									<!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
-									<!-- element will get class pswp__preloader--active when preloader is running -->
+									<!-- element will get class pswp__preloader-active when preloader is running -->
 									<div class="pswp__preloader">
 										<div class="pswp__preloader__icn">
 											<div class="pswp__preloader__cut">

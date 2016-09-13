@@ -1,5 +1,4 @@
 <meta charset="UTF-8">
-
 <meta name="Content-Security-Policy"
 	content="
 		default-src 'self';

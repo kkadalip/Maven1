@@ -1,7 +1,7 @@
 <%@ include file="imports.jsp"%>
 
 <!DOCTYPE html>
-<html lang="${language}">
+<html>
 <head>
 <%@ include file="html_head.jsp"%>
 <title>JVR | Home</title>
@@ -19,7 +19,6 @@
 
 		<div class="container">
 			<div class="brightBackground col-md-12">
-				<p>
 					<h1><fmt:message key="index.title.JVR" /></h1>
 					<br>
 					<fmt:message key="index.titleSentence" />
@@ -38,7 +37,7 @@
 					<fmt:message key="index.workers.2" /><br>
 					<fmt:message key="index.workers.3" /><br>
 					<fmt:message key="index.workers.4" /><br>
-				</p>
+					<br>
 			</div>
 		</div>
 		<!-- /container -->
