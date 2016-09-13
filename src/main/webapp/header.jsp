@@ -1,4 +1,3 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
 
 <!-- <div class="container">  -->
@@ -36,7 +35,7 @@
 							<li><a href="?language=et">Eesti</a></li>
 							<li><a href="?language=en">English</a></li>
 							<li role="separator" class="divider"></li>
-							<li><a href="?language=ru">Русский (TODO)</a></li>
+							<li><a href="?language=ru">\u0420\u0443\u0441\u0441\u043a\u0438\u0439 (TODO)</a></li>
 							<!-- 
 							<li role="separator" class="divider"></li>
 							<li class="dropdown-header">Example header</li>
