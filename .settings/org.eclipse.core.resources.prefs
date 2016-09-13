@@ -3,7 +3,6 @@ encoding//src/main/java/dao/SetupDao.java=UTF-8
 encoding//src/main/java/model/Project.java=UTF-8
 encoding//src/main/resources/hibernate.properties=ISO-8859-1
 encoding//src/main/resources/text.properties=ISO-8859-1
-encoding//src/main/resources/text_et.properties=ISO-8859-1
 encoding//src/main/resources/text_ru.properties=ISO-8859-1
 encoding//src/main/webapp/contact.jsp=UTF-8
 encoding//src/main/webapp/contact_google_maps_api_key.jsp=UTF-8

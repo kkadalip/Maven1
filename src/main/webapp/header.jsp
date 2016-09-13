@@ -37,16 +37,17 @@
 							<li><a href="?language=en">English</a></li>
 							<li role="separator" class="divider"></li>
 							<li><a href="?language=ru">Русский (TODO)</a></li>
-							<!-- 
-							<li role="separator" class="divider"></li>
-							<li class="dropdown-header">Example header</li>
-							<li><a href="#">Example separated link</a></li>
-							<li><a href="#">One more separated link</a></li>
-							 -->
 						</ul></li>
 					<li id="header_li_contact"><a href="./contact"><fmt:message key="header.button.contact" /></a></li>
 				</ul>
 			</form>
+			<!-- 
+			<li role="separator" class="divider"></li>
+			<li class="dropdown-header">Example header</li>
+			<li><a href="#">Example separated link</a></li>
+			<li><a href="#">One more separated link</a></li>
+			 -->
+			 
 			<!-- 
 			<form>
 			    <select id="language" name="language" onchange="submit()">
