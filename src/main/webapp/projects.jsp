@@ -3,7 +3,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
 <%@ include file="html_head.jsp"%>
 <title>JVR | Projects</title>
 
@@ -42,7 +41,7 @@
 							<div class="projectBackground">
 								<div class="projectLink">
 									<a class="projectLink" href="<c:url value="/projects/${project.id}"/>">
-										<img class="projectThumbnail" src="<c:url value="/static/images/${projectGroup.imagesRootFolder}/${project.imagesRootFolder}/thumbnail.png"/>" alt="Thumbnail">
+										<img class="projectThumbnail" src="${pageContext.request.contextPath}/static/images/${projectGroup.imagesRootFolder}/${project.imagesRootFolder}/thumbnail.png" alt="Thumbnail">
 										<span class="projectTitle"><fmt:message key="${project.name}"/></span>
 										 <!-- et/projektid/projektid?action=show_project&amp;project_id=4 -->
 										<span class="projectYear">${project.planningStartYear}</span>

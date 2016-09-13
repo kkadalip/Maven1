@@ -3,7 +3,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
 <%@ include file="html_head.jsp"%>
 <title>JVR | Project</title>
 
