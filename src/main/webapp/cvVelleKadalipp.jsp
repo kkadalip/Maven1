@@ -79,13 +79,13 @@
 						<td></td>
 						<td>Kehtna vald</td>
 						<td></td>
-						<td>Velle&nbsp;Kadalipp, JÃ¶rgen&nbsp;VÃ¤hi</td>
+						<td>Velle&nbsp;Kadalipp, Jörgen&nbsp;Vähi</td>
 					<tr>
 				  	<tr>
 						<td>1995-1996</td>
 						<td><fmt:message key="velle.cv.projects.1995-1996" /></td>
 						<td></td>
-						<td>Kilingi-NÃµmme</td>
+						<td>Kilingi-Nõmme</td>
 						<td></td>
 						<td>Velle&nbsp;Kadalipp</td>
 					<tr>
@@ -101,7 +101,7 @@
 						<td>1998-1999</td>
 						<td><fmt:message key="velle.cv.projects.1998-1999_1" /></td>
 						<td><fmt:message key="velle.cv.projects.1998-1999_1-street" /></td>
-						<td>VÃµru</td>
+						<td>Võru</td>
 						<td></td>
 						<td>Velle&nbsp;Kadalipp, Ilmar&nbsp;Jalas</td>
 					<tr>
@@ -117,7 +117,7 @@
 						<td>2000</td>
 						<td><fmt:message key="velle.cv.projects.2000" /></td>
 						<td><fmt:message key="velle.cv.projects.2000-street" /></td>
-						<td>PÃ¤rnu</td>
+						<td>Pärnu</td>
 						<td></td>
 						<td>Velle&nbsp;Kadalipp, Kalle&nbsp;Vellevoog</td>
 					<tr>
@@ -205,7 +205,7 @@
 						<td>2006</td>
 						<td><fmt:message key="velle.cv.projects.2006" /></td>
 						<td><fmt:message key="velle.cv.projects.2006-street" /></td>
-						<td>JÃµhvi</td>
+						<td>Jõhvi</td>
 						<td>15393m<sup>2</sup></td>
 						<td>Velle&nbsp;Kadalipp, Kalle&nbsp;Vellevoog</td>
 					<tr>
@@ -265,7 +265,7 @@
 				  	<tr>
 						<td>1990</td>
 						<td><fmt:message key="velle.cv.competitions.1990" /></td>
-						<td>JÃµhvi</td>
+						<td>Jõhvi</td>
 						<td><fmt:message key="velle.cv.competitions.1990-prize" /></td>
 						<td>Velle&nbsp;Kadalipp, Kalle&nbsp;Vellevoog, Ilmar&nbsp;Jalas</td>
 					<tr>
@@ -286,7 +286,7 @@
 				  	<tr>
 						<td>2001</td>
 						<td><fmt:message key="velle.cv.competitions.2001_2"/></td>
-						<td>PÃ¤rnu</td>
+						<td>Pärnu</td>
 						<td><fmt:message key="velle.cv.competitions.2001_2-prize" /></td>
 						<td>Velle&nbsp;Kadalipp</td>
 					<tr>
