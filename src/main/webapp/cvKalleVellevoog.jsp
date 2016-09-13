@@ -1,7 +1,7 @@
 <%@ include file="imports.jsp"%>
 
 <!DOCTYPE html>
-<html>
+<html lang="${language}">
 <head>
 <%@ include file="html_head.jsp"%>
 <title>JVR | Kalle Vellevoog</title>

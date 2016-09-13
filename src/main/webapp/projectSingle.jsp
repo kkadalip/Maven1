@@ -1,7 +1,7 @@
 <%@ include file="imports.jsp"%>
 
 <!DOCTYPE html>
-<html>
+<html lang="${language}">
 <head>
 <meta charset="UTF-8">
 <%@ include file="html_head.jsp"%>
