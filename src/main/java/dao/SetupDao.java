@@ -70,7 +70,7 @@ public class SetupDao { // extends AbstractDaoHibernate {
 		
 		ProjectGroup pg2 = new ProjectGroup();
 		pg2.setName("korterelamud.ja.ühiskondlikud.hooned"); // <- for translation files
-		pg2.setImagesRootFolder("Korterelamud ja ühisk hooned");
+		pg2.setImagesRootFolder("Korterelamud_ja_ühisk_hooned");
 		session.save(pg2);
 		
 		ProjectGroup pg3 = new ProjectGroup();
