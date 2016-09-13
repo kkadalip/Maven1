@@ -118,7 +118,7 @@
 	</dependencies>
 
 	<build>
-		<finalName>Maven1</finalName>
+		<finalName>ROOT</finalName> <!-- ROOT.war will be servet at root of tomcat! -->
 
 		<plugins>
 			<!-- Set JDK Compiler Level -->
