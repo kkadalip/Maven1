@@ -39,7 +39,7 @@
 
 <!-- Awesome font CSS CDN: -->
 <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
-<!-- <p>blablabla <i class="fa fa-skype" aria-hidden="true"></i> löaksdölasköldksa</p> -->
+<!-- <p>blablabla <i class="fa fa-skype" aria-hidden="true"></i> lÃ¶aksdÃ¶laskÃ¶ldksa</p> -->
 
 <!-- My CSS and JS -->
 

@@ -215,7 +215,7 @@
 				  	<tr>
 						<td>1990</td>
 						<td><fmt:message key="kalle.cv.competitions.1990" /></td>
-						<td>Jõhvi</td>
+						<td>JÃµhvi</td>
 						<td><fmt:message key="kalle.cv.competitions.1990-prize" /></td>
 						<td>Kalle&nbsp;Vellevoog, Velle&nbsp;Kadalipp, Ilmar&nbsp;Jalas</td>
 					<tr>
@@ -229,7 +229,7 @@
 				  	<tr>
 						<td>1998</td>
 						<td><fmt:message key="kalle.cv.competitions.1998" /></td>
-						<td>Jõhvi</td>
+						<td>JÃµhvi</td>
 						<td><fmt:message key="kalle.cv.competitions.1998-prize" /></td>
 						<td>Kalle&nbsp;Vellevoog, Ilmar&nbsp;Jalas</td>
 					<tr>
@@ -259,7 +259,7 @@
 						<td><fmt:message key="kalle.cv.competitions.2004" /></td>
 						<td><fmt:message key="kalle.cv.competitions.2004-location" /></td>
 						<td><fmt:message key="kalle.cv.competitions.2004-prize" /></td>
-						<td>Kalle&nbsp;Vellevoog, Laila&nbsp;Põdra</td>
+						<td>Kalle&nbsp;Vellevoog, Laila&nbsp;PÃµdra</td>
 					<tr>
 				  	<tr>
 						<td>2007</td>

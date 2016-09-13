@@ -210,7 +210,7 @@
 					<br>
 				</c:forEach>
 				<c:if test="${!empty project.contributors}">
-					kaastöö: 
+					kaastÃ¶Ã¶: 
 					<c:forEach items="${project.contributors}" var="contributor"
 						varStatus="loop">
 						${contributor.firstName} ${contributor.lastName}${loop.last ? '<br>' : ','} 
@@ -243,7 +243,7 @@
 					<br>
 				</c:forEach>
 				<c:if test="${!empty project.sizeQuantity}">
-					üldpind: ${project.sizeQuantity}m<sup>2</sup>
+					Ã¼ldpind: ${project.sizeQuantity}m<sup>2</sup>
 					<c:if test="${!empty project.apartmentsQuantity}">, ${project.apartmentsQuantity} korterit</c:if>
 					<br>
 				</c:if>

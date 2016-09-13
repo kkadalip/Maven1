@@ -43,7 +43,7 @@
 	-->
 	
 <!-- 
-Ei kasuta või üleliigne hetkel:
+Ei kasuta vÃµi Ã¼leliigne hetkel:
 
 <c:forEach items="${project.imagesPromo}" var="imagePromo">
 	  <div class="col-md-4">
