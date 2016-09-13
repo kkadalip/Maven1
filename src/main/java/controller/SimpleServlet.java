@@ -1,7 +1,7 @@
 package controller;
 
 import java.io.IOException;
-import java.io.PrintWriter;
+//import java.io.PrintWriter;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -9,7 +9,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import org.slf4j.LoggerFactory;
+//import org.slf4j.LoggerFactory;
 
 /**
  * Servlet implementation class SimpleServlet
@@ -19,7 +19,7 @@ public class SimpleServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
 	private static int counter = 0;
-	private final static org.slf4j.Logger logger = LoggerFactory.getLogger(SimpleServlet.class);
+	//private final static org.slf4j.Logger logger = LoggerFactory.getLogger(SimpleServlet.class);
     
 	/**
      * @see HttpServlet#HttpServlet()

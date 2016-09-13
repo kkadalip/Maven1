@@ -6,7 +6,7 @@ import org.hibernate.Transaction;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import model.Person;
+//import model.Person;
 
 import java.util.List;
 
@@ -46,7 +46,7 @@ public abstract class AbstractDao {
 		//        }
 	}
 
-	protected Object find(Class clazz, Long id) {
+	protected Object find(Class<?> clazz, Long id) {
 		Object obj = null;
 		//        try {
 		//            startOperation();
@@ -60,10 +60,10 @@ public abstract class AbstractDao {
 		return obj;
 	}
 
-	protected List getAll(Class clazz) {
+	protected List<?> getAll(Class<?> clazz) {
 		log.info("[getAll " + clazz.getSimpleName() +"]");
 		//Session session = HibernateUtil.getSessionFactory().openSession();
-		List objects = null;
+		List<?> objects = null;
 		try {
 			startOperation();
 			Query query = session.createQuery("from " + clazz.getName());
@@ -95,6 +95,11 @@ public abstract class AbstractDao {
 	 * Represents Exceptions thrown by the Data Access Layer.
 	 */
 	public class DataAccessLayerException extends RuntimeException {
+		/**
+		 * 
+		 */
+		private static final long serialVersionUID = 1L;
+
 		public DataAccessLayerException() {
 		}
 

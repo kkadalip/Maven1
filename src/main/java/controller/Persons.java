@@ -12,10 +12,10 @@ import javax.servlet.http.HttpServletResponse;
 import org.slf4j.LoggerFactory;
 
 import dao.PersonDao;
-import dao.ProjectGroupDao;
+//import dao.ProjectGroupDao;
 import model.Person;
-import model.Project;
-import model.ProjectGroup;
+//import model.Project;
+//import model.ProjectGroup;
 
 /**
  * Servlet implementation class People

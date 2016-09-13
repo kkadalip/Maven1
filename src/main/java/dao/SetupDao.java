@@ -1,17 +1,17 @@
 package dao;
 
-import java.time.LocalDate;
-import java.time.LocalDateTime;
+//import java.time.LocalDate;
+//import java.time.LocalDateTime;
 import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.HashSet;
+//import java.util.Arrays;
+//import java.util.HashSet;
 import java.util.List;
-import java.util.Set;
+//import java.util.Set;
 //import java.io.File;
 //import java.util.HashSet;
 //import java.util.Set;
-import java.util.SortedSet;
-import java.util.TreeSet;
+//import java.util.SortedSet;
+//import java.util.TreeSet;
 
 //import org.apache.tools.ant.Project;
 //import org.apache.tools.ant.taskdefs.SQLExec;
@@ -27,7 +27,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import model.Address;
-import model.Image;
+//import model.Image;
 import model.Person;
 import model.Project;
 //import model.Project;

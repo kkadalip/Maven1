@@ -1,6 +1,6 @@
 package dao;
 
-import java.util.Iterator;
+//import java.util.Iterator;
 import java.util.List;
 //import java.util.ArrayList;
 //import java.sql.SQLException;
@@ -10,7 +10,7 @@ import org.hibernate.HibernateException;
 //import org.hibernate.Query;
 //import org.hibernate.HibernateException;
 import org.hibernate.Session;
-import org.hibernate.SessionFactory;
+//import org.hibernate.SessionFactory;
 //import org.hibernate.Transaction;
 //import org.hibernate.criterion.Restrictions;
 //import org.hibernate.cfg.Configuration;
@@ -18,7 +18,7 @@ import org.hibernate.SessionFactory;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import model.Person;
+//import model.Person;
 import model.Project; // bean
 //import model.User;
 
@@ -65,7 +65,7 @@ public class ProjectDao extends AbstractDao {
      * Finds all Projects in the database.
      * @return
      */
-    public List getAll() { // throws DataAccessLayerException
+    public List<?> getAll() { // throws DataAccessLayerException
     	log.debug("GET ALL PROJECTS IN PROJECTDAO");
         return super.getAll(Project.class);
     }

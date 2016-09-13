@@ -1,17 +1,17 @@
 package dao;
 
-import java.util.ArrayList;
-import java.util.HashSet;
+//import java.util.ArrayList;
+//import java.util.HashSet;
 //import java.sql.SQLException;
 //import java.util.ArrayList;
 //import java.util.Iterator;
 import java.util.List;
-import java.util.Set;
+//import java.util.Set;
 
 //import javax.persistence.Query;
 
 import org.hibernate.HibernateException;
-import org.hibernate.Query;
+//import org.hibernate.Query; // DEPRECATED
 import org.hibernate.Session;
 //import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
@@ -23,7 +23,7 @@ import org.slf4j.LoggerFactory;
 //import controller.Default;
 //import model.Sector;
 //import dao.AbstractDao;
-import model.Project;
+//import model.Project;
 import model.Person; // bean
 
 public class PersonDao extends AbstractDao { // extends AbstractDao {
@@ -76,7 +76,7 @@ public class PersonDao extends AbstractDao { // extends AbstractDao {
 	
 	@SuppressWarnings("unchecked")
 	public List<Person> getAll(){
-		return super.getAll(Person.class);
+		return (List<Person>) super.getAll(Person.class);
 	}
 	
 	public List<Person> getAllPersons(){

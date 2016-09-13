@@ -12,7 +12,7 @@ import javax.servlet.http.HttpServletResponse;
 
 import org.slf4j.LoggerFactory;
 
-import dao.AbstractDao;
+//import dao.AbstractDao;
 import dao.PersonDao;
 import dao.ProjectDao;
 import dao.ProjectGroupDao;
@@ -133,12 +133,11 @@ public class Projects extends HttpServlet {
 			
 
 			@SuppressWarnings("unchecked")
-			List<Project> projects = projectDao.getAll(); //getAllProjects();
+			List<Project> projects = (List<Project>) projectDao.getAll(); //getAllProjects();
 			log.debug("projects size: " + projects.size());
 			request.setAttribute("projects", projects);
 			
 			ProjectGroupDao projectGroupDao = new ProjectGroupDao();
-			@SuppressWarnings("unchecked")
 			List<ProjectGroup> projectGroups = projectGroupDao.getAll(); //getAllProjects();
 			log.debug("projectGroups size: " + projectGroups.size());
 			request.setAttribute("projectGroups", projectGroups);

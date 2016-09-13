@@ -2,8 +2,8 @@ package dao;
 
 import java.util.List;
 
-import dao.AbstractDao.DataAccessLayerException;
-import model.Project;
+//import dao.AbstractDao.DataAccessLayerException;
+//import model.Project;
 import model.ProjectGroup;
 
 public class ProjectGroupDao extends AbstractDao {
@@ -12,8 +12,9 @@ public class ProjectGroupDao extends AbstractDao {
 		super();
 	}
 
-    public List getAll(){ // throws DataAccessLayerException{
-        return super.getAll(ProjectGroup.class);
+    @SuppressWarnings("unchecked")
+	public List<ProjectGroup> getAll(){ // throws DataAccessLayerException{
+        return (List<ProjectGroup>) super.getAll(ProjectGroup.class);
     }
 
 }
