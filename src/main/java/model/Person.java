@@ -19,7 +19,8 @@ import javax.persistence.Table;
 import org.hibernate.annotations.Cascade;
 import org.hibernate.annotations.CascadeType;
 
-import com.sun.istack.internal.Nullable;
+//WRONG: import com.sun.istack.internal.Nullable;
+import javax.annotation.Nullable;
 
 @Entity
 @Table(name="person")

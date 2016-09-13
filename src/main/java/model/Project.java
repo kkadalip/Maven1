@@ -25,7 +25,8 @@ import org.hibernate.annotations.CascadeType;
 import org.hibernate.annotations.LazyCollection;
 import org.hibernate.annotations.LazyCollectionOption;
 
-import com.sun.istack.internal.Nullable;
+//WRONG: import com.sun.istack.internal.Nullable;
+import javax.annotation.Nullable;
 
 import model.Person;
 

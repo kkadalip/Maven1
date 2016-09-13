@@ -22,7 +22,8 @@ import org.hibernate.annotations.LazyCollection;
 import org.hibernate.annotations.LazyCollectionOption;
 import org.hibernate.annotations.SortNatural;
 
-import com.sun.istack.internal.Nullable;
+// WRONG: import com.sun.istack.internal.Nullable;
+import javax.annotation.Nullable;
 
 @Entity
 @Table(name="projectGroup")

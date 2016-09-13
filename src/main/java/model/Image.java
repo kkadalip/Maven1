@@ -7,6 +7,8 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
+import javax.annotation.Nullable;
+
 @Entity
 @Table(name="image")
 public class Image {
